@@ -1,0 +1,51 @@
+site_name: Automata Knowledge
+
+#repo_url:
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+#  favicon:
+  features:
+    - navigation.tabs
+    - toc.integrate
+  platte:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+markdown_extensions:
+  - admonition
+
+  - meta
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.critic
+  - pymdownx.details
+
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+  - macros
+
+  - mermaid2:
+      arguments:
+        securityLevel: 'loose'
+
