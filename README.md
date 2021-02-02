@@ -1,10 +1,41 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7652114f-2c46-409c-9cdd-404b70ac1637/deploy-status)](https://app.netlify.com/sites/mkdocs-demo/deploys)
+# Automata Documentation
 
-# MkDocs Demo
+Welcome to Automata documentation repository.
 
-This [repo](https://github.com/athenian-programming/mkdocs-demo) provides an example of 
-a [MkDocs](http://mkdocs.org) website using the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-theme. Details are included for hosting the website for a Github Project, 
-User or Organization.
+You may also directly view the files in [`/docs`](./docs) directory.
 
-See https://mkdocs-demo.org 
+## Development
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/automata-network/docs.git
+
+# 2. Install python3 packages
+pip3 install -r requirements.txt
+
+# 3. Start the website locally
+mkdocs serve
+```
+
+## Contributing
+
+You are welcomed to:
+
+* raise an issues regarding the documentation and the hosted website.
+* create new documentations under [`docs/`](./docs) directory.
+* enrich your documentations with more [mkdocs-material features](https://squidfunk.github.io/mkdocs-material/reference)
+* get your hands dirty with [mkdocs][mkdocs] and [mkdocs material][mkdocs-material].
+
+## Acknowledgements
+
+Kudos to the following open-source projects.
+
+* [mkdocs][mkdocs]
+* [mkdocs-material][mkdocs-material]
+
+## License
+
+No License
+
+[mkdocs]: https://www.mkdocs.org/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
