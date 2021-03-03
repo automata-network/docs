@@ -12,6 +12,7 @@ repo_name: 'GitHub Home'
 # TODO add docs here.
 nav:
   - Home: index.md
+  - Guide: ./guide/witness-get-started.md
 
 theme:
   name: 'material'
