@@ -1,5 +1,13 @@
 # Get started with witness
 
+## Table of Content
+* [Introduction](#introduction)
+* [Main page](#main-page)
+* [Create a new workspace](#create-a-new-workspace)
+* [Create new proposals](#create-new-proposals)
+* [Vote for a proposal](#vote-for-a-proposal)
+
+## Introduction
 Automata witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
 
 This page will walk you through the witness page and the functionalities it currently provides.
@@ -39,7 +47,7 @@ On the top of the page you can find a **New proposal** button that you click to 
 
 You may also need sufficient fund to create a new proposal. As mentioned earlier, creating a new proposal incurs generating a new block and this is not a free lunch, although we aim to minimize the cost.
 
-## Vote for proposal
+## Vote for a proposal
 Fig 4-1 shows the page where you vote for the current proposal.
 
 ![Vote for proposal](https://github.com/automata-network/docs/blob/master/docs/images/vote_proposal.png?raw=true)
