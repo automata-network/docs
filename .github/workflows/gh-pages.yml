@@ -38,7 +38,7 @@ jobs:
       - run: mkdocs build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          BRANCH: gh-pages
+          FOLDER: site
