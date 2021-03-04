@@ -1,41 +1,47 @@
 site_name: Automata Documentation
-site_url: https://docs.automatanetwork.com
+site_url: https://docs.ata.com
 site_description: Automata Documentation
 site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
-repo_name: 'GitHub Home'
 
-# TODO Insert your Google Tracking ID
-# google_analytics: ['UA-125864726-1', 'auto']
-
-# TODO add docs here.
 nav:
   - Home: index.md
   - Guide: ./guide/witness-get-started.md
 
 theme:
   name: 'material'
-  include_search_page: false   # Don't include MkDocs' JavaScript
-  search_index_only: true
   language: en
-  feature:
-    tabs: false
-  palette:
-    primary: indigo
-    accent: indigo
   font:
-    text: Roboto
     code: Roboto Mono
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
   logo: 'images/favicon-192.png'
   favicon: 'images/favicon.ico'
 
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite:
       linenums: false   # true if website has code
   - toc:
       permalink: true
+  - pymdownx.tabbed
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -52,3 +58,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/automatanetwork
+      name: Automata on Twitter
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@automatanetwork
+      name: Automata on medium
