@@ -47,14 +47,17 @@ On the top of the page you can find a **New proposal** button that you click to 
 
 You may also need sufficient fund to create a new proposal. As mentioned earlier, creating a new proposal incurs generating a new block and this is not a free lunch, although we aim to minimize the cost.
 
+
 ## Vote for a proposal
 Fig 4-1 shows the page where you vote for the current proposal.
 
 ![Vote for proposal](https://github.com/automata-network/docs/blob/master/docs/images/vote_proposal.png?raw=true)
 *Fig 4-1 Vote for a proposal*
 
+The result of the vote is based on the tokens you hold, So you should get the tokens for the project first. 
 
-*TODO may need to explain where to obtain FAU tokens*
+You can get substitutions from [faucet](https://faucet.ata.network).Just enter MetaMask's account address.
 
+![Faucet Token](/images/faucet_token.png)
+Fig 4-2 shows the faucet page.
 
-*TODO may need to explain in what cases users may fail at voting*
