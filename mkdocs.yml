@@ -4,51 +4,21 @@ site_description: Automata Documentation
 site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
-repo_name: 'GitHub Home'
+repo_name: 'docs'
 
-# TODO Insert your Google Tracking ID
-# google_analytics: ['UA-125864726-1', 'auto']
-
-# TODO add docs here.
 nav:
   - Home: index.md
   - Guide: ./guide/witness-get-started.md
 
 theme:
-  name: 'material'
-  include_search_page: false   # Don't include MkDocs' JavaScript
-  search_index_only: true
-  language: en
-  feature:
-    tabs: false
-  palette:
-    primary: indigo
-    accent: indigo
-  font:
-    text: Roboto
-    code: Roboto Mono
-  logo: 'images/favicon-192.png'
-  favicon: 'images/favicon.ico'
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: dracula
+  disable_nav_search: true
+  disable_footer: true
+  highlightjs: true
+  hljs_languages:
+    - yaml
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      linenums: false   # true if website has code
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
