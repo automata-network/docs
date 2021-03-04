@@ -1,14 +1,13 @@
-site_name: Automata Docs
+site_name: Automata Network Docs
 site_url: https://docs.ata.network
-site_description: Automata Documentation
+site_description: Automata Network Documentation
 site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
 
 nav:
-  - Home: index.md
-  - Guide: ./guide/witness-get-started.md
-
+  - Welcome: index.md
+  - Witness: ./guide/witness-get-started.md
 
 theme:
   name: material
@@ -18,6 +17,8 @@ theme:
   features:
       - tabs
       - instant
+      # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+      - navigation.tabs
   logo: 'assets/favicon-192.png'
   favicon: 'assets/favicon.ico'
 
