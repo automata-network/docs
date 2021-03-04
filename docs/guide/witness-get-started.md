@@ -8,7 +8,7 @@
 - [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
 - [Getting tokens](#getting-tokens)
 - [Creating a workspace](#creating-a-workspace)
-- [Creating new proposals](#creating-new-proposals)
+- [Creating a new proposal](#creating-a-new-proposal)
 - [Voting for a proposal](#voting-for-a-proposal)
 
 
@@ -33,7 +33,7 @@ This page will walk you through the Witness page and the functionalities it curr
 You can then add the Automata Network to your existing networks with the following details:  
 
 **Network Name**: Automata Network  
-**New RPC URL**: https://rpc.ata.network/:9933  
+**New RPC URL**: https://rpc.ata.network/  
 **Chain ID**: 86  
 **Currency Symbol**: ATA  
 
@@ -120,7 +120,7 @@ Once ready, you can create a proposal by:
 
 <img src="/assets/creatingproposal_m.gif" width="673" height="463" />
 
-## Vote for a proposal  
+## Voting for a proposal  
 
 To make an anonymous vote, head over to the proposal of a particular project you're interested in voting for. 
 
