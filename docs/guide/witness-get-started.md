@@ -33,7 +33,7 @@ This page will walk you through the Witness page and the functionalities it curr
 You can then add the Automata Network to your existing networks with the following details:  
 
 **Network Name**: Automata Network  
-**New RPC URL**: https://rpc.ata.network/:9933  
+**New RPC URL**: https://rpc.ata.network/
 **Chain ID**: 86  
 **Currency Symbol**: ATA  
 
