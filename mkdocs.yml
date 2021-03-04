@@ -1,10 +1,9 @@
 site_name: Automata Documentation
-site_url: https://docs.automatanetwork.com
+site_url: https://docs.ata.network
 site_description: Automata Documentation
 site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
-repo_name: 'docs'
 
 nav:
   - Home: index.md
