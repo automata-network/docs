@@ -18,8 +18,8 @@ theme:
   features:
       - tabs
       - instant
-  logo: 'images/favicon-192.png'
-  favicon: 'images/favicon.ico'
+  logo: 'assets/favicon-192.png'
+  favicon: 'assets/favicon.ico'
 
 markdown_extensions:
   - admonition
