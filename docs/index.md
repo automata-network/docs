@@ -1,6 +1,6 @@
 # Automata
 
-**Automata** is a sub-second, privacy-first compute protocol. Aims to create a distributed service network that offers composable services to bridge the trust gap between different blockchain networks. 
+**Automata** is a decentralized service protocol that provides middleware-like services for dApps to achieve traceless privacy, high assurance and frictionless computation.
 
 ## Witness
 
@@ -8,10 +8,9 @@
 
 Please see the [guide](./guide/witness-get-started.md) to start.
 
-
-# Links
+## Links
 
 * [Website](https://www.ata.network/)
-* [Witness](https://witness-preview.ata.network/)
+* [Witness](https://witness.ata.network/)
 * [Dashboard](https://d.ata.network/)
 * [Faucet](https://faucet.ata.network)
