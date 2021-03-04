@@ -37,5 +37,5 @@ Kudos to the following open-source projects.
 
 No License
 
-* [mkdocs]: https://www.mkdocs.org/
-* [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
+[mkdocs]: https://www.mkdocs.org/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
