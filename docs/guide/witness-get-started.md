@@ -1,6 +1,6 @@
 # Getting started with Automata Witness
 
-## Table of Contents
+<!-- ## Table of Contents
 
 - [Introduction](#introduction)
 - [Setting up MetaMask](#setting-up-metamask)
@@ -9,14 +9,13 @@
 - [Getting tokens](#getting-tokens)
 - [Creating a workspace](#creating-a-workspace)
 - [Creating a new proposal](#creating-a-new-proposal)
-- [Voting for a proposal](#voting-for-a-proposal)
+- [Voting for a proposal](#voting-for-a-proposal) -->
 
-
-## Introduction 
+## Introduction
 
 Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
 
-This page will walk you through the [Witness page](https://witness-preview.ata.network/) and the functionalities it currently provides.
+This page will walk you through the [Witness page](https://witness.ata.network/) and the functionalities it currently provides.
 
 ## Setting up MetaMask
 
@@ -32,20 +31,21 @@ This page will walk you through the [Witness page](https://witness-preview.ata.n
 
 You can then add the Automata Network to your existing networks with the following details:  
 
-**Network Name**: Automata Network  
-**New RPC URL**: https://rpc.ata.network/  
-**Chain ID**: 86  
-**Currency Symbol**: ATA  
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |     Automata Network     |
+|   **New RPC URL**   | https://rpc.ata.network/ |
+|    **Chain ID**     |            86            |
+| **Currency Symbol** |           ATA            |
 
 The option to add networks can be found by clicking on:  
 **Profile Picture >> Settings >> Networks >> Add Network**  
 
-or simply:   
+or simply:
+
 **Network name >> Custom PRC**  
 
 <img src="/assets/addingautomata_m.gif" width="673" height="463"/>
-
-
 
 ## Connecting Your Metamask Wallet
 
@@ -53,7 +53,6 @@ If you see a **Connect wallet** or the **Not connected** text in your MetaMask, 
 
 <img src="/assets/check1.png" width="673" height="463"/>
 <img src="/assets/check2.png" width="673" height="463"/>
-
 
 You can follow the following steps to connect your wallet:  
 
