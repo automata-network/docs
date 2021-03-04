@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Automata Documentation">
+        <meta name="description" content="Automata Network Documentation">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Guide - Automata Docs</title>
+        <title>Witness - Automata Network Docs</title>
       
     
     
@@ -76,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://docs.ata.network" title="Automata Docs" class="md-header__button md-logo" aria-label="Automata Docs">
+    <a href="https://docs.ata.network" title="Automata Network Docs" class="md-header__button md-logo" aria-label="Automata Network Docs">
       
   <img src="../../assets/favicon-192.png" alt="logo">
 
@@ -88,13 +88,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Automata Docs
+            Automata Network Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Guide
+              Witness
             
           </span>
         </div>
@@ -155,6 +155,41 @@
       
       
         
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Witness
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -168,15 +203,17 @@
 
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://docs.ata.network" title="Automata Docs" class="md-nav__button md-logo" aria-label="Automata Docs">
+    <a href="https://docs.ata.network" title="Automata Network Docs" class="md-nav__button md-logo" aria-label="Automata Network Docs">
       
   <img src="../../assets/favicon-192.png" alt="logo">
 
     </a>
-    Automata Docs
+    Automata Network Docs
   </label>
   
     <div class="md-nav__source">
@@ -203,7 +240,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        Welcome
       </a>
     </li>
   
@@ -226,12 +263,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Guide
+          Witness
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Guide
+        Witness
       </a>
       
         
@@ -246,13 +283,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
@@ -343,13 +373,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
@@ -423,20 +446,20 @@
                 
                 
                 <h1 id="getting-started-with-automata-witness">Getting started with Automata Witness<a class="headerlink" href="#getting-started-with-automata-witness" title="Permanent link">&para;</a></h1>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#setting-up-metamask">Setting up MetaMask</a></li>
-<li><a href="#adding-automata-network-to-your-networks">Adding Automata Network to your networks</a></li>
-<li><a href="#connecting-your-metamask-wallet">Connecting Your Metamask Wallet</a></li>
-<li><a href="#getting-tokens">Getting tokens</a></li>
-<li><a href="#creating-a-workspace">Creating a workspace</a></li>
-<li><a href="#creating-a-new-proposal">Creating a new proposal</a></li>
-<li><a href="#voting-for-a-proposal">Voting for a proposal</a></li>
-</ul>
+<!-- ## Table of Contents
+
+- [Introduction](#introduction)
+- [Setting up MetaMask](#setting-up-metamask)
+- [Adding Automata Network to your networks](#adding-automata-network-to-your-networks)
+- [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
+- [Getting tokens](#getting-tokens)
+- [Creating a workspace](#creating-a-workspace)
+- [Creating a new proposal](#creating-a-new-proposal)
+- [Voting for a proposal](#voting-for-a-proposal) -->
+
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.</p>
-<p>This page will walk you through the <a href="https://witness-preview.ata.network/">Witness page</a> and the functionalities it currently provides.</p>
+<p>This page will walk you through the <a href="https://witness.ata.network/">Witness page</a> and the functionalities it currently provides.</p>
 <h2 id="setting-up-metamask">Setting up MetaMask<a class="headerlink" href="#setting-up-metamask" title="Permanent link">&para;</a></h2>
 <p><a href="https://metamask.io/">MetaMask</a> is a software cryptocurrency wallet used to interact with the Ethereum blockchain. As it is required when using the Automata network, you can install the extension via the official download page <a href="https://metamask.io/download.html">here</a>, or simply add the extension for your browser via the following links below:</p>
 <ul>
@@ -447,14 +470,36 @@
 </ul>
 <h2 id="adding-automata-network-to-your-networks">Adding Automata Network to your networks<a class="headerlink" href="#adding-automata-network-to-your-networks" title="Permanent link">&para;</a></h2>
 <p>You can then add the Automata Network to your existing networks with the following details:  </p>
-<p><strong>Network Name</strong>: Automata Network<br />
-<strong>New RPC URL</strong>: https://rpc.ata.network/<br />
-<strong>Chain ID</strong>: 86<br />
-<strong>Currency Symbol</strong>: ATA  </p>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Network Name</strong></td>
+<td align="center">Automata Network</td>
+</tr>
+<tr>
+<td align="center"><strong>New RPC URL</strong></td>
+<td align="center">https://rpc.ata.network/</td>
+</tr>
+<tr>
+<td align="center"><strong>Chain ID</strong></td>
+<td align="center">86</td>
+</tr>
+<tr>
+<td align="center"><strong>Currency Symbol</strong></td>
+<td align="center">ATA</td>
+</tr>
+</tbody>
+</table>
 <p>The option to add networks can be found by clicking on:<br />
 <strong>Profile Picture &gt;&gt; Settings &gt;&gt; Networks &gt;&gt; Add Network</strong>  </p>
-<p>or simply: <br />
-<strong>Network name &gt;&gt; Custom PRC</strong>  </p>
+<p>or simply:</p>
+<p><strong>Network name &gt;&gt; Custom PRC</strong>  </p>
 <p><img src="/assets/addingautomata_m.gif" width="673" height="463"/></p>
 <h2 id="connecting-your-metamask-wallet">Connecting Your Metamask Wallet<a class="headerlink" href="#connecting-your-metamask-wallet" title="Permanent link">&para;</a></h2>
 <p>If you see a <strong>Connect wallet</strong> or the <strong>Not connected</strong> text in your MetaMask, this means you are <strong>not connected</strong>!</p>
@@ -551,7 +596,7 @@ Before creating a workspace for your token, please ensure the following:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Welcome
             </div>
           </div>
         </a>
@@ -602,7 +647,7 @@ Before creating a workspace for your token, please ensure the following:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.ca5457b8.min.js"></script>
