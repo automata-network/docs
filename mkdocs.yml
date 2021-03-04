@@ -9,55 +9,31 @@ nav:
   - Home: index.md
   - Guide: ./guide/witness-get-started.md
 
+
 theme:
-  name: 'material'
-  language: en
-  font:
-    code: Roboto Mono
+  name: material
+  font: false
   palette:
-    # Light mode
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Dark mode
-    - scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-
+    primary: black
+  features:
+      - tabs
+      - instant
   logo: 'images/favicon-192.png'
   favicon: 'images/favicon.ico'
 
 markdown_extensions:
   - admonition
-  - attr_list
-  - codehilite:
-      linenums: false   # true if website has code
   - toc:
       permalink: true
   - pymdownx.tabbed
+  - pymdownx.details
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
 
 extra:
   social:
