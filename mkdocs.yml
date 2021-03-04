@@ -1,4 +1,4 @@
-site_name: Automata Documentation
+site_name: Automata Docs
 site_url: https://docs.ata.com
 site_description: Automata Documentation
 site_author: Automata Team
@@ -43,3 +43,5 @@ extra:
     - icon: fontawesome/brands/medium
       link: https://medium.com/@automatanetwork
       name: Automata on medium
+    - icon: fontawesome/brands/github
+      link: https://github.com/automata-network
