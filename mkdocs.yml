@@ -1,54 +1,47 @@
-site_name: Automata Documentation
-site_url: https://docs.automatanetwork.com
+site_name: Automata Docs
+site_url: https://docs.ata.com
 site_description: Automata Documentation
 site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
-repo_name: 'GitHub Home'
 
-# TODO Insert your Google Tracking ID
-# google_analytics: ['UA-125864726-1', 'auto']
-
-# TODO add docs here.
 nav:
   - Home: index.md
   - Guide: ./guide/witness-get-started.md
 
+
 theme:
-  name: 'material'
-  include_search_page: false   # Don't include MkDocs' JavaScript
-  search_index_only: true
-  language: en
-  feature:
-    tabs: false
+  name: material
+  font: false
   palette:
-    primary: indigo
-    accent: indigo
-  font:
-    text: Roboto
-    code: Roboto Mono
-  logo: 'images/favicon-192.png'
-  favicon: 'images/favicon.ico'
+    primary: black
+  features:
+      - tabs
+      - instant
+  logo: 'assets/favicon-192.png'
+  favicon: 'assets/favicon.ico'
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      linenums: false   # true if website has code
   - toc:
       permalink: true
+  - pymdownx.tabbed
+  - pymdownx.details
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/automatanetwork
+      name: Automata on Twitter
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@automatanetwork
+      name: Automata on medium
+    - icon: fontawesome/brands/github
+      link: https://github.com/automata-network
