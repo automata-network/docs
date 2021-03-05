@@ -19,7 +19,7 @@ theme:
       - instant
       # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
       - navigation.tabs
-  logo: 'assets/favicon-192.png'
+  logo: 'assets/favicon-192.svg'
   favicon: 'assets/favicon.ico'
 
 markdown_extensions:
