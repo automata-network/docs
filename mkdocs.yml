@@ -11,9 +11,22 @@ nav:
 
 theme:
   name: material
-  font: false
   palette:
-    primary: black
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   features:
       - tabs
       - instant
