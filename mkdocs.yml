@@ -15,7 +15,8 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: orange
+      accent: orange
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -28,12 +29,14 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   features:
-      - tabs
-      - instant
-      # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
-      - navigation.tabs
-  logo: 'assets/favicon-192.png'
-  favicon: 'assets/favicon.ico'
+    - tabs
+    - instant
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+  logo: "assets/favicon-192.png"
+  favicon: "assets/favicon.ico"
 
 markdown_extensions:
   - admonition
@@ -51,11 +54,15 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/automatanetwork
-      name: Automata on Twitter
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/@automatanetwork
-      name: Automata on medium
     - icon: fontawesome/brands/github
       link: https://github.com/automata-network
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/automatanetwork
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@automatanetwork
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/ata_network
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/Us8cxTVRxG
+
+copyright: Copyright &copy; 2021 Automata Network
