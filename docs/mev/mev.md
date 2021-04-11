@@ -1,7 +1,23 @@
 # The Miner Extractable Value (MEV) Wiki
 
-## Introduction
+## Resource List
 
+| Name                                                                                                                | Type           | URL                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------|
+| Miners, Front-Running-as-a-Service Is Theft                                                                         | Article        | [Link](https://www.coindesk.com/miners-front-running-service-theft)                                          |
+| MEV and Me                                                                                                          | Article        | [Link](https://research.paradigm.xyz/MEV)                                                                    |
+| Ethereum is a Dark Forest                                                                                           | Article        | [Link](https://medium.com/@danrobinson/ethereum-is-a-dark-forest-ecc5f0505dff)                               |
+| Escaping the Dark Forest                                                                                            | Article        | [Link](https://samczsun.com/escaping-the-dark-forest/)                                                       |
+| Smart Contract Security - Incentives Beyond the Launch by Phil Daian (Devcon4)                                      | Video          | [Link](https://www.youtube.com/watch?v=i-oWE8hg6-0&ab_channel=EthereumFoundation)                            |
+| Enter the Dark Forest: the terrifying world of MEV and Flash bots                                                   | Video          | [Link](https://www.youtube.com/watch?time_continue=943&v=Wd0at2Pu6xY&feature=emb_logo&ab_channel=TheDefiant) |
+| Frontrunning in Decentralized Exchanges, Miner Extractable Value, and Consensus Instability                         | Video          | [Link](https://www.youtube.com/watch?v=vR1v7AQ8i3k&ab_channel=IEEESymposiumonSecurityandPrivacy)             |
+| How To Get Front-Run on Ethereum mainnet                                                                            | Video          | [Link](https://www.youtube.com/watch?v=UZ-NNd6yjFM&ab_channel=ScottBigelow)                                  |
+| Flash Boys 2.0: Frontrunning, Transaction Reordering, and Consensus Instability in Decentralized Exchanges          | Research Paper | [Link](https://arxiv.org/abs/1904.05234)                                                                     |
+| Quantifying Blockchain Extractable Value: How dark is the forest?                                                   | Research Paper | [Link](https://arxiv.org/abs/2101.05511)                                                                     |
+| High-Frequency Trading on Decentralized On-Chain Exchanges                                                          | Research Paper | [Link](https://arxiv.org/abs/2009.14021)                                                                     |
+| Frontrunner Jones and the Raiders of the Dark Forest: An Empirical Study of Frontrunning on the Ethereum Blockchain | Research Paper | [Link](https://arxiv.org/abs/2102.03347)                                                                     |
+
+## Introduction
 
 ### What is Miner Extractable Value?
 
@@ -93,13 +109,13 @@ While Dan’s at it, since the current longest chain is height 3, he also re-min
 
 **Liquidations**
 
-a. Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt.
+  1. Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt.
 
-Strategy 1:  A detects a liquidation opportunity at block 𝐵𝑖 (i.e., after the execution of 𝐵𝑖 ). A then issues a liquidation transaction 𝑇𝐴, which is expected to be mined in the next block 𝐵𝑖+1. A attempts to destructively front-run other competing liquidators by setting high transaction fee for 𝑇𝐴.
+    *Strategy 1*:  A detects a liquidation opportunity at block 𝐵𝑖 (i.e., after the execution of 𝐵𝑖 ). A then issues a liquidation transaction 𝑇𝐴, which is expected to be mined in the next block 𝐵𝑖+1. A attempts to destructively front-run other competing liquidators by setting high transaction fee for 𝑇𝐴.
 
-Strategy 2: A observes a transaction 𝑇𝑉 , which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs 𝑇𝑉 with a liquidation transaction 𝑇𝐴 to avoid the transaction fee bidding competition.
+    *Strategy 2*: A observes a transaction 𝑇𝑉 , which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs 𝑇𝑉 with a liquidation transaction 𝑇𝐴 to avoid the transaction fee bidding competition.
 
-b. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
+  2. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
 
 ## Recent attempts to trick bots
 
@@ -157,7 +173,7 @@ Original proposers of MEVA and ETH 1.5.
 
 MEV Auction (MEVA) is created, in which the winner of the auction has the right to reorder submitted transactions and insert their own, as long as they do not delay any specific transaction by more than N blocks.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56aba71a-dda7-49dc-9dc5-8fb5befbc174/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56aba71a-dda7-49dc-9dc5-8fb5befbc174/Untitled.png)
+![](/assets/mev_auction.png){: style="zoom:100%"}
 
 **Implementing the Auction**
 
@@ -226,7 +242,7 @@ Today, some miners are already auctioning off mempool access for higher rates. T
 
 Examples include 1inch Exchange's Stealth Transactions https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work and Taichi Network https://taichi.network/.
 
-![/assets/private_mempools.png]
+![](/assets/private_mempools.png)
 
 Private Transactions offered by Taichi Network
 

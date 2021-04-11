@@ -37,11 +37,14 @@ theme:
     - instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
     - navigation.top
+    - toc.integrate
   logo: "assets/favicon-192.png"
   favicon: "assets/favicon.ico"
 
 markdown_extensions:
   - admonition
+  - tables
+  - attr_list
   - toc:
       permalink: true
   - pymdownx.tabbed
