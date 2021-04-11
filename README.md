@@ -1,8 +1,8 @@
-# Automata Documentation
+# Automata Network Documentation
 
-Welcome to Automata documentation repository.
+This repository has the documentation for [Automata Network](https://ata.network).
 
-You may also directly view the files in [`/docs`](./docs) directory.
+The docs are written in Markdown and you can directly read it [here](./docs).
 
 ## Development
 
@@ -35,7 +35,7 @@ Kudos to the following open-source projects.
 
 ## License
 
-No License
+[Apache 2.0](./license)
 
 [mkdocs]: https://www.mkdocs.org/
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
