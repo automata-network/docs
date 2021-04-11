@@ -1,3 +1,5 @@
+# The Miner Extractable Value (MEV) Wiki
+
 ## Introduction
 
 
@@ -224,7 +226,7 @@ Today, some miners are already auctioning off mempool access for higher rates. T
 
 Examples include 1inch Exchange's Stealth Transactions https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work and Taichi Network https://taichi.network/.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43136ca8-92ad-4799-9b80-cfbcccc6fd22/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43136ca8-92ad-4799-9b80-cfbcccc6fd22/Untitled.png)
+![/assets/private_mempools.png]
 
 Private Transactions offered by Taichi Network
 
