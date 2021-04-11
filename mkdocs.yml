@@ -5,6 +5,9 @@ site_author: Automata Team
 
 repo_url: https://github.com/automata-network/docs
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Welcome: index.md
   - Witness: ./guide/witness-get-started.md
