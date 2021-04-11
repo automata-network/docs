@@ -8,7 +8,7 @@ repo_url: https://github.com/automata-network/docs
 nav:
   - Welcome: index.md
   - Witness: ./guide/witness-get-started.md
-  - The Miner Extractable Value (MEV) Wiki: What it is .md 
+  - The Miner Extractable Value (MEV) Wiki: ./mev/mev.md
 
 theme:
   name: material

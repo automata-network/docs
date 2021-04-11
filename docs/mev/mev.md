@@ -1,13 +1,13 @@
-# Introduction
+## Introduction
 
 
-## What is Miner Extractable Value?
+### What is Miner Extractable Value?
 
 Miner Extractable Value refers to the amount of profit that miners can extract from reordering and censoring transactions on the blockchain.
 
-## Why does this matter?
+### Why does this matter?
 
-*Source:* https://research.paradigm.xyz/MEV
+*Source:* [https://research.paradigm.xyz/MEV](https://research.paradigm.xyz/MEV)
 
 **MEV can harm users**
 
@@ -17,15 +17,15 @@ MEV is an invisible tax that miners are collecting from users.
 
 If block rewards are small enough compared to MEV, it can be rational for miners to destabilize consensus.
 
-## Just how bad is the problem?
+### Just how bad is the problem?
 
-The Flashbots Dashboard tracks Extracted MEV over time https://explore.flashbots.net
+The Flashbots Dashboard tracks Extracted MEV over time [https://explore.flashbots.net](https://explore.flashbots.net)
 
-# `Terms and Concepts`
+## Terms and Concepts
 
 **DeFi**
 
-DeFi is a subset of finance-focused decentralized protocols that operate autonomously on blockchain-based smart contracts. The total value locked in DeFi amounts to >50B USD (Source: https://defipulse.com/)
+DeFi is a subset of finance-focused decentralized protocols that operate autonomously on blockchain-based smart contracts. The total value locked in DeFi amounts to >50B USD (Source: [https://defipulse.com/](https://defipulse.com/))
 
 **Automated Market Maker**
 
@@ -57,7 +57,7 @@ Because pure arbitrage opportunities offer unconditional revenue, bots often com
 
 Blockchains typically prescribe specific rules for consensus, but there are only loose requirements for miners on how to order transactions within a block. Many attacks are centered around how miners order transactions within blocks.
 
-# `Examples`
+## Examples
 
 **Front-running**
 
@@ -67,7 +67,7 @@ Blockchains typically prescribe specific rules for consensus, but there are only
 
 *Transaction A is broadcasted with a **slightly lower** gas price than already pending transaction B so that A gets mined **right** **after** B in the same block.*
 
-*Source:* https://twitter.com/bertcmiller/status/1380866353347846145?s=20
+*Source:* [https://twitter.com/bertcmiller/status/1380866353347846145?s=20](https://twitter.com/bertcmiller/status/1380866353347846145?s=20)
 
 Example of a back-running bot that back-runs new token listings. Bot monitors the Ethereum mempool for new pairs being created on Uniswap. If it finds a new pair the bot places a buy transaction immediately behind the initial liquidity. That way they can buy a new token before anyone else.
 
@@ -99,25 +99,25 @@ Strategy 2: A observes a transaction 𝑇𝑉 , which will create a liquidation 
 
 b. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
 
-# `Recent attempts to trick bots`
+## Recent attempts to trick bots
 
 **Salmonella**
 
 Salmonella intentionally exploits the generalised nature of front-running setups. The goal of sandwich trading is to exploit the slippage of unintended victims, so this strategy turns the tables on the exploiters. It’s a regular ERC20 token, which behaves exactly like any other ERC20 token in normal use-cases. However, it has some special logic to detect when anyone other than the specified owner is transacting it, and in these situations it only returns 10% of the specified amount - despite emitting event logs which match a trade of the full amount.
 
-https://github.com/Defi-Cartel/salmonella
+[https://github.com/Defi-Cartel/salmonella](https://github.com/Defi-Cartel/salmonella)
 
 **Kattana**
 
 The Kattana team included a trap for front-running bots. There is a line in the code that disallows the front-runner from selling all tokens. So a front-runner ended up with tokens he couldn't get rid of and paid 100 ETH + 68 ETH to the miner for it.
 
-https://twitter.com/SiegeRhino2/status/1381035640989626369?s=20
+[https://twitter.com/SiegeRhino2/status/1381035640989626369?s=20](https://twitter.com/SiegeRhino2/status/1381035640989626369?s=20)
 
 **Another attempt to trick bots covered here**
 
-https://twitter.com/bertcmiller/status/1381296074086830091?s=20
+[https://twitter.com/bertcmiller/status/1381296074086830091?s=20](https://twitter.com/bertcmiller/status/1381296074086830091?s=20)
 
-# `Different approaches to tackling the MEV problem`
+## Different approaches to tackling the MEV problem
 
 Many approaches involve encrypting transactions such that miners are not able to see the content of transactions until they are included in a block.
 
@@ -147,9 +147,9 @@ Vitalik on MEVA
 
 > Centralizing MEV extraction is good because it quarantines a revenue stream that could otherwise drive centralization in other sectors.
 
-https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021
+[https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021](https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021)
 
-## Optimism
+### Optimism
 
 Original proposers of MEVA and ETH 1.5.
 
@@ -173,19 +173,19 @@ Sequencers are elected by a smart contract managed auction run by the block prod
 
 It is possible to enshrine this MEVA contract directly on layer 1 (L1) blockchain consensus protocols. However, it is also possible to non-invasively add this mechanism in layer 2 (L2) and use it to manage Optimistic Rollup transaction ordering. In L2, L1 miners are repurposed and utilized as block proposers. MEVA contract is implemented and designated a single sequencer at a time
 
-Links
+**<u>Links</u>**
 
-https://optimism.io/
+[https://optimism.io/](https://optimism.io/)
 
-https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788
+[https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788](https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788)
 
-https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96
+[https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96](https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96)
 
-## Flashbots
+### Flashbots
 
 Flashbots is a research and development organization formed to mitigate the negative externalities and existential risks posed by MEV. They aim to Democratize MEV Extraction through MEV-Geth, which enables a sealed-bid block space auction mechanism for communicating transaction order preference.
 
-The ELI5 here https://twitter.com/_silto_/status/1381292907567722498?s=20
+The ELI5 here [https://twitter.com/_silto_/status/1381292907567722498?s=20](https://twitter.com/_silto_/status/1381292907567722498?s=20)
 
 Flashbots aims to reduce gas cost and some other issues that come from the activity of arbitrage bots on chain. One of the things that raises gas cost is that bots compete between each other to have the same transaction included first on the blockchain. If multiple bots detect an arbitrage between pools, they will craft the same transaction, send it to the mempool, but then detect that other bots are on it too and start raising the gas price on their transaction to be included first, like in an auction. The only limit to the price they are willing to pay for their transaction is the profitability of the arbitrage. So a bot detecting a 10K$ profit on an arbitrage could raise its gas price to something like 50 000Gwei, as long as the transaction costs less than 10K$. Miners profiting from this is called MEV because the miners get a fat fee from this gas bidding war. But the problem for normal users is that it leads to overpriced transactions being included preferentially and higher gas cost overall.
 
@@ -198,27 +198,27 @@ The transactions that the bots want to include are sent through the MEV-Relay as
 
 Since these transactions are sent through a parallel private relay, it reduces the mempool bidding war, failed transactions bloating the blockchain, and overall gas cost for users.
 
-Links
+**<u>Links</u>**
 
-GitHub https://github.com/flashbots
+GitHub [https://github.com/flashbots](https://github.com/flashbots)
 
-Research https://github.com/flashbots/mev-research
+Research [https://github.com/flashbots/mev-research](https://github.com/flashbots/mev-research)
 
-Monthly Meetings https://github.com/flashbots/pm
+Monthly Meetings [https://github.com/flashbots/pm](https://github.com/flashbots/pm)
 
-API https://blocks.flashbots.net/
+API [https://blocks.flashbots.net/](https://blocks.flashbots.net/)
 
-Discord https://discord.gg/7hvTycdNcK
+Discord [https://discord.gg/7hvTycdNcK](https://discord.gg/7hvTycdNcK)
 
-Medium https://medium.com/flashbots
+Medium [https://medium.com/flashbots](https://medium.com/flashbots)
 
-https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
+[https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 
-https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02
+[https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02)
 
-https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
+[https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
 
-## Private Mempools
+### Private Mempools
 
 Today, some miners are already auctioning off mempool access for higher rates. Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes.
 
@@ -230,9 +230,9 @@ Private Transactions offered by Taichi Network
 
 Note: Read here on how bloXroute Labs argues for the other side of the coin
 
-https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20
+[https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20](https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20)
 
-And their proposed solutions https://twitter.com/bloXrouteLabs/status/1359027468393406464?s=20
+And their proposed solutions [https://twitter.com/bloXrouteLabs/status/1359027468393406464?s=20](https://twitter.com/bloXrouteLabs/status/1359027468393406464?s=20)
 
 1- use bare-bones smart-pool (h/t @yaron_velner )
 
@@ -244,7 +244,7 @@ And their proposed solutions https://twitter.com/bloXrouteLabs/status/1359027468
 
 Idea 4 makes frontrunners pay the highest bid (so pools must pay their miners to include MEV Tx) Ideas 1-3 separate between block producer, mining devOps, and receiver of the reward.
 
-## KeeperDAO
+### KeeperDAO
 
 KeeperDAO is like a mining pool for Keepers. By incentivizing a game theory optimal strategy for cooperation among on-chain arbitrageurs, KeeperDAO provides an efficient mechanism for large scale arbitrage and liquidation trades on all DeFi protocols.
 
@@ -256,43 +256,43 @@ Here's the ELI5
 
 Users route their trades and loans through KeeperDAO, which attempts to extract any arbitrage or liquidation profit available. Those profits are returned back to the user in $ROOK tokens, and profits go into a pool controlled by $ROOK holders. By giving KeeperDAO priority access to arbitrage and liquidations, the Hiding Game maximizes the profits available from these opportunities.
 
-Links
+**<u>Links</u>**
 
-https://keeperdao.com/#/
+[https://keeperdao.com/#/](https://keeperdao.com/#/)
 
-Wiki https://github.com/keeperdao/docs/wiki
+Wiki [https://github.com/keeperdao/docs/wiki](https://github.com/keeperdao/docs/wiki)
 
-## ArcherDAO
+### ArcherDAO
 
 ArcherDAO seeks to help miners capture more MEV. Miners outsource their search for MEV to ArcherDAO and those who provide MEV will receive a cut.
 
-Links
+**<u>Links</u>**
 
-https://medium.com/archer-dao/introducing-archer-66f20d2cc425
+[https://medium.com/archer-dao/introducing-archer-66f20d2cc425](https://medium.com/archer-dao/introducing-archer-66f20d2cc425)
 
-# 2. MEV Minimization/Prevention
+## 2. MEV Minimization/Prevention
 
 At Automata Network we are in the Defense camp, where we use privacy (SGX and ORAM) to minimize MEV.
 
-## `Conveyor - The Automata Network approach to tackling MEV`
+### Conveyor - The Automata Network approach to tackling MEV
 
-https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9
+[https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9](https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9)
 
-## The Fair Sequencing Service by ChainLink
+### The Fair Sequencing Service by ChainLink
 
 The idea behind FSS is to have an oracle network order the transactions sent to a particular contract SC, including both user transactions and oracle reports. Oracle nodes ingest transactions and then reach consensus on their ordering, rather than allowing a single leader to dictate it.
 
 FSS is a framework for implementing ordering policies, of which Aequitas (protocol for order-fairness in addition to consistency and liveness) is one example. It can alternatively support simpler approaches, such as straightforward encryption of transactions, which can then be decrypted in a threshold manner by oracle nodes after ordering. It will also support various policies for inserting oracle reports into a stream of transactions. (It can even support MEV auctions, if desired.)
 
-Links
+**<u>Links</u>**
 
-https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/
+[https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/](https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/)
 
 White paper to be released later
 
-Aequitas Paper https://eprint.iacr.org/2020/269.pdf
+Aequitas Paper [https://eprint.iacr.org/2020/269.pdf](https://eprint.iacr.org/2020/269.pdf)
 
-## Arbitrum by Offchain Labs
+### Arbitrum by Offchain Labs
 
 Arbitrum is against MEVA and FaaS.
 
@@ -312,15 +312,15 @@ The Arbitrum flagship chain will eventually have a distributed set of independen
 
 A chain can be created in which no permissioned entities have Sequencing rights. Ordering is determined entirely by the Inbox contract; lose the ability to get lower latency than L1, but gain is that no party involved in L2, including Arbitrum validators, has any say in transaction ordering, and thus no L2 MEV enters the picture.
 
-Links
+**<u>Links</u>**
 
-https://offchainlabs.com/
+[https://offchainlabs.com/](https://offchainlabs.com/)
 
-https://medium.com/offchainlabs/front-running-as-a-service-334c929c945
+[https://medium.com/offchainlabs/front-running-as-a-service-334c929c945](https://medium.com/offchainlabs/front-running-as-a-service-334c929c945)
 
-https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit
+[https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit](https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit)
 
-## Vega Protocol
+### Vega Protocol
 
 Vega's proposal is to add a module to blockchains that supports the concept of relative fairness so that competing transactions may be sequenced under a known and understood protocol, and not subject to a validator’s discretion.
 
@@ -328,17 +328,17 @@ Vega's proposal is to add a module to blockchains that supports the concept of r
 
 To get the best combination, their current approach is a hybrid of the two. In normal operation, the protocol will assure block fairness. If the network detects that this causes a bottleneck, it temporarily switches to the timed approach (thus sacrificing a little fairness for performance), before switching back once the bottleneck is resolved. However, Vega will ultimately make the level of fairness customisable by market.
 
-Links
+**<u>Links</u>**
 
-https://vega.xyz/
+[https://vega.xyz/](https://vega.xyz/)
 
-https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb
+[https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb](https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb)
 
-Wendy, the Good Little Fairness Widget https://vega.xyz/papers/fairness.pdf
+Wendy, the Good Little Fairness Widget [https://vega.xyz/papers/fairness.pdf](https://vega.xyz/papers/fairness.pdf)
 
-Video https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol
+Video [https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol](https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol)
 
-## Veedo by StarkWare
+### Veedo by StarkWare
 
 VeeDo is StarkWare’s STARK-based Verifiable Delay Function (VDF), and its PoC is now live on Mainnet. VeeDo's time-locks allow information to be sealed for a predetermined period of time (during the sequencing phase), and then made public.
 
@@ -347,54 +347,55 @@ VeeDo is StarkWare’s STARK-based Verifiable Delay Function (VDF), and its PoC 
 1. Time-locks as part of the protocol layer
 2. Time-locks on Ethereum with smart contracts - supported today
 
-Links
+**<u>Links</u>**
 
-https://starkware.co/
+[https://starkware.co/](https://starkware.co/)
 
-https://medium.com/starkware/presenting-veedo-e4bbff77c7ae
+[https://medium.com/starkware/presenting-veedo-e4bbff77c7ae](https://medium.com/starkware/presenting-veedo-e4bbff77c7ae)
 
-https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836
+[https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836](https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836)
 
-## LibSubmarine
+### LibSubmarine
 
 LibSubmarine is an open-source smart contract library that protects your contract against front-runners by temporarily hiding transactions on-chain.
 
-Links
+**<u>Links</u>**
 
-https://libsubmarine.org/
+[https://libsubmarine.org/](https://libsubmarine.org/)
 
-Video https://www.youtube.com/watch?v=N8PDKoptmPs&feature=emb_imp_woyt&ab_channel=IC3InitiativeforCryptocurrenciesandContracts
+Video [https://www.youtube.com/watch?v=N8PDKoptmPs&feature=emb_imp_woyt&ab_channel=IC3InitiativeforCryptocurrenciesandContracts](https://www.youtube.com/watch?v=N8PDKoptmPs&feature=emb_imp_woyt&ab_channel=IC3InitiativeforCryptocurrenciesandContracts)
 
-GitHub https://github.com/lorenzb/libsubmarine
+GitHub [https://github.com/lorenzb/libsubmarine](https://github.com/lorenzb/libsubmarine)
 
-## Sikka
+### Sikka
 
 Sikka's MEV solution to censorship and frontrunning problems is using a technique called Threshold Decryption, as a plugin to the Tendermint Core BFT consensus engine to create mempool level privacy. With this plugin, users are able to submit encrypted transactions to the blockchain, which are only decrypted and executed after being committed to a block by a quorum of 2/3 validators.
 
-Links
+**<u>Links</u>**
 
-https://sikka.tech/
+[https://sikka.tech/](https://sikka.tech/)
 
-https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p
+[https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p](https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p)
 
-# Other Academic Papers
+## Other Academic Papers
 
 **Tesseract**
 
 Tesseract proposes a front-running resistant exchange relying on Intel SGX as a trusted execution environment.
 
-https://eprint.iacr.org/2017/1153.pdf
+[https://eprint.iacr.org/2017/1153.pdf](https://eprint.iacr.org/2017/1153.pdf)
 
 **Calypso**
 
 Enables a blockchain to hold and manage secrets on-chain with the convenient property that it is able to protect against front-running.
 
-https://eprint.iacr.org/2018/209.pdf
+[https://eprint.iacr.org/2018/209.pdf](https://eprint.iacr.org/2018/209.pdf)
 
-# `What Happens when Ethereum moves to Proof-of-Stake?`
+## What Happens when Ethereum moves to Proof-of-Stake?
 
 The move from PoW to PoS consensus means the Ethereum network becomes secured by a set validators, who stake their ETH and vote on consensus, as opposed to miners who run mining equipment to solve for the proof of work. This change of consensus is set to happen likely some time in 2021.
 
 There is an ongoing discussion and you can follow this here
 
-https://hackmd.io/@flashbots/ryuH4gn7d
+[https://hackmd.io/@flashbots/ryuH4gn7d](https://hackmd.io/@flashbots/ryuH4gn7d)
+
