@@ -7,7 +7,7 @@
 
     1. Contribute to this free resource, or want to share your feedback [HERE](https://us2.list-manage.com/survey?u=ffeae60ea2fcc1c9fe0f8ce40&id=8d7d318a72&attribution=false){target=_blank}.
 
-![](/assets/mev_wiki.png){target=_blank}{: style="zoom:100%"}
+![](/assets/mev_wiki.png){: style="zoom:100%"}
 
 ## Resource List
 
@@ -183,7 +183,7 @@ Original proposers of MEVA and ETH 1.5.
 
 MEV Auction (MEVA) is created, in which the winner of the auction has the right to reorder submitted transactions and insert their own, as long as they do not delay any specific transaction by more than N blocks.
 
-![](/assets/mev_auction.png){target=_blank}{: style="zoom:100%"}
+![](/assets/mev_auction.png){: style="zoom:100%"}
 
 **Implementing the Auction**
 
