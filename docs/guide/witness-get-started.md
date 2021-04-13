@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
+If you're new to us, Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
 
 This page will walk you through [Witness](https://witness.ata.network/) and the functionalities it currently provides.
 
