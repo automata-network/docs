@@ -5,8 +5,9 @@
  
     Contact us if you wish to :
 
-    1. Contribute to this free resource `FEEDBACK`{: style="background-color:powderblue;font-weight:bold;"}
-    2. Notify us of errors `REPORT ERROR`{: style="background-color:pink;font-weight:bold;"}
+    1. Contribute to this free resource, or want to share your feedback [HERE](https://us2.list-manage.com/survey?u=ffeae60ea2fcc1c9fe0f8ce40&id=8d7d318a72&attribution=false).
+
+![](/assets/mev_wiki.png){: style="zoom:100%"}
 
 ## Resource List
 
@@ -45,7 +46,8 @@ If block rewards are small enough compared to MEV, it can be rational for miners
 
 ### Just how bad is the problem?
 
-The Flashbots Dashboard tracks Extracted MEV over time [https://explore.flashbots.net](https://explore.flashbots.net)
+The Flashbots Dashboard tracks Extracted MEV over time [https://explore.flashbots.net](https://explore.flashbots.net).
+It is estimated that > $369.4M has been extracted since 1st January 2020.
 
 ## Terms and Concepts
 
@@ -248,7 +250,7 @@ Medium [https://medium.com/flashbots](https://medium.com/flashbots)
 
 Today, some miners are already auctioning off mempool access for higher rates. Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes.
 
-Examples include 1inch Exchange's Stealth Transactions https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work and Taichi Network https://taichi.network/.
+Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work){target=_blank} and [Taichi Network](https://taichi.network/){target=_blank}.
 
 ![](/assets/private_mempools.png)
 
@@ -260,7 +262,7 @@ Note: Read here on how bloXroute Labs argues for the other side of the coin
 
 And their proposed solutions [https://twitter.com/bloXrouteLabs/status/1359027468393406464?s=20](https://twitter.com/bloXrouteLabs/status/1359027468393406464?s=20)
 
-1- use bare-bones smart-pool (h/t @yaron_velner )
+1- use bare-bones smart-pool (h/t [@yaron_velner](https://twitter.com/yaron_velner) )
 
 2- incentivize large crypto actors to create block templates for miners (pays to smart pool)
 
@@ -302,21 +304,20 @@ At Automata Network we are in the Defense camp, where we use privacy (SGX and OR
 
 ### Conveyor - The Automata Network approach to tackling MEV
 
-[https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9](https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9)
+[insert link here](https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9)
 
 ### The Fair Sequencing Service by ChainLink
 
 The idea behind FSS is to have an oracle network order the transactions sent to a particular contract SC, including both user transactions and oracle reports. Oracle nodes ingest transactions and then reach consensus on their ordering, rather than allowing a single leader to dictate it.
 
-FSS is a framework for implementing ordering policies, of which Aequitas (protocol for order-fairness in addition to consistency and liveness) is one example. It can alternatively support simpler approaches, such as straightforward encryption of transactions, which can then be decrypted in a threshold manner by oracle nodes after ordering. It will also support various policies for inserting oracle reports into a stream of transactions. (It can even support MEV auctions, if desired.)
+FSS is a framework for implementing ordering policies, of which [Aequitas](https://eprint.iacr.org/2020/269.pdf)) (protocol for order-fairness in addition to consistency and liveness) is one example. It can alternatively support simpler approaches, such as straightforward encryption of transactions, which can then be decrypted in a threshold manner by oracle nodes after ordering. It will also support various policies for inserting oracle reports into a stream of transactions. (It can even support MEV auctions, if desired.)
 
 **<u>Links</u>**
 
 [https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/](https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/)
 
-White paper to be released later
+White paper to be released later.
 
-Aequitas Paper [https://eprint.iacr.org/2020/269.pdf](https://eprint.iacr.org/2020/269.pdf)
 
 ### Arbitrum by Offchain Labs
 
@@ -403,6 +404,26 @@ Sikka's MEV solution to censorship and frontrunning problems is using a techniqu
 
 [https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p](https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p)
 
+## B.Protocol
+
+BProtocol aims to shift MEV to users 
+
+Users interact with existing lending platforms via B.Protocol smart contract. Liquidity providers (LP) provide a cushion to user debt, which gives B.Protocol precedence over other liquidators. LPs share their profits with the users, where user reward is proportional to his user rating.
+
+**<u>Links</u>**
+
+[https://www.bprotocol.org/](https://www.bprotocol.org/)
+
+[https://docs.google.com/presentation/d/13UNysGCX9ZJG20lKaxr_qbhgKwcuHACdwlhGNKtzGt4/edit](https://docs.google.com/presentation/d/13UNysGCX9ZJG20lKaxr_qbhgKwcuHACdwlhGNKtzGt4/edit)
+
+## What Happens when Ethereum moves to Proof-of-Stake?
+
+The move from PoW to PoS consensus means the Ethereum network becomes secured by a set validators, who stake their ETH and vote on consensus, as opposed to miners who run mining equipment to solve for the proof of work. This change of consensus is set to happen likely some time in 2021.
+
+There is an ongoing discussion and you can follow this here
+
+[https://hackmd.io/@flashbots/ryuH4gn7d](https://hackmd.io/@flashbots/ryuH4gn7d)
+
 ## Other Academic Papers
 
 **Tesseract**
@@ -416,12 +437,3 @@ Tesseract proposes a front-running resistant exchange relying on Intel SGX as a 
 Enables a blockchain to hold and manage secrets on-chain with the convenient property that it is able to protect against front-running.
 
 [https://eprint.iacr.org/2018/209.pdf](https://eprint.iacr.org/2018/209.pdf)
-
-## What Happens when Ethereum moves to Proof-of-Stake?
-
-The move from PoW to PoS consensus means the Ethereum network becomes secured by a set validators, who stake their ETH and vote on consensus, as opposed to miners who run mining equipment to solve for the proof of work. This change of consensus is set to happen likely some time in 2021.
-
-There is an ongoing discussion and you can follow this here
-
-[https://hackmd.io/@flashbots/ryuH4gn7d](https://hackmd.io/@flashbots/ryuH4gn7d)
-

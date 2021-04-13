@@ -10,8 +10,8 @@ extra_css:
 
 nav:
   - Welcome: index.md
-  - Witness: ./guide/witness-get-started.md
   - The Miner Extractable Value (MEV) Wiki: ./mev/mev.md
+  - Witness: ./guide/witness-get-started.md
 
 theme:
   name: material
