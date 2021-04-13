@@ -4,7 +4,7 @@
 
 ## Witness
 
-**Witness** is an anonymous voting service for Dapps, powered by Automata Geode.
+**Witness** is a privacy-first off-chain governance solution with on-chain execution.
 
 Please see the [guide](./guide/witness-get-started.md) to start.
 
