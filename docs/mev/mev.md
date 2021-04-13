@@ -10,6 +10,7 @@
 ![](/assets/mev_wiki.png){: style="zoom:100%"}
 
 ## Resource List
+---
 
 | Name                                                                                                                | Type           | URL                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------|
@@ -27,6 +28,7 @@
 | Frontrunner Jones and the Raiders of the Dark Forest: An Empirical Study of Frontrunning on the Ethereum Blockchain | Research Paper | [Link](https://arxiv.org/abs/2102.03347){target=_blank}                                                                     |
 
 ## Introduction
+---
 
 ### What is Miner Extractable Value?
 
@@ -50,6 +52,7 @@ The Flashbots Dashboard tracks Extracted MEV over time [https://explore.flashbot
 It is estimated that > $369.4M has been extracted since 1st January 2020.
 
 ## Terms and Concepts
+---
 
 **DeFi**
 
@@ -86,6 +89,7 @@ Because pure arbitrage opportunities offer unconditional revenue, bots often com
 Blockchains typically prescribe specific rules for consensus, but there are only loose requirements for miners on how to order transactions within a block. Many attacks are centered around how miners order transactions within blocks.
 
 ## Examples
+---
 
 **Front-running**
 
@@ -128,6 +132,7 @@ While Dan’s at it, since the current longest chain is height 3, he also re-min
   2. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
 
 ## Recent attempts to trick bots
+---
 
 **Salmonella**
 
@@ -146,6 +151,7 @@ The Kattana team included a trap for front-running bots. There is a line in the 
 [https://twitter.com/bertcmiller/status/1381296074086830091?s=20](https://twitter.com/bertcmiller/status/1381296074086830091?s=20){target=_blank}
 
 ## Different approaches to tackling the MEV problem
+---
 
 Many approaches involve encrypting transactions such that miners are not able to see the content of transactions until they are included in a block.
 
@@ -168,6 +174,7 @@ As such we have put approaches into 2 categories
 At Automata Network we are in the Defense camp. Our solution Conveyor uses privacy (SGX and ORAM) to minimize MEV.
 
 ## 1. Front-running as a Service(FaaS) or MEV Auctions (MEVA)
+---
 
 In a FaaS or MEVA system, instead of miners developing front-running expertise themselves, MEV is extracted in a variety of ways such as miners auctioning off the right to front-run users.
 
@@ -299,6 +306,7 @@ ArcherDAO seeks to help miners capture more MEV. Miners outsource their search f
 [https://medium.com/archer-dao/introducing-archer-66f20d2cc425](https://medium.com/archer-dao/introducing-archer-66f20d2cc425){target=_blank}
 
 ## 2. MEV Minimization/Prevention
+---
 
 At Automata Network we are in the Defense camp, where we use privacy (SGX and ORAM) to minimize MEV.
 
@@ -405,6 +413,7 @@ Sikka's MEV solution to censorship and frontrunning problems is using a techniqu
 [https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p](https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p){target=_blank}
 
 ## B.Protocol
+---
 
 BProtocol aims to shift MEV to users 
 
@@ -417,6 +426,7 @@ Users interact with existing lending platforms via B.Protocol smart contract. Li
 [https://docs.google.com/presentation/d/13UNysGCX9ZJG20lKaxr_qbhgKwcuHACdwlhGNKtzGt4/edit](https://docs.google.com/presentation/d/13UNysGCX9ZJG20lKaxr_qbhgKwcuHACdwlhGNKtzGt4/edit){target=_blank}
 
 ## What Happens when Ethereum moves to Proof-of-Stake?
+---
 
 The move from PoW to PoS consensus means the Ethereum network becomes secured by a set validators, who stake their ETH and vote on consensus, as opposed to miners who run mining equipment to solve for the proof of work. This change of consensus is set to happen likely some time in 2021.
 
@@ -425,6 +435,7 @@ There is an ongoing discussion and you can follow this here
 [https://hackmd.io/@flashbots/ryuH4gn7d](https://hackmd.io/@flashbots/ryuH4gn7d){target=_blank}
 
 ## Other Academic Papers
+---
 
 **Tesseract**
 
