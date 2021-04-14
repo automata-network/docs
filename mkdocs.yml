@@ -7,6 +7,18 @@ repo_url: https://github.com/automata-network/docs
 
 nav:
   - Welcome: index.md
+  - The MEV Wiki:
+    - Introduction: ./mev/introduction.md
+    - Resource List: ./mev/resource-list.md
+    - Terms and Concepts: ./mev/terms-and-concepts.md
+    - Examples: ./mev/examples.md
+    - Attempts to Trick the Bots: ./mev/trick-the-bots.md
+    - Solutions:
+      - Different Approaches: ./mev/solutions/approaches.md
+      - FaaS or MEVA: ./mev/solutions/faas-or-meva.md
+      - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
+      - Others: ./mev/solutions/others.md
+    - Miscellaneous: ./mev/misc.md
   - Witness: ./guide/witness-get-started.md
 
 theme:
@@ -33,11 +45,16 @@ theme:
     - instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
     - navigation.top
+    - navigation.tabs
+    - toc.integrate
+    - navigation.expand
   logo: "assets/favicon-192.png"
   favicon: "assets/favicon.ico"
 
 markdown_extensions:
   - admonition
+  - tables
+  - attr_list
   - toc:
       permalink: true
   - pymdownx.tabbed
@@ -47,7 +64,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
 
 extra:
