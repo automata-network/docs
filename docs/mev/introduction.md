@@ -8,7 +8,7 @@ We cover a range of topics including the key concepts, research on this the topi
 
 !!! tip
 
-    1. Find and errors? Click the :material-pencil: icon on each page to contribute.
+    1. Find any errors? Click the :material-pencil: icon on each page to contribute.
     2. Want to share your feedback? Contact us [**here** :octicons-link-external-16:][feedback]{target=_blank}. 
 
 ## :bulb: What is Miner Extractable Value?
@@ -31,7 +31,6 @@ MEV is an invisible tax that miners are collecting from users.
 
 If block rewards are small enough compared to MEV, it can be rational for miners to destabilize consensus.
 
-> :material-information-variant: [source][mev-source]
 ## :bulb: Just how bad is the problem?
 
 The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target=_blank} tracks Extracted MEV over time.

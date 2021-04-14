@@ -1,6 +1,6 @@
-# Automata
+# Automata Network
 
-**Automata** is a decentralized service protocol that provides middleware-like services for dApps to achieve traceless privacy, high assurance and frictionless computation.
+**Automata Network** is a decentralized service protocol that provides middleware-like services for dApps to achieve traceless privacy, high assurance and frictionless computation.
 
 
 ## [**The MEV Wiki**](./mev/introduction.md)
