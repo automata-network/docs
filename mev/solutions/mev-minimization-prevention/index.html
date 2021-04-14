@@ -460,8 +460,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#okay-but-why-should-users-trust-conveyor" class="md-nav__link">
-    Okay. But why should users trust Conveyor?
+  <a href="#why-should-users-trust-conveyor" class="md-nav__link">
+    Why should users trust Conveyor?
   </a>
   
 </li>
@@ -624,7 +624,6 @@
                 
                 
                 <h1 id="mev-minimizationprevention">MEV Minimization/Prevention<a class="headerlink" href="#mev-minimizationprevention" title="Permanent link">&para;</a></h1>
-<p>At Automata Network we are in the Defense camp, where we use privacy (SGX and ORAM) to minimize MEV.</p>
 <h2 id="conveyor-the-automata-network-approach-to-tackling-mev"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Conveyor - The Automata Network approach to tackling MEV<a class="headerlink" href="#conveyor-the-automata-network-approach-to-tackling-mev" title="Permanent link">&para;</a></h2>
 <p>At Automata, we have created <strong>Conveyor</strong>, a service that ingests and outputs transactions in a determined order. This creates a front-running-free zone that removes the chaos of transaction reordering.</p>
 <p><img alt="" src="../../../assets/conveyor.png" /></p>
@@ -636,14 +635,13 @@ Delete ordered transactions: Transactions accepted by Conveyor are broadcasted e
 <li>Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions</li>
 <li>Other unordered transactions (which include front-running etc) that may negatively impact their users</li>
 </ol>
-<h3 id="okay-but-why-should-users-trust-conveyor">Okay. But why should users trust Conveyor?<a class="headerlink" href="#okay-but-why-should-users-trust-conveyor" title="Permanent link">&para;</a></h3>
-<p>And we hear you. Let us break it down.</p>
+<h3 id="why-should-users-trust-conveyor">Why should users trust Conveyor?<a class="headerlink" href="#why-should-users-trust-conveyor" title="Permanent link">&para;</a></h3>
 <p>Automata’s Conveyor runs on a decentralized compute plane backed by many Geode instances. Each Geode instance can be attested so anyone can publicly verify that the Geode is running on a system with genuine hardware (i.e., CPU) and that the Geode application code matches the version that is open-sourced and audited. This provides a strong guarantee that:</p>
 <ul>
 <li>The Geode code is untampered with</li>
 <li>The Geode data is inaccessible to even Geode providers (In which case they cannot act on said data to front-run transactions)</li>
 </ul>
-<p>Importantly, Automata’s Conveyor is a chain-agnostic solution to the MEV issue, and works seamlessly on various platforms — zero modifications needed. Watch our demo to see it in action.</p>
+<p>Importantly, Automata’s Conveyor is a chain-agnostic solution to the MEV issue, and works seamlessly on various platforms — zero modifications needed. Here’s a <a href="https://ata.network/demo-fp">demo</a> on how trading pairs on Uniswap can be protected.</p>
 <h3 id="an-industry-first-oblivious-ram">An industry-first: Oblivious RAM<a class="headerlink" href="#an-industry-first-oblivious-ram" title="Permanent link">&para;</a></h3>
 <p>In fully public computation, access pattern leakage is not negligible as everything is exposed. But in privacy-preserving computation, any tiny bit of information leakage becomes a significant issue. Studies have shown that access pattern leakage leads to exposure of sensitive information such as private keys from searchable encryption and trusted computing.</p>
 <p>This is where the Oblivious RAM algorithm comes into play. Automata’s implementation is the first-of-its-kind in the blockchain industry, providing an exceedingly high degree of privacy in dApps.</p>
