@@ -60,19 +60,17 @@ White paper to be released later.
 
 Arbitrum is against MEVA and FaaS.
 
-Minimizing L2 MEV capabilities
-
 3 Modes of Arbitrum:
 
-**1. Single Sequencer: L2 MEV-Potential (\**\*Mainnet Beta)\*\****
+### 1. Single Sequencer: L2 MEV-Potential (*Mainnet Beta*)
 
 For Arbitrum’s initial, flagship Mainnet beta release, the Sequencer will be controlled by a single entity. This entity has transaction ordering rights within the narrow / 15 minute window; users are trusting the Sequencer not to frontrun them.
 
-**2. Distributed Sequencer With Fair Ordering: L2-MEV-minimized** *Mainnet Final Form*
+### 2. Distributed Sequencer With Fair Ordering: L2-MEV-minimized (*Mainnet Final Form*)
 
 The Arbitrum flagship chain will eventually have a distributed set of independent parties controlling the Sequencer. They will collectively propose state updates via [the first BFT algorithm that enforces fair ordering within consensus (Aequitas)](https://eprint.iacr.org/2020/269.pdf){target=_blank}. Here, L2 MEV is only possible if >1/3 of the sequencing-parties maliciously collude, hence “MEV-minimized.”
 
-**3. No Sequencer: No L2 MEV**
+### 3. No Sequencer: No L2 MEV
 
 A chain can be created in which no permissioned entities have Sequencing rights. Ordering is determined entirely by the Inbox contract; lose the ability to get lower latency than L1, but gain is that no party involved in L2, including Arbitrum validators, has any say in transaction ordering, and thus no L2 MEV enters the picture.
 
@@ -86,9 +84,9 @@ A chain can be created in which no permissioned entities have Sequencing rights.
 
 ## :robot: Vega Protocol
 
-Vega's proposal is to add a module to blockchains that supports the concept of relative fairness so that competing transactions may be sequenced under a known and understood protocol, and not subject to a validator’s discretion.
+Traditionally, fairness in a blockchain has been defined in absolute terms, i.e. once a transaction is seen by a sufficient number of validators, it will be executed in some block, soon. Vega's proposal is to add a module to blockchains that supports the concept of relative fairness so that competing transactions may be sequenced under a known and understood protocol, and not subject to a validator’s discretion.
 
-"*If there is a time t such that all honest validators saw a before t and b after t, then a must be scheduled before b”.* This is a property that can be assured of at any time with a minimal impact on performance.
+"*If there is a time t such that all honest validators saw a before t and b after t, then a must be scheduled before b”.* This is a property that can be assured of at any time with a minimal impact on performance.
 
 To get the best combination, their current approach is a hybrid of the two. In normal operation, the protocol will assure block fairness. If the network detects that this causes a bottleneck, it temporarily switches to the timed approach (thus sacrificing a little fairness for performance), before switching back once the bottleneck is resolved. However, Vega will ultimately make the level of fairness customisable by market.
 

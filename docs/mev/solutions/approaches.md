@@ -18,4 +18,4 @@ As such we have put approaches into 2 categories
 1. Front-running as a Service (FaaS) or MEV Auctions (MEVA)
 2. MEV Minimization/Prevention
 
-At Automata Network we are in the Defense camp. Our solution Conveyor uses privacy (SGX and ORAM) to minimize MEV.
+At Automata Network we are in the Defense camp. Our solution Conveyor ingests transactions and outputs transactions in a determined order. This creates a front-running-free zone that removes the chaos of transaction reordering.

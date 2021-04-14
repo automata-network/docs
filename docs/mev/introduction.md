@@ -8,7 +8,7 @@ We cover a range of topics including the key concepts, research on this the topi
 
 !!! tip
 
-    1. Find any error? Click the :material-pencil: icon on each page to contribute.
+    1. Find and errors? Click the :material-pencil: icon on each page to contribute.
     2. Want to share your feedback? Contact us [**here** :octicons-link-external-16:][feedback]{target=_blank}. 
 
 ## :bulb: What is Miner Extractable Value?
@@ -36,7 +36,7 @@ If block rewards are small enough compared to MEV, it can be rational for miners
 
 The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target=_blank} tracks Extracted MEV over time.
 
-It is estimated that > $369.4M has been extracted since 1st January 2020.
+It is estimated that >$350M has been extracted since 1st January 2020.
 
 [mev-source]: https://research.paradigm.xyz/MEV
 [flashbot-dashboard]: https://explore.flashbots.net
