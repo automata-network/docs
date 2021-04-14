@@ -1,8 +1,6 @@
 
 # MEV Minimization/Prevention
 
-At Automata Network we are in the Defense camp, where we use privacy (SGX and ORAM) to minimize MEV.
-
 ## :robot: Conveyor - The Automata Network approach to tackling MEV
 
 At Automata, we have created **Conveyor**, a service that ingests and outputs transactions in a determined order. This creates a front-running-free zone that removes the chaos of transaction reordering.
@@ -18,16 +16,14 @@ From the DEX’s perspective, they can choose to accept either
 1. Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions
 2. Other unordered transactions (which include front-running etc) that may negatively impact their users
 
-### Okay. But why should users trust Conveyor?
-
-And we hear you. Let us break it down.
+### Why should users trust Conveyor?
 
 Automata’s Conveyor runs on a decentralized compute plane backed by many Geode instances. Each Geode instance can be attested so anyone can publicly verify that the Geode is running on a system with genuine hardware (i.e., CPU) and that the Geode application code matches the version that is open-sourced and audited. This provides a strong guarantee that:
 
 * The Geode code is untampered with
 * The Geode data is inaccessible to even Geode providers (In which case they cannot act on said data to front-run transactions)
 
-Importantly, Automata’s Conveyor is a chain-agnostic solution to the MEV issue, and works seamlessly on various platforms — zero modifications needed. Watch our demo to see it in action.
+Importantly, Automata’s Conveyor is a chain-agnostic solution to the MEV issue, and works seamlessly on various platforms — zero modifications needed. Here’s a [demo](https://ata.network/demo-fp) on how trading pairs on Uniswap can be protected.
 
 ### An industry-first: Oblivious RAM
 
