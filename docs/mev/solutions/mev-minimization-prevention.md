@@ -3,11 +3,47 @@
 
 At Automata Network we are in the Defense camp, where we use privacy (SGX and ORAM) to minimize MEV.
 
-## Conveyor - The Automata Network approach to tackling MEV
+## :robot: Conveyor - The Automata Network approach to tackling MEV
 
-[insert link here](https://docs.google.com/document/d/1B_2at8VjKAemN8t4AmE99BVFkeJypUafOFQ5-kAtaCU/edit#heading=h.tmrsl52w35x9){target=_blank}
+At Automata, we have created **Conveyor**, a service that ingests and outputs transactions in a determined order. This creates a front-running-free zone that removes the chaos of transaction reordering.
 
-## The Fair Sequencing Service by ChainLink
+![](./../../assets/conveyor.png)
+
+When transactions are fed into Conveyor, it determines the order of the incoming transactions and makes it impossible for block producers to perform the following:
+Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
+Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.
+
+From the DEX’s perspective, they can choose to accept either
+
+1. Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions
+2. Other unordered transactions (which include front-running etc) that may negatively impact their users
+
+### Okay. But why should users trust Conveyor?
+
+And we hear you. Let us break it down.
+
+Automata’s Conveyor runs on a decentralized compute plane backed by many Geode instances. Each Geode instance can be attested so anyone can publicly verify that the Geode is running on a system with genuine hardware (i.e., CPU) and that the Geode application code matches the version that is open-sourced and audited. This provides a strong guarantee that:
+
+* The Geode code is untampered with
+* The Geode data is inaccessible to even Geode providers (In which case they cannot act on said data to front-run transactions)
+
+Importantly, Automata’s Conveyor is a chain-agnostic solution to the MEV issue, and works seamlessly on various platforms — zero modifications needed. Watch our demo to see it in action.
+
+### An industry-first: Oblivious RAM
+
+In fully public computation, access pattern leakage is not negligible as everything is exposed. But in privacy-preserving computation, any tiny bit of information leakage becomes a significant issue. Studies have shown that access pattern leakage leads to exposure of sensitive information such as private keys from searchable encryption and trusted computing.
+
+This is where the Oblivious RAM algorithm comes into play. Automata’s implementation is the first-of-its-kind in the blockchain industry, providing an exceedingly high degree of privacy in dApps.
+
+This greatly reduces the probability of user privacy being leaked even as access patterns are being monitored and analyzed by malicious actors. The Automata team has authored multiple research papers on state-of-the-art ORAM and hardware technologies to enhance the privacy and performance of existing networks.
+
+* Robust P2P Primitives Using SGX Enclaves [RAID 2020](https://www.usenix.org/system/files/raid20-jia.pdf)
+* PRO-ORAM: Practical Read-Only Oblivious RAM [RAID 2019](https://www.usenix.org/system/files/raid2019-tople.pdf)
+* OblivP2P: An Oblivious Peer-to-Peer Content Sharing System [USENIX Security 2016](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_jia.pdf)
+* Preventing Page Faults from Telling Your Secrets [Asia CCS 2016](https://n.ethz.ch/~sshivaji/publications/pfdefense_asiaccs16.pdf)
+
+
+## :robot: The Fair Sequencing Service by ChainLink
 
 The idea behind FSS is to have an oracle network order the transactions sent to a particular contract SC, including both user transactions and oracle reports. Oracle nodes ingest transactions and then reach consensus on their ordering, rather than allowing a single leader to dictate it.
 
@@ -20,7 +56,7 @@ FSS is a framework for implementing ordering policies, of which [Aequitas](https
 White paper to be released later.
 
 
-## Arbitrum by Offchain Labs
+## :robot: Arbitrum by Offchain Labs
 
 Arbitrum is against MEVA and FaaS.
 
@@ -48,7 +84,7 @@ A chain can be created in which no permissioned entities have Sequencing rights.
 
 [https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit](https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit){target=_blank}
 
-## Vega Protocol
+## :robot: Vega Protocol
 
 Vega's proposal is to add a module to blockchains that supports the concept of relative fairness so that competing transactions may be sequenced under a known and understood protocol, and not subject to a validator’s discretion.
 
@@ -66,7 +102,7 @@ Wendy, the Good Little Fairness Widget [https://vega.xyz/papers/fairness.pdf](ht
 
 Video [https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol](https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol){target=_blank}
 
-## Veedo by StarkWare
+## :robot: Veedo by StarkWare
 
 VeeDo is StarkWare’s STARK-based Verifiable Delay Function (VDF), and its PoC is now live on Mainnet. VeeDo's time-locks allow information to be sealed for a predetermined period of time (during the sequencing phase), and then made public.
 
@@ -83,7 +119,7 @@ VeeDo is StarkWare’s STARK-based Verifiable Delay Function (VDF), and its PoC 
 
 [https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836](https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836){target=_blank}
 
-## LibSubmarine
+## :robot: LibSubmarine
 
 LibSubmarine is an open-source smart contract library that protects your contract against front-runners by temporarily hiding transactions on-chain.
 
@@ -95,7 +131,7 @@ Video [https://www.youtube.com/watch?v=N8PDKoptmPs&feature=emb_imp_woyt&ab_chann
 
 GitHub [https://github.com/lorenzb/libsubmarine](https://github.com/lorenzb/libsubmarine){target=_blank}
 
-## Sikka
+## :robot: Sikka
 
 Sikka's MEV solution to censorship and frontrunning problems is using a technique called Threshold Decryption, as a plugin to the Tendermint Core BFT consensus engine to create mempool level privacy. With this plugin, users are able to submit encrypted transactions to the blockchain, which are only decrypted and executed after being committed to a block by a quorum of 2/3 validators.
 

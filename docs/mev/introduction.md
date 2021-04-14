@@ -17,9 +17,11 @@ Miner Extractable Value refers to the amount of profit that miners can extract f
 
 ## :bulb: Why does this matter?
 
+
+<!-- 
 !!! info inline end
 
-    :material-sign-text:  See more in ["MEV and me"][mev-source]{target=_blank} 
+    :material-sign-text:  See more in ["MEV and me"][mev-source]{target=_blank}  -->
 
 ### MEV can harm users
 
@@ -29,6 +31,7 @@ MEV is an invisible tax that miners are collecting from users.
 
 If block rewards are small enough compared to MEV, it can be rational for miners to destabilize consensus.
 
+> :material-information-variant: [source][mev-source]
 ## :bulb: Just how bad is the problem?
 
 The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target=_blank} tracks Extracted MEV over time.

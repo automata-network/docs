@@ -1,6 +1,6 @@
 # Others
 
-## B.Protocol
+## :robot: B.Protocol
 
 BProtocol aims to shift MEV to users 
 

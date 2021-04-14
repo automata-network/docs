@@ -14,10 +14,10 @@ nav:
     - Examples: ./mev/examples.md
     - Attempts to Trick the Bots: ./mev/trick-the-bots.md
     - Solutions:
-      - Different Approaches: ./mev/approaches-to-tackle.md
-      - FaaS or MEVA: ./mev/faas-or-meva.md
-      - MEV Minimization / Prevention:  ./mev/mev-minimization-prevention.md
-      - Others: ./mev/others.md
+      - Different Approaches: ./mev/solutions/approaches-to-tackle.md
+      - FaaS or MEVA: ./mev/solutions/faas-or-meva.md
+      - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
+      - Others: ./mev/solutions/others.md
     - Miscellaneous: ./mev/misc.md
   - Witness: ./guide/witness-get-started.md
 

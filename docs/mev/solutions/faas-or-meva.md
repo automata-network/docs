@@ -8,7 +8,7 @@ Vitalik on MEVA
 
 [https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021](https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021){target=_blank}
 
-## Optimism
+## :robot: Optimism
 
 Original proposers of MEVA and ETH 1.5.
 
@@ -40,7 +40,7 @@ It is possible to enshrine this MEVA contract directly on layer 1 (L1) blockchai
 
 [https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96](https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96){target=_blank}
 
-## Flashbots
+## :robot: Flashbots
 
 Flashbots is a research and development organization formed to mitigate the negative externalities and existential risks posed by MEV. They aim to Democratize MEV Extraction through MEV-Geth, which enables a sealed-bid block space auction mechanism for communicating transaction order preference.
 
@@ -77,7 +77,7 @@ Medium [https://medium.com/flashbots](https://medium.com/flashbots){target=_blan
 
 [https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251){target=_blank}
 
-## Private Mempools
+## :robot: Private Mempools
 
 Today, some miners are already auctioning off mempool access for higher rates. Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes.
 
@@ -103,7 +103,7 @@ And their proposed solutions [https://twitter.com/bloXrouteLabs/status/135902746
 
 Idea 4 makes frontrunners pay the highest bid (so pools must pay their miners to include MEV Tx) Ideas 1-3 separate between block producer, mining devOps, and receiver of the reward.
 
-## KeeperDAO
+## :robot: KeeperDAO
 
 KeeperDAO is like a mining pool for Keepers. By incentivizing a game theory optimal strategy for cooperation among on-chain arbitrageurs, KeeperDAO provides an efficient mechanism for large scale arbitrage and liquidation trades on all DeFi protocols.
 
@@ -115,16 +115,16 @@ Here's the ELI5
 
 Users route their trades and loans through KeeperDAO, which attempts to extract any arbitrage or liquidation profit available. Those profits are returned back to the user in $ROOK tokens, and profits go into a pool controlled by $ROOK holders. By giving KeeperDAO priority access to arbitrage and liquidations, the Hiding Game maximizes the profits available from these opportunities.
 
-**<u>Links</u>**
+**Links**
 
 [https://keeperdao.com/#/](https://keeperdao.com/#/){target=_blank}
 
 Wiki [https://github.com/keeperdao/docs/wiki](https://github.com/keeperdao/docs/wiki){target=_blank}
 
-## ArcherDAO
+## :robot: ArcherDAO
 
 ArcherDAO seeks to help miners capture more MEV. Miners outsource their search for MEV to ArcherDAO and those who provide MEV will receive a cut.
 
-**<u>Links</u>**
+**Links**
 
 [https://medium.com/archer-dao/introducing-archer-66f20d2cc425](https://medium.com/archer-dao/introducing-archer-66f20d2cc425){target=_blank}
