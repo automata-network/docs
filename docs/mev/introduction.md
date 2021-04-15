@@ -15,13 +15,7 @@ We cover a range of topics including the key concepts, research on this the topi
 
 Miner Extractable Value refers to the amount of profit that miners can extract from reordering and censoring transactions on the blockchain.
 
-## :bulb: Why does this matter?
-
-
-<!-- 
-!!! info inline end
-
-    :material-sign-text:  See more in ["MEV and me"][mev-source]{target=_blank}  -->
+## :bulb: Why does this matter[^1]?
 
 ### MEV can harm users
 
@@ -37,6 +31,7 @@ The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target
 
 It is estimated that >$350M has been extracted since 1st January 2020.
 
-[mev-source]: https://research.paradigm.xyz/MEV
 [flashbot-dashboard]: https://explore.flashbots.net
 [feedback]: https://us2.list-manage.com/survey?u=ffeae60ea2fcc1c9fe0f8ce40&id=8d7d318a72&attribution=false
+
+[^1]: According to <https://research.paradigm.xyz/MEV>

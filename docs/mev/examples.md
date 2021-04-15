@@ -6,9 +6,7 @@ Front-running is the process by which an adversary observes transactions on the 
 
 ## Back-Running
 
-Transaction A is broadcasted with a **slightly lower** gas price than already pending transaction B so that A gets mined **right** **after** B in the same block.
-
-*Source:* [https://twitter.com/bertcmiller/status/1380866353347846145?s=20](https://twitter.com/bertcmiller/status/1380866353347846145?s=20)
+Transaction A is broadcasted with a **slightly lower** gas price than already pending transaction B so that A gets mined **right** **after** B in the same block[^1].
 
 Example of a back-running bot that back-runs new token listings. Bot monitors the Ethereum mempool for new pairs being created on Uniswap. If it finds a new pair the bot places a buy transaction immediately behind the initial liquidity. That way they can buy a new token before anyone else.
 
@@ -26,10 +24,18 @@ Now Dan has a choice: he can either mine on top of Sam’s 3 blocks, or he can a
 
 ## Liquidations
 
-a. Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt. 
+* Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt. 
 
-Strategy 1:  A detects a liquidation opportunity at block B (i.e., after the execution of B). A then issues a liquidation transaction T, which is expected to be mined in the next block B +1. A attempts to destructively front-run other competing liquidators by setting high transaction fees for his liquidation transaction T.
+    === "Strategy 1"
 
-Strategy 2: A observes a transaction 𝑇 , which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs 𝑇 with a liquidation transaction 𝑇𝐴 to avoid the transaction fee bidding competition.
+        A detects a liquidation opportunity at block B (i.e., after the execution of B). A then issues a liquidation transaction T, which is expected to be mined in the next block B +1. A attempts to destructively front-run other competing liquidators by setting high transaction fees for his liquidation transaction T.
 
-b. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
+    === "Strategy 2"
+
+        A observes a transaction T, which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs T with a liquidation transaction T~A~ to avoid the transaction fee bidding competition.
+
+
+* The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
+
+
+[^1]: <https://twitter.com/bertcmiller/status/1380866353347846145>{target=_blank}

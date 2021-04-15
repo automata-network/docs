@@ -66,6 +66,12 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
 
 extra:
   social:
@@ -79,5 +85,10 @@ extra:
       link: https://t.me/ata_network
     - icon: fontawesome/brands/discord
       link: https://discord.com/invite/Us8cxTVRxG
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 copyright: Copyright &copy; 2021 Automata Network
