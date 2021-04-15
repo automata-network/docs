@@ -32,7 +32,7 @@ Now Dan has a choice: he can either mine on top of Sam’s 3 blocks, or he can a
 
     === "Strategy 2"
 
-        A observes a transaction 𝑇 , which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs 𝑇 with a liquidation transaction 𝑇𝐴 to avoid the transaction fee bidding competition.
+        A observes a transaction T, which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs T with a liquidation transaction T~A~ to avoid the transaction fee bidding competition.
 
 
 * The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.
