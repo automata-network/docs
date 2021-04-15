@@ -564,8 +564,7 @@
 <h2 id="front-running">Front-Running<a class="headerlink" href="#front-running" title="Permanent link">&para;</a></h2>
 <p>Front-running is the process by which an adversary observes transactions on the network layer and then acts upon this information by, for instance, issuing a competing transaction, with the hope that this transaction is mined before a victim transaction e.g. Transaction A is broadcasted with a higher gas price than an already pending transaction B so that A gets mined before B.</p>
 <h2 id="back-running">Back-Running<a class="headerlink" href="#back-running" title="Permanent link">&para;</a></h2>
-<p>Transaction A is broadcasted with a <strong>slightly lower</strong> gas price than already pending transaction B so that A gets mined <strong>right</strong> <strong>after</strong> B in the same block.</p>
-<p><em>Source:</em> <a href="https://twitter.com/bertcmiller/status/1380866353347846145?s=20">https://twitter.com/bertcmiller/status/1380866353347846145?s=20</a></p>
+<p>Transaction A is broadcasted with a <strong>slightly lower</strong> gas price than already pending transaction B so that A gets mined <strong>right</strong> <strong>after</strong> B in the same block<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <p>Example of a back-running bot that back-runs new token listings. Bot monitors the Ethereum mempool for new pairs being created on Uniswap. If it finds a new pair the bot places a buy transaction immediately behind the initial liquidity. That way they can buy a new token before anyone else.</p>
 <h2 id="sandwich-attacks">Sandwich Attacks<a class="headerlink" href="#sandwich-attacks" title="Permanent link">&para;</a></h2>
 <p>Alice wants to buy a Token A on a Decentralised Exchange (DEX) that uses an automated market maker (AMM) model. A miner which sees Alice’s transaction can create two of its own transactions which it inserts before and after Alice’s transaction (sandwiching it). The miner’s first transaction buys Token A, which pushes up the price for Alice’s transaction, and then the third transaction is the miner’s transaction to sell Token A (now at a higher price) at a profit.</p>
@@ -574,10 +573,29 @@
 <p>Imagine there are two miners, Sam and Dan, who are paid a $100 reward for each block they find. Sam has found 3 blocks, the first of which contained a $10,000 arbitrage opportunity.</p>
 <p>Now Dan has a choice: he can either mine on top of Sam’s 3 blocks, or he can attempt to re-mine the first block in order to take the Uniswap arbitrage for himself. The $10,000 is much more lucrative than the $100 block reward, and Dan is more rational than honest, so he decides to re-mine the first block. While Dan’s at it, since the current longest chain is height 3, he also re-mines the second and third blocks (and captures any MEV that was in those, too). After the re-organization, Dan owns the longest chain and he and Sam can progress from the third block.</p>
 <h2 id="liquidations">Liquidations<a class="headerlink" href="#liquidations" title="Permanent link">&para;</a></h2>
-<p>a. Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt. </p>
-<p>Strategy 1:  A detects a liquidation opportunity at block B (i.e., after the execution of B). A then issues a liquidation transaction T, which is expected to be mined in the next block B +1. A attempts to destructively front-run other competing liquidators by setting high transaction fees for his liquidation transaction T.</p>
-<p>Strategy 2: A observes a transaction 𝑇 , which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs 𝑇 with a liquidation transaction 𝑇𝐴 to avoid the transaction fee bidding competition.</p>
-<p>b. The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.</p>
+<ul>
+<li>
+<p>Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt. </p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Strategy 1</label><div class="tabbed-content">
+<p>A detects a liquidation opportunity at block B (i.e., after the execution of B). A then issues a liquidation transaction T, which is expected to be mined in the next block B +1. A attempts to destructively front-run other competing liquidators by setting high transaction fees for his liquidation transaction T.</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Strategy 2</label><div class="tabbed-content">
+<p>A observes a transaction T, which will create a liquidation opportunity (e.g., an oracle price update transaction which will render a collateralized debt liquidatable). A then back-runs T with a liquidation transaction T<sub>A</sub> to avoid the transaction fee bidding competition.</p>
+</div>
+</div>
+</li>
+<li>
+<p>The auction liquidation allows a liquidator to start an auction that lasts for a pre-configured period (e.g., 6 hours). Competing liquidators can engage and bid on the collateral price.</p>
+</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://twitter.com/bertcmiller/status/1380866353347846145" target="_blank">https://twitter.com/bertcmiller/status/1380866353347846145</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -707,6 +725,12 @@
     
     
       <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

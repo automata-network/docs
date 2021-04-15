@@ -444,6 +444,47 @@
     Optimism
   </a>
   
+    <nav class="md-nav" aria-label="Optimism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementing-the-auction" class="md-nav__link">
+    Implementing the Auction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-producers-transaction-inclusion" class="md-nav__link">
+    Block producers - Transaction Inclusion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencers-transaction-ordering" class="md-nav__link">
+    Sequencers - Transaction Ordering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-on-layer-2" class="md-nav__link">
+    Implementation on Layer 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -564,37 +605,36 @@
                 
                 <h1 id="front-running-as-a-service-faas-or-mev-auctions-meva">Front-running as a Service (FaaS) or MEV Auctions (MEVA)<a class="headerlink" href="#front-running-as-a-service-faas-or-mev-auctions-meva" title="Permanent link">&para;</a></h1>
 <p>In a FaaS or MEVA system, MEV is extracted in a variety of ways such as miners auctioning off the right to front-run users.</p>
-<p>Vitalik on MEVA</p>
 <blockquote>
-<p>Centralizing MEV extraction is good because it quarantines a revenue stream that could otherwise drive centralization in other sectors.</p>
+<p>"Centralizing MEV extraction is good because it quarantines a revenue stream that could otherwise drive centralization in other sectors."
+- <a href="https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021" target="_blank">Vitalik on MEVA <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></p>
 </blockquote>
-<p><a href="https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021" target="_blank">https://medium.com/@VitalikButerin/i-feel-like-this-post-is-addressing-an-argument-that-isnt-the-actual-argument-that-mev-auction-b3c5e8fc1021</a></p>
 <h2 id="optimism"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Optimism<a class="headerlink" href="#optimism" title="Permanent link">&para;</a></h2>
 <p>Optimism are the original proposers of MEVA.</p>
 <p>MEV Auction (MEVA) is created in which the winner of the auction has the right to reorder submitted transactions and insert their own, as long as they do not delay any specific transaction by more than N blocks.</p>
 <p><img alt="" src="/assets/mev_auction.png" style="zoom:100%" /></p>
-<p><strong>Implementing the Auction</strong></p>
+<h3 id="implementing-the-auction">Implementing the Auction<a class="headerlink" href="#implementing-the-auction" title="Permanent link">&para;</a></h3>
 <p>The auction is able to extract MEV from miners by separating two functions 1) Transaction inclusion; and 2) transaction ordering. In order to implement MEVA roles are defined. <strong>Block producers</strong> determine transaction inclusion, and <strong>Sequencers</strong> determine transaction ordering.</p>
-<p><strong>Block producers - Transaction Inclusion</strong></p>
+<h3 id="block-producers-transaction-inclusion">Block producers - Transaction Inclusion<a class="headerlink" href="#block-producers-transaction-inclusion" title="Permanent link">&para;</a></h3>
 <p>Block proposers are most analogous to traditional blockchain miners. Instead of proposing blocks with an ordering, they simply propose a set of transactions to eventually be included before N blocks.</p>
-<p><strong>Sequencers - Transaction Ordering</strong></p>
+<h3 id="sequencers-transaction-ordering">Sequencers - Transaction Ordering<a class="headerlink" href="#sequencers-transaction-ordering" title="Permanent link">&para;</a></h3>
 <p>Sequencers are elected by a smart contract managed auction run by the block producers called the MEVA contract. This auction assigns the right to sequence the last N transactions. If, within a timeout the sequencer has not submitted an ordering which is included by block proposers, a new sequencer is elected.</p>
-<p><strong>Implementation on Layer 2</strong></p>
+<h3 id="implementation-on-layer-2">Implementation on Layer 2<a class="headerlink" href="#implementation-on-layer-2" title="Permanent link">&para;</a></h3>
 <p>It is possible to enshrine this MEVA contract directly on layer 1 (L1) blockchain consensus protocols. However, it is also possible to non-invasively add this mechanism in layer 2 (L2) and use it to manage Optimistic Rollup transactio ordering. In L2, L1 miners are repurposed and utilized as block proposers. MEVA contract is implemented and designated a single sequencer at a time.</p>
-<p><strong><u>Links</u></strong></p>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <p><a href="https://optimism.io/" target="_blank">https://optimism.io/</a></p>
 <p><a href="https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788" target="_blank">https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788</a></p>
 <p><a href="https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96" target="_blank">https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96</a></p>
 <h2 id="flashbots"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Flashbots<a class="headerlink" href="#flashbots" title="Permanent link">&para;</a></h2>
 <p>Flashbots is a research and development organization formed to mitigate the negative externalities and existential risks posed by MEV. They aim to Democratize MEV Extraction through MEV-Geth, which enables a sealed-bid block space auction mechanism for communicating transaction order preference.</p>
 <p>ELI5 here <a href="https://twitter.com/_silto_/status/1381292907567722498?s=20">https://twitter.com/<em>silto</em>/status/1381292907567722498?s=20</a></p>
-<p>Flashbots created an ETH node for miners, that not only watches the mempool like any other node, but also connects to a relayer (a server) operated by Flashbots. This MEV-Relay is a kind of parallel channel that directly connects miners to bots that want their transactions included. </p>
+<p>Flashbots created an ETH node for miners, that not only watches the mempool like any other node, but also connects to a relayer (a server) operated by Flashbots. This MEV-Relay is a kind of parallel channel that directly connects miners to bots that want their transactions included.</p>
 <p>The transactions that the bots want to include are sent through the MEV-Relay as bundles containing:</p>
 <ul>
 <li>the transactions to execute</li>
 <li>a tip to the miner, coming as an ETH transfer</li>
 </ul>
-<p>These transactions use a 0gwei gas price, as the payment to the miner is included in the transaction itself as the tip. </p>
+<p>These transactions use a 0 gwei gas price, as the payment to the miner is included in the transaction itself as the tip.</p>
 <p>Since these transactions are sent through a parallel private relay, it reduces the mempool bidding war, failed transactions bloating the blockchain, and overall gas cost for users.</p>
 <p><strong><u>Links</u></strong></p>
 <p>GitHub <a href="https://github.com/flashbots" target="_blank">https://github.com/flashbots</a></p>
@@ -755,6 +795,12 @@
     
     
       <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
