@@ -2,7 +2,7 @@
 
 ## :robot: B.Protocol
 
-BProtocol aims to shift MEV to users 
+BProtocol aims to shift MEV to users.
 
 Users interact with existing lending platforms via B.Protocol smart contract. Liquidity providers (LP) provide a cushion to user debt, which gives B.Protocol precedence over other liquidators. LPs share their profits with the users, where user reward is proportional to his user rating.
 
