@@ -2,11 +2,13 @@
 
 ## DeFi
 
-DeFi is a subset of finance-focused decentralized protocols that operate autonomously on blockchain-based smart contracts. The total value locked in DeFi amounts to >$50B USD (Source: [https://defipulse.com/](https://defipulse.com/))
+DeFi is a subset of finance-focused decentralized protocols that operate autonomously on blockchain-based smart contracts. The total value locked in DeFi amounts to >$50B USD[^1].
 
 ## Automated Market Maker
 
-A type of Decentralised Exchange. Contrary to traditional limit order-book-based exchanges (which maintain a list of bids and asks for an asset pair), AMM exchanges maintain a pool of capital (a liquidity pool) with at least two assets. A smart contract governs the rules by which traders can purchase and sell assets from the liquidity pool. The most common AMM mechanism is a constant product AMM, where the product of an asset 𝑥 and asset 𝑦 in a pool have to abide by a constant 𝑘. Examples of AMM Exchanges include [Uniswap](https://uniswap.org/), [Sushiswap](https://sushi.com/), [Balancer](https://balancer.exchange/#/swap).
+A type of Decentralised Exchange. Contrary to traditional limit order-book-based exchanges (which maintain a list of bids and asks for an asset pair), AMM exchanges maintain a pool of capital (a liquidity pool) with at least two assets. A smart contract governs the rules by which traders can purchase and sell assets from the liquidity pool. The most common AMM mechanism is a constant product AMM, where the product of an asset $x$ and asset $y$ in a pool have to abide by a constant $k$. 
+
+Examples of AMM Exchanges include [Uniswap](https://uniswap.org/), [Sushiswap](https://sushi.com/), [Balancer](https://balancer.exchange/#/swap).
 
 ## Lending Platforms
 
@@ -33,3 +35,5 @@ compete against each other by bidding up transaction fees (gas) in PGAs which dr
 ## Transaction Ordering
 
 Blockchains typically prescribe specific rules for consensus, but there are only loose requirements for miners on how to order transactions within a block. Many attacks are centered around how miners order transactions within blocks.
+
+[^1]: <https://defipulse.com/>
