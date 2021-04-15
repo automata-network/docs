@@ -86,6 +86,8 @@ Private Transactions offered by Taichi Network
 
 Note: For the other side of the coin, read BloXroute Labs' take on why private mempools are not necessarily bad
 
+Update bloxroute
+
 [https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20](https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20){target=_blank}
 
 ## :robot: KeeperDAO
