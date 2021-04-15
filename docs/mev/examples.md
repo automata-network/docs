@@ -22,6 +22,22 @@ Imagine there are two miners, Sam and Dan, who are paid a $100 reward for each b
 
 Now Dan has a choice: he can either mine on top of Sam’s 3 blocks, or he can attempt to re-mine the first block in order to take the Uniswap arbitrage for himself. The $10,000 is much more lucrative than the $100 block reward, and Dan is more rational than honest, so he decides to re-mine the first block. While Dan’s at it, since the current longest chain is height 3, he also re-mines the second and third blocks (and captures any MEV that was in those, too). After the re-organization, Dan owns the longest chain and he and Sam can progress from the third block.
 
+## The Uncle Bandit Attack
+
+[:fontawesome-brands-twitter:](https://twitter.com/bertcmiller/status/1382673587715342339?s=20){target=_blank}
+
+Bundles are groups of transactions Flashbots users submit. Those transactions must be included in the order submitted, and either the whole bundle is included, or nothing is. A bundle should never be split up.
+
+Robert Miller found that for a specific bundle, only the "Buy" part of a sandwich bundle submitted had landed on-chain, and right after that Buy someone else had inserted a 7 gas transaction that arbitraged it.
+
+How?
+
+In Ethereum occasionally two blocks are mined at roughly the same time, and only one block can be added to the chain. The other gets "uncled" or orphaned. Anyone can access transactions in an uncled block and some of the transactions may not have ended up in the non-uncled block. In a way some transactions end up in a sort of mempool like state: they are now public as a part of the uncled block and perhaps still valid too.
+
+A Sandwicher's bundle was included in an uncled block. An attacker saw this, grabbed only the Buy part of the Sandwich, threw away the rest, and added an arbitrage after. The attacker then submitted that as a bundle, which was then mined. 
+
+Instead of seeing something late in time and rewinding it (time-bandit attack), the uncle bandit attack is when an attacker sees something in an uncle and brings it forward. This also shows that attacks extend beyond the mempool and into uncled blocks as well. 
+
 ## Liquidations
 
 * Fixed spread liquidation used by Compound, Aave, and dYdX allows a liquidator to purchase collateral at a fixed discount when repaying debt. 
