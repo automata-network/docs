@@ -80,15 +80,15 @@ Medium [https://medium.com/flashbots](https://medium.com/flashbots){target=_blan
 
 Today, some miners are already auctioning off mempool access for higher rates. Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes (pay more for faster transactions).
 
-Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work){target=_blank}, [Taichi Network](https://taichi.network/){target=_blank} and [bloXroute](https://bloxroute.com/){target=_blank}.
+Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work){target=_blank}, [Taichi Network](https://taichi.network/){target=_blank} and [BloXroute](https://bloxroute.com/products/){target=_blank}.
 
 ![](/assets/private_mempools.png){target=_blank}
 
 Private Transactions offered by Taichi Network
 
-[BloXrouteLabs](https://bloxroute.com/){target=_blank} has a wide range of offerings and their core competency is low global latency for DeFi (8% of blocks mined within 1 sec).
+[BloXroute](https://bloxroute.com/products/){target=_blank} has a wide range of offerings and their core competency is low global latency for DeFi (8% of blocks mined within 1 sec).
 
-Note: For the other side of the coin, here is BloXroute Labs' take on why private mempools are not necessarily bad
+Note: For the other side of the coin, here is BloXroute's take on why private mempools are not necessarily bad
 
 [https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20](https://twitter.com/bloXrouteLabs/status/1357026919905173509?s=20)
 
