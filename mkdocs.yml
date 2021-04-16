@@ -11,7 +11,7 @@ nav:
     - Introduction: ./mev/introduction.md
     - Resource List: ./mev/resource-list.md
     - Terms and Concepts: ./mev/terms-and-concepts.md
-    - Examples: ./mev/examples.md
+    - Attack Examples: ./mev/examples.md
     - Attempts to Trick the Bots: ./mev/trick-the-bots.md
     - Solutions:
       - Different Approaches: ./mev/solutions/approaches.md
