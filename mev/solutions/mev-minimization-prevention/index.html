@@ -351,7 +351,7 @@
   
     <li class="md-nav__item">
       <a href="../../examples/" class="md-nav__link">
-        Examples
+        Attack Examples
       </a>
     </li>
   
@@ -490,33 +490,6 @@
     Arbitrum by Offchain Labs
   </a>
   
-    <nav class="md-nav" aria-label="Arbitrum by Offchain Labs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-single-sequencer-l2-mev-potential-mainnet-beta" class="md-nav__link">
-    1. Single Sequencer: L2 MEV-Potential (Mainnet Beta)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-distributed-sequencer-with-fair-ordering-l2-mev-minimized-mainnet-final-form" class="md-nav__link">
-    2. Distributed Sequencer With Fair Ordering: L2-MEV-minimized (Mainnet Final Form)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-no-sequencer-no-l2-mev" class="md-nav__link">
-    3. No Sequencer: No L2 MEV
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -543,6 +516,13 @@
         <li class="md-nav__item">
   <a href="#sikka" class="md-nav__link">
     Sikka
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shutter-network" class="md-nav__link">
+    Shutter Network
   </a>
   
 </li>
@@ -624,12 +604,14 @@
                 
                 
                 <h1 id="mev-minimizationprevention">MEV Minimization/Prevention<a class="headerlink" href="#mev-minimizationprevention" title="Permanent link">&para;</a></h1>
-<h2 id="conveyor-the-automata-network-approach-to-tackling-mev"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Conveyor - The Automata Network approach to tackling MEV<a class="headerlink" href="#conveyor-the-automata-network-approach-to-tackling-mev" title="Permanent link">&para;</a></h2>
+<h2 id="conveyor-the-automata-network-approach-to-tackling-mev"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Conveyor - The Automata Network approach to tackling MEV<a class="headerlink" href="#conveyor-the-automata-network-approach-to-tackling-mev" title="Permanent link">&para;</a></h2>
 <p>At Automata, we have created <strong>Conveyor</strong>, a service that ingests and outputs transactions in a determined order. This creates a front-running-free zone that removes the chaos of transaction reordering.</p>
-<p><img alt="" src="../../../assets/conveyor.png" /></p>
-<p>When transactions are fed into Conveyor, it determines the order of the incoming transactions and makes it impossible for block producers to perform the following:
-Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
-Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.</p>
+<p><img alt="Conveyor Overview" src="../../../assets/conveyor.png" /></p>
+<p>When transactions are fed into Conveyor, it determines the order of the incoming transactions and makes it impossible for block producers to perform the following:</p>
+<ol>
+<li>Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.</li>
+<li>Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.</li>
+</ol>
 <p>From the DEX’s perspective, they can choose to accept either</p>
 <ol>
 <li>Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions</li>
@@ -652,56 +634,106 @@ Delete ordered transactions: Transactions accepted by Conveyor are broadcasted e
 <li>OblivP2P: An Oblivious Peer-to-Peer Content Sharing System <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_jia.pdf">USENIX Security 2016</a></li>
 <li>Preventing Page Faults from Telling Your Secrets <a href="https://n.ethz.ch/~sshivaji/publications/pfdefense_asiaccs16.pdf">Asia CCS 2016</a></li>
 </ul>
-<h2 id="the-fair-sequencing-service-by-chainlink"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> The Fair Sequencing Service by ChainLink<a class="headerlink" href="#the-fair-sequencing-service-by-chainlink" title="Permanent link">&para;</a></h2>
+<h2 id="the-fair-sequencing-service-by-chainlink"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> The Fair Sequencing Service by ChainLink<a class="headerlink" href="#the-fair-sequencing-service-by-chainlink" title="Permanent link">&para;</a></h2>
 <p>The idea behind FSS is to have an oracle network order the transactions sent to a particular contract SC, including both user transactions and oracle reports. Oracle nodes ingest transactions and then reach consensus on their ordering, rather than allowing a single leader to dictate it.</p>
-<p>FSS is a framework for implementing ordering policies, of which <a href="https://eprint.iacr.org/2020/269.pdf" target="_blank">Aequitas</a>) (protocol for order-fairness in addition to consistency and liveness) is one example. It can alternatively support simpler approaches, such as straightforward encryption of transactions, which can then be decrypted in a threshold manner by oracle nodes after ordering. It will also support various policies for inserting oracle reports into a stream of transactions. (It can even support MEV auctions, if desired.)</p>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/" target="_blank">https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/</a></p>
-<p>White paper to be released later.</p>
-<h2 id="arbitrum-by-offchain-labs"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Arbitrum by Offchain Labs<a class="headerlink" href="#arbitrum-by-offchain-labs" title="Permanent link">&para;</a></h2>
+<p>FSS is a framework for implementing ordering policies, of which <a href="https://eprint.iacr.org/2020/269.pdf" target="_blank">Aequitas</a> (protocol for order-fairness in addition to consistency and liveness) is one example. It can alternatively support simpler approaches, such as straightforward encryption of transactions, which can then be decrypted in a threshold manner by oracle nodes after ordering. It will also support various policies for inserting oracle reports into a stream of transactions. (It can even support MEV auctions, if desired.)</p>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li>Blog post: <a href="https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/" target="_blank">https://blog.chain.link/chainlink-fair-sequencing-services-enabling-a-provably-fair-defi-ecosystem/</a></li>
+<li>Whitepaper (to be released later)</li>
+</ul>
+</div>
+<h2 id="arbitrum-by-offchain-labs"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Arbitrum by Offchain Labs<a class="headerlink" href="#arbitrum-by-offchain-labs" title="Permanent link">&para;</a></h2>
 <p>Arbitrum is against MEVA and FaaS.</p>
 <p>3 Modes of Arbitrum:</p>
-<h3 id="1-single-sequencer-l2-mev-potential-mainnet-beta">1. Single Sequencer: L2 MEV-Potential (<em>Mainnet Beta</em>)<a class="headerlink" href="#1-single-sequencer-l2-mev-potential-mainnet-beta" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Single Sequencer: L2 MEV-Potential (<em>Mainnet Beta</em>)</strong></p>
 <p>For Arbitrum’s initial, flagship Mainnet beta release, the Sequencer will be controlled by a single entity. This entity has transaction ordering rights within the narrow / 15 minute window; users are trusting the Sequencer not to frontrun them.</p>
-<h3 id="2-distributed-sequencer-with-fair-ordering-l2-mev-minimized-mainnet-final-form">2. Distributed Sequencer With Fair Ordering: L2-MEV-minimized (<em>Mainnet Final Form</em>)<a class="headerlink" href="#2-distributed-sequencer-with-fair-ordering-l2-mev-minimized-mainnet-final-form" title="Permanent link">&para;</a></h3>
+</li>
+<li>
+<p><strong>Distributed Sequencer With Fair Ordering: L2-MEV-minimized (<em>Mainnet Final Form</em>)</strong></p>
 <p>The Arbitrum flagship chain will eventually have a distributed set of independent parties controlling the Sequencer. They will collectively propose state updates via <a href="https://eprint.iacr.org/2020/269.pdf" target="_blank">the first BFT algorithm that enforces fair ordering within consensus (Aequitas)</a>. Here, L2 MEV is only possible if &gt;1/3 of the sequencing-parties maliciously collude, hence “MEV-minimized.”</p>
-<h3 id="3-no-sequencer-no-l2-mev">3. No Sequencer: No L2 MEV<a class="headerlink" href="#3-no-sequencer-no-l2-mev" title="Permanent link">&para;</a></h3>
+</li>
+<li>
+<p><strong>No Sequencer: No L2 MEV</strong></p>
 <p>A chain can be created in which no permissioned entities have Sequencing rights. Ordering is determined entirely by the Inbox contract; lose the ability to get lower latency than L1, but gain is that no party involved in L2, including Arbitrum validators, has any say in transaction ordering, and thus no L2 MEV enters the picture.</p>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://offchainlabs.com/" target="_blank">https://offchainlabs.com/</a></p>
-<p><a href="https://medium.com/offchainlabs/front-running-as-a-service-334c929c945" target="_blank">https://medium.com/offchainlabs/front-running-as-a-service-334c929c945</a></p>
-<p><a href="https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit" target="_blank">https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit</a></p>
-<h2 id="vega-protocol"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Vega Protocol<a class="headerlink" href="#vega-protocol" title="Permanent link">&para;</a></h2>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://offchainlabs.com/" target="_blank">https://offchainlabs.com/</a></li>
+<li><a href="https://medium.com/offchainlabs/front-running-as-a-service-334c929c945" target="_blank">https://medium.com/offchainlabs/front-running-as-a-service-334c929c945</a></li>
+<li><a href="https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit" target="_blank">https://docs.google.com/document/d/1VOACGgTR84XWm5lH5Bki2nBcImi3lVRe2tYxf5F6XbA/edit</a></li>
+</ul>
+</div>
+<h2 id="vega-protocol"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Vega Protocol<a class="headerlink" href="#vega-protocol" title="Permanent link">&para;</a></h2>
 <p>Traditionally, fairness in a blockchain has been defined in absolute terms, i.e. once a transaction is seen by a sufficient number of validators, it will be executed in some block, soon. Vega's proposal is to add a module to blockchains that supports the concept of relative fairness so that competing transactions may be sequenced under a known and understood protocol, and not subject to a validator’s discretion.</p>
 <p>"<em>If there is a time t such that all honest validators saw a before t and b after t, then a must be scheduled before b”.</em> This is a property that can be assured of at any time with a minimal impact on performance.</p>
 <p>To get the best combination, their current approach is a hybrid of the two. In normal operation, the protocol will assure block fairness. If the network detects that this causes a bottleneck, it temporarily switches to the timed approach (thus sacrificing a little fairness for performance), before switching back once the bottleneck is resolved. However, Vega will ultimately make the level of fairness customisable by market.</p>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://vega.xyz/" target="_blank">https://vega.xyz/</a></p>
-<p><a href="https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb" target="_blank">https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb</a></p>
-<p>Wendy, the Good Little Fairness Widget <a href="https://vega.xyz/papers/fairness.pdf" target="_blank">https://vega.xyz/papers/fairness.pdf</a></p>
-<p>Video <a href="https://www.youtube.com/watch?v=KjfLj5fhkGQ&amp;t=18s&amp;ab_channel=VegaProtocol" target="_blank">https://www.youtube.com/watch?v=KjfLj5fhkGQ&amp;t=18s&amp;ab_channel=VegaProtocol</a></p>
-<h2 id="veedo-by-starkware"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Veedo by StarkWare<a class="headerlink" href="#veedo-by-starkware" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://vega.xyz/" target="_blank">https://vega.xyz/</a></li>
+<li><a href="https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb" target="_blank">https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb</a></li>
+<li>Wendy, the Good Little Fairness Widget: <a href="https://vega.xyz/papers/fairness.pdf" target="_blank">https://vega.xyz/papers/fairness.pdf</a></li>
+<li>Video: <a href="https://www.youtube.com/watch?v=KjfLj5fhkGQ&amp;t=18s&amp;ab_channel=VegaProtocol" target="_blank">https://www.youtube.com/watch?v=KjfLj5fhkGQ&amp;t=18s&amp;ab_channel=VegaProtocol</a></li>
+</ul>
+</div>
+<h2 id="veedo-by-starkware"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Veedo by StarkWare<a class="headerlink" href="#veedo-by-starkware" title="Permanent link">&para;</a></h2>
 <p>VeeDo is StarkWare’s STARK-based Verifiable Delay Function (VDF), and its PoC is now live on Mainnet. VeeDo's time-locks allow information to be sealed for a predetermined period of time (during the sequencing phase), and then made public.</p>
 <p>2 approaches using privacy to minimize MEV</p>
 <ol>
 <li>Time-locks as part of the protocol layer</li>
 <li>Time-locks on Ethereum with smart contracts - supported today</li>
 </ol>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://starkware.co/" target="_blank">https://starkware.co/</a></p>
-<p><a href="https://medium.com/starkware/presenting-veedo-e4bbff77c7ae" target="_blank">https://medium.com/starkware/presenting-veedo-e4bbff77c7ae</a></p>
-<p><a href="https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836" target="_blank">https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836</a></p>
-<h2 id="libsubmarine"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> LibSubmarine<a class="headerlink" href="#libsubmarine" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://starkware.co/" target="_blank">https://starkware.co/</a></li>
+<li><a href="https://medium.com/starkware/presenting-veedo-e4bbff77c7ae" target="_blank">https://medium.com/starkware/presenting-veedo-e4bbff77c7ae</a></li>
+<li><a href="https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836" target="_blank">https://docs.google.com/presentation/d/1C_Rb_rtUXT2Nkettu_GPSlD9yCge8ioBNLRj5OBNbyY/edit#slide=id.gb576f94980_0_836</a></li>
+</ul>
+</div>
+<h2 id="libsubmarine"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> LibSubmarine<a class="headerlink" href="#libsubmarine" title="Permanent link">&para;</a></h2>
 <p>LibSubmarine is an open-source smart contract library that protects your contract against front-runners by temporarily hiding transactions on-chain.</p>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://libsubmarine.org/" target="_blank">https://libsubmarine.org/</a></p>
-<p>Video <a href="https://www.youtube.com/watch?v=N8PDKoptmPs&amp;feature=emb_imp_woyt&amp;ab_channel=IC3InitiativeforCryptocurrenciesandContracts" target="_blank">https://www.youtube.com/watch?v=N8PDKoptmPs&amp;feature=emb_imp_woyt&amp;ab_channel=IC3InitiativeforCryptocurrenciesandContracts</a></p>
-<p>GitHub <a href="https://github.com/lorenzb/libsubmarine" target="_blank">https://github.com/lorenzb/libsubmarine</a></p>
-<h2 id="sikka"><img alt="🤖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f916.svg" title=":robot:" /> Sikka<a class="headerlink" href="#sikka" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://libsubmarine.org/" target="_blank">https://libsubmarine.org/</a></li>
+<li>Video: <a href="https://www.youtube.com/watch?v=N8PDKoptmPs&amp;feature=emb_imp_woyt&amp;ab_channel=IC3InitiativeforCryptocurrenciesandContracts" target="_blank">https://www.youtube.com/watch?v=N8PDKoptmPs&amp;feature=emb_imp_woyt&amp;ab_channel=IC3InitiativeforCryptocurrenciesandContracts</a></li>
+<li>GitHub: <a href="https://github.com/lorenzb/libsubmarine" target="_blank">https://github.com/lorenzb/libsubmarine</a></li>
+</ul>
+</div>
+<h2 id="sikka"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Sikka<a class="headerlink" href="#sikka" title="Permanent link">&para;</a></h2>
 <p>Sikka's MEV solution to censorship and frontrunning problems is using a technique called Threshold Decryption, as a plugin to the Tendermint Core BFT consensus engine to create mempool level privacy. With this plugin, users are able to submit encrypted transactions to the blockchain, which are only decrypted and executed after being committed to a block by a quorum of 2/3 validators.</p>
-<p><strong><u>Links</u></strong></p>
-<p><a href="https://sikka.tech/" target="_blank">https://sikka.tech/</a></p>
-<p><a href="https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p" target="_blank">https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p</a></p>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://sikka.tech/" target="_blank">https://sikka.tech/</a></li>
+<li><a href="https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p" target="_blank">https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p</a></li>
+</ul>
+</div>
+<h2 id="shutter-network"><img alt="🛡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e1.svg" title=":shield:" /> Shutter Network<a class="headerlink" href="#shutter-network" title="Permanent link">&para;</a></h2>
+<p>Shutter Network is an open-source project that aims to prevent frontrunning and malicious MEV on Ethereum by using a threshold cryptography-based distributed key generation (DKG) protocol.</p>
+<p>A Shutter transaction is a transaction protected from frontrunning in the target smart contract system. It therefore passes through a sequence of stages before it is executed.</p>
+<p>A Shutter transaction flow:</p>
+<ol>
+<li>Created and encrypted in the user's wallet;</li>
+<li>Sent to the batcher contract as a standard Ethereum transaction;</li>
+<li>Picked up and decrypted by the keypers;</li>
+<li>Sent to the executor contract, and</li>
+<li>Forwarded to the target contract.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Links</p>
+<ul>
+<li><a href="https://shutter.ghost.io/" target="_blank">https://shutter.ghost.io/</a></li>
+<li>GitHub: <a href="https://github.com/brainbot-com/shutter" target="_blank">https://github.com/brainbot-com/shutter</a> </li>
+</ul>
+</div>
                 
               
               
