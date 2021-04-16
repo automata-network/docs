@@ -8,8 +8,10 @@ At Automata, we have created **Conveyor**, a service that ingests and outputs tr
 ![](./../../assets/conveyor.png)
 
 When transactions are fed into Conveyor, it determines the order of the incoming transactions and makes it impossible for block producers to perform the following:
-Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
-Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.
+
+1) Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
+
+2) Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.
 
 From the DEX’s perspective, they can choose to accept either
 
@@ -134,3 +136,24 @@ Sikka's MEV solution to censorship and frontrunning problems is using a techniqu
 [https://sikka.tech/](https://sikka.tech/){target=_blank}
 
 [https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p](https://docs.google.com/presentation/d/1tQEUpZjy_U9J-VQAx1Wf5W9oOX5rrCY3AwjAb7ZgA68/edit#slide=id.p){target=_blank}
+
+## :robot: Shutter Network
+
+Shutter Network is an open-source project that aims to prevent frontrunning and malicious MEV on Ethereum by using a threshold cryptography-based distributed key generation (DKG) protocol.
+
+A Shutter transaction is a transaction protected from frontrunning in the target smart contract system. It therefore passes through a sequence of stages before it is executed.
+
+A Shutter transaction flow:
+
+1) Created and encrypted in the user's wallet;
+2) Sent to the batcher contract as a standard Ethereum transaction;
+3) Picked up and decrypted by the keypers;
+4) Sent to the executor contract, and
+5) Forwarded to the target contract.
+
+
+**<u>Links</u>**
+
+[https://shutter.ghost.io/](https://shutter.ghost.io//){target=_blank}
+GitHub [https://github.com/brainbot-com/shutter](https://github.com/brainbot-com/shutter){target=_blank} 
+
