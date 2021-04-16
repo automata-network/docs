@@ -31,7 +31,10 @@ The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target
 
 It is estimated that >$350M has been extracted since 1st January 2020.
 
+[Dune Analytics :octicons-link-external-16:][dune-analytics]{target=_blank} tracks Gas consumption by back-running bots. 
+
 [flashbot-dashboard]: https://explore.flashbots.net
+[dune-analytics]: https://duneanalytics.com/phabc/backrunning-bots-gas-consumption
 [feedback]: https://us2.list-manage.com/survey?u=ffeae60ea2fcc1c9fe0f8ce40&id=8d7d318a72&attribution=false
 
 [^1]: According to <https://research.paradigm.xyz/MEV>
