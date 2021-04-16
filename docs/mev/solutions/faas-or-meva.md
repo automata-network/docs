@@ -4,6 +4,8 @@ In a FaaS or MEVA system, MEV is extracted in a variety of ways such as miners a
 
 > "Centralizing MEV extraction is good because it quarantines a revenue stream that could otherwise drive centralization in other sectors."
 > - [Vitalik on MEVA :octicons-link-external-16:][vitalik-meva]{target=_blank}
+> 
+Here, co-author or Flash Boys 2.0 Phil Daian presents his case on Why MEV should be Extracted [https://pdaian.com/blog/mev-wat-do/](https://pdaian.com/blog/mev-wat-do/){target=_blank}. 
 
 ## :robot: Optimism
 
