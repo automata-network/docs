@@ -105,10 +105,15 @@ One of the 3 games that has been built. The Hiding Game refers to the cooperatio
 
 Users route their trades and loans through KeeperDAO, which attempts to extract any arbitrage or liquidation profit available. Those profits are returned back to the user in $ROOK tokens, and profits go into a pool controlled by $ROOK holders. By giving KeeperDAO priority access to arbitrage and liquidations, the Hiding Game maximizes the profits available from these opportunities.
 
+### kCompound (Phase 2 of the Hiding Game)
+
+kCompound is the second phase of the Hiding Game. KeeperDAO posts collateral to save your position from being publicly liquidated. Instead, you get privately liquidated. KeeperDAO keeper will then find the best price for your collateral, targeting a 5% profit margin. This profit will then be split between you, the keeper, and the KeeperDAO treasury, meaning that kCompound borrowers will receive a portion of the profits from their own liquidation.
+
 !!! info "Links"
 
     - [https://keeperdao.com/#/](https://keeperdao.com/#/){target=_blank}
     - Wiki: [https://github.com/keeperdao/docs/wiki](https://github.com/keeperdao/docs/wiki){target=_blank}
+    - kCompound: [https://medium.com/keeperdao/introducing-kcompound-a23511c847a0](https://medium.com/keeperdao/introducing-kcompound-a23511c847a0){target=_blank}
 
 ## :pick: ArcherDAO
 
