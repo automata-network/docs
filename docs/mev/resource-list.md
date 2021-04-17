@@ -10,6 +10,7 @@
 | [**Escaping the Dark Forest** :octicons-link-external-16:][escape-dark-forest]{target=_blank}                                                                                             | Article        |
 | [**Ethereum Blockspace: Who Gets What and Why** :octicons-link-external-16:][eth-blockspace]{target=_blank}                                                                               | Article        |
 | [**Security of Interoperability** :octicons-link-external-16:][security-interoperability]{target=_blank}                                                                               | Presentation        |
+| [**Gas Wars: Understanding Ethereum's Mempool & Miner Extractable Value** :octicons-link-external-16:][gaswars]{target=_blank}                                                             | Podcast        |
 | [**Smart Contract Security - Incentives Beyond the Launch by Phil Daian (Devcon4)** :octicons-link-external-16:][smart-contract-sec]{target=_blank}                                       | Video          |
 | [**Enter the Dark Forest: the terrifying world of MEV and Flash bots** :octicons-link-external-16:][enter-dark-forest]{target=_blank}                                                     | Video          |
 | [**Frontrunning in Decentralized Exchanges, Miner Extractable Value, and Consensus Instability** :octicons-link-external-16:][fr-in-dex]{target=_blank}                                   | Video          |
@@ -26,6 +27,7 @@
 [escape-dark-forest]: https://samczsun.com/escaping-the-dark-forest/
 [eth-blockspace]: https://www.aniccaresearch.tech/blog/ethereum-blockspace-who-gets-what-and-why
 [security-interoperability]: https://docs.google.com/presentation/d/1oZcp2a1fQUdJSVAOrkXSZKr9f4h_Ll66ZUPtrd1e8cc/edit#slide=id.gcddc79164f_1_3
+[gaswars]: https://open.spotify.com/episode/3JNtMt7oouY5aXMmg7jh8w?si=z84j02J6Q2mIOnDrCJUQHQ
 
 [smart-contract-sec]: https://www.youtube.com/watch?v=i-oWE8hg6-0&ab_channel=EthereumFoundation
 [enter-dark-forest]: https://www.youtube.com/watch?time_continue=943&v=Wd0at2Pu6xY&feature=emb_logo&ab_channel=TheDefiant
