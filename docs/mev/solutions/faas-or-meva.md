@@ -115,13 +115,13 @@ kCompound is the second phase of the Hiding Game. KeeperDAO posts collateral to 
     - Wiki: [https://github.com/keeperdao/docs/wiki](https://github.com/keeperdao/docs/wiki){target=_blank}
     - kCompound: [https://medium.com/keeperdao/introducing-kcompound-a23511c847a0](https://medium.com/keeperdao/introducing-kcompound-a23511c847a0){target=_blank}
 
-## :pick: ArcherDAO
+## :pick: ArcherSwap
 
-ArcherDAO seeks to help miners capture more MEV. Miners outsource their search for MEV to ArcherDAO and those who provide MEV will receive a cut.
+ArcherSwap is a new DEX extension for Uniswap and Sushiswap that prevents frontrunning and offers traders zero slippage and zero cost cancellation swaps. It gives traders negotiation power with miners. Miners will only be paid if "acceptance criteria" are met, so any transaction that fails is not included on chain.
 
 !!! info "Links"
 
-    - [https://medium.com/archer-dao/introducing-archer-66f20d2cc425](https://medium.com/archer-dao/introducing-archer-66f20d2cc425){target=_blank}
+    - [https://archerdao.io/](https://archerdao.io/){target=_blank}
 
 ## :pick: BackBone Cabal
 
