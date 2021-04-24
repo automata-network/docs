@@ -117,7 +117,7 @@ kCompound is the second phase of the Hiding Game. KeeperDAO posts collateral to 
 
 ## :pick: ArcherSwap
 
-ArcherSwap is a new DEX extension for Uniswap and Sushiswap that prevents frontrunning and offers traders zero slippage and zero cost cancellation swaps. It gives traders negotiation power with miners. Miners will only be paid if "acceptance criteria" are met, so any transaction that fails is not included on chain.
+ArcherSwap is a new DEX extension for Uniswap and Sushiswap that prevents frontrunning and offers traders zero slippage and zero cost cancellation swaps. This enables users to set slippage tolerance to 0%. Miners will only be paid if "acceptance criteria" are met, so any transaction that fails is not included on chain. 
 
 !!! info "Links"
 
