@@ -92,6 +92,11 @@ Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/e
 
     1. Front-runners don't need these services to outpace regular users, who are slower by seconds. They need it to outpace one another, where improving speed 0.8->0.15 sec matters.
     2. When a transaction is privately sent to pools other frontrunners can't attempt to front-run it. This helps avoid fierce escalation of fees.
+    
+!!! info "Links"
+
+    - [https://docs.bloxroute.com/apis/frontrunning-protection](https://docs.bloxroute.com/apis/frontrunning-protection){target=_blank}
+    
 
 ## :pick: KeeperDAO
 
