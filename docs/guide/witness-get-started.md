@@ -50,7 +50,13 @@ Once ready, you can perform the vote by clicking on the appropriate option. Note
 
 The results of the proposal can be seen after it has been concluded and finalized.
 
-<img src="/assets/results.png" width="673" height="463" />
+For Private proposal - only the final winning option will be shown
+
+<img src="/assets/result_private.png" width="673" height="463" />
+
+For Medium proposal - the voting statics will also be shown for each option
+
+<img src="/assets/result_medium.png" width="673" height="463" />
 
 ## For Project Builders
 
