@@ -19,7 +19,10 @@ nav:
       - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
       - Others: ./mev/solutions/others.md
     - Miscellaneous: ./mev/misc.md
-  - Witness: ./guide/witness-get-started.md
+  - Witness: 
+    - Introduction: ./witness/introduction.md
+    - User Guide: ./witness/user-guide.md
+    - Geode API: ./witness/geode-api.md
 
 theme:
   name: material
