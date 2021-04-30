@@ -35,16 +35,17 @@ As a community member, to make an anonymous vote, choose the specific blockchain
     Before making the vote, please ensure the following:
 
     - Your MetaMask wallet is connected to the corresponding network to which you are going to vote. You can get necessary info about the blockchain we supports [here](#supported-chain-info) and follow [instructions](#adding-automata-network-testnet-to-your-networks) similarly to add it to MetaMask wallet
-    - Your account has the necessary ERC20/BEP20 token for the particular project in the block height as snapshot.
+    - Your account has the necessary ERC20/BEP20 token for the particular project **in the block height as snapshot**.
   
 <img src="/assets/choosenetwork.png" width="673" height="463" />
 <img src="/assets/voteproposal_2.png" width="673" height="463" />
+<img src="/assets/blocksnapshot.png" width="673" height="463" />
 
 !!! warning
 
     **If you do not have the necessary tokens for testnet, you can refer to the [Getting tokens](#getting-tokens) section for more information**
 
-Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter at the corresponding snapshotted block height.
+Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter at block height as snapshot regarding to each proposal.
 
 <img src="/assets/voteproposal_2.gif" width="673" height="463" />
 
