@@ -36,10 +36,11 @@ As a community member, to make an anonymous vote, choose the specific blockchain
 
     - Your MetaMask wallet is connected to the corresponding network to which you are going to vote. You can get necessary info about the blockchain we supports [here](#supported-chain-info) and follow [instructions](#adding-automata-network-testnet-to-your-networks) similarly to add it to MetaMask wallet
     - Your account has the necessary ERC20/BEP20 token for the particular project **in the block height as snapshot**.
-  
-<img src="/assets/choosenetwork.png" width="673" height="463" />
-<img src="/assets/voteproposal_2.png" width="673" height="463" />
-<img src="/assets/blocksnapshot.png" width="673" height="463" />
+
+![](../assets/choosenetwork.png){width="673" height="463"}
+![](../assets/voteproposal_2.png){width="673" height="463"}
+![](../assets/blocksnapshot.png){width="673" height="463"}
+
 
 !!! warning
 
@@ -47,17 +48,17 @@ As a community member, to make an anonymous vote, choose the specific blockchain
 
 Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter at block height as snapshot regarding to each proposal.
 
-<img src="/assets/voteproposal_2.gif" width="673" height="463" />
+![](../assets/voteproposal_2.png){width="673" height="463"}
 
 The results of the proposal can be seen after it has been concluded and finalized.
 
 For Private proposal - only the final winning option will be shown
 
-<img src="/assets/result_private.png" width="673" height="463" />
+![](../assets/result_private.png){width="673" height="463"}
 
 For Medium proposal - the voting statics will also be shown for each option
 
-<img src="/assets/result_medium.png" width="673" height="463" />
+![](../assets/result_medium.png){width="673" height="463"}
 
 ## For Project Builders
 
@@ -82,14 +83,14 @@ or simply:
 
 * **Network name >> Custom PRC**  
 
-<img src="/assets/addingautomata_m.gif" width="673" height="463"/>
+![](../assets/addingautomata_m.gif){width="673" height="463"}
 
 ### Connecting Your Metamask Wallet
 
 If you see a **Connect wallet** or the **Not connected** text in your MetaMask, this means you are **not connected**!
 
-<img src="/assets/check1_2.png" width="673" height="463"/>
-<img src="/assets/check2_2.png" width="673" height="463"/>
+![](../assets/check1_2.png){width="673" height="463"}
+![](../assets/check2_2.png){width="673" height="463"}
 
 You can follow the following steps to connect your wallet:  
 
@@ -98,7 +99,7 @@ You can follow the following steps to connect your wallet:
 - Select the account you wish to connect with MetaMask
 - Connect your account
 
-<img src="/assets/connecting_m_2.gif" width="673" height="463" />
+![](../assets/connecting_m_2.gif){width="673" height="463"}
 
 ### Creating a workspace
 
@@ -121,13 +122,13 @@ Once ready, you can create a workspace by:
 - Enter your token contract hash
 - Click on **Create**
 
-<img src="/assets/creatingworkspace_m_2.gif" width="673" height="463" />
+![](../assets/creatingworkspace_m_2.gif){width="673" height="463"}
 
 ### Creating a new proposal
 
 Before any voting can begin, a proposal has to be made first. To do so, head over to the workspace of a particular project you're interested in creating a proposal for.  If the workspace has not been created yet, refer to [Creating a Workspace](#creating-a-workspace) to see how you can create one.
 
-<img src="/assets/creatingproposal_2.png" width="673" height="463" />
+![](../assets/creatingproposal_2.png){width="673" height="463"}
 
 !!! tips
     Before creating the proposal for your token, please ensure the following:
@@ -146,7 +147,7 @@ Once ready, you can create a proposal by:
 - Select the start and end date
 - Click on **Publish**
 
-<img src="/assets/creatingproposal_m_2.gif" width="673" height="463" />
+![](../assets/creatingproposal_m_2.gif){width="673" height="463"}
 
 ## Chainhook
 
@@ -160,8 +161,9 @@ This feature enables calling of a particular on-chain method of a contract which
   - each argument is paired with the type and the value field
   - Currently only `uint256, uint256[], address, address[]` are supported as argument type.
   - Follow the example for inputt value by hovering above the value field.
-  
-<img src="/assets/addchainhook.gif" width="673" height="463" />
+
+
+![](../assets/addchainhook.gif){width="673" height="463"}
 
 ## Appendix
 
@@ -180,11 +182,11 @@ To get your tokens, you can now head over to our faucet at <https://faucet.ata.n
 
 Simply copy the address of your account in MetaMask by clicking on **'Copy to Clipboard'** and paste the address into the input field for your desired token before clicking on the **Submit** button.  
 
-<img src="/assets/gettingtoken1_m.gif" width="673" height="463"/>
+![](../assets/gettingtoken1_m.gif){width="673" height="463"}
 
 When receiving ERC-20 tokens, the relevant contract hash can be found in the adjacent blue badge, which you can copy by clicking on the **Copy** badge.  
 
-<img src="/assets/gettingtoken2_m.gif" width="673" height="463"/>
+![](../assets/gettingtoken2_m.gif){width="673" height="463"}
 
 #### Getting BEP20 tokens in Binance Smart Chain test network
 To get tokens in BSC test network, you can found the contract address using <https://testnet.bscscan.com/>, and use the faucet <https://testnet.venus.io/faucet> or <https://testnet.binance.org/faucet-smart> to get tokens.
