@@ -2,46 +2,51 @@
 
 <!-- ## Table of Contents
 
-- [Introduction](#introduction)
-- [Setting up MetaMask](#setting-up-metamask)
-- [Adding Automata Network to your networks](#adding-automata-network-to-your-networks)
-- [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
-- [Getting tokens](#getting-tokens)
-- [Creating a workspace](#creating-a-workspace)
-- [Creating a new proposal](#creating-a-new-proposal)
-- [Voting for a proposal](#voting-for-a-proposal) 
-- [Binance Smart Chain Info](#binance-smart-chain-info) -->
+- [Getting started with Automata Witness](#getting-started-with-automata-witness)
+  - [Introduction](#introduction)
+  - [For Users](#for-users)
+  - [For Project Builders](#for-project-builders)
+    - [Adding Automata Network testnet to your networks](#adding-automata-network-testnet-to-your-networks)
+    - [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
+    - [Creating a workspace](#creating-a-workspace)
+    - [Creating a new proposal](#creating-a-new-proposal)
+  - [Chainhook](#chainhook)
+  - [Appendix](#appendix)
+    - [Setting up MetaMask](#setting-up-metamask)
+    - [Getting tokens](#getting-tokens)
+      - [Getting ERC20 tokens in Ethereum kovan network](#getting-erc20-tokens-in-ethereum-kovan-network)
+      - [Getting BEP20 tokens in Binance Smart Chain test network](#getting-bep20-tokens-in-binance-smart-chain-test-network)
+    - [Supported Chain Info](#supported-chain-info)
+
+-->
 
 ## Introduction
 
-Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
+Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform across different blockchain where users don't need to worry about their privacy being compromised. In addition, the highly available service aims at a much lower transaction fee to generate new blocks.
 
 This page will walk you through [Witness](https://witness.ata.network/) and the functionalities it currently provides.
 
 ## For Users
 
-As a community member, to make an anonymous vote, head over to the proposal of a particular project you're interested in voting for. 
+As a community member, to make an anonymous vote, choose the specific blockchain network and head over to the proposal of a particular project you're interested in voting for. 
 
 !!! attention
 
     Before making the vote, please ensure the following:
 
-    - Your MetaMask wallet is connected to the **Ethereum Kovan Test Network** or **Binance Smart Chain Test Network**. You can get necessary info abount Binance Smart Chain [here](#binance-smart-chain-info) and follow [instructions](#adding-automata-network-to-your-networks) similarly to add it to MetaMask wallet
-    - Your account has the necessary ERC20/BEP20 token for the particular project
-
-<img src="/assets/voteproposal.png" width="673" height="463" />
-
-You will be able to see your token balance of the current connected account.
-
-<img src="/assets/checkp1.png" width="673" height="463" />
+    - Your MetaMask wallet is connected to the corresponding network to which you are going to vote. You can get necessary info about the blockchain we supports [here](#supported-chain-info) and follow [instructions](#adding-automata-network-testnet-to-your-networks) similarly to add it to MetaMask wallet
+    - Your account has the necessary ERC20/BEP20 token for the particular project in the block height as snapshot.
+  
+<img src="/assets/choosenetwork.png" width="673" height="463" />
+<img src="/assets/voteproposal_2.png" width="673" height="463" />
 
 !!! warning
 
-    **If you do not have the necessary tokens, you can refer to the [Getting tokens](#getting-tokens) section for more information**
+    **If you do not have the necessary tokens for testnet, you can refer to the [Getting tokens](#getting-tokens) section for more information**
 
-Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter.
+Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter at the corresponding snapshotted block height.
 
-<img src="/assets/voteproposal.gif" width="673" height="463" />
+<img src="/assets/voteproposal_2.gif" width="673" height="463" />
 
 The results of the proposal can be seen after it has been concluded and finalized.
 
@@ -76,8 +81,8 @@ or simply:
 
 If you see a **Connect wallet** or the **Not connected** text in your MetaMask, this means you are **not connected**!
 
-<img src="/assets/check1.png" width="673" height="463"/>
-<img src="/assets/check2.png" width="673" height="463"/>
+<img src="/assets/check1_2.png" width="673" height="463"/>
+<img src="/assets/check2_2.png" width="673" height="463"/>
 
 You can follow the following steps to connect your wallet:  
 
@@ -86,7 +91,7 @@ You can follow the following steps to connect your wallet:
 - Select the account you wish to connect with MetaMask
 - Connect your account
 
-<img src="/assets/connecting_m.gif" width="673" height="463" />
+<img src="/assets/connecting_m_2.gif" width="673" height="463" />
 
 ### Creating a workspace
 
@@ -103,18 +108,19 @@ You can create a workspace from the landing page of [Witness](https://witness.at
 Once ready, you can create a workspace by:
 
 - Clicking on **Create** at the top right corner
+- Choose the correct blockchain network for your workspace
 - Fill in your workspace name
 - Fill in your workspace spec
 - Enter your token contract hash
 - Click on **Create**
 
-<img src="/assets/creatingworkspace_m.gif" width="673" height="463" />
+<img src="/assets/creatingworkspace_m_2.gif" width="673" height="463" />
 
 ### Creating a new proposal
 
 Before any voting can begin, a proposal has to be made first. To do so, head over to the workspace of a particular project you're interested in creating a proposal for.  If the workspace has not been created yet, refer to [Creating a Workspace](#creating-a-workspace) to see how you can create one.
 
-<img src="/assets/creatingproposal.png" width="673" height="463" />
+<img src="/assets/creatingproposal_2.png" width="673" height="463" />
 
 !!! tips
     Before creating the proposal for your token, please ensure the following:
@@ -133,7 +139,22 @@ Once ready, you can create a proposal by:
 - Select the start and end date
 - Click on **Publish**
 
-<img src="/assets/creatingproposal_m.gif" width="673" height="463" />
+<img src="/assets/creatingproposal_m_2.gif" width="673" height="463" />
+
+## Chainhook
+
+This feature enables calling of a particular on-chain method of a contract which was registered at proposal creation based on the result of proposal. It is still a beta version, thus only enabled for testnet workspaces currently. Each voting options can be backed with a chainhook optionally, you can create a chainhook for your option by:
+
+- Clicking on **Add Chainhook** followed by the option field
+- Choose the smart contract language for your chainhook
+- Fill in the contract address to which your chainhook will take effect
+- Fill in the function name
+- Adding arguments for your callback function
+  - each argument is paired with the type and the value field
+  - Currently only `uint256, uint256[], address, address[]` are supported as argument type.
+  - Follow the example for inputt value by hovering above the value field.
+  
+<img src="/assets/addchainhook.gif" width="673" height="463" />
 
 ## Appendix
 
@@ -161,9 +182,18 @@ When receiving ERC-20 tokens, the relevant contract hash can be found in the adj
 #### Getting BEP20 tokens in Binance Smart Chain test network
 To get tokens in BSC test network, you can found the contract address using <https://testnet.bscscan.com/>, and use the faucet <https://testnet.venus.io/faucet> or <https://testnet.binance.org/faucet-smart> to get tokens.
 
-### Binance Smart Chain Info
+### Supported Chain Info
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |        BSC mainnet       |
+|   **New RPC URL**   | https://bsc-dataseed1.defibit.io/ |
+|    **Chain ID**     |            56            |
+
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
 |  **Network Name**   |        BSC testnet       |
 |   **New RPC URL**   | https://data-seed-prebsc-1-s1.binance.org:8545/ |
 |    **Chain ID**     |            97            |
+
+- Ethereum mainnet and Kovan testnet are not listed here since they are natively supported by Metamask
