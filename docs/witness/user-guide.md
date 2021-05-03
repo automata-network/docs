@@ -47,11 +47,11 @@ Once ready, you can perform the vote by clicking on the appropriate option. Note
 
 The results of the proposal can be seen after it has been concluded and finalized.
 
-For Private proposal - only the final winning option will be shown
+For Private Proposal: Only the final winning option will be shown
 
 ![](../assets/result_private.png){width="673" height="463"}
 
-For Medium proposal - the voting statistics will also be shown for each option
+For Medium Proposal: The voting statistics will also be shown for each option
 
 ![](../assets/result_medium.png){width="673" height="463"}
 
@@ -153,9 +153,9 @@ This feature enables calling of a particular on-chain method of a contract which
 - Fill in the contract address to which your chainhook will take effect
 - Fill in the function name
 - Adding arguments for your callback function
-  - each argument is paired with the type and the value field
-  - Currently only `uint256, uint256[], address, address[]` are supported as argument type.
-  - Follow the example for inputt value by hovering above the value field.
+  - Each argument is paired with the type and the value field
+  - Currently only `uint256, uint256[], address, address[]` are supported as argument type
+  - Follow the example for inputt value by hovering above the value field
 
 
 ![](../assets/addchainhook.gif){width="673" height="463"}
