@@ -51,7 +51,7 @@ For Private proposal - only the final winning option will be shown
 
 ![](../assets/result_private.png){width="673" height="463"}
 
-For Medium proposal - the voting statics will also be shown for each option
+For Medium proposal - the voting statistics will also be shown for each option
 
 ![](../assets/result_medium.png){width="673" height="463"}
 
