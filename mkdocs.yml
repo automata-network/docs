@@ -22,7 +22,7 @@ nav:
   - Witness: 
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
-    - Geode API: ./witness/geode-api.md
+    - Witness API: ./witness/api.md
 
 theme:
   name: material
@@ -56,6 +56,7 @@ theme:
   favicon: "assets/favicon.ico"
 
 markdown_extensions:
+  - pymdownx.superfences
   - admonition
   - tables
   - attr_list
@@ -94,5 +95,6 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
 
 copyright: Copyright &copy; 2021 Automata Network

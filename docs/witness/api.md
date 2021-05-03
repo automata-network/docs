@@ -1,10 +1,20 @@
-# Witness Geode API
+# Witness API
+
+[JSON-RPC](https://en.wikipedia.org/wiki/JSON-RPC) is a remote procedure call protocol encoded in JSON. You can use this API to send queries to our Geode instance for Witness.
+
+## Available Endpoints
+
+| Provider(s) | URL(s) | 
+|:--------:|:------:|
+| Witness Geode Mainnet | [https://witness-geode-mainnet.ata.network:3350](https://witness-geode-mainnet.ata.network:3350){target=_blank} |
 
 ## JSON-RPC Methods
 
-### *geode_witness_vote*
+### geode_witness_vote
 
-Submits a signed Vote message in EIP712 format.
+`geode_witness_vote`
+
+Submits a signed Vote message in EIP712 format. 
 
 Returns an integer representing the status of the operation.
 
@@ -23,9 +33,11 @@ Returns an integer representing the status of the operation.
 
 The function takes in a signed vote in EIP712 format. 
 
-#### Example Request
+#### Data Format
 
-```jsonrpc
+##### Request Format
+
+```json
 {
 	"id": 0,
 	"jsonrpc": "2.0",
@@ -36,9 +48,7 @@ The function takes in a signed vote in EIP712 format.
 }
 ```
 
-
-
-#### SignedEIP712Vote Format
+##### *SignedEIP712Vote* Format
 
 ```json
 {
@@ -47,22 +57,21 @@ The function takes in a signed vote in EIP712 format.
     "r": H256,
     "s": H256,
 }
-
+```
+``` javascript
 {
-    type: 'object',
+    type: "object",
     properties: {
-        msg: {type: 'object'},
-        v: {type: 'string'},
-        r: {type: 'string'},
-        s: {type: 'string'}
+        msg: {type: "object"},
+        v: {type: "string"},
+        r: {type: "string"},
+        s: {type: "string"}
     },
-    required: ['msg', 'v', 'r', 's']
+    required: ["msg", "v", "r", "s"]
 }
 ```
 
-
-
-#### EIP712Vote Format
+##### *EIP712Vote* Format
 
 ```json
 {
@@ -74,7 +83,8 @@ The function takes in a signed vote in EIP712 format.
     "primaryType": String,
     "message": Vote,
 }
-
+```
+```javascript
 {
     type: "object",
     properties: {
@@ -100,7 +110,7 @@ The function takes in a signed vote in EIP712 format.
                     maxItems: 4
                 },
             },
-            required: ['EIP712Domain', 'Vote']
+            required: ["EIP712Domain", "Vote"]
         },
         domain: {
             type: "object",
@@ -119,11 +129,9 @@ The function takes in a signed vote in EIP712 format.
 }
 ```
 
+##### *Vote* Format
 
-
-#### Vote Format
-
-```json
+```javascript
 {
     type: "object",
     properties: {
@@ -135,8 +143,6 @@ The function takes in a signed vote in EIP712 format.
     required: ["voter", "primaryType", "domain", "message"]
 }
 ```
-
-
 
 #### Sample JSON-RPC Request
 
@@ -208,8 +214,6 @@ The function takes in a signed vote in EIP712 format.
 }
 ```
 
-
-
 #### Sample Response
 
 ```json
@@ -220,3 +224,6 @@ The function takes in a signed vote in EIP712 format.
 }
 ```
 
+#### Metamask Support
+
+You can use Metamask for signing and sending the message by refering here: [Sign-Typed-Data-v4](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4).
