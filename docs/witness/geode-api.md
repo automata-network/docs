@@ -8,9 +8,8 @@ Submits a signed Vote message in EIP712 format.
 
 Returns an integer representing the status of the operation.
 
-```
 | Return Code | Description         |
-|:-----------:|---------------------|
+|:-----------:|:-------------------:|
 | 0           | Success             |
 | 1           | SignatureFailure    |
 | 2           | ProposalNotActive   |
@@ -21,7 +20,6 @@ Returns an integer representing the status of the operation.
 | 7           | WorkspaceDataError  |
 | 8           | ChainError          |
 | 9           | InsufficientBalance |
-```
 
 The function takes in a signed vote in EIP712 format. 
 
