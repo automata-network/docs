@@ -155,7 +155,7 @@ This feature enables calling of a particular on-chain method of a contract which
 - Adding arguments for your callback function
   - Each argument is paired with the type and the value field
   - Currently only `uint256, uint256[], address, address[]` are supported as argument type
-  - Follow the example for inputt value by hovering above the value field
+  - Follow the example for input value by hovering above the value field
 
 
 ![](../assets/addchainhook.gif){width="673" height="463"}
