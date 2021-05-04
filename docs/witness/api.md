@@ -12,9 +12,13 @@
 
 ### geode_witness_vote
 
-`geode_witness_vote`
-
 Submits a signed Vote message in EIP712 format. 
+
+#### Endpoint 
+
+`https://witness-geode-mainnet.ata.network:3350/v0/geode_witness_vote`
+
+#### Return Code
 
 Returns an integer representing the status of the operation.
 
