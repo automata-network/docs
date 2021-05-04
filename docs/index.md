@@ -8,13 +8,13 @@
 **Flashboys, Flashbots, Dark Forests and more..**
 
 [![](./assets/mev_wiki.png){style="zoom:60%"}](./mev/introduction.md)
-## [**Witness**](./guide/witness-get-started.md)
+## [**Witness**](./witness/introduction.md)
 
-[![](./assets/witness.png){style="zoom:60%"}](./guide/witness-get-started.md)
+[![](./assets/witness.png){style="zoom:60%"}](./witness/introduction.md)
 
 **Witness** is a privacy-first off-chain governance solution with on-chain execution.
 
-Please see the [guide](./guide/witness-get-started.md) to start.
+Please see the [guide](./witness/introduction.md) to start.
 
 <!-- 
 ## Links
