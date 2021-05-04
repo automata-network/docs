@@ -1,0 +1,1037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automata Network Documentation">
+      
+      
+      
+        <meta name="author" content="Automata Team">
+      
+      
+        <link rel="canonical" href="https://docs.ata.network/witness/user-guide/">
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>User Guide - Automata Network Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G8DBCFLGQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5G8DBCFLGQ');
+</script>
+
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-with-automata-witness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Automata Network Docs" class="md-header__button md-logo" aria-label="Automata Network Docs" data-md-component="logo">
+      
+  <img src="../../assets/favicon-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Automata Network Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange" type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/automata-network/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../mev/introduction/" class="md-tabs__link">
+        The MEV Wiki
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../introduction/" class="md-tabs__link md-tabs__link--active">
+        Witness
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Automata Network Docs" class="md-nav__button md-logo" aria-label="Automata Network Docs" data-md-component="logo">
+      
+  <img src="../../assets/favicon-192.png" alt="logo">
+
+    </a>
+    Automata Network Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/automata-network/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        The MEV Wiki
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="The MEV Wiki" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          The MEV Wiki
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/resource-list/" class="md-nav__link">
+        Resource List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/terms-and-concepts/" class="md-nav__link">
+        Terms and Concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/examples/" class="md-nav__link">
+        Attack Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/trick-the-bots/" class="md-nav__link">
+        Attempts to Trick the Bots
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" data-md-state="indeterminate" type="checkbox" id="__nav_2_6" checked>
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        Solutions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Solutions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Solutions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/solutions/approaches/" class="md-nav__link">
+        Different Approaches
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/solutions/faas-or-meva/" class="md-nav__link">
+        FaaS or MEVA
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/solutions/mev-minimization-prevention/" class="md-nav__link">
+        MEV Minimization / Prevention
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/solutions/others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mev/misc/" class="md-nav__link">
+        Miscellaneous
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Witness
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Witness" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Witness
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        User Guide
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-users" class="md-nav__link">
+    For Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-project-builders" class="md-nav__link">
+    For Project Builders
+  </a>
+  
+    <nav class="md-nav" aria-label="For Project Builders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-automata-network-testnet-to-your-networks" class="md-nav__link">
+    Adding Automata Network testnet to your networks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-your-metamask-wallet" class="md-nav__link">
+    Connecting Your Metamask Wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-workspace" class="md-nav__link">
+    Creating a workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-proposal" class="md-nav__link">
+    Creating a new proposal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chainhook" class="md-nav__link">
+    Chainhook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    Appendix
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-metamask" class="md-nav__link">
+    Setting up MetaMask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-tokens" class="md-nav__link">
+    Getting tokens
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting tokens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-erc20-tokens-in-ethereum-kovan-network" class="md-nav__link">
+    Getting ERC20 tokens in Ethereum kovan network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-bep20-tokens-in-binance-smart-chain-test-network" class="md-nav__link">
+    Getting BEP20 tokens in Binance Smart Chain test network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-chain-info" class="md-nav__link">
+    Supported Chain Info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/automata-network/docs/edit/master/docs/witness/user-guide.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="getting-started-with-automata-witness">Getting started with Automata Witness<a class="headerlink" href="#getting-started-with-automata-witness" title="Permanent link">&para;</a></h1>
+<!-- ## Table of Contents
+
+- [Getting started with Automata Witness](#getting-started-with-automata-witness)
+  - [For Users](#for-users)
+  - [For Project Builders](#for-project-builders)
+    - [Adding Automata Network testnet to your networks](#adding-automata-network-testnet-to-your-networks)
+    - [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
+    - [Creating a workspace](#creating-a-workspace)
+    - [Creating a new proposal](#creating-a-new-proposal)
+  - [Chainhook](#chainhook)
+  - [Appendix](#appendix)
+    - [Setting up MetaMask](#setting-up-metamask)
+    - [Getting tokens](#getting-tokens)
+      - [Getting ERC20 tokens in Ethereum kovan network](#getting-erc20-tokens-in-ethereum-kovan-network)
+      - [Getting BEP20 tokens in Binance Smart Chain test network](#getting-bep20-tokens-in-binance-smart-chain-test-network)
+    - [Supported Chain Info](#supported-chain-info)
+
+-->
+
+<h2 id="for-users">For Users<a class="headerlink" href="#for-users" title="Permanent link">&para;</a></h2>
+<p>As a community member, to make an anonymous vote, choose the specific blockchain network and head over to the proposal of a particular project you're interested in voting for. </p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Before making the vote, please ensure the following:</p>
+<ul>
+<li>Your MetaMask wallet is connected to the corresponding network to which you are going to vote. You can get necessary info about the blockchain we supports <a href="#supported-chain-info">here</a> and follow <a href="#adding-automata-network-testnet-to-your-networks">instructions</a> similarly to add it to MetaMask wallet</li>
+<li>Your account has the necessary ERC20/BEP20 token for the particular project <strong>in the block height as snapshot</strong>.</li>
+</ul>
+</div>
+<p><img alt="" height="463" src="../../assets/choosenetwork.png" width="673" />
+<img alt="" height="463" src="../../assets/voteproposal_2.png" width="673" />
+<img alt="" height="463" src="../../assets/blocksnapshot.png" width="673" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>If you do not have the necessary tokens for testnet, you can refer to the <a href="#getting-tokens">Getting tokens</a> section for more information</strong></p>
+</div>
+<p>Once ready, you can perform the vote by clicking on the appropriate option. Note that the current strategy employed is to calculate the token balance for each voter at block height as snapshot regarding to each proposal.</p>
+<p><img alt="" height="463" src="../../assets/voteproposal_2.png" width="673" /></p>
+<p>The results of the proposal can be seen after it has been concluded and finalized.</p>
+<p>For Private Proposal: Only the final winning option will be shown</p>
+<p><img alt="" height="463" src="../../assets/result_private.png" width="673" /></p>
+<p>For Medium Proposal: The voting statistics will also be shown for each option</p>
+<p><img alt="" height="463" src="../../assets/result_medium.png" width="673" /></p>
+<h2 id="for-project-builders">For Project Builders<a class="headerlink" href="#for-project-builders" title="Permanent link">&para;</a></h2>
+<p>Project builders can create a workspace for hosting proposals created by them or other community members. Currently the metadata is stored on the <a href="https://d.ata.network">testnet</a> of Automata Network, so to create workspaces or propsals, you will have to connect to the testnet.</p>
+<h3 id="adding-automata-network-testnet-to-your-networks">Adding Automata Network testnet to your networks<a class="headerlink" href="#adding-automata-network-testnet-to-your-networks" title="Permanent link">&para;</a></h3>
+<p>You can then add the Automata Network to your existing networks with the following details:  </p>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Network Name</strong></td>
+<td align="center">Automata Network</td>
+</tr>
+<tr>
+<td align="center"><strong>New RPC URL</strong></td>
+<td align="center">https://rpc.ata.network/</td>
+</tr>
+<tr>
+<td align="center"><strong>Chain ID</strong></td>
+<td align="center">86</td>
+</tr>
+<tr>
+<td align="center"><strong>Currency Symbol</strong></td>
+<td align="center">ATA</td>
+</tr>
+</tbody>
+</table>
+<p>The option to add networks can be found by clicking on:  </p>
+<ul>
+<li><strong>Profile Picture &gt;&gt; Settings &gt;&gt; Networks &gt;&gt; Add Network</strong>  </li>
+</ul>
+<p>or simply:</p>
+<ul>
+<li><strong>Network name &gt;&gt; Custom PRC</strong>  </li>
+</ul>
+<p><img alt="" height="463" src="../../assets/addingautomata_m.gif" width="673" /></p>
+<h3 id="connecting-your-metamask-wallet">Connecting Your Metamask Wallet<a class="headerlink" href="#connecting-your-metamask-wallet" title="Permanent link">&para;</a></h3>
+<p>If you see a <strong>Connect wallet</strong> or the <strong>Not connected</strong> text in your MetaMask, this means you are <strong>not connected</strong>!</p>
+<p><img alt="" height="463" src="../../assets/check1_2.png" width="673" />
+<img alt="" height="463" src="../../assets/check2_2.png" width="673" /></p>
+<p>You can follow the following steps to connect your wallet:  </p>
+<ul>
+<li>Click on the <strong>Connect wallet</strong> located at the top right corner</li>
+<li>Click on <strong>MetaMask</strong></li>
+<li>Select the account you wish to connect with MetaMask</li>
+<li>Connect your account</li>
+</ul>
+<p><img alt="" height="463" src="../../assets/connecting_m_2.gif" width="673" /></p>
+<h3 id="creating-a-workspace">Creating a workspace<a class="headerlink" href="#creating-a-workspace" title="Permanent link">&para;</a></h3>
+<p>You can create a workspace from the landing page of <a href="https://witness.ata.network/">Witness</a>.  </p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>Before creating a workspace for your token, please ensure the following:</p>
+<ul>
+<li><strong>Your MetaMask wallet is connected to the Automata Network</strong></li>
+<li><strong>Your account has the necessary ATA tokens</strong></li>
+</ul>
+<p>If you do not have the necessary tokens, you can refer to the <a href="#getting-tokens">Getting tokens</a> section for more information.</p>
+</div>
+<p>Once ready, you can create a workspace by:</p>
+<ul>
+<li>Clicking on <strong>Create</strong> at the top right corner</li>
+<li>Choose the correct blockchain network for your workspace</li>
+<li>Fill in your workspace name</li>
+<li>Fill in your workspace spec</li>
+<li>Enter your token contract hash</li>
+<li>Click on <strong>Create</strong></li>
+</ul>
+<p><img alt="" height="463" src="../../assets/creatingworkspace_m_2.gif" width="673" /></p>
+<h3 id="creating-a-new-proposal">Creating a new proposal<a class="headerlink" href="#creating-a-new-proposal" title="Permanent link">&para;</a></h3>
+<p>Before any voting can begin, a proposal has to be made first. To do so, head over to the workspace of a particular project you're interested in creating a proposal for.  If the workspace has not been created yet, refer to <a href="#creating-a-workspace">Creating a Workspace</a> to see how you can create one.</p>
+<p><img alt="" height="463" src="../../assets/creatingproposal_2.png" width="673" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>Before creating the proposal for your token, please ensure the following:</p>
+<ul>
+<li><strong>Your MetaMask wallet is connected to the Automata Network</strong></li>
+<li><strong>Your account has the necessary ATA tokens</strong></li>
+</ul>
+<p>If you do not have the necessary tokens, you can refer to the <a href="#getting-tokens">Getting tokens</a> section for more information.</p>
+</div>
+<p>Once ready, you can create a proposal by:</p>
+<ul>
+<li>Clicking on <strong>New Proposal</strong> at the top right corner</li>
+<li>Fill in your proposal title</li>
+<li>Fill in your proposal's content</li>
+<li>Edit / Remove / Add your voting options</li>
+<li>Select the start and end date</li>
+<li>Click on <strong>Publish</strong></li>
+</ul>
+<p><img alt="" height="463" src="../../assets/creatingproposal_m_2.gif" width="673" /></p>
+<h2 id="chainhook">Chainhook<a class="headerlink" href="#chainhook" title="Permanent link">&para;</a></h2>
+<p>This feature enables calling of a particular on-chain method of a contract which was registered at proposal creation based on the result of proposal. It is still a beta version, thus only enabled for testnet workspaces currently. Each voting options can be backed with a chainhook optionally, you can create a chainhook for your option by:</p>
+<ul>
+<li>Clicking on <strong>Add Chainhook</strong> followed by the option field</li>
+<li>Choose the smart contract language for your chainhook</li>
+<li>Fill in the contract address to which your chainhook will take effect</li>
+<li>Fill in the function name</li>
+<li>Adding arguments for your callback function</li>
+<li>Each argument is paired with the type and the value field</li>
+<li>Currently only <code>uint256, uint256[], address, address[]</code> are supported as argument type</li>
+<li>Follow the example for inputt value by hovering above the value field</li>
+</ul>
+<p><img alt="" height="463" src="../../assets/addchainhook.gif" width="673" /></p>
+<h2 id="appendix">Appendix<a class="headerlink" href="#appendix" title="Permanent link">&para;</a></h2>
+<h3 id="setting-up-metamask">Setting up MetaMask<a class="headerlink" href="#setting-up-metamask" title="Permanent link">&para;</a></h3>
+<p><a href="https://metamask.io/">MetaMask</a> is a cryptocurrency wallet used to interact with the Ethereum blockchain. As it is required when using Automata Network, you can install the extension via the official download page <a href="https://metamask.io/download.html">here</a>, or simply add the extension for your browser via the following links below:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">Chrome</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/">Firefox</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">Brave</a></li>
+<li><a href="https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm?hl=en-US">Edge</a></li>
+</ul>
+<h3 id="getting-tokens">Getting tokens<a class="headerlink" href="#getting-tokens" title="Permanent link">&para;</a></h3>
+<h4 id="getting-erc20-tokens-in-ethereum-kovan-network">Getting ERC20 tokens in Ethereum kovan network<a class="headerlink" href="#getting-erc20-tokens-in-ethereum-kovan-network" title="Permanent link">&para;</a></h4>
+<p>To get your tokens, you can now head over to our faucet at <a href="https://faucet.ata.network/">https://faucet.ata.network/</a>.</p>
+<p>Simply copy the address of your account in MetaMask by clicking on <strong>'Copy to Clipboard'</strong> and paste the address into the input field for your desired token before clicking on the <strong>Submit</strong> button.  </p>
+<p><img alt="" height="463" src="../../assets/gettingtoken1_m.gif" width="673" /></p>
+<p>When receiving ERC-20 tokens, the relevant contract hash can be found in the adjacent blue badge, which you can copy by clicking on the <strong>Copy</strong> badge.  </p>
+<p><img alt="" height="463" src="../../assets/gettingtoken2_m.gif" width="673" /></p>
+<h4 id="getting-bep20-tokens-in-binance-smart-chain-test-network">Getting BEP20 tokens in Binance Smart Chain test network<a class="headerlink" href="#getting-bep20-tokens-in-binance-smart-chain-test-network" title="Permanent link">&para;</a></h4>
+<p>To get tokens in BSC test network, you can found the contract address using <a href="https://testnet.bscscan.com/">https://testnet.bscscan.com/</a>, and use the faucet <a href="https://testnet.venus.io/faucet">https://testnet.venus.io/faucet</a> or <a href="https://testnet.binance.org/faucet-smart">https://testnet.binance.org/faucet-smart</a> to get tokens.</p>
+<h3 id="supported-chain-info">Supported Chain Info<a class="headerlink" href="#supported-chain-info" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Network Name</strong></td>
+<td align="center">BSC mainnet</td>
+</tr>
+<tr>
+<td align="center"><strong>New RPC URL</strong></td>
+<td align="center">https://bsc-dataseed1.defibit.io/</td>
+</tr>
+<tr>
+<td align="center"><strong>Chain ID</strong></td>
+<td align="center">56</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Network Name</strong></td>
+<td align="center">BSC testnet</td>
+</tr>
+<tr>
+<td align="center"><strong>New RPC URL</strong></td>
+<td align="center">https://data-seed-prebsc-1-s1.binance.org:8545/</td>
+</tr>
+<tr>
+<td align="center"><strong>Chain ID</strong></td>
+<td align="center">97</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Ethereum mainnet and Kovan testnet are not listed here since they are natively supported by Metamask</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../introduction/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Introduction
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Automata Network
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/automata-network" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/automatanetwork" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://medium.com/@automatanetwork" target="_blank" rel="noopener" title="medium.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm372.2 106.1-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://t.me/ata_network" target="_blank" rel="noopener" title="t.me" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://discord.com/invite/Us8cxTVRxG" target="_blank" rel="noopener" title="discord.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -11,6 +11,7 @@ window.MathJax = {
     }
   };
   
-  document$.subscribe(() => {
-    MathJax.typesetPromise()
-  })
+document$.subscribe(() => {
+  MathJax.typesetPromise()
+  hljs.highlightAll()
+})
