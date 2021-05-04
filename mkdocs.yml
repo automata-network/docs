@@ -22,7 +22,7 @@ nav:
   - Witness: 
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
-    - Witness API: ./witness/api.md
+    # - Witness API: ./witness/api.md
 
 theme:
   name: material
