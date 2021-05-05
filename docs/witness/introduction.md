@@ -1,8 +1,31 @@
 # Introduction
 
-Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform across different blockchain where users don't need to worry about their privacy being compromised. In addition, like other off-chain governance applications, users don't have to pay fees to participate the proposal voting. More importantly, throughout the voting process, user privacy is preserved, including:
+Automata [Witness](https://witness.ata.network) is a customizable voting service for decentralized applications. It aims to provide a fully decentralized voting platform across different blockchain where users don't need to worry about their privacy being compromised.
 
-* **Voter identity**: Encryption and signing is used to ensure that no one execpt the app running in Geode can know the voter's identity. Also, once the votes are processed, it's discarded and only aggregated voting result is presented to outside of Geode.
-* **Vote counts**: The number of votes from each individual voters are not revealed. Instead, only the total number of votes are calculated and presented to determine the wining option. 
+## Features
 
-The next page will walk you through [Witness](https://witness.ata.network/) and the functionalities it currently provides.
+* **Privacy**: You can choose different types of votes with different privacy levels e.g. Public (full disclosure of voter address and number of votes), Medium (only number of votes), and Private (only voting result is published — voter identities and number of votes are not).
+* **Off-chain**: Voting is conducted off-chain so there is no gas cost and a wider range of token holders can participate in governance without being deterred by high gas fees.
+* **Chainhook**: Trigger on-chain execution based on the voting results. Chainhook enables calling of the on-chain contract which was registered at proposal creation
+* **Modularity**: Each of these functions can be used as standalones, or together. If a project wants to use Witness as a signaling tool without on-chain execution, that is also possible.
+
+## Platforms
+
+Witness aims to support many platforms and the following platforms are supported:
+
+* Ethereum (Mainnet, Kovan Testnet)
+* Binance Smart Chain (Mainnet, Testnet)
+
+Next, we will add more [EVM-based chains][evm-chains] and [Substrate-based chains][substrate-chains] to the list.
+
+### Feature Support
+
+|          Platform           |   Private Voting   |     Chainhook      | Public Voting |
+|:---------------------------:|:------------------:|:------------------:|:-------------:|
+|      Ethereum Mainnet       | :white_check_mark: |   :construction:   |   :clock9:    |
+|   Ethereum Kovan Testnet    | :white_check_mark: | :white_check_mark: |   :clock9:    |
+| Binance Smart Chain Mainnet | :white_check_mark: |   :construction:   |   :clock9:    |
+| Binance Smart Chain Mainnet | :white_check_mark: | :white_check_mark: |   :clock9:    |
+
+[evm-chains]: https://chainlist.org/
+[substrate-chains]: https://polkaproject.com/#/projects?cateID=1&tagID=0

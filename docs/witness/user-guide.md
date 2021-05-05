@@ -1,8 +1,8 @@
-# Getting started with Automata Witness
+# Getting started
 
 <!-- ## Table of Contents
 
-- [Getting started with Automata Witness](#getting-started-with-automata-witness)
+- [Getting started](#getting-started)
   - [For Users](#for-users)
   - [For Project Builders](#for-project-builders)
     - [Adding Automata Network testnet to your networks](#adding-automata-network-testnet-to-your-networks)
@@ -18,8 +18,6 @@
     - [Supported Chain Info](#supported-chain-info)
 
 -->
-
-
 
 ## For Users
 
