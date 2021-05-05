@@ -516,9 +516,59 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Introduction
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforms" class="md-nav__link">
+    Platforms
+  </a>
+  
+    <nav class="md-nav" aria-label="Platforms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-support" class="md-nav__link">
+    Feature Support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -560,12 +610,58 @@
                 
                 
                 <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p>Automata Witness is an anonymous voting service for decentralized applications powered by Automata Geode. The Automata Witness aims to provide a fully decentralized voting platform across different blockchain where users don't need to worry about their privacy being compromised. In addition, like other off-chain governance applications, users don't have to pay fees to participate the proposal voting. More importantly, throughout the voting process, user privacy is preserved, including:</p>
+<p>Automata <a href="https://witness.ata.network">Witness</a> is a customizable voting service for decentralized applications. It aims to provide a fully decentralized voting platform across different blockchain where users don't need to worry about their privacy being compromised.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Voter identity</strong>: Encryption and signing is used to ensure that no one execpt the app running in Geode can know the voter's identity. Also, once the votes are processed, it's discarded and only aggregated voting result is presented to outside of Geode.</li>
-<li><strong>Vote counts</strong>: The number of votes from each individual voters are not revealed. Instead, only the total number of votes are calculated and presented to determine the wining option. </li>
+<li><strong>Privacy</strong>: You can choose different types of votes with different privacy levels e.g. Public (full disclosure of voter address and number of votes), Medium (only number of votes), and Private (only voting result is published — voter identities and number of votes are not).</li>
+<li><strong>Off-chain</strong>: Voting is conducted off-chain so there is no gas cost and a wider range of token holders can participate in governance without being deterred by high gas fees.</li>
+<li><strong>Chainhook</strong>: Trigger on-chain execution based on the voting results. Chainhook enables calling of the on-chain contract which was registered at proposal creation</li>
+<li><strong>Modularity</strong>: Each of these functions can be used as standalones, or together. If a project wants to use Witness as a signaling tool without on-chain execution, that is also possible.</li>
 </ul>
-<p>The next page will walk you through <a href="https://witness.ata.network/">Witness</a> and the functionalities it currently provides.</p>
+<h2 id="platforms">Platforms<a class="headerlink" href="#platforms" title="Permanent link">&para;</a></h2>
+<p>Witness aims to support many platforms and the following platforms are supported:</p>
+<ul>
+<li>Ethereum (Mainnet, Kovan Testnet)</li>
+<li>Binance Smart Chain (Mainnet, Testnet)</li>
+</ul>
+<p>Next, we will add more <a href="https://chainlist.org/">EVM-based chains</a> and <a href="https://polkaproject.com/#/projects?cateID=1&amp;tagID=0">Substrate-based chains</a> to the list.</p>
+<h3 id="feature-support">Feature Support<a class="headerlink" href="#feature-support" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Platform</th>
+<th align="center">Private Voting</th>
+<th align="center">Chainhook</th>
+<th align="center">Public Voting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Ethereum Mainnet</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="🚧" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a7.svg" title=":construction:" /></td>
+<td align="center"><img alt="🕘" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f558.svg" title=":clock9:" /></td>
+</tr>
+<tr>
+<td align="center">Ethereum Kovan Testnet</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="🕘" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f558.svg" title=":clock9:" /></td>
+</tr>
+<tr>
+<td align="center">Binance Smart Chain Mainnet</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="🚧" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6a7.svg" title=":construction:" /></td>
+<td align="center"><img alt="🕘" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f558.svg" title=":clock9:" /></td>
+</tr>
+<tr>
+<td align="center">Binance Smart Chain Mainnet</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="🕘" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f558.svg" title=":clock9:" /></td>
+</tr>
+</tbody>
+</table>
                 
               
               
