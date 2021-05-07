@@ -21,7 +21,7 @@
 
 ## For Users
 
-First, search for the project in the Search bar. Look for the proposal that you are interested in voting for.
+First, choose the blockchain network that you wish to connect to. Then search for the project in the Search bar. Look for the proposal that you are interested in voting for.
 
 !!! attention
 
