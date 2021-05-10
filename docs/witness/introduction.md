@@ -26,6 +26,8 @@ Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-base
 |   Ethereum Kovan Testnet    | :white_check_mark: | :white_check_mark: |   :clock9:    |
 | Binance Smart Chain Mainnet | :white_check_mark: |   :construction:   |   :clock9:    |
 | Binance Smart Chain Mainnet | :white_check_mark: | :white_check_mark: |   :clock9:    |
+| Plasm Network Dusty Testnet | :white_check_mark: |   :construction:   |   :clock9:    |
+| Clover Finance Testnet      | :white_check_mark: |   :construction:   |   :clock9:    |
 
 [evm-chains]: https://chainlist.org/
 [substrate-chains]: https://polkaproject.com/#/projects?cateID=1&tagID=0
