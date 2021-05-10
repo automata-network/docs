@@ -4,8 +4,8 @@
 
 - [Getting started](#getting-started)
   - [For Users](#for-users)
-  - [For Project Builders](#for-project-builders)
-    - [Adding Automata Network testnet to your networks](#adding-automata-network-testnet-to-your-networks)
+  - [For Project Owners](#for-project-owners)
+    - [Adding the Automata Network testnet to your network](#adding-the-automata-network-testnet-to-your-network)
     - [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
     - [Creating a workspace](#creating-a-workspace)
     - [Creating a new proposal](#creating-a-new-proposal)
@@ -13,8 +13,8 @@
   - [Appendix](#appendix)
     - [Setting up MetaMask](#setting-up-metamask)
     - [Getting tokens](#getting-tokens)
-      - [Getting ERC20 tokens in Ethereum kovan network](#getting-erc20-tokens-in-ethereum-kovan-network)
-      - [Getting BEP20 tokens in Binance Smart Chain test network](#getting-bep20-tokens-in-binance-smart-chain-test-network)
+      - [Getting ERC20 tokens (Ethereum Kovan Network)](#getting-erc20-tokens-ethereum-kovan-network)
+      - [Getting BEP20 tokens in the Binance Smart Chain test network](#getting-bep20-tokens-in-the-binance-smart-chain-test-network)
     - [Supported Chain Info](#supported-chain-info)
 
 -->
@@ -144,7 +144,7 @@ Once ready, you can create a proposal by:
 
 ## Chainhook
 
-This feature enables calling of the on-chain contract which was registered at proposal creation. Note this is still in beta so it's only enabled for testnet Worspaces currently. Each voting option can be followed with a chainhook or, you can create a chainhook by:
+This feature enables calling of the on-chain contract which was registered at proposal creation. Note this is still in beta so it's only enabled for [selected platform](../introduction/#feature-support) currently. Each voting option can be followed with a chainhook or, you can create a chainhook by:
 
 - Clicking on **Add Chainhook** followed by the option field
 - Choose the smart contract language for your Chainhook
@@ -197,5 +197,17 @@ To get tokens in the BSC test network, you can search for the contract address u
 |  **Network Name**   |        BSC testnet       |
 |   **New RPC URL**   | https://data-seed-prebsc-1-s1.binance.org:8545/ |
 |    **Chain ID**     |            97            |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |    Plasm Dusty testnet   |
+|   **New RPC URL**   | https://rpc.dusty.plasmnet.io:8545/ |
+|    **Chain ID**     |            80            |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |  Clover testnet  |
+|   **New RPC URL**   | https://rpc.clover.finance/ |
+|    **Chain ID**     |           1023           |
 
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
