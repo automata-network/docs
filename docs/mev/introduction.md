@@ -15,21 +15,25 @@ We cover a range of topics including the key concepts, research on this the topi
 
 Miner Extractable Value refers to the amount of profit that miners can extract from reordering and censoring transactions on the blockchain.
 
+## :bulb: Why does this happen?
+
+When one sends a transaction on the blockchain, there is a delay between the time when the transaction is broadcast to the network and when it is actually mined into a block. During this period, transactiosn sit in a pending transaction pool called the mempool where contents are visible to everyone. Arbitrageurs and miners can monitor the mempool and find opportunities to maximize their own profits e.g. by frontrunning transactions. If a front-runner is a miner, they can also reorder or even censor transactions.
+
 ## :bulb: Why does this matter[^1]?
 
 ### MEV can harm users
 
-MEV is an invisible tax that miners are collecting from users.
+MEV is an invisible tax that miners can collect from users.
 
 ### MEV can destabilize Ethereum
 
-If block rewards are small enough compared to MEV, it can be rational for miners to destabilize consensus.
+If block rewards are small enough compared to MEV, it can be rational for miners to destabilize consensus by reordering or censoring transactions.
 
 ## :bulb: Just how bad is the problem?
 
 The [Flashbots Dashboard :octicons-link-external-16:][flashbot-dashboard]{target=_blank} tracks Extracted MEV over time.
 
-It is estimated that >$350M has been extracted since 1st January 2020.
+It is estimated that >$500M has been extracted since 1st January 2020.
 
 [Dune Analytics :octicons-link-external-16:][dune-analytics]{target=_blank} tracks Gas consumption by back-running bots. 
 
