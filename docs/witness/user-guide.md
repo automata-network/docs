@@ -200,13 +200,13 @@ To get tokens in the BSC test network, you can search for the contract address u
 
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
-|  **Network Name**   | Plasm Network Dusty testnet |
+|  **Network Name**   |    Plasm Dusty testnet   |
 |   **New RPC URL**   | https://rpc.dusty.plasmnet.io:8545/ |
 |    **Chain ID**     |            80            |
 
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
-|  **Network Name**   |  Clover Finance testnet  |
+|  **Network Name**   |  Clover testnet  |
 |   **New RPC URL**   | https://rpc.clover.finance/ |
 |    **Chain ID**     |           1023           |
 
