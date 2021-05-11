@@ -9,7 +9,7 @@ There is an ongoing discussion and you can follow this here
 
 [https://hackmd.io/@flashbots/ryuH4gn7d](https://hackmd.io/@flashbots/ryuH4gn7d){target=_blank}
 
-From Paradigm's piece "On Staking Pools and Staking Derivatives" - fewer restrictions around MEV Extraction: Institutional staking pools (e.g. exchanges) may have social and reputational constraints that prevent them from extracting certain forms of MEV. This allows smaller staking firms and decentralized pools without these constraints to provide higher returns for their stakers. This could turn the aforementioned decentralization premium for using a decentralized staking pool into a decentralization discount.
+From Paradigm's piece "On Staking Pools and Staking Derivatives" - Staking pools and their staking derivatives are subject to similar market realities as MEV extraction, in the sense that their existence is inevitable. Institutional staking pools (e.g. exchanges) may have social and reputational constraints that prevent them from extracting certain forms of MEV. This allows smaller staking firms and decentralized pools without these constraints to provide higher returns for their stakers. This could turn the decentralization premium for using a decentralized staking pool into a decentralization discount.
 
 [https://research.paradigm.xyz/staking](https://research.paradigm.xyz/staking){target=_blank}
 
