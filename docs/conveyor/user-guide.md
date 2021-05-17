@@ -10,8 +10,10 @@ At first, you need to get some DAI and USDC tokens, the following steps show how
 ## Deposit
 In order to use conveyor, you need deposit your DAI and USDC to get the Wrapped token, such as gDAI or gUSDC
 ![](../assets/gtoken_gdai.jpg){width="673" height="463"}
+
 1. Click `Deposit` and enter deposit amount
 ![](../assets/gtoken_gdai_deposit.jpg){width="673" height="463"}
+
 2. Click `Deposit` again and use metamask to sign the transaction 
 ![](../assets/gtoken_gdai_sign.jpg){width="673" height="463"}
 
@@ -19,6 +21,7 @@ In order to use conveyor, you need deposit your DAI and USDC to get the Wrapped 
 You can withdraw your deposit at any time
 1. Click `Withdraw` and enter amount
 ![](../assets/gtoken_gdai_withdraw.jpg){width="673" height="463"}
+
 2. Click `Withdraw` again and use metamask to sign the transaction
 ![](../assets/gtoken_gdai_withdraw_sign.jpg){width="673" height="463"}
 
