@@ -16,16 +16,16 @@ In order to use conveyor, you need to deposit your DAI and USDC to get the Wrapp
 
 ![](../assets/gtoken_gdai.jpg){width="673" height="463"}
 
-1. Enter the deposit amount and click `Approve`(If you have already approved, please skip this step), then you need to confirm in the pop-up window of Metamask.
+Enter the deposit amount and click `Approve`(If you have already approved, please skip this step), then you need to confirm in the pop-up window of Metamask.
 
 ![](../assets/gtoken_gdai_approve.jpg){width="673" height="463"}
 
-2. Click the `Deposit` and confirm in Metamask
+Click the `Deposit` and confirm in Metamask
 ![](../assets/gtoken_gdai_deposit.jpg){width="673" height="463"}
 
 ## Withdraw
 You can withdraw your deposit at any time
-1. Click `Withdraw`, enter the amount in pop-up window and click `Withdraw` again, also need to confirm in Metamask
+Click `Withdraw`, enter the amount in pop-up window and click `Withdraw` again, also need to confirm in Metamask
 
 ![](../assets/gtoken_gdai_withdraw.jpg){width="673" height="463"}
 
