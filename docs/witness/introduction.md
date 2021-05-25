@@ -20,14 +20,16 @@ Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-base
 
 ### Feature Support
 
-|          Platform           |   Private Voting   |     Chainhook      | Public Voting |
-|:---------------------------:|:------------------:|:------------------:|:-------------:|
-|      Ethereum Mainnet       | :white_check_mark: |   :construction:   |   :clock9:    |
-|   Ethereum Kovan Testnet    | :white_check_mark: | :white_check_mark: |   :clock9:    |
-| Binance Smart Chain Mainnet | :white_check_mark: |   :construction:   |   :clock9:    |
-| Binance Smart Chain Mainnet | :white_check_mark: | :white_check_mark: |   :clock9:    |
-| Plasm Network Dusty Testnet | :white_check_mark: |   :construction:   |   :clock9:    |
-| Clover Finance Testnet      | :white_check_mark: |   :construction:   |   :clock9:    |
+|          Platform           |   Private Voting   |     Chainhook      |    Public Voting   |
+|:---------------------------:|:------------------:|:------------------:|:------------------:|
+|      Ethereum Mainnet       | :white_check_mark: |   :construction:   | :white_check_mark: |
+|   Ethereum Kovan Testnet    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Binance Smart Chain Mainnet | :white_check_mark: |   :construction:   | :white_check_mark: |
+| Binance Smart Chain Mainnet | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Plasm Network Dusty Testnet | :white_check_mark: |   :construction:   | :white_check_mark: |
+| Clover Finance Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
+| Darwinia Pangolin Testnet   | :white_check_mark: |   :construction:   | :white_check_mark: |
+| Moonbase Alpha Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
 
 [evm-chains]: https://chainlist.org/
 [substrate-chains]: https://polkaproject.com/#/projects?cateID=1&tagID=0

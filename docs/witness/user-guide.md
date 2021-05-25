@@ -53,6 +53,10 @@ For Medium Proposals: The number of votes for each option will be shown.
 
 ![](../assets/result_medium.png){width="673" height="463"}
 
+For Public Proposals: The voter information will be transparent to the public.
+
+![](../assets/result_public.png){width="673" height="463}
+
 ## For Project Owners
 
 Project owners can create a workspace for hosting proposals. Project teams or community members can then proceed to create proposals. Currently the metadata is stored on the [testnet](https://d.ata.network) of Automata Network. Connect to the testnet to create workspaces or propsals.
@@ -144,7 +148,7 @@ Once ready, you can create a proposal by:
 
 ## Chainhook
 
-This feature enables calling of the on-chain contract which was registered at proposal creation. Note this is still in beta so it's only enabled for several [selected platform](../introduction/#feature-support) currently. Each voting option can be followed with a chainhook or, you can create a chainhook by:
+This feature enables calling of the on-chain contract which was registered at proposal creation. Note this is still in beta so it's only enabled for [selected platform](../introduction/#feature-support) currently. Each voting option can be followed with a chainhook or, you can create a chainhook by:
 
 - Clicking on **Add Chainhook** followed by the option field
 - Choose the smart contract language for your Chainhook
@@ -200,14 +204,26 @@ To get tokens in the BSC test network, you can search for the contract address u
 
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
-|  **Network Name**   | Plasm Network Dusty testnet |
+|  **Network Name**   |    Plasm Dusty testnet   |
 |   **New RPC URL**   | https://rpc.dusty.plasmnet.io:8545/ |
 |    **Chain ID**     |            80            |
 
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
-|  **Network Name**   |  Clover Finance testnet  |
+|  **Network Name**   |      Clover testnet      |
 |   **New RPC URL**   | https://rpc.clover.finance/ |
 |    **Chain ID**     |           1023           |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   | Dawinia Pangolin testnet |
+|   **New RPC URL**   | https://pangolin-rpc.darwinia.network/ |
+|    **Chain ID**     |            43            |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |  Moonbase Alpha testnet  |
+|   **New RPC URL**   | https://rpc.testnet.moonbeam.network/ |
+|    **Chain ID**     |           1287           |
 
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
