@@ -89,6 +89,16 @@ To get the best combination, their current approach is a hybrid of the two. In n
     - <https://blog.vega.xyz/new-paper-fairness-and-front-running-an-invitation-for-feedback-cbb39a1a3eb>{target=_blank}
     - Wendy, the Good Little Fairness Widget: <https://vega.xyz/papers/fairness.pdf>{target=_blank}
     - Video: <https://www.youtube.com/watch?v=KjfLj5fhkGQ&t=18s&ab_channel=VegaProtocol>{target=_blank}
+    
+## :shield: CowSwap 
+
+A collaboration between BalancerLabs and Gnosis, CowSwap is a DEX that leverages batch auctions to provide MEV protection, plus integrate with liquidity sources across DEXs to offer traders the best prices. When two traders each hold an asset the other wants, an order can be settled directly between them without an external market maker or liquidity provider. Any excess is settled in the same transaction with the best available AMM. The transaction is sent by professional “solvers” which set tight slippage bounds. Solvers compete with each other to achieve best prices for the user.
+
+!!! info "Links"
+
+    - <https://cowswap.exchange/#/swap>{target=_blank}
+    - <https://blog.gnosis.pm/introducing-gnosis-protocol-v2-and-balancer-gnosis-protocol-f693b2938ae4>{target=_blank}
+
 
 ## :shield: Veedo by StarkWare
 
