@@ -49,7 +49,7 @@ Users can use MetaMask directly on BackRunMe to trade on Uniswap or Sushiswap.
 !!! info "Links"
 
     - [https://backrunme.com/#/swap](https://backrunme.com/#/swap){target=_blank}
-    - [https://medium.com/bloxroute/there-is-light-in-the-dark-forest-2d7b77f4ca2d){target=_blank}
+    - [https://medium.com/bloxroute/there-is-light-in-the-dark-forest-2d7b77f4ca2d](https://medium.com/bloxroute/there-is-light-in-the-dark-forest-2d7b77f4ca2d){target=_blank}
     
 ## :pick: Flashbots
 
@@ -124,7 +124,7 @@ One is for searchers to submit Flashbots-compatible bundles.  The other is the A
 
     - [https://swap.archerdao.io/#/swap](https://swap.archerdao.io/#/swap){target=_blank}
     
-    ## :pick: Optimism
+## :pick: Optimism
 
 Optimism are the original proposers of MEVA.
 
