@@ -13,36 +13,44 @@ In a FaaS or MEVA system, MEV is extracted in a variety of ways such as miners a
 
      In this article, I’m going to go deep into my personal arguments for why extracting MEV in cryptocurrencies isn’t like theft, why it is a critical metric for network security in any distributed system secured by economic incentives (yes, including centralized ones), and what we should do about MEV in the next 3-5 years as a community. 
 
-## :pick: Optimism
 
-Optimism are the original proposers of MEVA.
+    
+## :pick: Private Transactions
 
-MEV Auction (MEVA) is created in which the winner of the auction has the right to reorder submitted transactions and insert their own, as long as they do not delay any specific transaction by more than N blocks.
+Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes (pay more for faster transactions).
 
-![](/assets/mev_auction.png){: style="zoom:100%"}
+Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work){target=_blank}, [Taichi Network](https://taichi.network/){target=_blank} and [BloXroute](https://bloxroute.com/products/){target=_blank}.
 
-### Implementing the Auction
+[![](/assets/private_mempools.png){target=_blank}](https://taichi.network/){target=_blank}
 
-The auction is able to extract MEV from miners by separating two functions 1) Transaction inclusion; and 2) transaction ordering. In order to implement MEVA roles are defined. **Block producers** determine transaction inclusion, and **Sequencers** determine transaction ordering.
+[*<p align=center>Private Transactions offered by Taichi Network</p>*](https://taichi.network/){target=_blank}
 
-### Block producers - Transaction Inclusion
+[bloXroute Labs](https://bloxroute.com/){target=_blank} has a wide range of offerings and their core competency is low global latency for DeFi (8% of blocks mined within 1 sec).
 
-Block proposers are most analogous to traditional blockchain miners. Instead of proposing blocks with an ordering, they simply propose a set of transactions to eventually be included before N blocks.
+!!! note
 
-### Sequencers - Transaction Ordering
+    For the other side of the coin, here is bloXroute Labs' take on why private mempools are not necessarily bad[^1]:
 
-Sequencers are elected by a smart contract managed auction run by the block producers called the MEVA contract. This auction assigns the right to sequence the last N transactions. If, within a timeout the sequencer has not submitted an ordering which is included by block proposers, a new sequencer is elected.
-
-### Implementation on Layer 2
-
-It is possible to enshrine this MEVA contract directly on layer 1 (L1) blockchain consensus protocols. However, it is also possible to non-invasively add this mechanism in layer 2 (L2) and use it to manage Optimistic Rollup transactio ordering. In L2, L1 miners are repurposed and utilized as block proposers. MEVA contract is implemented and designated a single sequencer at a time.
-
+    1. Front-runners don't need these services to outpace regular users, who are slower by seconds. They need it to outpace one another, where improving speed 0.8->0.15 sec matters.
+    2. When a transaction is privately sent to pools other frontrunners can't attempt to front-run it. This helps avoid fierce escalation of fees.
+    
 !!! info "Links"
 
-    - [https://optimism.io/](https://optimism.io/){target=_blank}
-    - [https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788](https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788){target=_blank}
-    - [https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96](https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96){target=_blank}
+    - [https://docs.bloxroute.com/apis/frontrunning-protection](https://docs.bloxroute.com/apis/frontrunning-protection){target=_blank}
+    
+## :pick: BackRunMe by bloXroute
 
+BackRunMe is a service that allows users to submit private transactions (e.g. protection against frontrunning and sandwich attacks) while allowing searchers to backrun the transaction via MEV IF it produces an arbitrage profit. If it doesn't generate an arbitrage profit it is processed as a regular private transaction. BackRunMe, gives a portion of this additional profit back to the user. 
+
+The profit sharing ratio is as follows: 50% to miners, 25% to users, 20% to searchers and 5% to bloXroute.
+
+Users can use MetaMask directly on BackRunMe to trade on Uniswap or Sushiswap. 
+    
+!!! info "Links"
+
+    - [https://backrunme.com/#/swap](https://backrunme.com/#/swap){target=_blank}
+    - [https://medium.com/bloxroute/there-is-light-in-the-dark-forest-2d7b77f4ca2d){target=_blank}
+    
 ## :pick: Flashbots
 
 Flashbots is a research and development organization formed to mitigate the negative externalities and existential risks posed by MEV. They aim to Democratize MEV Extraction through MEV-Geth, which enables a sealed-bid block space auction mechanism for communicating transaction order preference.
@@ -74,29 +82,15 @@ Since these transactions are sent through a parallel private relay, it reduces t
     - [https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02){target=_blank}
     - [https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251){target=_blank}
 
-## :pick: Private Mempools
+## :pick: mistX by alchemist
 
-Today, some miners are already auctioning off mempool access for higher rates. Typically, transactions are broadcast to the mempool where they remain pending until miners pick them and add to the block. Private transactions however, are only visible to the pool and are not broadcast to other nodes (pay more for faster transactions).
+mistX is a DEX that enables end users to send transactions through Flashbots bundles. All transactions are gasless. However, instead of paying gas to the miners mistX users pay miners a bribe/tip in ETH. The tip is either included in the trade or comes from the user's wallet.
 
-Examples include [1inch Exchange's Stealth Transactions](https://help.1inch.io/en/articles/4695716-what-are-stealth-transactions-and-how-they-work){target=_blank}, [Taichi Network](https://taichi.network/){target=_blank} and [BloXroute](https://bloxroute.com/products/){target=_blank}.
+The exchange utilises Flashbots and as such transactions processed via mistX do not publish user transaction information to a public mempool, but instead bundle transactions together. This hides the information from front-runners and thus prevents transactions from being manipulated, front-run, or sandwiched.
 
-[![](/assets/private_mempools.png){target=_blank}](https://taichi.network/){target=_blank}
-
-[*<p align=center>Private Transactions offered by Taichi Network</p>*](https://taichi.network/){target=_blank}
-
-[bloXroute Labs](https://bloxroute.com/){target=_blank} has a wide range of offerings and their core competency is low global latency for DeFi (8% of blocks mined within 1 sec).
-
-!!! note
-
-    For the other side of the coin, here is bloXroute Labs' take on why private mempools are not necessarily bad[^1]:
-
-    1. Front-runners don't need these services to outpace regular users, who are slower by seconds. They need it to outpace one another, where improving speed 0.8->0.15 sec matters.
-    2. When a transaction is privately sent to pools other frontrunners can't attempt to front-run it. This helps avoid fierce escalation of fees.
-    
 !!! info "Links"
 
-    - [https://docs.bloxroute.com/apis/frontrunning-protection](https://docs.bloxroute.com/apis/frontrunning-protection){target=_blank}
-    
+    - [https://app.mistx.io/#/exchange](https://app.mistx.io/#/exchange){target=_blank}
 
 ## :pick: KeeperDAO
 
@@ -122,11 +116,55 @@ kCompound is the second phase of the Hiding Game. KeeperDAO posts collateral to 
 
 ## :pick: ArcherSwap
 
-ArcherSwap is a new DEX extension for Uniswap and Sushiswap that prevents frontrunning and offers traders zero slippage and zero cost cancellation swaps. This enables users to set slippage tolerance to 0%. Miners will only be paid if "acceptance criteria" are met, so any transaction that fails is not included on chain. 
+Archerswap is a new DEX extension for Uniswap and Sushiswap that prevents frontrunning and offers traders zero slippage and zero cost cancellation swaps. This enables users to set slippage tolerance to 0%. Miners will only be paid if "acceptance criteria" are met, so any transaction that fails is not included on chain. 
+
+One is for searchers to submit Flashbots-compatible bundles.  The other is the Archer Relay Network (powers Archerswap) where users can submit private transactions and be protected from malicious MEV. 
 
 !!! info "Links"
 
-    - [https://archerdao.io/](https://archerdao.io/){target=_blank}
+    - [https://swap.archerdao.io/#/swap](https://swap.archerdao.io/#/swap){target=_blank}
+    
+    ## :pick: Optimism
+
+Optimism are the original proposers of MEVA.
+
+MEV Auction (MEVA) is created in which the winner of the auction has the right to reorder submitted transactions and insert their own, as long as they do not delay any specific transaction by more than N blocks.
+
+![](/assets/mev_auction.png){: style="zoom:100%"}
+
+### Implementing the Auction
+
+The auction is able to extract MEV from miners by separating two functions 1) Transaction inclusion; and 2) transaction ordering. In order to implement MEVA roles are defined. **Block producers** determine transaction inclusion, and **Sequencers** determine transaction ordering.
+
+### Block producers - Transaction Inclusion
+
+Block proposers are most analogous to traditional blockchain miners. Instead of proposing blocks with an ordering, they simply propose a set of transactions to eventually be included before N blocks.
+
+### Sequencers - Transaction Ordering
+
+Sequencers are elected by a smart contract managed auction run by the block producers called the MEVA contract. This auction assigns the right to sequence the last N transactions. If, within a timeout the sequencer has not submitted an ordering which is included by block proposers, a new sequencer is elected.
+
+### Implementation on Layer 2
+
+It is possible to enshrine this MEVA contract directly on layer 1 (L1) blockchain consensus protocols. However, it is also possible to non-invasively add this mechanism in layer 2 (L2) and use it to manage Optimistic Rollup transactio ordering. In L2, L1 miners are repurposed and utilized as block proposers. MEVA contract is implemented and designated a single sequencer at a time.
+
+!!! info "Links"
+
+    - [https://optimism.io/](https://optimism.io/){target=_blank}
+    - [https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788](https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788){target=_blank}
+    - [https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96](https://docs.google.com/presentation/d/1RaF1byflrLF3yUjd-5vXDZB1ZIRofVeK3JYVD6NPr30/edit#slide=id.gc9bdacc472_0_96){target=_blank}
+    
+    
+## :pick: MiningDAO
+
+MiningDAO is building a decentralized and transparent protocol for block formation that aims to pass 100% of MEV to miners. Anyone with an Ethereum address can propose the next block to be mined (via a block sealhash), and attach a bounty for successfully mining it. The mining pools would then mine on the highest-bounty proposal. 
+
+One is for searchers to submit Flashbots-compatible bundles.  The other is the Archer Relay Network (powers Archerswap) where users can submit private transactions and be protected from malicious MEV. 
+
+!!! info "Links"
+
+    - [https://miningdao.io](https://miningdao.io){target=_blank}
+    - [https://medium.com/mining-dao/introducing-miningdao-1e469626f7ad](https://medium.com/mining-dao/introducing-miningdao-1e469626f7ad){target=_blank}
 
 ## :pick: BackBone Cabal
 
