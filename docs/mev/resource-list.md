@@ -9,6 +9,7 @@
 | [**Ethereum is a Dark Forest** :octicons-link-external-16:][dark-forest]{target=_blank}                                                                                                   | Article        |
 | [**Escaping the Dark Forest** :octicons-link-external-16:][escape-dark-forest]{target=_blank}                                                                                             | Article        |
 | [**Ethereum Blockspace: Who Gets What and Why** :octicons-link-external-16:][eth-blockspace]{target=_blank}                                                                               | Article        |
+| [**The fastest draw on the Blockchain: Ethereum Backrunning** :octicons-link-external-16:][fastest-draw]{target=_blank}                                                                | Article        |
 | [**Security of Interoperability** :octicons-link-external-16:][security-interoperability]{target=_blank}                                                                               | Presentation        |
 | [**Gas Wars: Understanding Ethereum's Mempool & Miner Extractable Value** :octicons-link-external-16:][gaswars]{target=_blank}                                                             | Podcast        |
 | [**Smart Contract Security - Incentives Beyond the Launch by Phil Daian (Devcon4)** :octicons-link-external-16:][smart-contract-sec]{target=_blank}                                       | Video          |
@@ -26,6 +27,7 @@
 [dark-forest]: https://medium.com/@danrobinson/ethereum-is-a-dark-forest-ecc5f0505dff
 [escape-dark-forest]: https://samczsun.com/escaping-the-dark-forest/
 [eth-blockspace]: https://www.aniccaresearch.tech/blog/ethereum-blockspace-who-gets-what-and-why
+[fastest-draw]: https://amanusk.medium.com/the-fastest-draw-on-the-blockchain-bzrx-example-6bd19fabdbe1
 [security-interoperability]: https://docs.google.com/presentation/d/1oZcp2a1fQUdJSVAOrkXSZKr9f4h_Ll66ZUPtrd1e8cc/edit#slide=id.gcddc79164f_1_3
 [gaswars]: https://open.spotify.com/episode/3JNtMt7oouY5aXMmg7jh8w?si=z84j02J6Q2mIOnDrCJUQHQ
 
