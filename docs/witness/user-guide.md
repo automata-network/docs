@@ -53,6 +53,10 @@ For Medium Proposals: The number of votes for each option will be shown.
 
 ![](../assets/result_medium.png){width="673" height="463"}
 
+For Public Proposals: The voter information will be transparent to the public.
+
+![](../assets/result_public.png){width="673" height="463}
+
 ## For Project Owners
 
 Project owners can create a workspace for hosting proposals. Project teams or community members can then proceed to create proposals. Currently the metadata is stored on the [testnet](https://d.ata.network) of Automata Network. Connect to the testnet to create workspaces or propsals.
@@ -206,8 +210,20 @@ To get tokens in the BSC test network, you can search for the contract address u
 
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
-|  **Network Name**   |  Clover testnet  |
+|  **Network Name**   |      Clover testnet      |
 |   **New RPC URL**   | https://rpc.clover.finance/ |
 |    **Chain ID**     |           1023           |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   | Dawinia Pangolin testnet |
+|   **New RPC URL**   | https://pangolin-rpc.darwinia.network/ |
+|    **Chain ID**     |            43            |
+
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |  Moonbase Alpha testnet  |
+|   **New RPC URL**   | https://rpc.testnet.moonbeam.network/ |
+|    **Chain ID**     |           1287           |
 
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
