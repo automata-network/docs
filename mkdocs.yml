@@ -23,6 +23,8 @@ nav:
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
     # - Witness API: ./witness/api.md
+  - Claim ATA Tokens:
+    - User Guide: ./claim/claim-guide.md
 
 theme:
   name: material
