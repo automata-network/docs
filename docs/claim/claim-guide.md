@@ -35,7 +35,7 @@ To withdraw tokens, click on the *Withdraw* button. The transcation fee can be f
 
 ![withdraw](../assets/claim/withdraw.png)
 
-Once the transaction is complete, do one of the following methods to verify that the tokens have been transferred to your account.
+Once the transaction is complete, use one of the following methods to verify that the tokens have been transferred to your account.
 
 1. Etherscan
     
