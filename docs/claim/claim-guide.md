@@ -49,6 +49,4 @@ Once the transaction is complete, use one of the following methods to verify tha
 
     - Check out this official [guide](https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-view-see-your-tokens-custom-tokens-in-Metamask) to learn how to add tokens in Metamask.
 
-    - ERC-20 Token Address: `0xA2120b9e674d3fC3875f415A7DF52e382F141225`
-
-    - BEP-20 Token Address: `0xA2120b9e674d3fC3875f415A7DF52e382F141225`
+    - Token Address: `0xA2120b9e674d3fC3875f415A7DF52e382F141225`
