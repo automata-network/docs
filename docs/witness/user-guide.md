@@ -16,7 +16,7 @@
       - [Getting ERC20 tokens (Ethereum Kovan Network)](#getting-erc20-tokens-ethereum-kovan-network)
       - [Getting BEP20 tokens in the Binance Smart Chain test network](#getting-bep20-tokens-in-the-binance-smart-chain-test-network)
     - [Supported Chain Info](#supported-chain-info)
-    - [Apply to get supported by Witness](#apply-to-get-supported-by-witness)
+    - [Get supported by Witness](#get-supported-by-witness)
 
 -->
 
@@ -229,7 +229,7 @@ To get tokens in the BSC test network, you can search for the contract address u
 
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
 
-### Apply to get supported by Witness
+### Get supported by Witness
 
 We are open to onboard any EVM networks as our first batch of supported networks by Witness. The following details are required for us to complete the onboarding. The integration only involves small changes in Witness on our side.
 
