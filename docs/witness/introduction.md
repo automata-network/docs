@@ -30,6 +30,7 @@ Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-base
 | Clover Finance Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Darwinia Pangolin Testnet   | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Moonbase Alpha Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
+|          Polygon            | :white_check_mark: |   :construction:   | :white_check_mark: |
 
 [evm-chains]: https://chainlist.org/
 [substrate-chains]: https://polkaproject.com/#/projects?cateID=1&tagID=0
