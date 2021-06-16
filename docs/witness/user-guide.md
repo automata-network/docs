@@ -227,6 +227,12 @@ To get tokens in the BSC test network, you can search for the contract address u
 |   **New RPC URL**   | https://rpc.testnet.moonbeam.network/ |
 |    **Chain ID**     |           1287           |
 
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |         Polygon          |
+|   **New RPC URL**   | https://rpc-mainnet.matic.network |
+|    **Chain ID**     |           137            |
+
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
 
 ### Get supported by Witness

@@ -15,6 +15,11 @@ Witness currently supports the following with more to be added in future:
 
 * Ethereum (Mainnet, Kovan Testnet)
 * Binance Smart Chain (Mainnet, Testnet)
+* Plasm Network (Dusty Testnet)
+* Clover Finance (Testnet)
+* Darwinia (Pangolin Testnet)
+* Moonbase (Alpha Testnet)
+* Polygon (Matic Mainnet)
 
 Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-based chains][substrate-chains] to the list.
 
@@ -30,6 +35,7 @@ Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-base
 | Clover Finance Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Darwinia Pangolin Testnet   | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Moonbase Alpha Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
+|          Polygon            | :white_check_mark: |   :construction:   | :white_check_mark: |
 
 [evm-chains]: https://chainlist.org/
 [substrate-chains]: https://polkaproject.com/#/projects?cateID=1&tagID=0
