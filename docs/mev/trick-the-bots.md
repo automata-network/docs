@@ -34,7 +34,7 @@ The first defense was that simulation was done with an ERC20 transfer function t
 
 Again: Sandwich bots make miner payment conditional on profit. That was broken by making the ERC20 token pay the miner. Thus even with the Sandwich bot sell failing, the miner would still get paid!
 
-Here's what actually happened: Sandwich bot gets baited and buys 100 ETH of the poisonous token Poisonous token owner's bait triggers custom transfer function, which pays 0.1 ETH to the miner Sandwich bot's sell doesn't work because of the poisonous token. As the sandwich bot submitted these three transactions in a bundle all three were included: the successful buy, the bait, and the failed sell. The poisonous ERC20's payment via the custom transfer was what incentivized a miner to include it!
+Here's what actually happened: Sandwich bot gets baited and buys 100 ETH of the poisonous token. Poisonous token owner's bait triggers custom transfer function, which pays 0.1 ETH to the miner Sandwich bot's sell doesn't work because of the poisonous token. As the sandwich bot submitted these three transactions in a bundle all three were included: the successful buy, the bait, and the failed sell. The poisonous ERC20's payment via the custom transfer was what incentivized a miner to include it!
 
 It is estimated that the first person to do this made about 100 ETH. You can see the poisoned ERC20 Uniswap transactions [here :octicons-link-external-16:](https://etherscan.io/token/0xe253a1f7d5818022661bfbd2cbe043b642b4eff9?a=0x01f8d5a4862d51d2cf0cf52ac900a4d60adaeee6){target=_blank}.
 
