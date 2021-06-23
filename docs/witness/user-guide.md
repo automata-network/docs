@@ -232,4 +232,10 @@ To get tokens in the BSC test network, you can search for the contract address u
 |   **New RPC URL**   | https://rpc-mainnet.matic.network |
 |    **Chain ID**     |           137            |
 
+|        Field        |          Value           |
+|:-------------------:|:------------------------:|
+|  **Network Name**   |        Avalanche         |
+|   **New RPC URL**   | https://api.avax.network/ext/bc/C/rpc |
+|    **Chain ID**     |          43114           |
+
 - Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
