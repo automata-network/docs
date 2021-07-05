@@ -23,6 +23,9 @@ nav:
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
     # - Witness API: ./witness/api.md
+  - Conveyor:
+    - Introduction: ./conveyor/introduction.md
+    - User Guide: ./conveyor/user-guide.md
 
 theme:
   name: material

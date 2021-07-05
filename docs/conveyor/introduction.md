@@ -1,0 +1,2 @@
+# Introduction
+Automata Conveyor is an anti-front-running service that allows users to trade ERC20 tokens in a deterministic order via Geode-enabled trusted relayers. To use this service, users would wrap their ERC20 tokens into gTokens to enjoy the benefit of gasless trading.
