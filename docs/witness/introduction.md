@@ -31,7 +31,7 @@ Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-base
 |      Ethereum Mainnet       | :white_check_mark: |   :construction:   | :white_check_mark: |
 |   Ethereum Kovan Testnet    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Binance Smart Chain Mainnet | :white_check_mark: |   :construction:   | :white_check_mark: |
-| Binance Smart Chain Mainnet | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Binance Smart Chain Testnet | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Plasm Network Dusty Testnet | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Clover Finance Testnet      | :white_check_mark: |   :construction:   | :white_check_mark: |
 | Darwinia Pangolin Testnet   | :white_check_mark: |   :construction:   | :white_check_mark: |
