@@ -59,9 +59,9 @@
    
    *If you have problems it would look like this.* 
    
-   *![img](https://lh4.googleusercontent.com/CVF09H-SRmDggR37LbKAiWJkFuuBbsQcn3ccUiPpNOZO3zKFs2EMOGYdesIgsJgr8dF8OYDf_J60QWvTQWYZmQVBsW-EubM5ijWhABIwT0LzWrdoRS3774RX7i1AWQfQYNG8h8An=s0)
+   ![img](https://lh4.googleusercontent.com/CVF09H-SRmDggR37LbKAiWJkFuuBbsQcn3ccUiPpNOZO3zKFs2EMOGYdesIgsJgr8dF8OYDf_J60QWvTQWYZmQVBsW-EubM5ijWhABIwT0LzWrdoRS3774RX7i1AWQfQYNG8h8An=s0)
    
-   *Now that you have set up everything, complete our google form with your name, email, Discord username, Telegram handle and your ContextFree Network wallet address and we will airdrop you some $CTX tokens for you to take part in the upcoming Canary Games.
+   Now that you have set up everything, complete our google form with your name, email, Discord username, Telegram handle and your ContextFree Network wallet address and we will airdrop you some $CTX tokens for you to take part in the upcoming Canary Games.
 
 8. Registration is opened now at [https://forms.gle/VnjEjj8x8sNxvW4Q9] .
 
