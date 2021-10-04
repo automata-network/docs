@@ -34,9 +34,11 @@
    *Click on Settings.*
    
    ![img](https://lh6.googleusercontent.com/WYw9fBVCaqQ_FyZ4Oa6etI24YFFcNt-trUJQj5y7cPYtnUh8w48D1a5tkf00mkPC2JQusdSX3gy_OaQRFceT_4Q3pFCHBlsOZYXuuHSJX0OyxdZBcABexhahdzi2IIFvYm--HwwN=s0)
+   
    Then click on Metadata.
    
    ![img](https://lh5.googleusercontent.com/d-DVJ8wnEn55ak2BKS6mwv7fDgjLVIbJZFVJNhQkhVlP8WTkqD6oNp6JbFoGKhXYbQsQ4rPpgwn3yNOiqRtybdznFuy6kZH9TWqJT_4xSHr98U20xBOq5ALbNCLjg1C1PdnzGMxI=s0)
+   
    Then click on upload metadata.
    
    ![img](https://lh3.googleusercontent.com/I6p6zxZh2_-pyr9fD6wEjKy_TlO_AnBjC8cROMWn6TF0RrUAjaA7WZ8BVV_AzzN442YuKPrj2RD-6Tl8Zm7HMUBg0eAp9vtRcOW7ViD_pPgxD9G2IJYugpmh09OBmCz5xAKH9Fvj=s0)
@@ -49,11 +51,17 @@
 
    ![img](https://lh3.googleusercontent.com/wt48PW1NI3fg-ITzV5YDt8KfpVozZhr_cCbHLS35aIS6PJR99NN8jr4HaJWp3fMPzMLcNvtrmCjmzNkr9d6hdMM3x5neXJScA7-9Z0xfzhJ7ZOBH8ceAkEYmU6MMfss8LiAI1jvq=s0)
 
-   After you have done this to make sure everything is completed click on Accounts again and if there is no exclamation mark next to your account then everything should be set up.*It should look like this.* 
+   After you have done this to make sure everything is completed click on Accounts again and if there is no exclamation mark next to your account then everything    should be set up.
    
-   ![img](https://lh6.googleusercontent.com/OVNvzJe5j4pV99vAZ3gvxJXMf5crW_H8jyhZM6EHY_WUP8HDlq4kvsVpgKZPB9jE7KQ52byfAxaPWNDuPrOT2WAlInV-7FO_-yfVTpqhb-2k4V1O4EWmcdVCZpefrelYs70pRDKh=s0)However, if there is an exclamation mark, then ensure that you have followed all the steps above. If you believe you have done all the steps properly, try the whole process once more and if you are still having problems then get in touch with us.*If you have problems it would look like this.* 
+   *It should look like this.* 
    
-   *![img](https://lh4.googleusercontent.com/CVF09H-SRmDggR37LbKAiWJkFuuBbsQcn3ccUiPpNOZO3zKFs2EMOGYdesIgsJgr8dF8OYDf_J60QWvTQWYZmQVBsW-EubM5ijWhABIwT0LzWrdoRS3774RX7i1AWQfQYNG8h8An=s0)*Now that you have set up everything, complete our google form with your name, email, Discord username, Telegram handle and your ContextFree Network wallet address and we will airdrop you some $CTX tokens for you to take part in the upcoming Canary Games.
+   ![img](https://lh6.googleusercontent.com/OVNvzJe5j4pV99vAZ3gvxJXMf5crW_H8jyhZM6EHY_WUP8HDlq4kvsVpgKZPB9jE7KQ52byfAxaPWNDuPrOT2WAlInV-7FO_-yfVTpqhb-2k4V1O4EWmcdVCZpefrelYs70pRDKh=s0)However, if there is an exclamation mark, then ensure that you have followed all the steps above. If you believe you have done all the steps properly, try the whole process once more and if you are still having problems then get in touch with us.
+   
+   *If you have problems it would look like this.* 
+   
+   *![img](https://lh4.googleusercontent.com/CVF09H-SRmDggR37LbKAiWJkFuuBbsQcn3ccUiPpNOZO3zKFs2EMOGYdesIgsJgr8dF8OYDf_J60QWvTQWYZmQVBsW-EubM5ijWhABIwT0LzWrdoRS3774RX7i1AWQfQYNG8h8An=s0)
+   
+   *Now that you have set up everything, complete our google form with your name, email, Discord username, Telegram handle and your ContextFree Network wallet address and we will airdrop you some $CTX tokens for you to take part in the upcoming Canary Games.
 
 8. Registration is opened now at [https://forms.gle/VnjEjj8x8sNxvW4Q9] .
 
