@@ -16,6 +16,11 @@
 
 Please see the [guide](./witness/introduction.md) to start.
 
+[![](./assets/canary.png){style="zoom:60%"}](./canarynet/canarywalletguide.md)
+**ContextFree** is a the canary network of Automata Network.
+
+Please see the [wallet guide](./canarynet/canarywalletguide.md) here!
+
 <!-- 
 ## Links
 
