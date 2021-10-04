@@ -7,7 +7,8 @@
 
 2. Hover over the Accounts taskbar and click on Accounts.
    
-   *Picture showing what is needed to be clicked.*![img](https://lh5.googleusercontent.com/rBK0MBvG20Vny58OR1mlHL-tathc6jKwWk4XAmkF1Bpxu3FDKOKWFZP452AJtwDx5bONQdaYc5Lx54w_risIeVYTNCGMTCJ1860WgbclfHXuoIxAzIqWKGe1Y4qRDdXv6PGxSOrW=s0)
+   *Picture showing what is needed to be clicked.*
+   ![img](https://lh5.googleusercontent.com/rBK0MBvG20Vny58OR1mlHL-tathc6jKwWk4XAmkF1Bpxu3FDKOKWFZP452AJtwDx5bONQdaYc5Lx54w_risIeVYTNCGMTCJ1860WgbclfHXuoIxAzIqWKGe1Y4qRDdXv6PGxSOrW=s0)
    *You should then reach this page.* ![img](https://lh3.googleusercontent.com/g9SA3wF7-ajb5ufLf6S77asPEyT41gIsv3zGh_bIVHDDeYBVHatDadYrrIjpQCJst7IMN9dxr_ICkPMe5FI9yUnJVKODtPTl0S3sN_nZ57DmQ5txo9fQ0ufTcYasJGgnGiw3tdlm=s0)
 
 3. Then you must click on the link called [polkadot-js extension](https://chrome.google.com/webstore/detail/polkadot{js}-extension/mopnmbcafieddcagagdcbnhejhlodfdd) on the page. 
