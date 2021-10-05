@@ -51,11 +51,13 @@
 7. After you have done this, click on the polkadot{.js} plugin again. After this click on the three dots next to your account, click on the drop down box which currently says ‘Allow Use On Any Chain’ and change it to ‘ContextFree Network.’
 
    ![](../assets/canaryimg/img12.png)
+   
    After you have done this to make sure everything is completed, refresh the page, then click on Accounts again. If there is no exclamation mark next to your account then everything should be set up correctly.
    
    *It should look like this.* 
    
    ![](../assets/canaryimg/img13.png)
+   
    However, if there is an exclamation mark, then ensure that you have followed all the steps above. If you believe you have done all the steps properly, try the whole process once more and if you are still having problems then get in touch with us.
    
    *If you have problems it would look like this.* 
