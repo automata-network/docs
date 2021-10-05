@@ -3,8 +3,8 @@
 ## This is a guide on how to get onto the Automata Canary Net for Chrome users(recommended).
 
 1. Go to website url - ‘Dashboard.ata.network‘
-   *You should reach a website which looks like the picture below.* ![img](https://lh4.googleusercontent.com/AfyfULXVPqAnCPDTxqql1RIly8zR4y36EBpFhRtpyuby8rhnNlBMuGoZn3OtoHV4TQLDaUY1U-mkZ0tr4jeoPZH7hkfOHhbe3UNB-h1_6Fsl4638eg2-9PfZrGw5dlarcCqjD4pH=s0)
-
+   *You should reach a website which looks like the picture below.*
+   ![](../assets/canaryimg/img1.png)
 2. Hover over the Accounts taskbar and click on Accounts.
    
    *Picture showing what is needed to be clicked.*
