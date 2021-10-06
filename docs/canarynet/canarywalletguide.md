@@ -30,7 +30,7 @@ This will direct you to an extension which needs to be downloaded. You should th
 ![](../assets/canaryimg/img8.png)  
 Then click on Metadata.  
 ![](../assets/canaryimg/img9.png)  
-Then click on upload metadata.  
+Then click on update metadata.  
 ![](../assets/canaryimg/img10.png)  
 This will give you another prompt from polkadot{.js} asking to add the metadata to your extension instance. Click ‘yes, do this metadata update’  
 ![](../assets/canaryimg/img11.png)  
