@@ -16,6 +16,13 @@
 
 Please see the [guide](./witness/introduction.md) to start.
 
+## [**ContextFree**](./canarynet/getstarted/introduction.md)
+[![](./assets/canary.png){style="zoom:60%"}](./canarynet/getstarted/introduction.md)
+
+**ContextFree** is the canary network of Automata Network.
+
+Please see the [wallet guide](./canarynet/userguide/setupwallet.md) here!
+
 <!-- 
 ## Links
 
