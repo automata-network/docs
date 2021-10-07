@@ -24,8 +24,10 @@ nav:
     - User Guide: ./witness/user-guide.md
     # - Witness API: ./witness/api.md
   - ContextFree Network:
-    - Introduction: ./canarynet/introduction.md
-    - Wallet Guide: ./canarynet/canarywalletguide.md
+    - Get Started:
+      - Introduction: ./canarynet/getstarted/introduction.md
+    - User Guide:
+      - Set up Wallet: ./canarynet/userguide/setupwallet.md
 
 theme:
   name: material
