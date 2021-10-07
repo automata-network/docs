@@ -23,6 +23,9 @@ nav:
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
     # - Witness API: ./witness/api.md
+  - ContextFree Network:
+    - Introduction: ./canarynet/introduction.md
+    - Wallet Guide: ./canarynet/canarywalletguide.md
 
 theme:
   name: material
