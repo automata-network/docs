@@ -18,9 +18,8 @@ You may want to run a validator, which means if you are elected into the validat
     -p 9933:9933 \
     -p 9944:9944 \
     -d \
-    atactr/automata:d0965c83 \
-    --bootnodes /dns/fstarchiveboot.westus2.cloudapp.azure.com/tcp/30333/ws/p2p/12D3KooWSCufgHzV4fCwRijfH2k3abrpAJxTKxEvN1FDuRXA2U9x \
-    --chain=finitestate \
+    atactr/automata:v0.1.0-rc1 \
+    --chain=contextfree \
     --port=30333 \
     --base-path /data \
     --validator \
@@ -70,7 +69,7 @@ You may want to run a validator, which means if you are elected into the validat
 
 ### Get Token
 - Your Stash account and Controller account need to be funded with some native token
-  - If you already had some native token on other account, you can follow the [steps](../userguide/gettoken.md) to transfer to the stash and controller accounts you have created.
+  - If you already had some native token on other account, you can simply transfer to the stash and controller accounts you have created, using the dashboard by opening the `Transfer` page under the `Accounts` tab.
   - If you don't have any native token, visit [Get Token from Faucet](../userguide/gettoken.md) to get some native token.
   - Alternatively, if you have some [ContextFree ERC20 token](https://ropsten.etherscan.io/token/0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7), you can follow the [Token Bridge user guide](../userguide/tokenbridge.md) to convert it into native token.
 
