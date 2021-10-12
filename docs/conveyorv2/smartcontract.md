@@ -1,21 +1,22 @@
-## XATA Overview
+## ConveyorV2 Overview
 
 ### Summary
 
-XATA is a DEX powered using ConveyorV2. In other words, tokens that are traded in the ConveyorV2 liquidity pools enjoy the MEV protection and transaction ordering enforcement capabilities.  
+ConveyorV2 is Automata's new and improved Conveyor with improved usability. 
+Tokens that are traded in the ConveyorV2 liquidity pools enjoy the MEV protection and transaction ordering enforcement capabilities without the need to wrap existing ERC20 tokens into gTokens.
 
-To use XATA, users must sign an EIP712 message to authorize Geode to submit a transaction on the user's behalf. Users would still enjoy the benefit of gasless trading, meaning they are not required to hold native tokens like MATIC or BNB to pay for gas. 
+Similar with ConveyorV1 (formerly known as GTokens), users must sign an EIP712 message to authorize Geode to submit a transaction on the user's behalf. Users would still enjoy the benefit of gasless trading, meaning they are not required to hold native tokens like MATIC or BNB to pay for gas. 
 However, users are subjected to pay a service fee with an acceptable form of ERC20 tokens, such as DAI, USDC or ATA tokens.
 
-## Codebase
+### Codebase
 
-The XATA smart contracts are a fork of UniswapV2. To learn more about the DEX protocol, read the UniswapV2 [docs](https://docs.uniswap.org/protocol/V2/introduction).
+The ConveyorV2 smart contracts are a fork of UniswapV2. To learn more about the DEX protocol, read the UniswapV2 [docs](https://docs.uniswap.org/protocol/V2/introduction).
 
 There are certain modifications applied to the contracts. Check out the next section for details.
 
 ---
 
-## Comparison between the UniswapV2 Protocol and XATA
+## Comparison between the UniswapV2 Protocol and ConveyorV2
 
 This section highlights the modification that has been applied to the DEX protocol contracts.
 
@@ -39,7 +40,7 @@ This section highlights the modification that has been applied to the DEX protoc
 
 The gas forwarder contract enables meta-transaction executions, which allows gas relayers to be compensated for the gas payment with ERC20 tokens. The gas forwarder contract has the ability to calculate a better estimation of the actual gas usage, including transactions that are being reverted. This way, the relayers are only compensated for the equivalent amount of ERC20 token in gas usage.
 
-![erc20-forwarder.png](/assets/xata/forwarder_flow.png)
+![erc20-forwarder.png](/assets/conveyorv2/forwarder_flow.png)
 
 ### **`constructor()`**
 
@@ -69,7 +70,7 @@ Updates the ERC20 transfer gas limit, the `transferFee` value, defaults at 65000
 |---|---|---|
 | _newTransfeFee | `uint256` | ERC20 transfer limit value |
 
-## **`setRelayer()`**
+### **`setRelayer()`**
 
 ```solidity
 function setRelayer(address _relayer, bool _trusted) public onlyOwner
@@ -139,7 +140,7 @@ This function executes the encoded function data, as defined in `MetaTransaction
 | feeOffset | `uint256` | An additional amount of token to be taken into consideration when verifying the user's balance |
 | sig | `SIGNATURE_TYPR` | The user's EIP712 signature |
 
-## **`MetaStatus`**
+### **`MetaStatus`**
 
 ```solidity
 event MetaStatus(address sender, bool success, string error)

@@ -28,9 +28,8 @@ nav:
       - Introduction: ./canarynet/getstarted/introduction.md
     - User Guide:
       - Set up Wallet: ./canarynet/userguide/setupwallet.md
-  - XATA:
-    - XATA Design: ./xata/smartcontract.md
-    - XATA Contract Addresses: ./xata/xata_info.md
+  - ConveyorV2:
+    - ConveyorV2 Design: ./conveyorv2/smartcontract.md
 
 
 theme:
