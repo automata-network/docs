@@ -1,6 +1,8 @@
 # Run ContextFree Node
 ## Introduction
-According to description in [Type of Nodes](./node-type.md), you can run a Full Node or an Archive Node on ContextFree Network.
+According to description in [Type of Nodes](./node-type.md), you can run Full Node, Archive Node or Validator Node on ContextFree Network.<br>
+In this section, we briefly introduce how to run `Full Node` or `Archive Node`<br>
+For running `Validator Node`, please refer to the [next section](./run-validator.md).
 
 ## Preparation
 ### Dependencies

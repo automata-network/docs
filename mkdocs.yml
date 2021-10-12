@@ -28,6 +28,11 @@ nav:
       - Introduction: ./canarynet/getstarted/introduction.md
     - User Guide:
       - Set up Wallet: ./canarynet/userguide/setupwallet.md
+      - Get Test Token: ./canarynet/userguide/get-test-token.md
+      - Use Token Bridge: ./canarynet/userguide/token-bridge.md
+    - Node:
+      - Run a Full Node: ./canarynet/node/run-node.md
+      - Join as Validator: ./canarynet/node/run-validator.md
 
 theme:
   name: material
