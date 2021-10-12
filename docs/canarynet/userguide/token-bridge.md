@@ -1,4 +1,4 @@
-# Token Bridge Tutorial
+# Automata ContextFree Token Bridge Tutorial
 ## Introduction
 A cross-chain bridge is a connection that allows the transfer of tokens from one chain to another. Both chains can have different protocols and rules, but the bridge provides a compatible way to interoperate securely on both sides. 
 The Automata team has set up a cross-chain token bridge for ContextFree between EVM (**Ropsten testnet**) and Substrate-based chains(**ContextFree canary networ**k) by adopting one of the currently available solutions [**ChainBridge**](https://github.com/ChainSafe/ChainBridge) built by [**ChainSafe**](https://chainsafe.io/).
@@ -35,7 +35,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 - Make sure the following fields are correct:
   - Home network: `Ethereum Ropsten`.
   - Destination Network: `Automata ContextFree`.
-- Get some CTX ERC20 token if the balance is 0, please refer [here](./gettesttoken.md/#get-contextFree-erc20-token-on-ropsten-testnet).
+- Get some CTX ERC20 token if the balance is 0, please refer [here](./get-test-token.md/#get-contextFree-erc20-token-on-ropsten-testnet).
 - Make sure you have enough `ETH` on Ropsten Testnet to pay for the BridgeFee and transaction Gas Fee. If not, you can use [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) to get some airdrop.
 - Enter the amount of CTX you want to transfer.
 - For the Destination Address, make sure that:
@@ -78,7 +78,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 - Make sure the following fields are correct:
   - Select account: The address of your native token sender.
   - Destination Network: `Ethereum Ropsten`.
-- Get some native CTX test token if the balance is 0, please refer [here](./gettesttoken.md).
+- Get some native CTX test token if the balance is 0, please refer [here](./get-test-token.md).
 - Make sure you have enough balance to pay for the Bridge Fee and the total amount to transfer.
 - Fill in the `Destination Address`, which will be an Ethereum address on Ropsten Test Network starting with `0x`.
 - Press `Start transfer`, you will be required to input the password to sign the transaction.

@@ -1,40 +1,49 @@
+# Run A Validator
 ## Introduction
-You may want to run a validator, which means if you are elected into the validator set, you will be able to earn rewards. To run a validator, you need to run a full node and stake some tokens, we will show you how to do it step by step.
+You may want to run a validator, which means if you are elected into the validator set, you will be able to earn rewards. To run a validator, you need to run a validator node and stake some tokens, we will show you how to do it step by step.
 
 ## Steps
 ### Install Dependencies
 - Install Docker
   - Please go to [this link](https://docs.docker.com/get-docker/) to download the docker engine for your Operating System accordingly.
 
+### Create a local directory to store the chain data
+- You may need `sudo` permission to run the following commands.
+  - Firstly create a folder to store the synchronized on-chain data
+    ```
+    mkdir /chain
+    ```
+  - Change the ownership and permission of your local storage directory to current user
+    ```
+    sudo chown -R $(id -u):$(id -g) /chain
+    ```
+
 ### Launch the Validator Node
-- Firstly create a folder to store the synchronized on-chain data
-    ```
-    mkdir chain-base
-    ```
-- Launch the node under the same folder
-    ```
-    docker run -it \
-    -v chain-base:/data \
-    -p 9933:9933 \
-    -p 9944:9944 \
-    -d \
-    atactr/automata:v0.1.0-rc1 \
-    --chain=contextfree \
-    --port=30333 \
-    --base-path /data \
-    --validator \
-    --no-telemetry \
-    --rpc-cors=all \
-    --rpc-methods=Unsafe \
-    --unsafe-rpc-external
-    ```
+- Run the following command to launch a Full Node, you may need sudo permission:
+  ```
+  docker run -it \
+  -v "/chain:/data" \
+  -u $(id -u ${USER}):$(id -g ${USER}) \
+  -p 9933:9933 \
+  -p 9944:9944 \
+  -d \
+  atactr/automata:contextfree-v0.1.0-rc2 \
+  --chain=contextfree \
+  --port=30333 \
+  --base-path /data \
+  --validator \
+  --no-telemetry \
+  --rpc-cors=all \
+  --rpc-methods=Unsafe \
+  --unsafe-rpc-external
+  ```
   Which will return the container ID of your node
 - Check whether your node downloading blocks by checking the log
     ```
     docker logs --follow <YOUR_CONTAINER_ID>
     ```
   If it works fine, the beginning of the log should look like
-  ![](../../assets/canaryimg/validator/dockerlog.png){width="673" height="463"} 
+  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}
   Notice that you should have a **non-zero** number of peers connected as shown in the image above.
 
 ### Get Session Keys of your node
@@ -51,13 +60,13 @@ You may want to run a validator, which means if you are elected into the validat
         }'
     ```
 - You will get a response like this
-    ```
-    {
-        "jsonrpc": "2.0",
-        "result":"0xc05a9d093e4db4c1bde31977716e7a0a39d6f3d1f1bf749e7fec8371147de730af6860aeef81a11130c9fcd317b96e736f6c36141c28f382a18f9faf6e7df797eaa951ead00d12db10937003f0956e3d3444d1774d452ed045dbc1b84d1bf1471abf5d77bf5033845f01be1188a852c6f0ba703042b4d06d14314841c1096c50",
-        "id":1
-    }
-    ```
+  ```
+  {
+    "jsonrpc": "2.0",
+    "result":"0xc05a9d093e4db4c1bde31977716e7a0a39d6f3d1f1bf749e7fec8371147de730af6860aeef81a11130c9fcd317b96e736f6c36141c28f382a18f9faf6e7df797eaa951ead00d12db10937003f0956e3d3444d1774d452ed045dbc1b84d1bf1471abf5d77bf5033845f01be1188a852c6f0ba703042b4d06d14314841c1096c50",
+    "id":1
+  }
+  ```
 - The content after `"result"` is the session keys of your validator node
 
 ### Set Up Accounts
