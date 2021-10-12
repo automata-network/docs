@@ -28,8 +28,14 @@ nav:
       - Introduction: ./canarynet/getstarted/introduction.md
     - User Guide:
       - Set up Wallet: ./canarynet/userguide/setupwallet.md
+  - ConveyorV1:
+    - ./conveyorv1/automata-conveyor-overview.md
+    - ./conveyorv1/automata-conveyor-gtoken.md
+    - ./conveyorv1/automata-conveyor-controller.md
+    - ./conveyorv1/fee.md
+    - ./conveyorv1/fee-contract.md
   - ConveyorV2:
-    - ConveyorV2 Design: ./conveyorv2/smartcontract.md
+    - ./conveyorv2/overview.md
 
 
 theme:

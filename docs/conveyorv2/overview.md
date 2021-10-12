@@ -1,14 +1,15 @@
-## ConveyorV2 Overview
+# ConveyorV2 Design
 
-### Summary
+## Summary
 
-ConveyorV2 is Automata's new and improved Conveyor with improved usability. 
+ConveyorV2 is an upgrade of Automata's ConveyorV1 to support a better user
+experience. 
 Tokens that are traded in the ConveyorV2 liquidity pools enjoy the MEV protection and transaction ordering enforcement capabilities without the need to wrap existing ERC20 tokens into gTokens.
 
 Similar with ConveyorV1 (formerly known as GTokens), users must sign an EIP712 message to authorize Geode to submit a transaction on the user's behalf. Users would still enjoy the benefit of gasless trading, meaning they are not required to hold native tokens like MATIC or BNB to pay for gas. 
 However, users are subjected to pay a service fee with an acceptable form of ERC20 tokens, such as DAI, USDC or ATA tokens.
 
-### Codebase
+## Codebase
 
 The ConveyorV2 smart contracts are a fork of UniswapV2. To learn more about the DEX protocol, read the UniswapV2 [docs](https://docs.uniswap.org/protocol/V2/introduction).
 
