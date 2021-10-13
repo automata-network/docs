@@ -19,7 +19,7 @@ You may want to run a validator, which means if you are elected into the validat
     ```
 
 ### Launch the Validator Node
-- Run the following command to launch a Full Node, you may need sudo permission:
+- Run the following command to launch a validator node, you may need sudo permission:
   ```
   docker run -it \
   -v "/chain:/data" \
