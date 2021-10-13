@@ -7,7 +7,7 @@ You may want to run a validator, which means if you are elected into the validat
 - Install Docker
   - Please go to [this link](https://docs.docker.com/get-docker/) to download the docker engine for your Operating System accordingly.
 
-### Create a local directory to store the chain data
+### Create a Local Directory To Store the Chain Data
 - You may need `sudo` permission to run the following commands.
   - Firstly create a folder to store the synchronized on-chain data
     ```
@@ -46,7 +46,7 @@ You may want to run a validator, which means if you are elected into the validat
   ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}<br>
   Notice that you should have a **non-zero** number of peers connected as shown in the image above.
 
-### Get Session Keys of your node
+### Get Session Keys Of Your Node
 - Run the following command
     ```
     curl http://127.0.0.1:9933 \
@@ -82,7 +82,7 @@ You may want to run a validator, which means if you are elected into the validat
   - If you don't have any native token, visit [Get Token from Faucet](../userguide/gettoken.md) to get some native token.
   - Alternatively, if you have some [ContextFree ERC20 token](https://ropsten.etherscan.io/token/0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7), you can follow the [Token Bridge user guide](../userguide/tokenbridge.md) to convert it into native token.
 
-### Stake tokens
+### Stake Tokens
 - Visit the [Automata Dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Ffs-api.ata.network#/explorer)
 -  Go to the `Staking` section.<br>
 ![](../../assets/canaryimg/validator/staking.png){width="673" height="463}<br>
@@ -91,19 +91,19 @@ You may want to run a validator, which means if you are elected into the validat
 - Choose the stash account and controller account accordingly, set the value for staking and press `Bond` to submit the transaction.<br>
 ![](../../assets/canaryimg/validator/bond.png){width="673" height="463}<br>
 
-### Set session keys
+### Set Session Keys
 - Click `Session Keys` and set the session keys you got previously.<br>
 ![](../../assets/canaryimg/validator/sessionkey.png){width="673" height="463}<br>
 - If you are nominating someone, you need to stop nominating or you will not be able to set session keys.
 
-### Set validate parameters
+### Set Validate Parameters
 - Click `Validate`<br>
 ![](../../assets/canaryimg/validator/validate.png){width="673" height="463}<br>
 - Set the value of `reward commission percentage`, which is the rate that your validator will be commissioned with. The remaining rewards will be split among your nominators.<br>
 ![](../../assets/canaryimg/validator/validate_2.png){width="673" height="463}<br>
 - Besides, you can choose to accept nominating or not.
 
-### Joining validator set
+### Joining Validator Set
 - If you go to the "Staking" tab, you will see a list of active validators currently running on the network. At the top of the page, it shows the number of validator slots that are available as well as the number of nodes that have signaled their intention to be a validator. You can go to the "Waiting" tab to double check to see whether your node is listed there.<br>
 ![](../../assets/canaryimg/validator/validatorset.png){width="673" height="463}<br>
 - The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the waiting queue. If your validator is not selected to become part of the validator set, it will remain in the waiting queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of native token staked or seek out nominators for your validator in order to join the validator set.

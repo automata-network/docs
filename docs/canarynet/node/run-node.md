@@ -8,7 +8,7 @@ For running `Validator Node`, please refer to the [next section](./run-validator
 ### Dependencies
 - Install Docker
   - Please go to [this link](https://docs.docker.com/get-docker/) to download the docker engine for your Operating System accordingly.
-### Create a local directory to store the chain data
+### Create a Local Directory To Store the Chain Data
 - You may need `sudo` permission to run the following commands.
   - Firstly create a folder to store the synchronized on-chain data
     ```
@@ -65,6 +65,6 @@ For running `Validator Node`, please refer to the [next section](./run-validator
   ```
   docker logs --follow <YOUR_CONTAINER_ID>
   ```
-- If it works fine, the beginning of the log should look like
-  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}
+- If it works fine, the beginning of the log should look like<br>
+  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}<br>
 - Notice that you should have a **non-zero** number of peers connected as shown in the image above.
