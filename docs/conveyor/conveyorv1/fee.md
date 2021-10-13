@@ -1,7 +1,5 @@
 # Fee System
 
-![Fee-Protocol](/assets/conveyorv1/fee.png)
-
 ## Overview:
 
 1)   The user submits a request to the Geode to perform a transaction. For example, swapping 100 gUSDC for 100 gDAI. `swapExactTokensForTokens()`
