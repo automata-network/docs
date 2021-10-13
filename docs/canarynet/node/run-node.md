@@ -57,7 +57,7 @@ For running `Validator Node`, please refer to the [next section](./run-validator
     --rpc-cors=all \
     --rpc-external \
     --ws-external
-  ```
+    ```
   Which will return the **container ID** of your node
 
 ## Check Launch Status
