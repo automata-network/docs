@@ -71,8 +71,8 @@ You may want to run a validator, which means if you are elected into the validat
 
 ### Set Up Accounts
 - For running a validator, you need to set up two accounts:
-  - Stash account: This account holds funds bonded for staking, but delegates some functions to the Controller account. It can be kept in a cold wallet, meaning it can stays offline all the time.
-  - Controller account: This account acts on behalf of the Stash account, signalling decisions and necessary execution for staking. It only needs enough funds to pay transaction fees.
+  - `Stash account`: This account holds funds bonded for staking, but delegates some functions to the Controller account. It can be kept in a cold wallet, meaning it can stays offline all the time.
+  - `Controller account`: This account acts on behalf of the Stash account, signalling decisions and necessary execution for staking. It only needs enough funds to pay transaction fees.
   - For more details, refer to [Polkadot Keys](https://wiki.polkadot.network/docs/learn-keys).
 - You can refer [here](../userguide/setupwallet.md) to set up accounts with the Polkadot-JS extension.
 
