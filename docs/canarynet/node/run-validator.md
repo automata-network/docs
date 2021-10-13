@@ -33,9 +33,9 @@ You may want to run a validator, which means if you are elected into the validat
   --base-path /data \
   --validator \
   --no-telemetry \
-  --rpc-cors=all \
+  --rpc-cors=http://127.0.0.1 \
   --rpc-methods=Unsafe \
-  --unsafe-rpc-external
+  --rpc-external
   ```
   Which will return the container ID of your node
 - Check whether your node downloading blocks by checking the log
