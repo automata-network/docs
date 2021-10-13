@@ -43,7 +43,7 @@ You may want to run a validator, which means if you are elected into the validat
     docker logs --follow <YOUR_CONTAINER_ID>
     ```
   If it works fine, the beginning of the log should look like<br>
-  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}
+  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}<br>
   Notice that you should have a **non-zero** number of peers connected as shown in the image above.
 
 ### Get Session Keys of your node
@@ -85,27 +85,27 @@ You may want to run a validator, which means if you are elected into the validat
 ### Stake tokens
 - Visit the [Automata Dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Ffs-api.ata.network#/explorer)
 -  Go to the `Staking` section.<br>
-![](../../assets/canaryimg/validator/staking.png){width="673" height="463}
+![](../../assets/canaryimg/validator/staking.png){width="673" height="463}<br>
 - Set Stash and Controller.<br>
-![](../../assets/canaryimg/validator/stash.png){width="673" height="463}
+![](../../assets/canaryimg/validator/stash.png){width="673" height="463}<br>
 - Choose the stash account and controller account accordingly, set the value for staking and press `Bond` to submit the transaction.<br>
-![](../../assets/canaryimg/validator/bond.png){width="673" height="463}
+![](../../assets/canaryimg/validator/bond.png){width="673" height="463}<br>
 
 ### Set session keys
 - Click `Session Keys` and set the session keys you got previously.<br>
-![](../../assets/canaryimg/validator/sessionkey.png){width="673" height="463}
+![](../../assets/canaryimg/validator/sessionkey.png){width="673" height="463}<br>
 - If you are nominating someone, you need to stop nominating or you will not be able to set session keys.
 
 ### Set validate parameters
 - Click `Validate`<br>
-![](../../assets/canaryimg/validator/validate.png){width="673" height="463}
+![](../../assets/canaryimg/validator/validate.png){width="673" height="463}<br>
 - Set the value of `reward commission percentage`, which is the rate that your validator will be commissioned with. The remaining rewards will be split among your nominators.<br>
-![](../../assets/canaryimg/validator/validate_2.png){width="673" height="463}
+![](../../assets/canaryimg/validator/validate_2.png){width="673" height="463}<br>
 - Besides, you can choose to accept nominating or not.
 
 ### Joining validator set
 - If you go to the "Staking" tab, you will see a list of active validators currently running on the network. At the top of the page, it shows the number of validator slots that are available as well as the number of nodes that have signaled their intention to be a validator. You can go to the "Waiting" tab to double check to see whether your node is listed there.<br>
-![](../../assets/canaryimg/validator/validatorset.png){width="673" height="463}
+![](../../assets/canaryimg/validator/validatorset.png){width="673" height="463}<br>
 - The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the waiting queue. If your validator is not selected to become part of the validator set, it will remain in the waiting queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of native token staked or seek out nominators for your validator in order to join the validator set.
 
 ### Congratuation
