@@ -23,11 +23,22 @@ nav:
     - Introduction: ./witness/introduction.md
     - User Guide: ./witness/user-guide.md
     # - Witness API: ./witness/api.md
+  - Conveyor:
+    - Overview: ./conveyor/overview.md
+    - ConveyorV1:
+      - ./conveyor/conveyorv1/automata-conveyor-overview.md
+      - ./conveyor/conveyorv1/automata-conveyor-gtoken.md
+      - ./conveyor/conveyorv1/automata-conveyor-controller.md
+      - ./conveyor/conveyorv1/fee.md
+      - ./conveyor/conveyorv1/fee-contract.md
+    - ConveyorV2:
+      - ./conveyor/conveyorv2/design.md
   - ContextFree Network:
     - Get Started:
       - Introduction: ./canarynet/getstarted/introduction.md
     - User Guide:
       - Set up Wallet: ./canarynet/userguide/setupwallet.md
+
 
 theme:
   name: material
