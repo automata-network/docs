@@ -19,25 +19,29 @@ You may want to run a validator, which means if you are elected into the validat
     ```
 
 ### Launch the Validator Node
-- Run the following command to launch a validator node, you may need sudo permission:
+- Run the following command to launch a validator node, you may need `sudo` permission:
   ```
   docker run -it \
   -v "/chain:/data" \
   -u $(id -u ${USER}):$(id -g ${USER}) \
   -d \
-  atactr/automata:contextfree-v0.1.0-rc3 \
-  --chain=contextfree \
-  --validator \
-  --rpc-methods=Unsafe
+  atactr/automata:contextfree-v0.1.0-rc4 \
+  --node-type validator \
+  --name <YOUR_NODE_NAME>
   ```
-  Which will return the **container ID** of your node
-- Check whether your node downloading blocks by checking the log
-    ```
-    docker logs --follow <YOUR_CONTAINER_ID>
-    ```
-  If it works fine, the beginning of the log should look like<br>
-  ![](../../assets/canaryimg/node_logs.png){width="673" height="463"}<br>
-  Notice that you should have a **non-zero** number of peers connected as shown in the image above.
+  - Which will return the **container ID** of your node
+  - `<YOUR_NODE_NAME>` can be anything, but it's recommended to have something unique to make it easier to identify your node.
+### Check Launch Status
+- Check whether your node downloading blocks by checking the logs
+  ```
+  docker logs --follow <YOUR_CONTAINER_ID>
+  ```
+- If it works fine, the beginning of the log should look like<br>
+  ![](../../assets/canaryimg/node_logs_2.png){width="673" height="463"}<br>
+
+  - **Take note of your node identity behind `"Local node identity is: ..."`.** This will be very important for identifying your node on the Telemetry, as the node name can be duplicated.
+  - Notice that you should have a **non-zero** number of `"peers"` connected as shown in the image above.
+  - If the logs saying `"Error while dialing /dns/..."`, don't be panic, normally it may take a few minutes for the node to connect to the Telemetry server, after that the error will stop popping up.
 
 ### Get Session Keys Of Your Node
 - Run the following command
