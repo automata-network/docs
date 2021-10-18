@@ -24,20 +24,13 @@ You may want to run a validator, which means if you are elected into the validat
   docker run -it \
   -v "/chain:/data" \
   -u $(id -u ${USER}):$(id -g ${USER}) \
-  -p 9933:9933 \
-  -p 9944:9944 \
   -d \
-  atactr/automata:contextfree-v0.1.0-rc2 \
+  atactr/automata:contextfree-v0.1.0-rc3 \
   --chain=contextfree \
-  --port=30333 \
-  --base-path /data \
   --validator \
-  --no-telemetry \
-  --rpc-cors=http://127.0.0.1 \
-  --rpc-methods=Unsafe \
-  --rpc-external
+  --rpc-methods=Unsafe
   ```
-  Which will return the container ID of your node
+  Which will return the **container ID** of your node
 - Check whether your node downloading blocks by checking the log
     ```
     docker logs --follow <YOUR_CONTAINER_ID>
@@ -49,15 +42,12 @@ You may want to run a validator, which means if you are elected into the validat
 ### Get Session Keys Of Your Node
 - Run the following command
     ```
-    curl http://127.0.0.1:9933 \
-        -H "Content-Type:application/json;charset=utf-8" \
-        -d \
-        '{
-            "jsonrpc":"2.0",
-            "id":1,
-            "method":"author_rotateKeys",
-            "params": []
-        }'
+    docker exec -t <YOUR_CONTAINER_ID> curl http://127.0.0.1:9933 -H "Content-Type:application/json;charset=utf-8" -d '{
+        "jsonrpc":"2.0",
+        "id":1,
+        "method":"author_rotateKeys",
+        "params": []
+    }'
     ```
 - You will get a response like this
   ```
@@ -74,7 +64,7 @@ You may want to run a validator, which means if you are elected into the validat
   - `Stash account`: This account holds funds bonded for staking, but delegates some functions to the Controller account. It can be kept in a cold wallet, meaning it can stays offline all the time.
   - `Controller account`: This account acts on behalf of the Stash account, signalling decisions and necessary execution for staking. It only needs enough funds to pay transaction fees.
   - For more details, refer to [Polkadot Keys](https://wiki.polkadot.network/docs/learn-keys).
-- You can refer [here](../userguide/setupwallet.md) to set up accounts with the Polkadot-JS extension.
+- For how to create accounts in ContextFree, you can refer [here](../userguide/accounts.md#create-account).
 
 ### Get Token
 - Your Stash account and Controller account need to be funded with some native token

@@ -3,7 +3,6 @@
 **Welcome to the ContextFree Network documentation.**
 
 ContextFree is the canary network of Automata’s main network where its features are rolled out in phases to ensure the stability and security of the blockchain.
-For more information about how to setup a wallet address on ContextFree, please click [here](../userguide/setupwallet.md).
 
 ## Network Parameters
 ### Basic
@@ -23,6 +22,12 @@ ContextFree network will be upgraded following [roadmap](https://www.ata.network
 ## Features
 <details><summary>2021-09-30 Initial launch</summary>
 The ContextFree network was launched at Sep 30, 2021, which is in POA stage. All nodes are hold by Automata team and most of the functionalities are disabled.
+</details>
+<details><summary>2021-10-09 Token Economics</summary>
+The Transfer, Staking, Token Bridge related features has been enabled at Oct 09, 2021.
+</details>
+<details><summary>2021-10-12 NPoS</summary>
+The NPoS related features has been enabled at Oct 12, 2021, the network is in NPoS stage. Public validator joining has been enabled.
 </details>
 
 ## Resources

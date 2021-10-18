@@ -1,4 +1,4 @@
-# Run ContextFree Node
+# Run Full Node
 ## Introduction
 According to description in [Type of Nodes](./node-type.md), you can run Full Node, Archive Node or Validator Node on ContextFree Network.<br>
 In this section, we briefly introduce how to run `Full Node` or `Archive Node`<br>
@@ -25,14 +25,9 @@ For running `Validator Node`, please refer to the [next section](./run-validator
     docker run -it \
     -v "/chain:/data" \
     -u $(id -u ${USER}):$(id -g ${USER}) \
-    -p 9933:9933 \
-    -p 9944:9944 \
     -d \
-    atactr/automata:contextfree-v0.1.0-rc2 \
+    atactr/automata:contextfree-v0.1.0-rc3 \
     --chain=contextfree \
-    --port=30333 \
-    --base-path /data \
-    --no-telemetry \
     --rpc-cors=all \
     --rpc-external \
     --ws-external
@@ -45,18 +40,13 @@ For running `Validator Node`, please refer to the [next section](./run-validator
     docker run -it \
     -v "/chain:/data" \
     -u $(id -u ${USER}):$(id -g ${USER}) \
-    -p 9933:9933 \
-    -p 9944:9944 \
     -d \
-    atactr/automata:contextfree-v0.1.0-rc2 \
+    atactr/automata:contextfree-v0.1.0-rc3 \
     --chain=contextfree \
-    --port=30333 \
-    --base-path /data \
-    --pruning archive \
-    --no-telemetry \
     --rpc-cors=all \
     --rpc-external \
-    --ws-external
+    --ws-external \
+    --pruning archive
     ```
   Which will return the **container ID** of your node
 

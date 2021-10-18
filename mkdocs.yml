@@ -31,7 +31,8 @@ nav:
       - Get Test Token: ./canarynet/userguide/get-test-token.md
       - Use Token Bridge: ./canarynet/userguide/token-bridge.md
     - Node:
-      - Run a Full Node: ./canarynet/node/run-node.md
+      - Node Types: ./canarynet/node/node-type.md
+      - Run Full Node: ./canarynet/node/run-full-node.md
       - Join as Validator: ./canarynet/node/run-validator.md
 
 theme:

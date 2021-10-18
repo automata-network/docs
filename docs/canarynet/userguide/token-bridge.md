@@ -35,7 +35,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 - Make sure the following fields are correct:
   - Home network: `Ethereum Ropsten`.
   - Destination Network: `Automata ContextFree`.
-- Get some CTX ERC20 token if the balance is 0, please refer [here](./get-test-token.md/#get-contextFree-erc20-token-on-ropsten-testnet).
+- Get some CTX ERC20 token if the balance is 0, please refer [here](./get-test-token.md#get-contextFree-erc20-token-on-ropsten-testnet).
 - Make sure you have enough `ETH` on Ropsten Testnet to pay for the BridgeFee and transaction Gas Fee. If not, you can use [Ropsten Ethereum Faucet](https://faucet.ropsten.be/) to get some airdrop.
 - Enter the amount of CTX you want to transfer.
 - For the Destination Address, make sure that:
