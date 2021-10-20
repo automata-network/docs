@@ -4,7 +4,7 @@
 - Assume you have set up your wallet account, if not, please refer to [here](./setupwallet.md)
 
 ## Use Automata Faucet 
-- Visit the [Automata Faucet](https://dashboard.ata.network/?rpc=wss%3A%2F%2Ffs-api.ata.network#/explorer), you may need to login via Twitter account to get access to the faucet page.
+- Visit the [Automata Faucet](https://faucet.ata.network/), you may need to login via Twitter account to get access to the faucet page.
 
 ### Get ContextFree Native Token
 - Input your canary network wallet address under this tab, and press `Submit`.<br>

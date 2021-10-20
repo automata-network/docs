@@ -1,7 +1,7 @@
 # Type of Nodes
-Before introducing to different node types, there are serveral concepts which we should know:
-* **Genesis block:** defined by a chain spec file, which describe the initial status of a chain, including the initial wasm, balances, authority set and so on.
-* **Extrinsics:** a piece of information comes from outside the chain and included in a block, which will change the state of chain.
+Before an introduction to the distinct type of nodes, it is important to understand a few concepts:
+* **Genesis block:** defined by a chain spec file, which describes the initial status of a chain, including the initial wasm, balances, authority set and so on.
+* **Extrinsics:** a piece of information that comes from outside the chain and is included in a block, which will change the state of chain.
 * **Events:** a piece of information comes from inside the chain, which may trigger some operation and change the state of chain.
 
 The chain starts from a initial state, and updated by **Extrinsics** or **Events**. Assume the current block height is N, a validator will takes the chain state at block N and apply changes on top of it, to construct the block N+1.

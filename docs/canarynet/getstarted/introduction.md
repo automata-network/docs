@@ -1,8 +1,10 @@
 # ContextFree Network
 
-**Welcome to the ContextFree Network documentation.**
+ContextFree is the Canary Network of Automata’s Mainnet, and this is an important milestone in realizing the technological vision of a privacy middleware platform built for Web 3.0.
 
-ContextFree is the canary network of Automata’s main network where its features are rolled out in phases to ensure the stability and security of the blockchain.
+The launch of ContextFree provides a pre-production environment for real-life learnings to be applied to the eventual rollout of the Mainnet. During this time, users are invited to battle-test the code. Features are rolled out in phases to ensure the stability and security of the blockchain.
+
+This documentation homepage offers the necessary resources to learn about ContextFree, guides and tools to contribute to the Canary Network, either as a user looking to explore the blockchain, or to participate by running a node. Here are some background information to get you started:
 
 ## Network Parameters
 ### Basic
@@ -14,20 +16,20 @@ ContextFree is the canary network of Automata’s main network where its feature
 | Account prefix | 11820 |
 
 ## Tokens
-Tokens on ContextFree Network, named CTX. **CTX tokens hold on value and can be freely acquired.** The initial amount is 1 billion, and will be minted on demand. You can get CTX tokens from our faucet.
+CTX are ContextFree tokens, and do not have any monetary value. Users can request for free CTX tokens by heading over to our [faucet](https://faucet.ata.network/). The initial circulation amount of CTX is set at 1 billion, and will be minted on demand.
 
 ## Roadmap
-ContextFree network will be upgraded following [roadmap](https://www.ata.network/roadmap), with faster frequency. And all upgrades will be recorded in this document.
+ContextFree launch progress mimics and follows the [Roadmap](https://www.ata.network/roadmap), with faster iteration. All upgrades will be recorded in this documentation.
 
 ## Features
 <details><summary>2021-09-30 Initial launch</summary>
-The ContextFree network was launched at Sep 30, 2021, which is in POA stage. All nodes are hold by Automata team and most of the functionalities are disabled.
+ContextFree was launched on September 30, 2021, in Proof of Authority mode. All nodes are held by the Automata team, with most functionalities disabled.
 </details>
 <details><summary>2021-10-09 Token Economics</summary>
-The Transfer, Staking, Token Bridge related features has been enabled at Oct 09, 2021.
+Features related to Transfer, Staking and Token Bridge have been enabled on October 9, 2021.
 </details>
 <details><summary>2021-10-12 NPoS</summary>
-The NPoS related features has been enabled at Oct 12, 2021, the network is in NPoS stage. Public validator joining has been enabled.
+Nominated Proof of Stake has been enabled on October 12, 2021, and public validators will be able to join the network.
 </details>
 
 ## Resources
