@@ -73,8 +73,8 @@ You may want to run a validator, which means if you are elected into the validat
 ### Get Token
 - Your Stash account and Controller account need to be funded with some native token
   - If you already had some native token on other account, you can simply transfer to the stash and controller accounts you have created, using the dashboard by opening the `Transfer` page under the `Accounts` tab.
-  - If you don't have any native token, visit [Get Token from Faucet](../userguide/gettoken.md) to get some native token.
-  - Alternatively, if you have some [ContextFree ERC20 token](https://ropsten.etherscan.io/token/0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7), you can follow the [Token Bridge user guide](../userguide/tokenbridge.md) to convert it into native token.
+  - If you don't have any native token, visit [Get Token from Faucet](../userguide/get-test-token.md) to get some native token.
+  - Alternatively, if you have some [ContextFree ERC20 token](https://ropsten.etherscan.io/token/0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7), you can follow the [Token Bridge user guide](../userguide/token-bridge.md) to convert it into native token.
 
 ### Stake Tokens
 - Visit the [Automata Dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Ffs-api.ata.network#/explorer)
