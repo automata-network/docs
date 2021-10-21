@@ -43,8 +43,13 @@ You may want to run a validator, which means if you are elected into the validat
   - Notice that you should have a **non-zero** number of `"peers"` connected as shown in the image above.
   - If the logs saying `"Error while dialing /dns/..."`, don't be panic, normally it may take a few minutes for the node to connect to the Telemetry server, after that the error will stop popping up.
 
+### In order to display and output the desired result, you need to fall into your container
+docker exec -t <YOUR_CONTAINER_ID>
+apt-get -qq update
+apt-get -qq -y install curl
 ### Get Session Keys Of Your Node
 - Run the following command
+
     ```
     docker exec -t <YOUR_CONTAINER_ID> curl http://127.0.0.1:9933 -H "Content-Type:application/json;charset=utf-8" -d '{
         "jsonrpc":"2.0",
