@@ -45,6 +45,11 @@ You may want to run a validator, which means if you are elected into the validat
 
 ### Get Session Keys Of Your Node
 - Run the following command
+  - Install `curl` in your docker container:
+    ```
+    docker exec -t -u root <YOUR_CONTAINER_ID> bash -c 'apt-get update | apt-get -y install curl'
+    ```
+  - Fetch Session Keys from your container:
     ```
     docker exec -t <YOUR_CONTAINER_ID> curl http://127.0.0.1:9933 -H "Content-Type:application/json;charset=utf-8" -d '{
         "jsonrpc":"2.0",
