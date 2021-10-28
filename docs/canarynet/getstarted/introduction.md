@@ -35,6 +35,6 @@ Nominated Proof of Stake has been enabled on October 12, 2021, and public valida
 ## Resources
 | Name | Value |
 | -- | -- |
-| Explorer | https://dashboard.ata.network |
+| Explorer | <https://dashboard.ata.network> |
 | Http DNS | https://cf-rpc.ata.network |
 | Ws DNS | wss://cf-api.ata.network |
