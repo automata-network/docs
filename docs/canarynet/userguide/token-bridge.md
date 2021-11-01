@@ -83,4 +83,4 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 - Fill in the `Destination Address`, which will be an Ethereum address on Ropsten Test Network starting with `0x`.
 - Press `Start transfer`, you will be required to input the password to sign the transaction.
 - Wait for your transfer to complete, it may take a few minutes. 
-- After the webpage showing `Transfer completed`. You can go to [Ethereum Ropsten Explorer](https://ropsten.etherscan.io/) to check the balance of [ContextFree ERC20 Token] of your destination address.
+- After the webpage showing `Transfer completed`. You can go to [Ethereum Ropsten Explorer](https://ropsten.etherscan.io/) to check the balance of [ContextFree ERC20 Token](https://ropsten.etherscan.io/token/0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7) of your destination address.
