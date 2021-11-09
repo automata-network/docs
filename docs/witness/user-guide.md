@@ -69,7 +69,7 @@ Add the Automata Network to your existing network using the following details:
 |        Field        |          Value           |
 |:-------------------:|:------------------------:|
 |  **Network Name**   |     Automata Network     |
-|   **New RPC URL**   | https://rpc.ata.network/ |
+|   **New RPC URL**   | https://rpcv3.ata.network/ |
 |    **Chain ID**     |            86            |
 | **Currency Symbol** |           ATA            |
 
