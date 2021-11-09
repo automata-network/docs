@@ -1,4 +1,4 @@
-#**ContextFree Network Wallet Setup Guide**  
+#ContextFree Network Wallet Setup Guide 
 
 **This is a guide on how to get onto the Automata Canary Net for Chrome users(recommended).**  
 
