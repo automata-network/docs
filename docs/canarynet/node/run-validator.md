@@ -2,6 +2,10 @@
 ## Introduction
 You may want to run a validator, which means if you are elected into the validator set, you will be able to earn rewards. To run a validator, you need to run a validator node and stake some tokens, we will show you how to do it step by step.
 
+The following parts are steps to host a validator node in your local environment.
+
+Alternatively, you can use the Dedicated Nodes service provided by [OnFinality](https://app.onfinality.io/) to deploy nodes in minutes to the ContextFree Canary Network with only a few clicks.
+
 ## Steps
 ### Install Dependencies
 - Install Docker

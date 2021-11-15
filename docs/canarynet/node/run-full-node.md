@@ -4,6 +4,10 @@ According to description in [Type of Nodes](./node-type.md), you can run Full No
 In this section, we briefly introduce how to run `Full Node` or `Archive Node`<br>
 For running `Validator Node`, please refer to the [next section](./run-validator.md).
 
+The following parts are steps to host a node in your local environment.
+
+Alternatively, you can use the Dedicated Nodes service provided by [OnFinality](https://app.onfinality.io/) to deploy nodes in minutes to the ContextFree Canary Network with only a few clicks.
+
 ## Preparation
 ### Dependencies
 - Install Docker
