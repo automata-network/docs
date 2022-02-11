@@ -10,17 +10,17 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
   - [Metamask Wallet Extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 
 - Visit [Automata Token Bridge](https://cf-bridge.ata.network/).
-- Click `Connect` on the prompted page.
-![](../../assets/canaryimg/bridge_connect.png){width="673" height="463"}
 
 #### Set Up MetaMask
-- Click `Use Ethereum Wallet`.<br>
-![](../../assets/canaryimg/bridge_ethwallet.png){width="673" height="463"}<br>
+- Click `Connect with Ethereum Wallet(ERC20 -> Native)`.<br>
+![](../../assets/canaryimg/evm_sub_choose.png){width="673" height="463"}<br>
 - Select `MetaMask`.<br>
-![](../../assets/canaryimg/bridge_metamask.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/evm_sub_wallet_select.png){width="673" height="463"}<br>
 - Then you may need may need to enter password to unlock the MetaMask wallet extension if it hasn't been open for a while.
+- Connect Metamask to bridge dapp.
+![](../../assets/canaryimg/evm_sub_connect_dapp.png){width="673" height="463"}<br>
 - Change the network in MetaMask to `Ropsten Test Network`.<br>
-![](../../assets/canaryimg/bridge_ropsten.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/evm_sub_choose_ropsten.png){width="673" height="463"}<br>
 - If you don't see the CTX token showing up in the assets, press `Import tokens`, enter the following specifications and press `Add Custom Token`:<br>
 ![](../../assets/canaryimg/bridge_import.png){width="673" height="463"}<br>
   - Token Contract Address: `0x8289b901CAC48EbBB1B5cb0049d1459EA1240EF7`
@@ -29,7 +29,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 ![](../../assets/canaryimg/bridge_addtoken.png){width="673" height="463"}<br>
 - Then `Import Tokens`, if you already had some CTX token, the balance will be showed.
 - Let's go back to the web page for the token bridge, by now it should look like this:<br>
-![](../../assets/canaryimg/bridge_ethtransfer.png){width="673" height="463"}</br>
+![](../../assets/canaryimg/evm_sub_before_transfer.png){width="673" height="463"}</br>
   If not you can click `Connect` and repeat the above steps.
 #### Use the Bridge App
 - Make sure the following fields are correct:
@@ -44,11 +44,12 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
   - **double check the destination address is correct, once your token were sent to a wrong address it can never be claimed back.**
 - If everything looks okay, press `Start transfer`, confirm the `Pre-flight check` and press `Start Transfer` again.
 - Then a MetaMask notification will be popped up to let you allow the website to spend your CTX token, press `Confirm`. Wait a moment for that transaction to be confirmed
+![](../../assets/canaryimg/evm_sub_init_transfer.png){width="673" height="463"}<br>
 - Another MetaMask notification will be prompted, which is to send a transaction to trigger the actual cross-chain bridging transfer, press `Confirm`.
 - Then you should be able to see this `In Transit`, it usually takes a few minutes to finish the transferring, please be patient.<br>
-![](../../assets/canaryimg/bridge_intransit.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/evm_sub_wait_signature.png){width="673" height="463"}<br>
 - Once the transferring has been completed, it will show `Transfer completed`<br>
-![](../../assets/canaryimg/bridge_completed.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/evm_sub_transfer_succ.png){width="673" height="463"}<br>
 
 - **Congratulations! You have completed your first cross-chain token transfer on Automata ContextFree!**</br>
   Go check the balance of the destination address on [Automata Dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/accounts). If you can't see it, try `Add contact` in the [Address book](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/addresses).
@@ -59,22 +60,22 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
   - [Polkadot{.js} Wallet Extension](https://chrome.google.com/webstore/detail/polkadot{js}-extension/mopnmbcafieddcagagdcbnhejhlodfdd)
 
 - Visit [Automata Token Bridge](https://cf-bridge.ata.network/).
-- Click `Connect` on the prompted page.<br>
-![](../../assets/canaryimg/bridge_connect.png){width="673" height="463"}<br>
 
 #### Set Up Polkadot{.js}
-- Click `Use Substrate Wallet`.<br>
-![](../../assets/canaryimg/bridge_subwallet.png){width="673" height="463"}<br>
+- Click `Connect with Substrate Wallet(Native -> ERC20)`.<br>
+![](../../assets/canaryimg/sub_evm_choose.png){width="673" height="463"}<br>
+- If it's your first time to use ContextFree bridge, you need to allow it to access your wallet.<br>
+![](../../assets/canaryimg/sub_evm_wallet_connect.png){width="673" height="463"}<br>
 - Authorize the application to access the wallet by pressing `Yes, allow this application access` on the popped up Polkadot.js notification.
 - If you haven't set up your wallet addresses, please refer [here](./setupwallet.md).
 
 #### Use the Bridge App
 - After connecting you Substrate wallet and setting up your Polkadot.js wallet extension, the Token Bridge App should be like this:<br>
-![](../../assets/canaryimg/bridge_submain.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/sub_evm_before_transfer.png){width="673" height="463"}<br>
 - Click `Select an account`, you should be able to see a list of addresses starting with `a7`, which are ContextFree addresses injected from your Polkadot.js wallet extension.<br>
-![](../../assets/canaryimg/bridge_subaddress.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/sub_evm_choose_account.png){width="673" height="463"}<br>
 - Select the address you want to transfer native token from, the page now should look like:<br>
-![](../../assets/canaryimg/bridge_submain2.png){width="673" height="463"}<br>
+![](../../assets/canaryimg/sub_evm_transfer.png){width="673" height="463"}<br>
 - Make sure the following fields are correct:
   - Select account: The address of your native token sender.
   - Destination Network: `Ethereum Ropsten`.
