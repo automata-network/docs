@@ -17,7 +17,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
 - Select `MetaMask`.<br>
 ![](../../assets/canaryimg/evm_sub_wallet_select.png){width="673" height="463"}<br>
 - Then you may need may need to enter password to unlock the MetaMask wallet extension if it hasn't been open for a while.
-- Connect Metamask to bridge dapp.
+- Connect Metamask to bridge dapp.<br>
 ![](../../assets/canaryimg/evm_sub_connect_dapp.png){width="673" height="463"}<br>
 - Change the network in MetaMask to `Ropsten Test Network`.<br>
 ![](../../assets/canaryimg/evm_sub_choose_ropsten.png){width="673" height="463"}<br>
@@ -43,7 +43,7 @@ The Automata team has set up a cross-chain token bridge for ContextFree between 
   - the address is valid by trying [Add Contact](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/addresses) on Automata Dashboard.
   - **double check the destination address is correct, once your token were sent to a wrong address it can never be claimed back.**
 - If everything looks okay, press `Start transfer`, confirm the `Pre-flight check` and press `Start Transfer` again.
-- Then a MetaMask notification will be popped up to let you allow the website to spend your CTX token, press `Confirm`. Wait a moment for that transaction to be confirmed
+- Then a MetaMask notification will be popped up to let you allow the website to spend your CTX token, press `Confirm`. Wait a moment for that transaction to be confirmed.<br>
 ![](../../assets/canaryimg/evm_sub_init_transfer.png){width="673" height="463"}<br>
 - Another MetaMask notification will be prompted, which is to send a transaction to trigger the actual cross-chain bridging transfer, press `Confirm`.
 - Then you should be able to see this `In Transit`, it usually takes a few minutes to finish the transferring, please be patient.<br>
