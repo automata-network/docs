@@ -2,12 +2,12 @@
 
 **Automata Network** is a decentralized service protocol that provides middleware-like services for dApps to achieve traceless privacy, high assurance and frictionless computation.
 
-
 ## [**The MEV Wiki**](./mev/introduction.md)
 
 **Flashboys, Flashbots, Dark Forests and more..**
 
 [![](./assets/mev_wiki.png){style="zoom:60%"}](./mev/introduction.md)
+
 ## [**Witness**](./witness/introduction.md)
 
 [![](./assets/witness.png){style="zoom:60%"}](./witness/introduction.md)
@@ -17,13 +17,18 @@
 Please see the [guide](./witness/introduction.md) to start.
 
 ## [**ContextFree**](./canarynet/getstarted/introduction.md)
+
 [![](./assets/canary.png){style="zoom:60%"}](./canarynet/getstarted/introduction.md)
 
 **ContextFree** is the canary network of Automata Network.
 
 Please see the [wallet guide](./canarynet/userguide/setupwallet.md) here!
 
-<!-- 
+**ContextFree** Automata NFTFair is A NFT launch platform.
+
+Please see the [introduction](./nftfair/introduction.md) to start.
+
+<!--
 ## Links
 
 * [Website](https://www.ata.network/)
