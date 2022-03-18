@@ -58,7 +58,7 @@ Relayer-sponsored transactions do not charge ERC20 gas payment from the users. T
 
 If you are interested in using our platform and ready to start a fairdrop, you need to provide us with the following information:
 
-- The activity name. (Example: MOGA Blindbox Fairdrop)
+- The activity name. (Example: MOGA Mystery Box Fairdrop)
 
 - A page title. (Example: Come And Obtain Your Own Genesis MOGA!)
 
@@ -66,7 +66,7 @@ If you are interested in using our platform and ready to start a fairdrop, you n
 
 - Your Official website address and media links.
 
-- A short description to introduce your project. (Example: Monster Galaxy is making a blind box fairdrop to give our players the chance to obtain powerful genesis mogas! Don’t lose this opportunity!)
+- A short description to introduce your project. (Example: Monster Galaxy is making a mystery box fairdrop to give our players the chance to obtain powerful genesis mogas! Don’t lose this opportunity!)
 
 - A faq list lets your users know how they can participate in your fairdrop.
 
