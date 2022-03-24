@@ -48,7 +48,7 @@ nav:
     - Introduction: ./nftfair/introduction.md
     - User Info:
       - Homepage and Activity Sites: ./nftfair/users/activities.md
-      - FAQ: ./nftfair/users/faq.md
+      - FAQs: ./nftfair/users/faq.md
     - Contracts:
       - Summary: ./nftfair/contracts/summary.md
       - NFTFairFactory: ./nftfair/contracts/factory.md
