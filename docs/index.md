@@ -23,7 +23,15 @@ Please see the [guide](./witness/introduction.md) to start.
 
 Please see the [wallet guide](./canarynet/userguide/setupwallet.md) here!
 
-<!-- 
+## [**NFTFair**](./nftfair/introduction.md)
+
+[![](./assets/nftfair-image.png){style="zoom:60%"}](./nftfair/introduction.md)
+
+**Automata NFTFair** is an NFT launch platform.
+
+Read the [introduction](./nftfair/introduction.md) to learn more about the platform.
+
+<!--
 ## Links
 
 * [Website](https://www.ata.network/)

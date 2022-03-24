@@ -44,6 +44,19 @@ nav:
       - Node Types: ./canarynet/node/node-type.md
       - Run Full Node: ./canarynet/node/run-full-node.md
       - Join as Validator: ./canarynet/node/run-validator.md
+  - NFTFair:
+    - Introduction: ./nftfair/introduction.md
+    - User Info:
+      - Overview: ./nftfair/users/activities.md
+      - FAQs: ./nftfair/users/faq.md
+    - Contracts:
+      - Summary: ./nftfair/contracts/summary.md
+      - NFTFairFactory: ./nftfair/contracts/factory.md
+      - NFTFairTreasury: ./nftfair/contracts/treasury.md
+      - NFTFairVault: ./nftfair/contracts/vault/base.md
+      - Vault Templates:
+        - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
+        - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
 
 
 theme:
