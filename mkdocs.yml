@@ -46,6 +46,17 @@ nav:
       - Join as Validator: ./canarynet/node/run-validator.md
   - NFTFair:
     - Introduction: ./nftfair/introduction.md
+    - User Info:
+      - Homepage and Activity Sites: ./nftfair/users/activities.md
+      - FAQ: ./nftfair/users/faq.md
+    - Contracts:
+      - Summary: ./nftfair/contracts/summary.md
+      - NFTFairFactory: ./nftfair/contracts/factory.md
+      - NFTFairTreasury: ./nftfair/contracts/treasury.md
+      - NFTFairVault: ./nftfair/contracts/vault/base.md
+      - Vault Templates:
+        - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
+        - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
 
 
 theme:
