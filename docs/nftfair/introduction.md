@@ -1,5 +1,5 @@
 # Introduction
-Automata NFTFair is A NFT launch platform, designed around principles of fairness and efficacy for a community-led experience is how we would describe NFTFair. Metadata exploits pre-sniping are all predatory practices that make it unfair for the average user to get their hands on a new collection, much less obtain rare or lucrative items.
+[Automata NFTFair](https://www.nftfair.app/) is A NFT launch platform, designed around principles of fairness and efficacy for a community-led experience is how we would describe NFTFair. Metadata exploits pre-sniping are all predatory practices that make it unfair for the average user to get their hands on a new collection, much less obtain rare or lucrative items.
 
 # About Fairdrops
 ## Network:
@@ -8,7 +8,7 @@ This platform is compatible with most EVM networks. We currently support the hos
 
 - BSC
 
-We are working hard to expand the list of supported networks and if your intended launch network is not included in our supported list, please reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network).
+We are working hard to expand the list of supported networks. If your intended launch network is not included in our supported list, please submit a proposal [here](https://docs.google.com/forms/d/e/1FAIpQLScU36yLYWuiL3gXVvy7NwvnY-t4JD0u6XUvhTeaogCzQDzQpw/viewform) or reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network).
 
 ## Fairdrop Templates:
 This platform currently supports two templates, i.e. (1) FIFO (First-In-First-Out) and (2) Mystery Boxes Fairdrops.
