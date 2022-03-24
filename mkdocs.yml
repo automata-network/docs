@@ -44,6 +44,8 @@ nav:
       - Node Types: ./canarynet/node/node-type.md
       - Run Full Node: ./canarynet/node/run-full-node.md
       - Join as Validator: ./canarynet/node/run-validator.md
+  - NFTFair:
+    - Introduction: ./nftfair/introduction.md
 
 
 theme:
