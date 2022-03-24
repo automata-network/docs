@@ -7,15 +7,11 @@ Automata NFTFair is A NFT launch platform, designed around principles of fairnes
 
 ## Network:
 
-This platform is easily compatible with most Layer 1 EVM networks. The currently supported network(s) are:
+This platform is compatible with most EVM networks. We currently support the hosting of Fairdrop events on the following networks:
 
 - BSC
 
-In the future, we plan to deploy the platform to the following networks:
-
-- Polygon
-- Moonriver
-- Ethereum
+We are working hard to expand the list of supported networks and if your intended launch network is not included in our supported list, please reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network).
 
 ## Fairdrop Templates:
 
@@ -58,7 +54,7 @@ Sales revenue can be withdrawn once the Fairdrop event has come to an end.
 
 Gas consumption plays a major role on the cost of running Fairdrops. This platform provides a gasless transaction experience, powered by [Conveyor](https://www.ata.network/conveyor). To provide the true experience of zero-cost transactions for the users, you may opt for relayer-sponsored transactions.
 
-Relayer-sponsored transactions do not charge ERC20 gas payment from the users. The event organizers would bear the full gas cost instead. Please reach out to our team, to get a quote and a cost breakdown for enabling relayer-sponsored transactions.
+Relayer-sponsored transactions do not charge ERC20 gas payment from the users. The event organizers would bear the full gas cost instead. Please reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network), to get a quote and a cost breakdown for enabling relayer-sponsored transactions.
 
 # Ready to start?
 
