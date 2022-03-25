@@ -8,6 +8,12 @@ This platform is compatible with most EVM networks. We currently support the hos
 
 - BSC
 
+We plan to deploy this platform on the following networks in the near future:
+
+- Polygon PoS
+- Moonbeam
+- Ethereum
+
 We are working hard to expand the list of supported networks. If your intended launch network is not included in our supported list, please submit a proposal [here](https://docs.google.com/forms/d/e/1FAIpQLScU36yLYWuiL3gXVvy7NwvnY-t4JD0u6XUvhTeaogCzQDzQpw/viewform) or reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network).
 
 ## Fairdrop Templates:
