@@ -1,9 +1,9 @@
 # User Guide
 ## Claim Testing Token
 - Ahead to the [Automata Faucet](./spec.md#faucet), you may need to login via Twitter account to get access to the faucet page.
-- Choose FiniteState under the Network drop-down field
+- Choose ContextFree under the Network drop-down field
 ![](../assets/anydao/faucet.png)
-- Input your FiniteState wallet address and submit, 10 FST native token will be sent to your account, can check on [FiniteState Dashboard](./spec.md#explorer).
+- Input your ContextFree wallet address and submit, 10 CTX native token will be sent to your account, can check on our [Blockchain Dashboard](./spec.md#explorer).
 ## Interface Layout
 - Now let's explore our [AnyDAO frontend](./spec.md#frontend)
 ![](../assets/anydao/home_empty.png)
@@ -12,7 +12,7 @@
 ## Connect Wallet
 - The connect button is located at the bottom of the left panel.
 - If you want to disconnect, click on your connected wallet and you can find the disconnect button there
-- Currently you have to connect with a Polkadot Extension wallet to proceed to the following operations: `Register Project`, `Update Project`, and `Create Proposal`.
+- Currently you have to connect with a PolkadotJS wallet to proceed to the following operations: `Register Project`, `Update Project`, and `Create Proposal`.
 
 ## Register Project
 - Once you have connected with a wallet, you will see another entry `My Projects` appears at your left panel. Make sure you are connected with a Polkadot Extension Wallet.
@@ -32,11 +32,10 @@
 - If you see this it means you succeeded. You can check your created project
 ![](../assets/anydao/project_success.png)
 ### Update Project
-- Upon successfully registering your project, you should be able to see your registered project in `My Projects` page
+- Upon successfully created your project, you should be able to see your project in `Project Management` page
 ![](../assets/anydao/project_registered.png)
-- Go into your registered project, you should be able to see your previous configuration for your project.
-![](../assets/anydao/project_edit.png)
-- Change any of the fields you wish to, and click `Edit Project`, follow the wallet instructions and submit the transaction.
+- Go into your created project, you should be able to see your previous configuration for your project.
+- Change any of the fields you wish to, and click `Save project settings`, follow the wallet instructions and submit the transaction.
 ## Create Proposal
 - Go to any project, you should see the detail page. Click `New Proposal`
 ![](../assets/anydao/project_detail.png)
