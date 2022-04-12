@@ -11,7 +11,7 @@ Currently supports wallet conenction with [Metamask](https://metamask.io/) and [
 
 ### Blockchain
 #### Explorer
-[FiniteState dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer)
+[ContextFree Dashboard](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer)
 #### Endpoints
 <https://cf-rpc.ata.network>
 <wss://fs-api.ata.network>
