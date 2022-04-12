@@ -14,10 +14,10 @@
 - If you want to disconnect, click on your connected wallet and you can find the disconnect button there
 - Currently you have to connect with a PolkadotJS wallet to proceed to the following operations: `Register Project`, `Update Project`, and `Create Proposal`.
 
-## Register Project
-- Once you have connected with a wallet, you will see another entry `My Projects` appears at your left panel. Make sure you are connected with a Polkadot Extension Wallet.
+## Create Project
+- Once you have connected with a wallet, you will see another entry `Project Management` appears at your left panel. Make sure you are connected with a Polkadot Extension Wallet.
 ![](../assets/anydao/home_connected.png)
-- Go to `My Projects`, then `Add a new project`
+- Go to `Project Management`, then `Add a new project`
 ![](../assets/anydao/project_manage.png)
 - Fill in your Project title, description (currently there is no size limitation, please show mercy🙏🏼)
 - Upload your project icon, banner (currently there is no compression feature, please show mercy🙏🏼)
