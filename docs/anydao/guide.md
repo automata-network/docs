@@ -19,8 +19,8 @@
 ![](../assets/anydao/home_connected.png)
 - Go to `Project Management`, then `Add a new project`
 ![](../assets/anydao/project_manage.png)
-- Fill in your Project title, description (currently there is no size limitation, please show mercy🙏🏼)
-- Upload your project icon, banner (currently there is no compression feature, please show mercy🙏🏼)
+- Fill in your Project title, description
+- Upload your project icon, banner
 - Then add workspaces for your project, choose the chain you want to add
 ![](../assets/anydao/workspace_chain.png)
 - Attach available strategy to it, such as
