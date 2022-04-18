@@ -1,5 +1,5 @@
 # Specifications
-## Staging
+## Production
 
 ### Frontend
 <https://the.anydao.app/>
