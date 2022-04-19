@@ -1,5 +1,6 @@
 # User Guide
 ## Claim Testing Token
+- Assume you have set up your wallet account, if not, please refer to [here](../canarynet/userguide/setupwallet.md)
 - Ahead to the [Automata Faucet](./spec.md#faucet), you may need to login via Twitter account to get access to the faucet page.
 - Choose ContextFree under the Network drop-down field
 ![](../assets/anydao/faucet.png)
