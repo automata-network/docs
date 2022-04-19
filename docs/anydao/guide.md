@@ -50,6 +50,7 @@
   - Starting date & Ending data: the actual timing you want to start and end your proposal voting period. Here you can see more details of [Time Restriction](./spec.md#configurations)
   - Here you can see more details of [Update Frequency](./design.md#update-frequency)
 - Click `Publish my proposal` and follow the instructions to submit your transaction. You should be able to see your proposal once it's successfully created.
+![](../assets/anydao/proposal_publish_txn.png)
 ## Vote
 - Go to any on-going proposal or the one you just created.
 ![](../assets/anydao/proposal_detail.png)
