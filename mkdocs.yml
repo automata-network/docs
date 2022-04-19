@@ -57,6 +57,11 @@ nav:
       - Vault Templates:
         - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
         - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
+  - AnyDAO:
+    - Introduction: ./anydao/introduction.md
+    - Design: ./anydao/design.md
+    - Specification: ./anydao/spec.md
+    - User Guide: ./anydao/guide.md
 
 
 theme:
