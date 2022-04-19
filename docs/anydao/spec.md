@@ -4,7 +4,7 @@
 ### Frontend
 <https://the.anydao.app/>
 
-Currently supports wallet conenction with [Metamask](https://metamask.io/) and [Polkadot Extension](https://polkadot.js.org/extension/)
+Currently supports wallet connection with [Metamask](https://metamask.io/) and [Polkadot Extension](https://polkadot.js.org/extension/)
 
 ### Faucet
 <https://faucet.ata.network>

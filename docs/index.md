@@ -31,6 +31,14 @@ Please see the [wallet guide](./canarynet/userguide/setupwallet.md) here!
 
 Read the [introduction](./nftfair/introduction.md) to learn more about the platform.
 
+## [**AnyDAO**](./anydao/introduction.md)
+
+[![](./assets/anydao-image.png){style="zoom:60%"}](./anydao/introduction.md)
+
+**Automata AnyDAO** is a governance platform for DAOs.
+
+Read the [introduction](./anydao/introduction.md) to learn more about the platform.
+
 <!--
 ## Links
 
