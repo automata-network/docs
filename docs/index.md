@@ -39,6 +39,14 @@ Read the [introduction](./nftfair/introduction.md) to learn more about the platf
 
 Read the [introduction](./anydao/introduction.md) to learn more about the platform.
 
+## [**2FA**](./2fa/introduction.md)
+
+<!-- Add a image here -->
+
+**Automata 2FA** is a middleware to protect your assets.
+
+Read the [introduction](./2fa/introduction.md) to setup your 2FA.
+
 <!--
 ## Links
 
