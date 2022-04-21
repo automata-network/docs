@@ -68,6 +68,9 @@ nav:
       - Architecture: ./2fa/design/design.md
       - Contracts:
         - Summary: ./2fa/contracts/summary.md
+        - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
+        - TwoFactorAuthentication: ./2fa/contracts/TwoFactorAuthentication.md
+        - Appendix: ./2fa/contracts/2FAppendix.md
     - User Info:
       - User Guide: ./2fa/users/guide.md
       - FAQs: ./2fa/users/faq.md

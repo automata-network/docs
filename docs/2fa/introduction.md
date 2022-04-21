@@ -30,6 +30,6 @@ As a user, if you're interested in our 2FA protected and want to have a more sec
 
 You can find more details in the [User Guide]().
 
-As a developer, before you release your dApp, you have to integrate them with our 2FA protected smart contract. You can find more details in the [Contract Guide](). Once you're done and deployed it to the target network, reach we out and we will add your dApp in our 2FA management website.
+As a developer, before you release your dApp, you have to integrate them with our 2FA protected smart contract. You can find more details in the [Contract Guide](./contracts/summary.md). Once you're done and deployed it to the target network, reach we out and we will add your dApp in our 2FA management website.
 
 It's highest recommended that setup your 2FA to protect all assets which are supported 2FA, to avoid any potential attack. And it's appreciated to integrate your dApps with our 2FA protection.
