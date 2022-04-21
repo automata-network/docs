@@ -28,7 +28,7 @@ As a user, if you're interested in our 2FA protected and want to have a more sec
 
 - 2FA device, retrieve your 2FA TOTP code before you make any authorised transfer, please don't use the same device as the primary wallet's.
 
-You can find more details in the [User Guide]().
+You can find more details in the [User Guide](./users/guide.md).
 
 As a developer, before you release your dApp, you have to integrate them with our 2FA protected smart contract. You can find more details in the [Contract Guide](./contracts/summary.md). Once you're done and deployed it to the target network, reach we out and we will add your dApp in our 2FA management website.
 

@@ -26,6 +26,14 @@ The 2FA won't be enabled for this account, and the authenticated code from this 
 
 The new secret won't be stored in the 2FA storage, and the old secret is still active.
 
+### **7. Can I use the same recovery wallet for more than one primary wallet?**
+
+Yes.
+
+### **8. What kinds of assets will be shown in the wallet assets management page?**
+
+All 2FA protected assets and some common ERC20 tokens, including ETH, BSCUSD, WBNB, USDC, XRP, ADA, AVAX, DOGE, DOT, UST, BUSD, SHIB, NEAR, DAI, LTC, ATOM, LINK, UNI, BCH, TRX.
+
 ## Developers
 
 ### **1. How can I integrate with the Automata 2FA protection?**
