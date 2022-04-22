@@ -62,7 +62,7 @@ nav:
     - Design: ./anydao/design.md
     - Specification: ./anydao/spec.md
     - User Guide: ./anydao/guide.md
-  - 2FA:
+  - 2FA Guru:
     - Introduction: ./2fa/introduction.md
     - Design:
       - Architecture: ./2fa/design/design.md

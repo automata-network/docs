@@ -39,7 +39,7 @@ Read the [introduction](./nftfair/introduction.md) to learn more about the platf
 
 Read the [introduction](./anydao/introduction.md) to learn more about the platform.
 
-## [**2FA**](./2fa/introduction.md)
+## [**2FA Guru**](./2fa/introduction.md)
 
 <!-- Add a image here -->
 

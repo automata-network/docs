@@ -1,6 +1,6 @@
 # Introduction
 <!-- Replace the landing page url -->
-[Automata 2FA](https://atanetwork.editorx.io/my-site-1) is a middleware to protect your assets in different networks and any dApps, designed around fund's secured enhancements in any assets transfer scenarios. Nowadays, user-controlled private key is compromised and excessive or unlimited ERC20 allowance is exploited, which is very dangerous and the assets may be transferred when the attack happens. We introduce a 2FA mechanism as an additional security step before the users make any risky transaction, while authorised transfers in real-time are required, and the secret seed is stored based on the strongest security guarantees.
+[Automata 2FA Guru](https://www.2fa.guru) is a middleware to protect your assets in different networks and any dApps, designed around fund's secured enhancements in any assets transfer scenarios. Nowadays, user-controlled private key is compromised and excessive or unlimited ERC20 allowance is exploited, which is very dangerous and the assets may be transferred when the attack happens. We introduce a 2FA mechanism as an additional security step before the users make any risky transaction, while authorised transfers in real-time are required, and the secret seed is stored based on the strongest security guarantees.
 
 It's a middleware across different networks and can be served for any dApps which are integrated with our 2FA based smart contract structure. Users can easily setup 2FA for their wallet with their 2FA devices as usual, find 2FA supported dApps and make the authorised transfers on demand.
 
@@ -12,11 +12,13 @@ This middleware is compatible with most EVM networks. We currently support on th
 
 - Polygon
 
-We are working hard to expand the list of supported networks. If you're developers and your target dApp is not included in our supported list, please submit a proposal [here]() or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
+- zkSync testnet
+
+We are working hard to expand the list of supported networks. If you're developers and your target dApp is not included in our supported list, please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
 
 ## Supported dApps:
 
-This middleware requires the target dApps are integrated with our 2FA protected contract before the announcement. As a user, you can easily to find what kinds of dApps are supported [here](), setup your 2FA before you use them. As a developer, if you're already integrated with 2FA protected functionality, but you cannot see your dApp shown in [Automata 2FA](), please submit a proposal [here]() or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
+This middleware requires the target dApps are integrated with our 2FA protected contract before the announcement. As a user, you can easily to find what kinds of dApps are supported [here](https://app.2fa.guru), setup your 2FA before you use them. As a developer, if you're already integrated with 2FA protected functionality, but you cannot see your dApp shown in [Automata 2FA Guru](https://www.2fa.guru), please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
 
 # Ready to start?
 

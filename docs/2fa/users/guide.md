@@ -1,13 +1,11 @@
 # User Guide
 
-![](../../assets/2fa/use-case.png)
-
-Visit [Automata 2FA]() to start your 2FA protection.
+Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection.
 
 ---
 
 ## Setup 2FA
-- Visit [Automata 2FA]().
+- Visit [Automata 2FA Guru](https://app.2fa.guru).
 
 - Use metamask and connect your wallet.
 
@@ -35,7 +33,7 @@ Visit [Automata 2FA]() to start your 2FA protection.
 
 If you lost your 2FA device unfortunately, you can reset it if you have been bind a recovery wallet, the reset processes are quite similar as setup's:
 
-- Visit [Automata 2FA]().
+- Visit [Automata 2FA Guru](https://app.2fa.guru).
 
 - Use metamask and connect your recovery wallet.
 
@@ -69,7 +67,7 @@ So it's recommended to transfer all your 2FA protected assets to another account
 
 ### Steps to disable 2FA:
 
-- Visit [Automata 2FA]()
+- Visit [Automata 2FA Guru](https://app.2fa.guru)
 
 - Use metamask and connect your wallet
 
