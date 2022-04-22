@@ -2,7 +2,7 @@
 
 ## Signature Extraction
 
-The `data` of any incoming transaction (or `msg.data`) must **strictly** adhere to the following format.
+Data that are sent to `TwoFactorBase` contracts must **strictly** adhere to the following format.
 
 |  Calldata | Deadline | Signature |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ The `data` of any incoming transaction (or `msg.data`) must **strictly** adhere 
 
 Transaction data that are in compliance with the above format is then divided into three parts using the formula described below:
 
-- Deadline = Data [len-97 : len]
+- Deadline = Data [len-97 : len-65]
 
 This is the given deadline of a transaction, which reverts at `block.timestamp > deadline`.
 
