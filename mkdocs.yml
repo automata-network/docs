@@ -65,7 +65,7 @@ nav:
   - 2FA Guru:
     - Introduction: ./2fa/introduction.md
     - Design:
-      - Architecture: ./2fa/design/design.md
+      - Workflow: ./2fa/design/design.md
       - Contracts:
         - Summary: ./2fa/contracts/summary.md
         - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
