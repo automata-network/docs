@@ -14,11 +14,13 @@ This middleware is compatible with most EVM networks. We currently support on th
 
 - zkSync testnet
 
-We are working hard to expand the list of supported networks. If you're developers and your target dApp is not included in our supported list, please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
+- Celer
+
+We are working hard to expand the list of supported networks. If you're developers and your target dApp is not included in our supported list, please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa.guru@ata.network](mailto:2fa.guru@ata.network).
 
 ## Supported dApps:
 
-This middleware requires the target dApps are integrated with our 2FA protected contract before the announcement. As a user, you can easily to find what kinds of dApps are supported [here](https://app.2fa.guru), setup your 2FA before you use them. As a developer, if you're already integrated with 2FA protected functionality, but you cannot see your dApp shown in [Automata 2FA Guru](https://www.2fa.guru), please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa@ata.network](mailto:2fa@ata.network).
+This middleware requires the target dApps are integrated with our 2FA protected contract before the announcement. As a user, you can easily to find what kinds of dApps are supported [here](https://app.2fa.guru), setup your 2FA before you use them. As a developer, if you're already integrated with 2FA protected functionality, but you cannot see your dApp shown in [Automata 2FA Guru](https://app.2fa.guru), please submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or reach out to us at [2fa.guru@ata.network](mailto:2fa@ata.network).
 
 # Ready to start?
 
@@ -28,7 +30,7 @@ As a user, if you're interested in our 2FA protected and want to have a more sec
 
 - Recovery wallet, it's used for reset the 2FA device if you lost it.
 
-- 2FA device, retrieve your 2FA TOTP code before you make any authorised transfer, please don't use the same device as the primary wallet's.
+- 2FA device, retrieve your 2FA TOTP(Time-based One-time Password) code before you make any authorised transfer, please don't use the same device as the primary wallet's.
 
 You can find more details in the [User Guide](./users/guide.md).
 
