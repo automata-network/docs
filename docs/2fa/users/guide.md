@@ -17,6 +17,18 @@ Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection.
 
 ![](../../assets/2fa/setup-3.png)
 
+And we also support 1password for the 2FA secret representation. You need to prepare a **Login** item in 1password, configure the basic information, then you can use **Scan QR Code** function in 1password. It will make it more flexiable and efficient.
+
+![](../../assets/2fa/1password.png)
+
+Recommend configuration in 1password
+
+| | |
+| --- | --- |
+| username | wallet address |
+| website | https://app.2fa.guru |
+| tags | the target network |
+
 - Once you successfully sign up, we recommend you add a recovery wallet for your primary account, which can be used to reset your 2FA device. Otherwise, if you lost your 2FA device, then the only thing you can do is to disable the 2FA protection before you use your 2FA protected assets.
 
   You need to send a bind transaction to our 2FA management contract after our authentication, which means the gas fee is required.
