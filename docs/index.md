@@ -41,11 +41,11 @@ Read the [introduction](./anydao/introduction.md) to learn more about the platfo
 
 ## [**2FA Guru**](./2fa/introduction.md)
 
-<!-- Add a image here -->
+[![](./assets/2fa/2fa-guru-image.png){style="zoom:60%"}](./2fa/introduction.md)
 
-**Automata 2FA** is a middleware to protect your assets.
+**Automata 2FA Guru** is a middleware to protect your assets.
 
-Read the [introduction](./2fa/introduction.md) to setup your 2FA.
+Read the [introduction](./2fa/introduction.md) to setup your 2FA Guru.
 
 <!--
 ## Links
