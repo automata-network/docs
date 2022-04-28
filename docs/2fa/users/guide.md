@@ -77,7 +77,7 @@ If you lost your 2FA device and don't bind any recovery wallet, or you don't wan
 
 So it's recommended to transfer all your 2FA protected assets to another account after you disable the 2FA, and sign up the 2FA protection for this new account as soon as possible, to make sure all assets are safe.
 
-### Steps to disable 2FA:
+### Steps to disable 2FA
 
 - Visit [Automata 2FA Guru](https://app.2fa.guru)
 

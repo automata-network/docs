@@ -1,7 +1,5 @@
 # Frequently Asked Questions
 
-## Users
-
 ### **1. Are the 2FA secrets different for each account?**
 
 Yes, of course. Each signed up account has a unique secret, and it will be replaced if a reset request is confirmed. Furthermore, even with the same account, the secrets are different across networks.
@@ -32,10 +30,6 @@ Yes.
 
 ### **8. What kinds of assets will be shown in the wallet assets management page?**
 
-All 2FA protected assets and some common ERC20 tokens, including ETH, BSCUSD, WBNB, USDC, XRP, ADA, AVAX, DOGE, DOT, UST, BUSD, SHIB, NEAR, DAI, LTC, ATOM, LINK, UNI, BCH, TRX.
+All 2FA protected assets and Top20 ERC20 tokens in each networks.
 
-## Developers
-
-### **1. How can I integrate with the Automata 2FA protection?**
-
-You can refer to smart contract part to see how to integrate with your contract, please make sure all assets ownership transfer operations should add **only2FA** modifier.
+- Polygon: https://polygonscan.com/tokens
