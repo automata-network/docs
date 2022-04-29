@@ -87,6 +87,8 @@ So it's recommended to transfer all your 2FA protected assets to another account
 
 ![](../../assets/2fa/disable.png)
 
+![](../../assets/2fa/disabling.png)
+
 If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.
 
 - Click **Cancel Disable 2FA** button in **Wallet actions**, sign the message and you can use the previous 2FA device to get the 2FA protection.
