@@ -2,9 +2,9 @@
 2FA Guru by Automata is a blockchain-based authentication solution that secures access to accounts and protects users with an active defence. 
 
 There are a number of known scenarios where hackers can brute-force attacks: 
-User-controlled private keys can be compromised or stolen
-Exploitation of excessive or unlimited ERC20 allowance 
-Rise of social engineering attacks, such as phishing scams 
+- User-controlled private keys can be compromised or stolen
+- Exploitation of excessive or unlimited ERC20 allowance 
+- Rise of social engineering attacks, such as phishing scams 
 
 Not all security measures are made equal. 2FA Guru’s secret seed is based on the strongest technical guarantees with Automata’s impenetrable technical design. This makes it nigh-impossible for malicious agents to intercept, obtain, or duplicate the authentication factor. 
 
