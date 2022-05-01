@@ -20,7 +20,7 @@ Unfortunately, no. Binding is permanent, so make sure to keep your recovery wall
 
 2FA will not be successfully enabled for the account, and the authenticated code from its secret will not be authorized.
 
-### **6. During the reset process, what if I scan the QR code but don't input the 6-digit authentication code?**
+### **6. During the reset process, what if I scan the QR code without inputting the 6-digit authentication code?**
 
 The new secret will not be stored in the 2FA storage. The user's old secret will remain active.
 
