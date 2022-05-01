@@ -7,7 +7,7 @@ There are a number of known scenarios where hackers can brute-force attacks:
 - Exploitation of excessive or unlimited ERC20 allowance 
 - Rise of social engineering attacks, such as phishing scams 
 
-Not all security measures are made equal. 2FA Guru’s secret seed is based on the strongest technical guarantees with Automata’s impenetrable technical design. This makes it nigh-impossible for malicious agents to intercept, obtain, or duplicate the authentication factor. 
+Not all security measures are made equal. 2FA Guru’s secret generation, storage and verification is based on the strongest technical guarantees with Automata’s impenetrable technical design. This makes it nigh-impossible for malicious agents to intercept, obtain, or duplicate the authentication factor. 
 
 ## 2FA Guru features 
 - Anti-phishing protection. Crypto is fun and exciting, but there are serious risks. Make sure your accounts are resistant to real-time identity attacks. 
