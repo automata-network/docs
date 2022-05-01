@@ -14,7 +14,7 @@ Of course. Each new account has a unique secret, which is replaced if a reset re
 
 ### **4. Can I change my recovery wallet after binding?**
 
-Unfortunately not. Binding is permanent, so make sure to keep your recovery wallet safe - for one, don't use it in the same device as your primary wallet so that they are not compromised at the same time. 
+Unfortunately, no. Binding is permanent, so make sure to keep your recovery wallet safe - for one, don't use it in the same device as your primary wallet so that they are not compromised at the same time. 
 
 ### **5. During the setup process, what happens if I scan the QR code without inputting the 6-digit authentication code?**
 
