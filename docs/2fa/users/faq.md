@@ -4,13 +4,13 @@
 
 Of course. Each new account has a unique secret, which is replaced if a reset request is confirmed. Even with the same account, secrets are different across networks.
 
-### **2. How long can I bind a recovery wallet?**
+### **2. How long does it take to bind a recovery wallet?**
 
-7 Days.
+Binding takes place immediately. You will need to bind a recovery wallet within 7 days of signing up with your primary wallet. 
 
 ### **3. How long does it take to disable 2FA?**
 
-7 Days.
+Once you have put in your request, there is a cooldown window of 7 days before 2FA is permanently disabled for that particular account. During those 7 days, if you happen to change your mind, simply cancel the request.
 
 ### **4. Can I change my recovery wallet after binding?**
 
