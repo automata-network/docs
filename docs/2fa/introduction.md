@@ -22,4 +22,4 @@ Not all security measures are made equal. 2FA Guru’s secret generation, storag
 - Add your 2FA Authenticator application and complete setup
 - Link a recovery wallet to your primary wallet to be extra safe
 
-Follow the [user guide](https://purple-desert-0fb5d1500-86.eastasia.azurestaticapps.net/2fa/users/guide/) for more details. If you're a developer, head over here to view the [contract guide](https://purple-desert-0fb5d1500-86.eastasia.azurestaticapps.net/2fa/contracts/summary/). 
+Follow the [user guide](./users/guide.md) for more details. If you're a developer, head over here to view the [contract guide](./contracts/summary.md).

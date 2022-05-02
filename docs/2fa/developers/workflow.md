@@ -15,7 +15,8 @@
 
   The device which provides the TOTP(Time-based one-time password).
 
-* [Automata 2FA Guru](https://app.2fa.guru)
+<!-- * [Automata 2FA Guru](https://app.2fa.guru) -->
+* Automata 2FA Guru
 
   The dApp hosted by the Automata team. It contains the 2FA management panel and wallet assets control panel. Users can sign up 2FA and find the 2FA protected dApps in the management panel, and they can make the authorised transfer under the wallet assets control panel.
 
