@@ -11,7 +11,7 @@ Visit Automata 2FA Guru to start your 2FA protection.
 
 - Use metamask and connect your wallet.
 
-- If you haven't signed up for an account, you can click the **Wallet Actions** button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices
+- If you haven't signed up for an account, you can click the **Wallet Actions** button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices.
 
 ![](../../assets/2fa/setup-1.png)
 
