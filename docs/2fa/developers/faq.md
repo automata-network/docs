@@ -1,5 +1,5 @@
 # Frequently Asked Questions
 
-### **1. How can I integrate with the Automata 2FA protection?**
+### **1. How can I integrate my dApp with the Automata's 2FA protection?**
 
-You can refer to smart contract part to see how to integrate with your contract, please make sure all assets ownership transfer operations should add **only2FA** modifier.
+You can refer to the smart contract section for more technical details. Do ensure that all asset transfer operation include a **only2FA** modifier.

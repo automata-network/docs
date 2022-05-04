@@ -11,7 +11,7 @@ Visit Automata 2FA Guru to start your 2FA protection.
 
 - Use metamask and connect your wallet.
 
-- If your account hasn't signed up, you can click the **Wallet Actions** button on the top, and go through the signup process. You need to sign a message to prove your identity before generating a 2FA secret. Attention, you must use a different device to store the 2FA secret, don't keep the 2FA device and your wallet in the same one.
+- If you haven't signed up for an account, you can click the **Wallet Actions** button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices
 
 ![](../../assets/2fa/setup-1.png)
 
@@ -19,11 +19,11 @@ Visit Automata 2FA Guru to start your 2FA protection.
 
 ![](../../assets/2fa/setup-3.png)
 
-And we also support 1password for the 2FA secret representation. You need to prepare a **Login** item in 1password, configure the basic information, then you can use **Scan QR Code** function in 1password. It will make it more flexiable and efficient.
+We support 1Password for storing your 2FA secret. To enable the use of **Scan QR Code** function in 1Password, you would first have to prepare a **Login** item in 1Password and configure the basic information. This makes password retrieval more convenient.
 
 ![](../../assets/2fa/1password.png)
 
-Recommend configuration in 1password
+Recommended configuration in 1Password
 
 | | |
 | --- | --- |
@@ -31,11 +31,11 @@ Recommend configuration in 1password
 | website | https://app.2fa.guru |
 | tags | the target network |
 
-- Once you successfully sign up, we recommend you add a recovery wallet for your primary account, which can be used to reset your 2FA device. Otherwise, if you lost your 2FA device, then the only thing you can do is to disable the 2FA protection before you use your 2FA protected assets.
+- Once you've successfully signed up, we recommend that you add a recovery wallet for your primary wallet, which can be used to reset your 2FA device. Without a recovery wallet, if you lost your 2FA device, then you can only disable the 2FA protection before you use your 2FA protected assets.
 
-  You need to send a bind transaction to our 2FA management contract after our authentication, which means the gas fee is required.
+  For binding a recovery wallet, you would need to send a binding transaction to our 2FA management contract after our authentication, and gas fees would be required.
 
-  There is a binding window for each account after signup, you must bind the recovery wallet in **7 days**, otherwise you cannot bind anymore.
+  There is a binding window for each account after signup, If you do not bind a recovery wallet in **7 days**, you would not be allowed to bind one subsequently.
 
 ![](../../assets/2fa/bind-1.png)
 
@@ -45,14 +45,14 @@ Recommend configuration in 1password
 
 ## Reset 2FA devices
 
-If you lost your 2FA device unfortunately, you can reset it if you have been bind a recovery wallet, the reset processes are quite similar as setup's:
+If you lost your 2FA device in an unfortunate incident, you can reset it only if you have a recovery wallet. The reset processes are similar to setting up 2FA for the first time:
 
 <!-- - Visit [Automata 2FA Guru](https://app.2fa.guru). -->
 - Visit Automata 2FA Guru.
 
 - Use metamask and connect your recovery wallet.
 
-- Click **Reset 2FA** button in **Wallet Actions**, input your primary wallet address and sign the message. If it's matched, then you can scan the new secret to reset the 2FA device. There is no transaction on chain, so it's free to reset a 2FA device. And the recovery wallet is not required to sign up for 2FA.
+- Click **Reset 2FA** button in **Wallet Actions**, input your primary wallet address and sign the message. If the address pair matches, you can scan the new secret to reset the 2FA device. There is no transaction on chain, so no gas fees are required to reset a 2FA device. Take note, the recovery wallet does not need to sign up for 2FA for this to work.
 
 ![](../../assets/2fa/reset-1.png)
 
@@ -62,9 +62,9 @@ If you lost your 2FA device unfortunately, you can reset it if you have been bin
 
 ## Make authorised transfer
 
-Once you sign up 2FA for your wallet, you will benefit from all 2FA protected assets and dApps. If you get any 2FA protected assets, you will be able to transfer them in **Manage my Wallet Assets** panel.
+Once you sign up 2FA for your wallet, your 2FA assets in supported dApps will be protected. If you hold any 2FA protected assets, you will be able to transfer them in **Manage my Wallet Assets** panel.
 
-It will check your 2FA code first and return you a valid signature, which will be used in the transfer transaction.
+During the transfer of assets, a 2FA check will be conducted before allowing you to sign a message which would be used in the transfer.
 
 ![](../../assets/2fa/transfer-1.png)
 
@@ -76,9 +76,9 @@ It will check your 2FA code first and return you a valid signature, which will b
 
 ## Disable 2FA protection
 
-If you lost your 2FA device and don't bind any recovery wallet, or you don't want to use 2FA anymore, you can disable 2FA protection in 2FA dApp. There is a cooldown period when disabling 2FA protection, you can cancel the disable 2FA protection request before this window. Attention, the cooldown period is **7 Days**, and you cannot use **2FA protection** anymore.
+If you've lost your 2FA device and no respective recovery wallet has been bound, you always have the option to disable 2FA protection in the 2FA dApp. There is a cooldown period for disabling 2FA protection, and you can cancel the disable 2FA protection request before this period ends. The cooldown period is **7 Days**, and after which you would not be able to use **2FA protection** anymore.
 
-So it's recommended to transfer all your 2FA protected assets to another account after you disable the 2FA, and sign up the 2FA protection for this new account as soon as possible, to make sure all assets are safe.
+Hence, it's recommended to transfer all your 2FA protected assets to another 2FA protected account after you've disabled the 2FA for a primary wallet. This ensures that all assets will stay protected.
 
 ### Steps to disable 2FA
 
@@ -87,7 +87,7 @@ So it's recommended to transfer all your 2FA protected assets to another account
 
 - Use metamask and connect your wallet.
 
-- Click **Disable 2FA** button in **Wallet actions**, sign the message and wait the cooldown window ends. Attention, the 2FA is still active during this period, and all authorised operations are required.
+- Click **Disable 2FA** button in **Wallet actions**, sign the message and wait until the cooldown window ends. Do note, 2FA is still active during this period, and all operations will require authorisation.
 
 ![](../../assets/2fa/disable.png)
 
@@ -95,6 +95,6 @@ So it's recommended to transfer all your 2FA protected assets to another account
 
 If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.
 
-- Click **Cancel Disable 2FA** button in **Wallet actions**, sign the message and you can use the previous 2FA device to get the 2FA protection.
+- Click **Cancel Disable 2FA** button in **Wallet actions**, sign the message and this would cancel the request to disable 2FA on the current wallet. You can then continue to use the previous 2FA device with 2FA protection.
 
 ![](../../assets/2fa/cancel-disable.png)
