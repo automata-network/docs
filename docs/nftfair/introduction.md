@@ -81,7 +81,7 @@ If you are interested in using our platform and ready to start a Fairdrop, you n
 
 - The meta data for your NFTs. Required: name, cover(recommended size: 930x294px). Optional: description, tags, properties, etc...
 
-- If you holding a mystery box fairdrop, you need a cover (930x294px, [example](https://ipfs.io/ipfs/bafybeiehhoqx54wf6o6cgu7etjxxlhfxa2qstf6ay75lzi4o3thxf26e6i/box-banner.png)), title(Less than 70 characters) and short description(Less than 200 characters) for each of your mystery box.
+- The infomation for each of your mystery boxes: a cover (930x294px, [example](https://ipfs.io/ipfs/bafybeiehhoqx54wf6o6cgu7etjxxlhfxa2qstf6ay75lzi4o3thxf26e6i/box-banner.png)), title(Less than 70 characters) and short description(Less than 200 characters), the purchase limit and the price(paid activity required).
 
 - Once you complete setting up the Fairdrop, you can transfer or mint your NFT to our vault contract, and begin selling.
 
