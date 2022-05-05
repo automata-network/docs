@@ -1,6 +1,7 @@
 # Minter Vault
 
 This vault extends the `NFTFairVaultBase` contract. However, there are several notable characteristics that set itself apart from the currently existing templates. Such differences are:
+
 - The contract no longer holds pre-minted tokens, and will not accept any inbound token transfers. Calling the `onERC721Received` hook will cause a transaction to revert.
 - The `ids` property of the Category object stores a list of token IDs that has been minted by the Vault.
 - The `claimable_ids` property of the category object stores a list of pre-configured IDs that will be minted from the specified category.
@@ -13,7 +14,7 @@ The workflow to host a Fairdrop using this template does not deviate too far fro
 
 The following briefly shows the steps of setting up a Fairdrop using this template:
 
-1. Deploy the Minter vault via the console.
+1. Deploy a Minter vault.
 
 2. Deploy a contract that inherits either the `IERC721Mintable` or `IERC1155Mintable` interface
 
@@ -29,7 +30,7 @@ The following briefly shows the steps of setting up a Fairdrop using this templa
 
 ### Overloaded Methods
 
-The following functions inherited from the `NFTFairVaultBase` have been overloaded to suit the use case for this template.
+The following functions inherited from the `NFTFairVaultBase` have been overloaded to accommodate the use case for this template.
 
 #### `getCategoryNftIds`
 
