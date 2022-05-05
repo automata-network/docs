@@ -6,10 +6,11 @@ This documentation outlines the contract specification of the platform. The cont
 - `NFTFairTreasury` - The central contract that collects sales revenues generated from vaults, and other protocol-related payment.
 - `NFTFairVaultBase` - The base Vault contract that implements essential features of a vault, can be extended with additional implementations that are tailored to a specific template.
 
-Currently, the platform supports the two templates:
+Currently, the platform supports the following templates:
 
 - FIFO
 - Mystery Boxes
+- Minter Vault
 
 We plan to add more templates in the future.
 
