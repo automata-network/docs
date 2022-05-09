@@ -90,10 +90,12 @@ Make sure you have the below information ready:
 
 - A square brand logo, bigger than 500px. [Example](https://ipfs.io/ipfs/bafybeie5adkgmljzx7qzeulnwnq3laqsne4w5myic6c75kk2sqviqdjtua/supercar-icon.png)
 
+- A square cover for your activity, bigger than 500px. [Example](https://ipfs.io/ipfs/bafybeicbfrketst3vtf5yn2q6ty5ww5yt7lvxy64d3rhdnv6b4vz3etsqq/1%20peewee%20egg.png)
+
 - A banner related to the theme of the Fairdrop with size 2132x224px [Example](https://ipfs.io/ipfs/bafybeicywiylhs2w6jfofgzhaw3gfnl2pen2u4wgsrmxuu7crlx46uilbe/supercar-banner.jpeg)
 
 - A small 32x32px square icon for the browser tab bar. [Example](https://static.wixstatic.com/media/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png)
 
-- The meta data for your NFTs. Required: name, cover(recommended size: 930x294px). Optional: description, tags, properties, etc...
+- The meta data for your NFTs. Required: name, image [Example](https://ipfs.io/ipfs/bafybeih5qzros2ysahzo2x5bo3rjaqfhfcqt47ncxrbk6mi3y2flu3f4dq/5%20extra-large%20egg.png). Optional: description, tags, properties, etc...
 
 - The infomation for each of your mystery boxes: a cover (930x294px, [example](https://ipfs.io/ipfs/bafybeiehhoqx54wf6o6cgu7etjxxlhfxa2qstf6ay75lzi4o3thxf26e6i/box-banner.png)), title(Less than 70 characters) and short description(Less than 200 characters), the purchase limit and the price(paid activity required).
