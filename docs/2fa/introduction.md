@@ -11,7 +11,7 @@ Not all security measures are made equal. 2FA Guru’s secret generation, storag
 
 ## 2FA Guru features 
 - Anti-phishing protection. Crypto is fun and exciting, but there are serious risks. Make sure your accounts are resistant to real-time identity attacks. 
-- Multi-chain support. 2FA Guru is currently live on Polygon and zkSync’s public testnet. We’re EVM-compatible and working hard to expand the range of supported networks - If you’d like us to prioritise a chain, submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or drop us a [message](mailto:2fa.guru@ata.network). 
+- Multi-chain support. 2FA Guru is currently live on Polygon mainnet. We’re EVM-compatible and working hard to expand the range of supported networks - If you’d like us to prioritise a chain, submit a proposal [here](https://forms.gle/xnwQZepySGiEyyNy9) or drop us a [message](mailto:2fa.guru@ata.network).
 - One-time setup. The additional layer of protection extends across all dApps supported by 2FA Guru on the same blockchain network. 
 - Developer-oriented integration. Deploy and secure dApps easily with 2FA Guru’s smart contract. 
 - Smooth onboarding. 2FA Guru fits seamlessly into your workflow by working with your favourite tools such as 1Password, LastPass and more. 

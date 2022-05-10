@@ -1,13 +1,11 @@
 # User Guide
 
-<!-- Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection. -->
-Visit Automata 2FA Guru to start your 2FA protection.
+Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection.
 
 ---
 
 ## Setup 2FA
-<!-- - Visit [Automata 2FA Guru](https://app.2fa.guru). -->
-- Visit Automata 2FA Guru.
+- Visit [Automata 2FA Guru](https://app.2fa.guru).
 
 - Use metamask and connect your wallet.
 
@@ -47,8 +45,7 @@ Recommended configuration in 1Password
 
 If you lost your 2FA device in an unfortunate incident, you can reset it only if you have a recovery wallet. The reset processes are similar to setting up 2FA for the first time:
 
-<!-- - Visit [Automata 2FA Guru](https://app.2fa.guru). -->
-- Visit Automata 2FA Guru.
+- Visit [Automata 2FA Guru](https://app.2fa.guru).
 
 - Use metamask and connect your recovery wallet.
 
@@ -82,8 +79,7 @@ Hence, it's recommended to transfer all your 2FA protected assets to another 2FA
 
 ### Steps to disable 2FA
 
-<!-- - Visit [Automata 2FA Guru](https://app.2fa.guru). -->
-- Visit Automata 2FA Guru.
+- Visit [Automata 2FA Guru](https://app.2fa.guru).
 
 - Use metamask and connect your wallet.
 
