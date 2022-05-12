@@ -1,6 +1,9 @@
 # :beginner: Introduction
 
 <!-- ![](/assets/mev_wiki.png) -->
+**Flashboys, Flashbots, Dark Forests and more..**
+
+![](../assets/mev_wiki.png){style="zoom:80%"}
 
 This is a public resource for learning about **Miner Extractable Value**.
 

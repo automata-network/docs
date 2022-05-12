@@ -6,62 +6,66 @@ site_author: Automata Team
 repo_url: https://github.com/automata-network/docs
 
 nav:
-  - Welcome: index.md
-  - The MEV Wiki:
-    - Introduction: ./mev/introduction.md
-    - Resource List: ./mev/resource-list.md
-    - Terms and Concepts: ./mev/terms-and-concepts.md
-    - Attack Examples: ./mev/examples.md
-    - Attempts to Trick the Bots: ./mev/trick-the-bots.md
-    - Solutions:
-      - Different Approaches: ./mev/solutions/approaches.md
-      - FaaS or MEVA: ./mev/solutions/faas-or-meva.md
-      - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
-      - Others: ./mev/solutions/others.md
-    - Miscellaneous: ./mev/misc.md
-  - Witness: 
-    - Introduction: ./witness/introduction.md
-    - User Guide: ./witness/user-guide.md
-    # - Witness API: ./witness/api.md
-  - Conveyor:
-    - Overview: ./conveyor/overview.md
-    - ConveyorV1:
-      - ./conveyor/conveyorv1/automata-conveyor-overview.md
-      - ./conveyor/conveyorv1/automata-conveyor-gtoken.md
-      - ./conveyor/conveyorv1/automata-conveyor-controller.md
-      - ./conveyor/conveyorv1/fee.md
-      - ./conveyor/conveyorv1/fee-contract.md
-    - ConveyorV2:
-      - ./conveyor/conveyorv2/design.md
-  - ContextFree Network:
-    - Get Started:
-      - Introduction: ./canarynet/getstarted/introduction.md
-    - User Guide:
-      - Set up Wallet: ./canarynet/userguide/setupwallet.md
-      - Get Test Token: ./canarynet/userguide/get-test-token.md
-      - Use Token Bridge: ./canarynet/userguide/token-bridge.md
-    - Node:
-      - Node Types: ./canarynet/node/node-type.md
-      - Run Full Node: ./canarynet/node/run-full-node.md
-      - Join as Validator: ./canarynet/node/run-validator.md
-  - NFTFair:
-    - Introduction: ./nftfair/introduction.md
-    - User Info:
-      - Overview: ./nftfair/users/activities.md
-      - FAQs: ./nftfair/users/faq.md
-    - Contracts:
-      - Summary: ./nftfair/contracts/summary.md
-      - NFTFairFactory: ./nftfair/contracts/factory.md
-      - NFTFairTreasury: ./nftfair/contracts/treasury.md
-      - NFTFairVault: ./nftfair/contracts/vault/base.md
-      - Vault Templates:
-        - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
-        - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
-  - AnyDAO:
-    - Introduction: ./anydao/introduction.md
-    - Design: ./anydao/design.md
-    - Specification: ./anydao/spec.md
-    - User Guide: ./anydao/guide.md
+  - General:
+    - The MEV Wiki:
+      - Introduction: ./mev/introduction.md
+      - Resource List: ./mev/resource-list.md
+      - Terms and Concepts: ./mev/terms-and-concepts.md
+      - Attack Examples: ./mev/examples.md
+      - Attempts to Trick the Bots: ./mev/trick-the-bots.md
+      - Solutions:
+        - Different Approaches: ./mev/solutions/approaches.md
+        - FaaS or MEVA: ./mev/solutions/faas-or-meva.md
+        - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
+        - Others: ./mev/solutions/others.md
+      - Miscellaneous: ./mev/misc.md
+  - User Guide:
+    - NFTFair:
+      - Introduction: ./nftfair/introduction.md
+      - User Info:
+        - Overview: ./nftfair/users/activities.md
+        - FAQs: ./nftfair/users/faq.md
+      - Contracts:
+        - Summary: ./nftfair/contracts/summary.md
+        - NFTFairFactory: ./nftfair/contracts/factory.md
+        - NFTFairTreasury: ./nftfair/contracts/treasury.md
+        - NFTFairVault: ./nftfair/contracts/vault/base.md
+        - Vault Templates:
+          - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
+          - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
+    - AnyDao:
+      - Introduction: ./anydao/introduction.md
+      - Design: ./anydao/design.md
+      - Specification: ./anydao/spec.md
+      - User Guide: ./anydao/guide.md
+    - XATA:
+      - Introduction: ./xata/introduction.md
+    - Witness: 
+      - Introduction: ./witness/introduction.md
+      - User Guide: ./witness/user-guide.md
+      # - Witness API: ./witness/api.md
+  - Developers:
+    - ContextFree Network:
+      - Get Started:
+        - Introduction: ./canarynet/getstarted/introduction.md
+      - User Guide:
+        - Set up Wallet: ./canarynet/userguide/setupwallet.md
+        - Get Test Token: ./canarynet/userguide/get-test-token.md
+        - Use Token Bridge: ./canarynet/userguide/token-bridge.md
+      - Node:
+        - Node Types: ./canarynet/node/node-type.md
+        - Run Full Node: ./canarynet/node/run-full-node.md
+        - Join as Validator: ./canarynet/node/run-validator.md
+    - Conveyor:
+      - Overview: ./conveyor/overview.md
+      - ConveyorV1:
+        - ./conveyor/conveyorv1/automata-conveyor-overview.md
+        - ./conveyor/conveyorv1/automata-conveyor-gtoken.md
+        - ./conveyor/conveyorv1/automata-conveyor-controller.md
+        - ./conveyor/conveyorv1/fee.md
+        - ./conveyor/conveyorv1/fee-contract.md
+      - ConveyorV2:
+        - ./conveyor/conveyorv2/design.md
 
 
 theme:
@@ -91,7 +95,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - toc.integrate
-    - navigation.expand
+    # - navigation.expand
   logo: "assets/favicon-192.png"
   favicon: "assets/favicon.ico"
 

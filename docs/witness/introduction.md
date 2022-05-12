@@ -1,5 +1,7 @@
 # Introduction
 
+![](../assets/witness.png){style="zoom:80%"}
+
 Automata [Witness](https://witness.ata.network) is a customizable voting service for decentralized applications. Witness provides a fully decentralized voting platform (with privacy features) across different blockchains.
 
 ## Features

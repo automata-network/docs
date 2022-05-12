@@ -1,5 +1,7 @@
 # ContextFree Network
 
+![](../../assets/canary.png){style="zoom:80%"}
+
 ContextFree is the Canary Network of Automata’s Mainnet, and this is an important milestone in realizing the technological vision of a privacy middleware platform built for Web 3.0.
 
 The launch of ContextFree provides a pre-production environment for real-life learnings to be applied to the eventual rollout of the Mainnet. During this time, users are invited to battle-test the code. Features are rolled out in phases to ensure the stability and security of the blockchain.

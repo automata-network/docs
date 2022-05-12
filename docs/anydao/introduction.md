@@ -1,5 +1,7 @@
 # Introduction
 
+![](../assets/anydao-image.png){style="zoom:80%"}
+
 Voting is one of the most important components for DAO. Currently there are two major approaches: off-chain signalling and on-chain governance. Due to the sensitivity and indeterminate design of on-chain infrastructure for different project, there is no an easy approach to have a universal pattern to apply to most of the cases and it requires abundant knowledge and thorough understanding to practice on-chain governance, currently there are very few teams have the ability to adopt it. Thus off-chain signalling is still the major approach for DAO to involve the community to make decisions.
 
 However for off-chain signalling voting, there are also several major problems faced:
