@@ -1,5 +1,7 @@
 # Minter Vault
 
+:warning: **Note:** This template will be deprecated soon. We planned on adding the minting function on top of the existing FIFO and mystery box templates. At that point, this template will be removed from the Factory.
+
 This vault extends the `NFTFairVaultBase` contract. However, there are several notable characteristics that set itself apart from the currently existing templates. Such differences are:
 
 - The contract no longer holds pre-minted tokens, and will not accept any inbound token transfers. Calling the `onERC721Received` hook will cause a transaction to revert.
