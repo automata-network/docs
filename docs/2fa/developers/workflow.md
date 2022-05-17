@@ -1,6 +1,59 @@
 # Workflow
 
-![](../../assets/2fa/workflow.png)
+* Make your authorised transfer
+
+``` mermaid
+sequenceDiagram
+  autonumber
+    participant PW as Primary wallet
+    participant Client as 2FA client
+    participant DApp as Automata 2FA Guru
+    participant Geode as 2FA Guru Geode
+    participant Contract as Target contract
+
+  note over PW, DApp: Make authorised transfer
+  PW->>DApp: Attempt to transfer 2FA protected assets
+  DApp-->>PW: Request 2FA code and recipient address
+  PW->>Client: Acquire a valid 2FA code
+  Client-->>PW: 6-digit 2FA code
+  PW->>DApp: Input the valid 2FA code and recipient address
+  DApp->>Geode: Ask for the validation
+  alt
+    note over Geode: Validation succeeded
+    Geode-->>DApp: Return a signature based on the actual transaction
+    DApp-->>PW: Metamask signature
+    DApp->Contract: Make authorised transfer
+  else
+    note over Geode: Validation failed
+    Geode-->>DApp: Return a validation error
+    DApp-->>PW: Request declined
+  end
+```
+
+* Recover your 2FA client
+
+``` mermaid
+sequenceDiagram
+  autonumber
+    participant RW as Recovery Wallet
+    participant Client as 2FA client
+    participant DApp as Automata 2FA Guru
+    participant Geode as 2FA Guru Geode
+    participant Contract as 2FA authentication contract
+  
+  RW->>DApp: Attempt to recover your 2FA client for your primary wallet
+  DApp->>Geode: Ask for the validation
+  Geode->>Contract: Check the binding relationship
+  alt
+    note over Geode: Validation succeeded
+    Geode-->>DApp: Return a new generated secret
+    DApp-->>Client: Scan the QR code to set up
+  else
+    note over Geode: Validation failed
+    Geode-->>DApp: Return a validation error
+    DApp-->>RW: Request declined
+  end
+```
 
 ### Key Components
 * Primary wallet:
