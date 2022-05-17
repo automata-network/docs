@@ -19,7 +19,7 @@ Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection.
 
 We support 1Password for storing your 2FA secret. To enable the use of **Scan QR Code** function in 1Password, you would first have to prepare a **Login** item in 1Password and configure the basic information. This makes password retrieval more convenient.
 
-![](../../assets/2fa/1password.png){width="400" height="240"}
+![](../../assets/2fa/1password.png){width="600" height="360"}
 
 Recommended configuration in 1Password
 
