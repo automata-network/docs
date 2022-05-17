@@ -22,7 +22,8 @@ sequenceDiagram
     note over Geode: Validation succeeded
     Geode-->>DApp: Return a signature based on the actual transaction
     DApp-->>PW: Metamask signature
-    DApp->Contract: Make authorised transfer
+    PW->>DApp: Make authorised transfer
+    DApp->>Contract: Make authorised transfer
   else
     note over Geode: Validation failed
     Geode-->>DApp: Return a validation error
@@ -48,6 +49,15 @@ sequenceDiagram
     note over Geode: Validation succeeded
     Geode-->>DApp: Return a new generated secret
     DApp-->>Client: Scan the QR code to set up
+    Client->>DApp: Input a 6-digit 2FA code
+    DApp->>Geode: Confirm reset
+    alt
+      note over Geode: Validation succeeded
+      Geode->>DApp: Reset succeeded
+    else
+      note over Geode: Validation failed
+      Geode->>DApp: Return a validation error
+    end
   else
     note over Geode: Validation failed
     Geode-->>DApp: Return a validation error
