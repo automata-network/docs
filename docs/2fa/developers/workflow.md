@@ -60,8 +60,7 @@ sequenceDiagram
     end
   else
     note over Geode: Validation failed
-    Geode-->>DApp: Return a validation error
-    DApp-->>RW: Request declined
+    Geode-->>DApp: Request declined
   end
 ```
 
