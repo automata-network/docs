@@ -62,6 +62,20 @@ nav:
     - Design: ./anydao/design.md
     - Specification: ./anydao/spec.md
     - User Guide: ./anydao/guide.md
+  - 2FA Guru:
+    - Introduction: ./2fa/introduction.md
+    - User Info:
+      - User Guide: ./2fa/users/guide.md
+      - FAQs: ./2fa/users/faq.md
+    - Developer Info:
+      - Workflow: ./2fa/developers/workflow.md
+      - Contracts:
+        - Summary: ./2fa/contracts/summary.md
+        - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
+        - TwoFactorAuthentication: ./2fa/contracts/TwoFactorAuthentication.md
+        - Appendix: ./2fa/contracts/2FAppendix.md
+      - FAQs: ./2fa/developers/faq.md
+    
 
 
 theme:
