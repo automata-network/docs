@@ -11,15 +11,15 @@ Visit [Automata 2FA Guru](https://app.2fa.guru) to start your 2FA protection.
 
 - If you haven't signed up for an account, you can click the **Wallet Actions** button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices.
 
-![](../../assets/2fa/setup-1.png)
+![](../../assets/2fa/setup-1.png){width="600" height="150"}
 
-![](../../assets/2fa/setup-2.png)
+![](../../assets/2fa/setup-2.png){width="600" height="270"}
 
-![](../../assets/2fa/setup-3.png)
+![](../../assets/2fa/setup-3.png){width="600" height="150"}
 
 We support 1Password for storing your 2FA secret. To enable the use of **Scan QR Code** function in 1Password, you would first have to prepare a **Login** item in 1Password and configure the basic information. This makes password retrieval more convenient.
 
-![](../../assets/2fa/1password.png)
+![](../../assets/2fa/1password.png){width="600" height="360"}
 
 Recommended configuration in 1Password
 
@@ -35,9 +35,9 @@ Recommended configuration in 1Password
 
   There is a binding window for each account after signup, If you do not bind a recovery wallet in **7 days**, you would not be allowed to bind one subsequently.
 
-![](../../assets/2fa/bind-1.png)
+![](../../assets/2fa/bind-1.png){width="600" height="150"}
 
-![](../../assets/2fa/bind-2.png)
+![](../../assets/2fa/bind-2.png){width="600" height="300"}
 
 ---
 
@@ -51,9 +51,9 @@ If you lost your 2FA device in an unfortunate incident, you can reset it only if
 
 - Click **Reset 2FA** button in **Wallet Actions**, input your primary wallet address and sign the message. If the address pair matches, you can scan the new secret to reset the 2FA device. There is no transaction on chain, so no gas fees are required to reset a 2FA device. Take note, the recovery wallet does not need to sign up for 2FA for this to work.
 
-![](../../assets/2fa/reset-1.png)
+![](../../assets/2fa/reset-1.png){width="600" height="225"}
 
-![](../../assets/2fa/reset-2.png)
+![](../../assets/2fa/reset-2.png){width="600" height="330"}
 
 ---
 
@@ -63,11 +63,11 @@ Once you sign up 2FA for your wallet, your 2FA assets in supported dApps will be
 
 During the transfer of assets, a 2FA check will be conducted before allowing you to sign a message which would be used in the transfer.
 
-![](../../assets/2fa/transfer-1.png)
+![](../../assets/2fa/transfer-1.png){width="600" height="150"}
 
-![](../../assets/2fa/transfer-2.png)
+![](../../assets/2fa/transfer-2.png){width="600" height="300"}
 
-![](../../assets/2fa/transfer-3.png)
+![](../../assets/2fa/transfer-3.png){width="600" height="120"}
 
 ---
 
@@ -85,12 +85,12 @@ Hence, it's recommended to transfer all your 2FA protected assets to another 2FA
 
 - Click **Disable 2FA** button in **Wallet actions**, sign the message and wait until the cooldown window ends. Do note, 2FA is still active during this period, and all operations will require authorisation.
 
-![](../../assets/2fa/disable.png)
+![](../../assets/2fa/disable.png){width="600" height="180"}
 
-![](../../assets/2fa/disabling.png)
+![](../../assets/2fa/disabling.png){width="800" height="100"}
 
 If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.
 
 - Click **Cancel Disable 2FA** button in **Wallet actions**, sign the message and this would cancel the request to disable 2FA on the current wallet. You can then continue to use the previous 2FA device with 2FA protection.
 
-![](../../assets/2fa/cancel-disable.png)
+![](../../assets/2fa/cancel-disable.png){width="600" height="180"}
