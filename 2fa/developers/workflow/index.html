@@ -1762,7 +1762,66 @@
 
 
 <h1 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h1>
-<p><img alt="" src="../../../assets/2fa/workflow.png" /></p>
+<ul>
+<li>Make your authorised transfer</li>
+</ul>
+<pre class="mermaid"><code>sequenceDiagram
+  autonumber
+    participant PW as Primary wallet
+    participant Client as 2FA client
+    participant DApp as Automata 2FA Guru
+    participant Geode as 2FA Guru Geode
+    participant Contract as Target contract
+
+  note over PW, DApp: Make authorised transfer
+  PW-&gt;&gt;DApp: Attempt to transfer 2FA protected assets
+  DApp--&gt;&gt;PW: Request 2FA code and recipient address
+  PW-&gt;&gt;Client: Acquire a valid 2FA code
+  Client--&gt;&gt;PW: 6-digit 2FA code
+  PW-&gt;&gt;DApp: Input the valid 2FA code and recipient address
+  DApp-&gt;&gt;Geode: Ask for the validation
+  alt
+    note over Geode: Validation succeeded
+    Geode--&gt;&gt;DApp: Return a signature based on the actual transaction
+    DApp--&gt;&gt;PW: Metamask signature
+    PW-&gt;&gt;DApp: Make authorised transfer
+    DApp-&gt;&gt;Contract: Make authorised transfer
+  else
+    note over Geode: Validation failed
+    Geode--&gt;&gt;DApp: Return a validation error
+    DApp--&gt;&gt;PW: Request declined
+  end</code></pre>
+<ul>
+<li>Recover your 2FA client</li>
+</ul>
+<pre class="mermaid"><code>sequenceDiagram
+  autonumber
+    participant RW as Recovery Wallet
+    participant Client as 2FA client
+    participant DApp as Automata 2FA Guru
+    participant Geode as 2FA Guru Geode
+    participant Contract as 2FA authentication contract
+
+  RW-&gt;&gt;DApp: Attempt to recover your 2FA client for your primary wallet
+  DApp-&gt;&gt;Geode: Ask for the validation
+  Geode-&gt;&gt;Contract: Check the binding relationship
+  alt
+    note over Geode: Validation succeeded
+    Geode--&gt;&gt;DApp: Return a new generated secret
+    DApp--&gt;&gt;Client: Scan the QR code to set up
+    Client-&gt;&gt;DApp: Input a 6-digit 2FA code
+    DApp-&gt;&gt;Geode: Confirm reset
+    alt
+      note over Geode: Validation succeeded
+      Geode-&gt;&gt;DApp: Reset succeeded
+    else
+      note over Geode: Validation failed
+      Geode-&gt;&gt;DApp: Return a validation error
+    end
+  else
+    note over Geode: Validation failed
+    Geode--&gt;&gt;DApp: Request declined
+  end</code></pre>
 <h3 id="key-components">Key Components<a class="headerlink" href="#key-components" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Primary wallet:</li>

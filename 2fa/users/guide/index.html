@@ -1810,11 +1810,11 @@
 <p>If you haven't signed up for an account, you can click the <strong>Wallet Actions</strong> button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices.</p>
 </li>
 </ul>
-<p><img alt="" src="../../../assets/2fa/setup-1.png" /></p>
-<p><img alt="" src="../../../assets/2fa/setup-2.png" /></p>
-<p><img alt="" src="../../../assets/2fa/setup-3.png" /></p>
+<p><img alt="" height="150" src="../../../assets/2fa/setup-1.png" width="600" /></p>
+<p><img alt="" height="270" src="../../../assets/2fa/setup-2.png" width="600" /></p>
+<p><img alt="" height="150" src="../../../assets/2fa/setup-3.png" width="600" /></p>
 <p>We support 1Password for storing your 2FA secret. To enable the use of <strong>Scan QR Code</strong> function in 1Password, you would first have to prepare a <strong>Login</strong> item in 1Password and configure the basic information. This makes password retrieval more convenient.</p>
-<p><img alt="" src="../../../assets/2fa/1password.png" /></p>
+<p><img alt="" height="360" src="../../../assets/2fa/1password.png" width="600" /></p>
 <p>Recommended configuration in 1Password</p>
 <table>
 <thead>
@@ -1843,8 +1843,8 @@
 </ul>
 <p>For binding a recovery wallet, you would need to send a binding transaction to our 2FA management contract after our authentication, and gas fees would be required.</p>
 <p>There is a binding window for each account after signup, If you do not bind a recovery wallet in <strong>7 days</strong>, you would not be allowed to bind one subsequently.</p>
-<p><img alt="" src="../../../assets/2fa/bind-1.png" /></p>
-<p><img alt="" src="../../../assets/2fa/bind-2.png" /></p>
+<p><img alt="" height="150" src="../../../assets/2fa/bind-1.png" width="600" /></p>
+<p><img alt="" height="300" src="../../../assets/2fa/bind-2.png" width="600" /></p>
 <hr />
 <h2 id="reset-2fa-devices">Reset 2FA devices<a class="headerlink" href="#reset-2fa-devices" title="Permanent link">&para;</a></h2>
 <p>If you lost your 2FA device in an unfortunate incident, you can reset it only if you have a recovery wallet. The reset processes are similar to setting up 2FA for the first time:</p>
@@ -1859,15 +1859,15 @@
 <p>Click <strong>Reset 2FA</strong> button in <strong>Wallet Actions</strong>, input your primary wallet address and sign the message. If the address pair matches, you can scan the new secret to reset the 2FA device. There is no transaction on chain, so no gas fees are required to reset a 2FA device. Take note, the recovery wallet does not need to sign up for 2FA for this to work.</p>
 </li>
 </ul>
-<p><img alt="" src="../../../assets/2fa/reset-1.png" /></p>
-<p><img alt="" src="../../../assets/2fa/reset-2.png" /></p>
+<p><img alt="" height="225" src="../../../assets/2fa/reset-1.png" width="600" /></p>
+<p><img alt="" height="330" src="../../../assets/2fa/reset-2.png" width="600" /></p>
 <hr />
 <h2 id="make-authorised-transfer">Make authorised transfer<a class="headerlink" href="#make-authorised-transfer" title="Permanent link">&para;</a></h2>
 <p>Once you sign up 2FA for your wallet, your 2FA assets in supported dApps will be protected. If you hold any 2FA protected assets, you will be able to transfer them in <strong>Manage my Wallet Assets</strong> panel.</p>
 <p>During the transfer of assets, a 2FA check will be conducted before allowing you to sign a message which would be used in the transfer.</p>
-<p><img alt="" src="../../../assets/2fa/transfer-1.png" /></p>
-<p><img alt="" src="../../../assets/2fa/transfer-2.png" /></p>
-<p><img alt="" src="../../../assets/2fa/transfer-3.png" /></p>
+<p><img alt="" height="150" src="../../../assets/2fa/transfer-1.png" width="600" /></p>
+<p><img alt="" height="300" src="../../../assets/2fa/transfer-2.png" width="600" /></p>
+<p><img alt="" height="120" src="../../../assets/2fa/transfer-3.png" width="600" /></p>
 <hr />
 <h2 id="disable-2fa-protection">Disable 2FA protection<a class="headerlink" href="#disable-2fa-protection" title="Permanent link">&para;</a></h2>
 <p>If you've lost your 2FA device and no respective recovery wallet has been bound, you always have the option to disable 2FA protection in the 2FA dApp. There is a cooldown period for disabling 2FA protection, and you can cancel the disable 2FA protection request before this period ends. The cooldown period is <strong>7 Days</strong>, and after which you would not be able to use <strong>2FA protection</strong> anymore.</p>
@@ -1884,13 +1884,13 @@
 <p>Click <strong>Disable 2FA</strong> button in <strong>Wallet actions</strong>, sign the message and wait until the cooldown window ends. Do note, 2FA is still active during this period, and all operations will require authorisation.</p>
 </li>
 </ul>
-<p><img alt="" src="../../../assets/2fa/disable.png" /></p>
-<p><img alt="" src="../../../assets/2fa/disabling.png" /></p>
+<p><img alt="" height="180" src="../../../assets/2fa/disable.png" width="600" /></p>
+<p><img alt="" height="100" src="../../../assets/2fa/disabling.png" width="800" /></p>
 <p>If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.</p>
 <ul>
 <li>Click <strong>Cancel Disable 2FA</strong> button in <strong>Wallet actions</strong>, sign the message and this would cancel the request to disable 2FA on the current wallet. You can then continue to use the previous 2FA device with 2FA protection.</li>
 </ul>
-<p><img alt="" src="../../../assets/2fa/cancel-disable.png" /></p>
+<p><img alt="" height="180" src="../../../assets/2fa/cancel-disable.png" width="600" /></p>
 
               
             </article>
