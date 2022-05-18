@@ -87,7 +87,7 @@ Hence, it's recommended to transfer all your 2FA protected assets to another 2FA
 
 ![](../../assets/2fa/disable.png){width="600" height="180"}
 
-![](../../assets/2fa/disabling.png){width="600" height="75"}
+![](../../assets/2fa/disabling.png){width="800" height="100"}
 
 If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.
 
