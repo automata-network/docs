@@ -1,4 +1,7 @@
 # Introduction
+
+![](../../assets/nftfair-image.png){style="zoom:80%"}
+
 [Automata NFTFair](https://www.nftfair.app/) is A NFT launch platform, designed around principles of fairness and efficacy for a community-led experience is how we would describe NFTFair. Metadata exploits pre-sniping are all predatory practices that make it unfair for the average user to get their hands on a new collection, much less obtain rare or lucrative items.
 
 # About Fairdrops

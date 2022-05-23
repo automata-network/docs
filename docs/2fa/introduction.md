@@ -1,4 +1,7 @@
 # Introduction
+
+![](../assets/2fa/2fa-guru-image.png){style="zoom:80%"}
+
 2FA Guru by Automata is a blockchain-based authentication solution that secures access to accounts and protects users with an active defence. 
 
 There are a number of known scenarios where hackers can brute-force attacks: 
