@@ -6,6 +6,7 @@ site_author: Automata Team
 repo_url: https://github.com/automata-network/docs
 
 nav:
+<<<<<<< HEAD
   - General:
     - The MEV Wiki:
       - Introduction: ./mev/introduction.md
@@ -38,6 +39,19 @@ nav:
       - Design: ./anydao/design.md
       - Specification: ./anydao/spec.md
       - User Guide: ./anydao/guide.md
+    - 2FA Guru:
+      - Introduction: ./2fa/introduction.md
+      - User Info:
+        - User Guide: ./2fa/users/guide.md
+        - FAQs: ./2fa/users/faq.md
+      - Developer Info:
+        - Workflow: ./2fa/developers/workflow.md
+        - Contracts:
+          - Summary: ./2fa/contracts/summary.md
+          - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
+          - TwoFactorAuthentication: ./2fa/contracts/TwoFactorAuthentication.md
+          - Appendix: ./2fa/contracts/2FAppendix.md
+        - FAQs: ./2fa/developers/faq.md
     - XATA:
       - Introduction: ./xata/introduction.md
     - Witness: 
@@ -66,7 +80,6 @@ nav:
         - ./conveyor/conveyorv1/fee-contract.md
       - ConveyorV2:
         - ./conveyor/conveyorv2/design.md
-
 
 theme:
   name: material
@@ -100,7 +113,11 @@ theme:
   favicon: "assets/favicon.ico"
 
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - tables
   - attr_list
