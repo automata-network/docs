@@ -6,7 +6,6 @@ site_author: Automata Team
 repo_url: https://github.com/automata-network/docs
 
 nav:
-<<<<<<< HEAD
   - General:
     - The MEV Wiki:
       - Introduction: ./mev/introduction.md
