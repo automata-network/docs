@@ -73,6 +73,7 @@ If you have done everything right, the user’s address and balance should appea
 You are also given the option to provide liquidity to XATA by creating a LP (Liquidity Pool) token pair.
 ### Adding Liquidity
 To do this, please follow these steps:
+
 * Click on "Pool" in the top left hand corner.
 
 ![](../assets/xata/pool.jpeg){style="zoom:80%"}
