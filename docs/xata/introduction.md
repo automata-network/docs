@@ -43,7 +43,7 @@ To understand how XATA works in practice, check out this 2 minute video overview
 <iframe width="732" height="412" src="https://www.youtube.com/embed/ydu6iRdlFpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Get started
-Follow our in-depth [Guide](https://app.gitbook.com/o/-MjTHc7BOHyVLIwg4MYT/s/gqCCsfqAud7IrQymu673/~/changes/u3Ag5ra2KTLlc8KWQfKs/xata/swap-and-liquidity-pool-guide) to learn the basics of using XATA.
+Follow our in-depth [Guide](./liquiditypool-guide.md) to learn the basics of using XATA.
 
 ### Get involved
 We are on Telegram - Join the conversation [here](https://t.me/xataprotocol) on telegram now!

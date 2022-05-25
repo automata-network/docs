@@ -3,7 +3,7 @@
 ## Connecting Your Wallet
 
 !!! note
-	Currently, XATA only supports the Polygon(MATIC) network & Binance Smart Chain(BSC). Support for other chains will be launched very soon.
+	Please note: Currently, XATA only supports the Polygon(MATIC) network & Binance Smart Chain(BSC). Support for other chains will be launched very soon.
 
 For this guide, we will be using Metamask with a Polygon wallet address to connect to XATA. Please ensure that you have these ready:
 
@@ -20,7 +20,8 @@ Once you have prepared everything, let's begin conneting our wallet to XATA:
 
 ![](../assets/xata/connect_wallet.jpeg){style="zoom:80%"}
 
-Select “Metamask”
+* Select “Metamask”
+
 ![](../assets/xata/metamask.jpeg){style="zoom:80%"}
 
 * The Metamask extension prompt will appear. Ensure that your account is checked with a tick and click "Next".
@@ -34,7 +35,7 @@ Select “Metamask”
 If you have done everything right, the user’s address and balance should appear on the top-right corner as shown in this image.
 ![](../assets/xata/connect_complete.jpeg){style="zoom:80%"}
 
-# Swapping Tokens
+## Swapping Tokens
 
 * Click on "Swap" at the top left hand corner.
 * Select the tokens that you are swapping for.
@@ -53,6 +54,7 @@ If you have done everything right, the user’s address and balance should appea
 * **Transaction deadline**: The amount of time in seconds after the transaction is submitted. If a transaction were executed past the deadline, it will be reverted.
 * **Multihop**:  When a user is attempting to swap USDC for DAI, and such a LP pair does not exist, this trade must go through an intermediary token (USDT) from another existing LP pair. The trade route would look like this: USDC -> USDT -> DAI.
 
+
 * Once you are ready, click on "Swap" and a prompt on XATA will appear. Click on "Confirm Swap" to proceed.
 
 ![](../assets/xata/confirm_swap.jpeg){style="zoom:80%"}
@@ -69,7 +71,7 @@ If you have done everything right, the user’s address and balance should appea
 
 ![](../assets/xata/swap_complete.jpeg){style="zoom:80%"}
 
-# Liquidity Pools
+## Liquidity Pools
 You are also given the option to provide liquidity to XATA by creating a LP (Liquidity Pool) token pair.
 ### Adding Liquidity
 To do this, please follow these steps:
@@ -104,7 +106,7 @@ To do this, please follow these steps:
 
 ![](../assets/xata/add_liquidity_complete.jpeg){style="zoom:80%"}
 
-## Removing Liquidity
+### Removing Liquidity
 * To remove liquidity, click on “Pool” to view all your liquidity pools. Then click on "Manage" on the liquidity pool of your choice. Then click "Remove".
 
 ![](../assets/xata/pool_remove.jpeg){style="zoom:80%"}

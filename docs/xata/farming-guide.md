@@ -10,7 +10,7 @@ You should be able to see the available farming pools by clicking on the 'Farm' 
 Feel free to use the filter/search functions to find a pool for your favorite token, or the one you wish to stake.
 
 ### Step 2: Add Liquidity
-If you have not already done this, head over to our [Liquidity Pool Guide](https://docs.xata.fi/xata/swap-and-liquidity-pool-guide) to add liquidity to the token pair.
+If you have not already done this, head over to our [Liquidity Pool Guide](./liquiditypool-guide.md) to add liquidity to the token pair.
 
 ### Step 3: Stake LP tokens
 After adding liquidity, return to the Farm page to stake.

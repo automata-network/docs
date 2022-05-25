@@ -1,14 +1,14 @@
 # SDK
 
 ## The XATA-API module
-The source code for this module can be found [here on Github](https://github.com/xata-fi/xata-sdk/tree/main/src/xata-api) , inside the ./src/xata-api directory.
+The source code for this module can be found [here on Github](https://github.com/xata-fi/xata-sdk/tree/main/src/xata-api) , inside the `./src/xata-api directory`.
 
 Each function within this module bundles the process of EIP712 signing, fee token calculation, and submitting meta transaction into a single workflow. The supported functions are the following:
 
-* addLiquidity()
-* swapExactTokensForTokens()
-* swapTokensForExactTokens()
-* removeLiquidity()
+* `addLiquidity()`
+* `swapExactTokensForTokens()`
+* `swapTokensForExactTokens()`
+* `removeLiquidity()`
 
 Using this module, developers no longer required to manually construct a transaction request that looks like this:
 ```json
@@ -41,14 +41,15 @@ npm i @xatadev/sdk
 ​
 ## Getting Started
 To use the module, simply do the following 3 steps:
-1.Declare an instance of the XATA module.
+
+1. Declare an instance of the XATA module.
 ```javascript
 import { Xata } from '@xatadev/sdk';
     ​
 const xataApi = new Xata();
 ```
 
-1.Initiate the instance
+1. Initiate the instance
 ```javascript
 const feeToken = '<0xAddress>'
 await xataApi.init(web3Provider, feeToken)
@@ -59,9 +60,9 @@ await xataApi.setFeeToken(otherFeeToken)
 ```
 
 
-1.Interact with XATA
+1. Interact with XATA
 
-You may now interact with the XATA router using Uniswap-like functions. These functions return API responses like the one below:
+    You may now interact with the XATA router using Uniswap-like functions. These functions return API responses like the one below:
 ```json
 // response example
 {
@@ -88,13 +89,33 @@ await xataApi.addLiquidity(<params>)
 
 | Parameter | Type | Description |
 | ----------|------|------------ |
-| amountln  |ethers.BigNumber| The amount of input tokens to send |
-| amountOutMin | ethers.BigNumber | The minimum amount of output tokens that must be received for the transaction not to revert.|
-| path | address[] | An array of token addresses. path.length >= 2 |
-| user | address | The user's address |
-| deadline | unit256 | Unix timestamp after which the transaction is reverted |
-| gasLimit | BigNumber | Optional: Gas limit for calculating the token fee amount. This value may not be the actual gas limit used in the transaction |
-| gasPrice | BigNumber | Optional: Gas price for calculating the token fee amount. This value may not be the actual gas price used in the transaction |
+| tokenA | `string` | Token A address |
+| tokenB | `string` | Token B address |
+| amountADesired | <div style="width: 100pt"> `ethers.BigNumber` | The amount of A added to the liquidity pool if the B/A price <= (`amountBDesired`/`amountADesired`) |
+| amountBDesired | `ethers.BigNumber` | The amount of B added to the liquidity pool if the A/B price <= (`amountADesired`/`amountBDesired`) |
+| amountAMin | `ethers.BigNumber` | Bounds the extent to which the B/A price can go up before the transaction reverts. Must be <= `amountADesired` |
+| amountBMin | `ethers.BigNumber` | Bounds the extent to which the A/B price can go up before the transaction reverts. Must be <= `amountBDesired` |
+| user | `string` | The user's address. The liquidity provider and the recipient of LP tokens |
+| deadline | `BigNumber` | Unix timestamp after which the transaction is reverted |
+| gasLimit | `BigNumber` | Optional: Gas limit for calculating the token fee amount. This value may not be the actual gas limit used in the transaction |
+| gasPrice | `BigNumber` | Optional: Gas price for calculating the token fee amount. This value may not be the actual gas price used in the transaction |
+
+### Swap Exact Tokens For Tokens
+Swap an exact amount of input tokens for as many output tokens as possible.
+
+```javascript
+await xataApi.swapExactTokensForTokens(<param>)
+```
+
+| Parameter | Type | Description |
+| ----------|------|------------ |
+| amountln  | <div style="width: 100pt"> `ethers.BigNumber`| The amount of input tokens to send |
+| amountOutMin | `ethers.BigNumber` | The minimum amount of output tokens that must be received for the transaction not to revert.|
+| path | `address[]` | An array of token addresses. `path.length >= 2` |
+| user | `address` | The user's address |
+| deadline | `unit256` | Unix timestamp after which the transaction is reverted |
+| gasLimit | `BigNumber` | Optional: Gas limit for calculating the token fee amount. This value may not be the actual gas limit used in the transaction |
+| gasPrice | `BigNumber` | Optional: Gas price for calculating the token fee amount. This value may not be the actual gas price used in the transaction |
 
 ### Swap Tokens For Exact Tokens
 Receive an exact amount of output tokens for as few input tokens as possible.
@@ -105,13 +126,13 @@ await xataApi.swapTokensForExactTokens(<params>)
 
 | Parameter | Type | Description | 
 | ----------|------|------------ |
-| amountOut | ethers.BigNumber | The amount of output tokens to receive |
-| amountInMax | ethers.BigNumber | The maximum amount of input tokens that must                                      be sent for the transaction not to revert. |
-| path | address[] | An array of token addresses. path.length >= 2 |
-| user | address | The user's address |
-| deadline | uint256 | Unix timestamp after which the transaction is reverted |
-| gasLimit | BigNumber | Optional: Gas limit for calculating the token fee                                amount. This value may not be the actual gas limit used                          in the transaction |
-| gasPrice | BigNumber | Optional: Gas price for calculating the token fee                                amount. This value may not be the actual gas price used                          in the transaction |
+| amountOut | <div style="width: 100pt"> `ethers.BigNumber` | The amount of output tokens to receive |
+| amountInMax | `ethers.BigNumber` | The maximum amount of input tokens that must                                      be sent for the transaction not to revert. |
+| path | `address[]` | An array of token addresses. `path.length >= 2` |
+| user | `address` | The user's address |
+| deadline | `uint256` | Unix timestamp after which the transaction is reverted |
+| gasLimit | `BigNumber` | Optional: Gas limit for calculating the token fee                                amount. This value may not be the actual gas limit used                          in the transaction |
+| gasPrice | `BigNumber` | Optional: Gas price for calculating the token fee                                amount. This value may not be the actual gas price used                          in the transaction |
 
 ### Remove Liquidity
 Withdraws a pair of tokens by burning LP tokens. This method consists of a 2-steps flow; it requires the LP holders to first sign a permit message, allowing the router to burn LP tokens, then proceeds with the actual LP tokens removal.
@@ -124,12 +145,12 @@ await xataApi.permitLP(<params>)
 
 | Parameter | Type | Description
 |-----------|------|------------
-| pairAddr | string | The LP token address
-| owner | string | The owner of the LP tokens. A.k.a. the user's address
-| spender | string | The recipient address for the allowance. (XATA Router address)
-| value | ethers.BigNumber | The liquidity value to approve
-| nonce | ethers.BigNumber | The nonce used for signing the message
-| deadline | uint256 | Unix timestamp after which the transaction is reverted
+| pairAddr | `string` | The LP token address
+| owner | `string` | The owner of the LP tokens. A.k.a. the user's address
+| spender | `string` | The recipient address for the allowance. (XATA Router address)
+| value | <div style="width: 100pt"> `ethers.BigNumber` | The liquidity value to approve
+| nonce | `ethers.BigNumber` | The nonce used for signing the message
+| deadline | `uint256` | Unix timestamp after which the transaction is reverted
 
 It will return a Signature object that is required for removing liquidity.
 
@@ -149,16 +170,16 @@ await xataApi.removeLiquidity(<params>)
 
 |Parameter | Type | Description
 |----------|------|------------|
-| tokenA | string | Token A address
-| tokenB | string Token B address
-| liquidity |ethers.BigNumber | The amount of liquidity to remove
-| amountAMin | ethers.BigNumber | The amount of tokenA that must be received before the transaction reverts
-|amountBMin | ethers.BigNumber | The amount of tokenB that must be received before the transaction reverts |
-| user | string | The user's address. The liquidity provider and the recipient of LP tokens
-| deadline | BigNumber | Unix timestamp after which the transaction is reverted
-| sig | SignatureLike | A signature object received from permitLP()
-| gasLimit | BigNumber | Optional: Gas limit for calculating the token fee amount. This value may not be the actual gas limit used in the transaction
-| gasPrice | BigNumber | Optional: Gas price for calculating the token fee amount. This value may not be the actual gas price used in the transaction |
+| tokenA | `string` | Token A address
+| tokenB | `string` | Token B address
+| liquidity | <div style="width: 100pt"> `ethers.BigNumber` | The amount of liquidity to remove
+| amountAMin | `ethers.BigNumber` | The amount of tokenA that must be received before the transaction reverts
+|amountBMin | `ethers.BigNumber` | The amount of tokenB that must be received before the transaction reverts |
+| user | `string` | The user's address. The liquidity provider and the recipient of LP tokens
+| deadline | `BigNumber` | Unix timestamp after which the transaction is reverted
+| sig | `SignatureLike` | A signature object received from `permitLP()`
+| gasLimit | `BigNumber` | Optional: Gas limit for calculating the token fee amount. This value may not be the actual gas limit used in the transaction
+| gasPrice | `BigNumber` | Optional: Gas price for calculating the token fee amount. This value may not be the actual gas price used in the transaction |
 
 ## Relay Config
 When a transaction request is successfully sent to one of the API routers, the transaction is forwarded and processed by Geode – one of our technologies that can increase privacy and eliminate trading MEV. To do this, the XATA SDK stores the Geode relay configuration as part of the API module.
@@ -176,7 +197,7 @@ Developers can freely customize these endpoints to meet their application needs.
 
 XATA API works on production mode by default, and therefore the transaction request also gets forwarded to production-grade Geode. If you are under the development stage and want to test the transaction on a separate relay, you need to make a couple of changes.
 
-Update the relay configuration as in the previous section. What makes it different from the previous one is that you have to set the endpoint value(s) under the Environment.STAGING object instead of Environment.PRODUCTION.
+Update the relay configuration as in the previous section. What makes it different from the previous one is that you have to set the endpoint value(s) under the `Environment.STAGING` object instead of `Environment.PRODUCTION`.
 
 ```javascript
 [Environment.PRODUCTION]: {

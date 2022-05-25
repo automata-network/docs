@@ -8,9 +8,9 @@ Frequently asked questions.
 * **Are there any risks in providing to a liquidity pool like ATA/USDT?**
 
     Yes. All liquidity farming activities are subjected to the risk of impermanent loss. You will need to do your own calculations as to whether yield farming and earning LP fees are more profitable than holding ATA itself to decide on the best choice of action.
-​
-    More information on impermanent loss can be found in this article: ​
-    https://academy.binance.com/en/articles/impermanent-loss-explained
+    
+    More information on impermanent loss can be found in this article:
+    [https://academy.binance.com/en/articles/impermanent-loss-explained](https://academy.binance.com/en/articles/impermanent-loss-explained)
 
 * **How do I connect on my mobile browser?**
 
