@@ -47,6 +47,14 @@ Read the [introduction](./anydao/introduction.md) to learn more about the platfo
 
 Read the [introduction](./2fa/introduction.md) to setup your 2FA Guru.
 
+## [**XATA.FI**](./xata/introduction.md)
+
+[![image](../assets/xata/xata_brand.png){style="zoom:60%"}](./xata/introduction.md)
+
+**XATA.FI** is a Fair Liquidity Provisioning protocol to minimize MEV.
+
+Read the [introduction](./xata/introduction.md) to learn more about the protocol.
+
 <!--
 ## Links
 

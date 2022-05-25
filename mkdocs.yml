@@ -53,6 +53,11 @@ nav:
         - FAQs: ./2fa/developers/faq.md
     - XATA:
       - Introduction: ./xata/introduction.md
+      - Smart Contracts: ./xata/smart-contract.md
+      - Swap & Liquidity Pool Guide: ./xata/liquiditypool-guide.md
+      - Farming Guide: ./xata/farming-guide.md
+      - SDK: ./xata/sdk.md
+      - FAQ: ./xata/faq.md
     - Witness: 
       - Introduction: ./witness/introduction.md
       - User Guide: ./witness/user-guide.md

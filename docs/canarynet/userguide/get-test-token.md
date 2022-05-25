@@ -15,6 +15,6 @@
 ### Get ContextFree ERC20 Token on Ropsten Testnet
 - Input your Ropsten ETH address under this tab, and press `Submit`.<br>
 ![](../../assets/canaryimg/faucet_erc20.png){width="673" height="463"}<br>
-- Then 10 CTX ERC20 token will be sent to your Ropsten address, you can check on [Ropsten Explorer](ropsten.etherscan.io).
-- However the ERC20 token cannot be utilized as native token on the canary network, you can follow the instruction [here](../userguide/tokenbridge.md) to use the **Automata Token Bridge** to convert it into the ContextFree native token.
+- Then 10 CTX ERC20 token will be sent to your Ropsten address, you can check on [Ropsten Explorer](https://ropsten.etherscan.io).
+- However the ERC20 token cannot be utilized as native token on the canary network, you can follow the instruction [here](../userguide/token-bridge.md) to use the **Automata Token Bridge** to convert it into the ContextFree native token.
 - *Notice: You can request funding for your address for once per 24 hours.*
