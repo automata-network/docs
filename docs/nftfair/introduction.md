@@ -1,82 +1,92 @@
-# Introduction
+## Overview
 
 ![](../../assets/nftfair-image.png){style="zoom:80%"}
 
-[Automata NFTFair](https://www.nftfair.app/) is A NFT launch platform, designed around principles of fairness and efficacy for a community-led experience is how we would describe NFTFair. Metadata exploits pre-sniping are all predatory practices that make it unfair for the average user to get their hands on a new collection, much less obtain rare or lucrative items.
+It comes as a surprise that NFT launches are hardly fair and hurt the very community built around it. Users have reasonable expectations of obtaining an item from an NFT collection, but instead find that pre-sniping and metadata exploits - where traits are revealed on-chain before the sale - are so common as to be expected. 
 
-# About Fairdrops
+It was in light of these current shortcomings that we sat down and deliberated on what a viable solution could be, and how it would look like. It was clear to us that fairness would be a crucial part of such a design. With the support of [Conveyor](https://conveyor.ata.network), [NFTFair](https://www.nftfair.app) was launched. 
+
+## Features
+
+- Unexploitable fairness
+</br> Powered by Conveyor to ensure that metadata is not revealed before the NFT is bought and settled
+- True randomness
+</br> Random numbers directly generated from Silicon, with the option of utilizing Verifiable Random Function 
+- Multi-chain support
+</br> EVM/WASM compatible, with support for major ecosystem blockchains such as Ethereum, BSC, and Polygon
+- Gasless transactions
+</br> Intuitive experience to eliminate user friction and complexity 
+
+## (FIFO) Fairdrops
+
+Attackers with a technical edge can skip ahead of the queue and interact directly with the smart contract of a new collection. The rarest NFTs are snapped up before the average user has a chance to connect their wallet once the sale goes public. For an effective launch process, metadata cannot be revealed at any point of the NFT journey from bidding, selection to distribution. 
+
+With NFTFair, first-in-first-out ordering by Conveyor removes any room for exploitation. 
+
+## Mystery Boxes
+
+Users anticipate the excitement of not knowing the exact item and rarity of an item when they participate in a mystery box collection. The surprise, however, can turn sour, when distribution is not truly randomized. The assumption that each user has an equal opportunity to mint an NFT with random metadata is just that.
+
+AT NFTFair, no one, including the hosting nodes, is able to glean the ordering before it has been decided. It is out of the question for anyone to favor bids based on undisclosed information, which ensures randomization.
+
+## Templates
+NFTFair currently supports:
+
+- FIFO (First-In-First-Out) Fairdrops
+- Mystery Boxes Fairdrops 
+
+More curated template versions coming soon. 
+
 ## Network:
 
-This platform is compatible with most EVM networks. We currently support the hosting of Fairdrop events on the following networks:
+NFTFair is compatible with most EVM networks, and is live on: 
 
 - BSC
+- Polygon 
 
-We are working hard to expand the list of supported networks. If your intended launch network is not included in our supported list, please submit a proposal [here](https://docs.google.com/forms/d/e/1FAIpQLScU36yLYWuiL3gXVvy7NwvnY-t4JD0u6XUvhTeaogCzQDzQpw/viewform) or reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network).
+We are also working hard to expand the list of supported networks. Share your project with us [here](https://docs.google.com/forms/d/e/1FAIpQLScU36yLYWuiL3gXVvy7NwvnY-t4JD0u6XUvhTeaogCzQDzQpw/viewform) or drop us a [message](mailto:nftfair@ata.network).
 
-## Fairdrop Templates:
-This platform currently supports two templates, i.e. (1) FIFO (First-In-First-Out) and (2) Mystery Boxes Fairdrops.
-
-### FIFO Fairdrop
-First-in-first-out vaults enforce the correct ordering of NFT distributions. This is all made possible by [Conveyor](https://www.ata.network/conveyor).
-
-### Mystery Boxes Fairdrop
-Mystery boxes are a more restricted form of FIFO Fairdrop. Users who participated in a mystery box fairdrop selects an NFT category, i.e. a collection of token IDs. A single token ID is then randomly chosen and not revealed until the transaction has been broadcasted.
-
-Users are also rest-assured that transaction ordering is determined and correctly enforced in a fair manner.
-
-We plan to add more templates in the future.
-
-## Category:
-A category defines a collection of NFTs, with a set of configurable properties, such as:
+## Category
+A category is what defines a collection of NFTs. Properties that can be configured include: 
 
 - NFT Contract
 - Range of Token IDs
 - Sales Price
 - Maximum Purchase/Claim Limit
 
-Fairdrop event organizers must define at least one category before sending NFTs to Fairdrop vaults.
+Projects must define at least one category before sending NFTs to Fairdrop vaults.
 
-## Fair Sales:
-This platform provides the option to enable Fairdrop sales, i.e. Selling NFTs in exchange for an acceptable form of ERC20 payment tokens. NFTs can be differentiated by categories, where prices can be set individually.
+## Sales
+Prices can be set for NFTs in different categories (i.e. collections). Proceeds from the sale can be withdrawn from the platform once the launch has ended. 
 
-Each vault only accepts a single ERC20 payment token. In other words, it is not possible to price one category at 100 USDC, and the other at 100 BTC.
+As each Fairdrop vault only accepts a single ERC20 payment token, it is not possible to price Category A at 100 USDC, and Category B at 100 BTC. Projects can choose to price different categories for varying amounts of the same token. For example, Category A at 100 UDSC and Category B at 1000 USDC. 
 
-You can however, price different categories for different amounts of the same token. For instance, 100 USDC for category A and 1000 USDC for category B.
+## Costs
+NFT launches on the platform are performed with gasless transactions. For users to benefit from zero-cost transactions, projects may choose to opt for relayer-sponsored transactions. Projects bear the full gas cost and users do not have to pay for any transaction fees. 
 
-Sales revenue can be withdrawn once the Fairdrop event has come to an end.
+Please reach out to [us](mailto:nftfair@ata.network) for more cost details. 
 
-# Costs
-Gas consumption plays a major role on the cost of running Fairdrops. This platform provides a gasless transaction experience, powered by [Conveyor](https://www.ata.network/conveyor). To provide the true experience of zero-cost transactions for the users, you may opt for relayer-sponsored transactions.
+## To get started 
+Make sure you have the below information ready: 
 
-Relayer-sponsored transactions do not charge ERC20 gas payment from the users. The event organizers would bear the full gas cost instead. Please reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network), to get a quote and a cost breakdown for enabling relayer-sponsored transactions.
+- Activity name. Example: Automata NFT Egg Hunt
 
-# Ready to start?
-If you are interested in using our platform and ready to start a Fairdrop, you need to provide us with the following information:
+- Page title. Example: Come and crack your own egg! 
 
-- The activity name. (Example: MOGA Mystery Box Fairdrop)
+- Start and end time for the Fairdrop
 
-- A page title. (Example: Come And Obtain Your Own Genesis MOGA!)
+- Official website and social media links 
 
-- The start and end time for your fairdrop.
+- Short description to introduce your project. (Example: Automata NFT Egg Hunt is a mystery box competition launched and hosted on NFTFair to celebrate the spirit of Easter with the community.)
 
-- Official website and social media URLs.
+- List of commmon FAQs 
 
-- A short description to introduce your project. (Example: Monster Galaxy is making a mystery box fairdrop to give our players the chance to obtain powerful genesis mogas! Don’t lose this opportunity!)
+- A horizontal brand logo, more than 200px. [Example](https://ipfs.io/ipfs/bafybeihapvgs3ifvv5ts3soxpkez37yo6dln6smlza3smpjjj7dktk7fta/supercar-logo.png)
 
-- A list of FAQs to let users know about the Fairdrop.
+- A square brand logo, more than 500px. [Example](https://ipfs.io/ipfs/bafybeie5adkgmljzx7qzeulnwnq3laqsne4w5myic6c75kk2sqviqdjtua/supercar-icon.png)
 
-- A horizontal brand logo, higher than 200px. [Example](https://ipfs.io/ipfs/bafybeihapvgs3ifvv5ts3soxpkez37yo6dln6smlza3smpjjj7dktk7fta/supercar-logo.png)
+- A banner related to the theme of the Fairdrop, 2132 x 224px. [Example](https://ipfs.io/ipfs/bafybeicywiylhs2w6jfofgzhaw3gfnl2pen2u4wgsrmxuu7crlx46uilbe/supercar-banner.jpeg)
 
-- A square brand logo, bigger than 500px. [Example](https://ipfs.io/ipfs/bafybeie5adkgmljzx7qzeulnwnq3laqsne4w5myic6c75kk2sqviqdjtua/supercar-icon.png)
+- A favicon for the browser tab bar, 32 x 32px. [Example](https://static.wixstatic.com/media/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png)
 
-- A banner related to the theme of the Fairdrop with size 2132x224px [Example](https://ipfs.io/ipfs/bafybeicywiylhs2w6jfofgzhaw3gfnl2pen2u4wgsrmxuu7crlx46uilbe/supercar-banner.jpeg)
-
-- A small 32x32px square icon for the browser tab bar. [Example](https://static.wixstatic.com/media/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png)
-
-- Once you complete setting up the Fairdrop, you can transfer or mint your NFT to our vault contract, and begin selling.
-
-- If you wish to enable the wallet connect function with your infura id, you need to provide the id to us. Read more about [Wallet Connect](https://walletconnect.com/) and [Infura ID](https://infura.io/)
-
-Moreover, you can provide us with the primary color of your brand and some decoration backgrounds to customize and enrich your Fairdrop  activity page.
-
-That's all, leave the rest to us, and we'll bring you a fantastic Fairdrop.
+Once the setup is complete, projects can then transfer or mint the NFTs to the Fairdrop Vaults. If you wish to enable the wallet connect function with your infura id, please share the id with us. For context, read more about [Wallet Connect](https://walletconnect.com/) and [Infura ID](https://infura.io/).
