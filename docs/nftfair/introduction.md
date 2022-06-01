@@ -21,7 +21,7 @@ It was in light of these current shortcomings that we sat down and deliberated o
 
 Attackers with a technical edge can skip ahead of the queue and interact directly with the smart contract of a new collection. The rarest NFTs are snapped up before the average user has a chance to connect their wallet once the sale goes public. For an effective launch process, metadata cannot be revealed at any point of the NFT journey from bidding, selection to distribution. 
 
-With NFTFair, first-in-first-out ordering by Conveyor removes any room for exploitation. 
+With NFTFair, first-in-first-out ordering enforced by Conveyor removes any room for exploitation. 
 
 ## Mystery Boxes
 
