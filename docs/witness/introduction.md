@@ -1,33 +1,39 @@
-# Introduction
+## Overview
 
-![](../assets/witness.png){style="zoom:80%"}
+![](../assets/witness_updated.png){style="zoom:80%"}
 
-Automata [Witness](https://witness.ata.network) is a customizable voting service for decentralized applications. Witness provides a fully decentralized voting platform (with privacy features) across different blockchains.
+The concept of community takes on tangible form and value as blockchain gains velocity. People with real financial stake change not only the proverbial status quo, but also foster new economies and polities in the image of Web3. With so many going about to decide the future of some of the biggest and most impactful decentralized projects, we thought about the experience we wanted communities to have, and how we could value-add to that journey. 
 
-## Features
+[Witness](https://witness.ata.network) was the result. A privacy-first, off-chance governance solution with on-chain execution. 
 
-* **Privacy**: You can choose different types of votes with different privacy levels e.g. Public (full disclosure of voter address and number of votes), Medium (only number of votes), and Private (only voting result is published — voter identities and number of votes are not).
-* **Low-cost**: Voting is conducted off-chain so there is no gas cost and a wider range of token holders can participate in governance without being deterred by high gas fees.
-* **Chainhook**: Trigger on-chain execution based on the voting results. Chainhook enables calling of the on-chain contract which was registered at proposal creation.
-* **Modularity**: Each of these functions can be used as standalones, or together. If a project wants to use Witness as a signaling tool without on-chain execution, that is also possible.
+## Features 
+
+- Privacy 
+</br> Users can select and change different privacy settings, which allows for specific results to be displayed. Public: Voter address, number of votes. Medium: Number of votes. Private: Only the overall result is shown. 
+- Gasless 
+</br> Off-chain voting is gas-free. Users do not have to grapple with prohibitive gas fees to create proposals and vote on them.
+- On-chain execution 
+</br> Chainhook enables calling of the on-chain contract registered at proposal creation. 
+- Multi-chain support 
+</br> Witness currently supports ERC20 on Ethereum, with other [EVM-based chains](https://chainlist.org/) and [Substrate-based chains](https://polkaproject.com/#/projects?cateID=1&tagID=0) in the pipeline. 
+- Modular 
+</br> Each function can be used standalone or together. It is entirely possible for a project to use Witness solely as a signaling tool. 
 
 ## Platforms
 
-Witness currently supports the following with more to be added in future:
+Witness currently supports the following networks: 
 
-* Ethereum (Mainnet, Kovan Testnet)
-* Binance Smart Chain (Mainnet, Testnet)
-* Plasm Network (Dusty Testnet)
-* Clover Finance (Testnet)
-* Darwinia (Pangolin Testnet)
-* Moonbase (Alpha Testnet)
-* Polygon (Matic Mainnet)
-* Avalanche (Mainnet)
-* HECO (Mainnet, Testnet)
+- Ethereum (Mainnet, Kovan Testnet)
+- Binance Smart Chain (Mainnet, Testnet)
+- Plasm Network (Dusty Testnet)
+- Clover Finance (Testnet)
+- Darwinia (Pangolin Testnet)
+- Moonbase (Alpha Testnet)
+- Polygon (Matic Mainnet)
+- Avalanche (Mainnet)
+- HECO (Mainnet, Testnet)
 
-Next, we will be adding other [EVM-based chains][evm-chains] and [Substrate-based chains][substrate-chains] to the list.
-
-### Feature Support
+## Support
 
 |          Platform           |   Private Voting   |     Chainhook      |    Public Voting   |
 |:---------------------------:|:------------------:|:------------------:|:------------------:|
