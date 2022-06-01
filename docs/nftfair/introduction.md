@@ -87,6 +87,6 @@ Make sure you have the below information ready:
 
 - A banner related to the theme of the Fairdrop, 2132 x 224px. [Example](https://ipfs.io/ipfs/bafybeicywiylhs2w6jfofgzhaw3gfnl2pen2u4wgsrmxuu7crlx46uilbe/supercar-banner.jpeg)
 
-- A favicon for the browser tab bar, 32 x 32px. [Example](https://static.wixstatic.com/media/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png)
+- A favicon for the browser tab, 32 x 32px. [Example](https://static.wixstatic.com/media/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0653dd_303a21ade8b64ed5bca9f2755b2cb4a5~mv2.png)
 
-Once the setup is complete, projects can then transfer or mint the NFTs to the Fairdrop Vaults. If you wish to enable the wallet connect function with your infura id, please share the id with us. For context, read more about [Wallet Connect](https://walletconnect.com/) and [Infura ID](https://infura.io/).
+Once the setup is complete, projects can then transfer or mint the NFTs to the Fairdrop Vaults. If you wish to enable the wallet connect function with your infura id, please share the id with us. Read more about [Wallet Connect](https://walletconnect.com/) and [Infura ID](https://infura.io/).
