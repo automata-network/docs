@@ -1,6 +1,6 @@
 ## Overview
 
-![](../../assets/nftfair-image.png){style="zoom:80%"}
+![](../assets/nftfair-image.png){style="zoom:80%"}
 
 It comes as a surprise that NFT launches are hardly fair and hurt the very community built around it. Users have reasonable expectations of obtaining an item from an NFT collection, but instead find that pre-sniping and metadata exploits - where traits are revealed on-chain before the sale - are so common as to be expected. 
 
