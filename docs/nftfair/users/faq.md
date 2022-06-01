@@ -4,7 +4,9 @@
 
 ### **1. What is NFTFair? How is this platform different from other NFT platforms? (e.g. OpenSea)**
 
-NFTFair is a platform powered by Conveyor to ensure NFTs are being distributed (or sold) fairly. The average user is able to avoid being front-run by snipers, technically sophisticated buyers, or trading bots. Conveyor achieves this by enforcing the fair ordering of transactions. Click [here](https://www.ata.network/conveyor) to try it out yourself. 
+NFTFair is a platform powered by Conveyor to ensure NFTs are being distributed (or sold) fairly. The average user is able to avoid being front-run by snipers, technically sophisticated buyers, or trading bots. Conveyor is able to achieve this by enforcing the fair ordering of transactions. 
+
+Click [here](https://www.ata.network/conveyor) to try it out yourself. 
 
 ### **2. What is a Fairdrop?**
 
