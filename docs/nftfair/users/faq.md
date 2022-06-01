@@ -4,7 +4,7 @@
 
 ### **1. What is NFTFair? How is this platform different from other NFT platforms? (e.g. OpenSea)**
 
-NFTFair is a platform that integrates Conveyor to ensure NFTs are being distributed (or sold) fairly, in a manner which the average users should not be put in a disadvantage of getting frontrun by technologically sophisticated buyers or trading bots. Conveyor achieves Fairness by enforcing the correct ordering of transactions to reduce MEV. Click [here](https://www.ata.network/conveyor) to learn more about Conveyor's MEV minimization solution.
+NFTFair is a platform powered by Conveyor to ensure NFTs are being distributed (or sold) fairly. The average user is able to avoid being front-run by snipers, technically sophisticated buyers, or trading bots. Conveyor achieves this by enforcing the fair ordering of transactions. Click [here](https://www.ata.network/conveyor) to try it out yourself. 
 
 ### **2. What is a Fairdrop?**
 
@@ -16,39 +16,38 @@ A user-facing activity site is also created for a Fairdrop event, for participan
 
 ### **1. Can I start a Fairdrop activity to sell or give away NFTs from an existing contract?**
 
-Currently, this platform only supports NFT contract that follows the ERC721 standard.
+Currently, this platform only supports NFT contracts that follow the ERC721 standard.
 
-Please reach out to us at [nftfair@ata.network](mailto:nftfair@ata.network), and we will gladly assist you with the deployment of your very own Fairdrop activity.
+Drop us a message at [nftfair@ata.network](mailto:nftfair@ata.network) to get started with your own Fairdrop. 
 
 ## Participants
 
 ### **1. Why am I not qualified to claim NFTs?**
 
-Certain Fairdrop events may be limited for participants that are in a whitelist. If you are not an eligible participants, please reach out to the Fairdrop organizer directly, since we do not have control over whitelists.
+Certain Fairdrops may be be open only to participants on a whitelist. If you are not eligible, please reach out to the project directly, as we do not have control over whitelists.
 
 ### **2. How much does it cost to claim NFTs?**
 
-The price varies by the Fairdrop event and its category. You can find NFT pricings on the activity site.
+The price varies by the Fairdrop and its category. You can find NFT pricing on the activity site.
 
 ### **3. How many NFTs can I claim?**
 
-This also varies by the event and its category. More info can be found on the activity site.
+This also varies by the Fairdrop and its category. More details can be found on the activity site.
 
 ### **4. Why am I prompted to send an `approve()` transaction? What am I approving?**
 
-If this is your first time using Conveyor, you are likely prompted to send at most two `approve()` transactions.
+If this is your first time using Conveyor, you will likely be prompted with (at most) two `approve()` transactions.
 
 The first `approve()` transaction grants permission for the collection of **gas payment** ERC20 tokens. There are certain scenarios which may omit this requirement, such as:
 
-- Certain Fairdrop events may be opting for relayer-sponsored transactions. In this case, users do not bear the cost of Conveyor transaction fees.
-- User's token of choice has previously been approved for other Conveyor projects.
+- Fairdrops that opt for relayer-sponsored transactions. In this case, users do not have to bear the cost of transaction fees.
+- The user's token of choice has previously been approved for other Conveyor projects.
 
 The second `approve()` transaction grants permission to the Treasury contract for collecting payment from NFT sales. This permission is valid for all vaults and other contracts on the platform that are receiving payments via the Treasury contract.
 
-
 ### **5. Why do I still have to sign two EIP712 messages?**
 
-Sending `approve()` transactions as a mean of assigning allowance for the transfer of ERC20 tokens requires the users to hold native currencies to pay for gas. Requesting an approval for every single token transfers does not provide the smoothest user experience. A good workaround this issue is to allocate a very large amount of allowance for the spender, so users would only have to `approve()` once. This however, puts a huge trust on the spender to not drain the user's allowance at its will. To eliminate trust, the spender is subjected to a secondary approval process by requiring user's signed EIP 712 message, without needing to pay for gas.
+Sending `approve()` transactions as a mean of assigning allowance for the transfer of ERC20 tokens requires users to hold native currencies to pay for gas. Requesting an approval for every single token transfers does not provide the smoothest user experience. A good workaround is to allocate a large amount of allowance for the spender, so users would only have to `approve()` once. This however places a huge amount of trust in the spender to not drain the user's allowance at will. To prevent exploitation, the spender is subjected to a secondary approval process which requires the user's signed EIP 712 message, without needing to pay for gas.
 
 The first signature is verified by the Conveyor relayer to collect ERC20 payment token, with the amount closely equivalent to the market gas price.
 
