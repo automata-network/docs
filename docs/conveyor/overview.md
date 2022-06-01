@@ -10,5 +10,5 @@ Because blockchains are written by consensus and the content of each block is ch
 
 When transactions are fed into Conveyor, the service ingest and outputs incoming transactions by a FIFO order. This means block producers cannot: 
 
-- Inject new transactions into the Conveyor output. The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
+- Inject new transactions into the Conveyor output. Any inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
 - Delete ordered transactions. Transactions accepted by Conveyor are broadcasted throughout the network so transactions cannot be deleted unless all block producers are colluding and censoring the transactions at the same time.
