@@ -5,7 +5,7 @@
 - [Getting started](#getting-started)
   - [For Users](#for-users)
   - [For Project Owners](#for-project-owners)
-    - [Adding the Automata Network testnet to your network](#adding-the-automata-network-testnet-to-your-network)
+    - [Adding the Automata Network testnet to your network](#adding-the-automata-network-testnet)
     - [Connecting Your Metamask Wallet](#connecting-your-metamask-wallet)
     - [Creating a workspace](#creating-a-workspace)
     - [Creating a new proposal](#creating-a-new-proposal)
@@ -22,47 +22,45 @@
 
 ## For Users
 
-First, choose the blockchain network that you wish to connect to. Then search for the project in the Search bar. Look for the proposal that you are interested in voting for.
+- Connect to the corresponding network 
+- Search for the project in the Search bar
+- Cast your vote for an active proposal 
 
-!!! attention
+!!! Attention
 
-    Before voting, please ensure that:
+    Before voting, make sure that:
 
-    - Your MetaMask wallet is connected to the corresponding network you are voting in. You can get necessary info about the blockchains we support [here](#supported-chain-info) and follow these [instructions](#adding-automata-network-testnet-to-your-networks) to add to your MetaMask wallet
-    - Your account has the necessary number of ERC20/BEP20 tokens to qualify for the vote **as specified by the block height in the snapshot**.
+    - Your MetaMask wallet is connected to the correct network. Read more about the blockchains we support [here](#supported-chain-info) 
+    [here](#supported-chain-info) and follow these [instructions](#adding-the-automata-network-testnet) to add them to your wallet.
+    - Your account has the necessary number of ERC20/BEP20 tokens to qualify for the vote as specified by the block height in the snapshot.
 
 ![](../assets/choosenetwork.png){width="673" height="463"}
 ![](../assets/voteproposal_2.png){width="673" height="463"}
 ![](../assets/blocksnapshot.png){width="673" height="463"}
 
-
 !!! Note
 
-    **If you wish to get tokens for the testnet, please refer to the [Getting tokens](#getting-tokens) section for more information**
+    Find out how to obtain testnet tokens [here](#getting-tokens).
 
-Once you have obtained tokens, you can participate in the vote by clicking on your option of choice. Currently, we are calculating the token balance for each voter based on the block height that each proposal mandates. 
+Results will be displayed after voting ends.
 
-![](../assets/voteproposal_2.png){width="673" height="463"}
-
-The results of vote can be seen after the vote has concluded and finazlied. 
-
-For Private Proposals: Only the final winning option will be shown
+Private proposals: Only the final outcome is shown. 
 
 ![](../assets/result_private.png){width="673" height="463"}
 
-For Medium Proposals: The number of votes for each option will be shown. 
+Medium proposals: Number of votes for each option will be shown. 
 
 ![](../assets/result_medium.png){width="673" height="463"}
 
-For Public Proposals: The voter information will be transparent to the public.
+Public proposals: Voter information can be viewed by the public.
 
 ![](../assets/result_public.png){width="673" height="463}
 
 ## For Project Owners
 
-Project owners can create a workspace for hosting proposals. Project teams or community members can then proceed to create proposals. Currently the metadata is stored on the [testnet](https://d.ata.network) of Automata Network. Connect to the testnet to create workspaces or propsals.
+There are a number of roles assigned with different levels of control. Project owners can create a workspace for hosting proposals. Project teams or community members are able to create proposals. Currently, the metadata is stored on the [testnet](https://d.ata.network) of Automata Network. Connect to the testnet to create workspaces or propsals.
 
-### Adding the Automata Network testnet to your network  
+### Adding the Automata Network testnet  
 
 Add the Automata Network to your existing network using the following details:  
 
@@ -73,7 +71,7 @@ Add the Automata Network to your existing network using the following details:
 |    **Chain ID**     |            86            |
 | **Currency Symbol** |           ATA            |
 
-The option to add network can be found by clicking on:  
+Alternatively, add a new network by navigating to: 
 
 * **Profile Picture >> Settings >> Networks >> Add Network**  
 
@@ -85,12 +83,12 @@ or:
 
 ### Connecting Your Metamask Wallet
 
-If you see **Connect wallet** or **Not connected** show up in your MetaMask, this means that you are **not connected**!
+If the **Connect wallet** button continues to show up, you are **not connected**.
 
 ![](../assets/check1_2.png){width="673" height="463"}
 ![](../assets/check2_2.png){width="673" height="463"}
 
-You can follow these steps to connect your wallet:  
+Follow these steps to connect your wallet:  
 
 - Click on **Connect wallet** at the top right corner
 - Click on **MetaMask**
@@ -101,17 +99,18 @@ You can follow these steps to connect your wallet:
 
 ### Creating a workspace
 
-You can create a workspace from the landing page [Witness](https://witness.ata.network/).  
+Create a workspace from the landing [page](https://witness.ata.network/).
 
-!!! tips
-    Before creating a workspace for your token, please ensure the following:
+!!! Tips
+
+    Before creating a workspace for your token, ensure that:
 
     - **Your MetaMask wallet is connected to Automata Network**
-    - **Your account has the necessary ATA tokens**
+    - **Your account holds the necessary ATA tokens**
 
-    If you do not have the necessary tokens, please refer to [Getting tokens](#getting-tokens).
+    Jump ahead to [Getting tokens](#getting-tokens) for a detailed guide. 
 
-Once ready, you can create a workspace by:
+Begin by:
 
 - Clicking on **Create**
 - Choose the correct blockchain network for your workspace
@@ -124,19 +123,20 @@ Once ready, you can create a workspace by:
 
 ### Creating a new proposal
 
-Head over to the workspace of a project you're interested in creating a proposal for.  If the workspace has not been created yet, refer to [Creating a Workspace](#creating-a-workspace).
+Head over to the [workspace](#creating-a-workspace) to create a proposal. 
 
 ![](../assets/creatingproposal_2.png){width="673" height="463"}
 
-!!! tips
-    Before creating a proposal, please ensure that:
+!!! Tips
+
+    Before creating a proposal, ensure that:
 
     - **Your MetaMask wallet is connected to Automata Network**
-    - **Your account has the necessary ATA tokens**
+    - **Your account contains the necessary ATA tokens**
 
-    If you do not have the necessary tokens, you can refer to [Getting tokens](#getting-tokens).
+    Jump ahead to [Getting tokens](#getting-tokens) for a detailed guide.
 
-Once ready, you can create a proposal by:
+Begin by:
 
 - Clicking on **New Proposal** 
 - Fill in your proposal title
@@ -149,7 +149,9 @@ Once ready, you can create a proposal by:
 
 ## Chainhook
 
-This feature enables calling of the on-chain contract which was registered at proposal creation. Note this is still in beta so it's only enabled for [selected platform](../introduction/#feature-support) currently. Each voting option can be followed with a chainhook or, you can create a chainhook by:
+This feature enables calling of the on-chain contract registered at proposal creation, across our list of supported [networks](../introduction/#feature-support).
+
+Each voting option can be followed with a chainhook. Or, create a chainhook by:
 
 - Clicking on **Add Chainhook** followed by the option field
 - Choose the smart contract language for your Chainhook
@@ -160,14 +162,13 @@ This feature enables calling of the on-chain contract which was registered at pr
   - Currently only `uint256, uint256[], address, address[]` are supported as argument types
   - Follow the example for input value by hovering above the value field
 
-
 ![](../assets/addchainhook.gif){width="673" height="463"}
 
 ## Appendix
 
 ### Setting up MetaMask
 
-[MetaMask](https://metamask.io/) is a cryptocurrency wallet used to interact with the Ethereum blockchain. As it is required when using Automata Network, you can install the extension via the official download page [here](https://metamask.io/download.html), or simply add the extension for your browser using the links below:
+[MetaMask](https://metamask.io/) is a cryptocurrency wallet used to interact with the Ethereum blockchain. Install the extension via the official download page [here](https://metamask.io/download.html), or simply add the extension for your browser using the links below:
 
 - [Chrome](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/)
@@ -176,18 +177,21 @@ This feature enables calling of the on-chain contract which was registered at pr
 
 ### Getting tokens
 #### Getting ERC20 tokens (Ethereum Kovan Network) 
-To get your tokens, head over to our faucet at <https://faucet.ata.network/>.
 
-Copy the address of your account in MetaMask by clicking on **'Copy to Clipboard'** and then paste the address into the input field for your desired token. Click **Submit**.  
+- Get tokens from Automata's [faucet](https://faucet.ata.network).
+- Copy the address of your account in MetaMask by clicking on **'Copy to Clipboard'** 
+- Paste the address into the input field for your desired token.
+- Click **Submit**. 
 
 ![](../assets/gettingtoken1_m.gif){width="673" height="463"}
 
-When receiving ERC-20 tokens, the relevant contract hash can be found right next to the words "Ethereum Kovan Network". You can copy this by clicking on the **Copy** button next to it.  
+When receiving ERC-20 tokens, the relevant contract hash can be found  next to the network name "Ethereum Kovan Network". This information can be copied by clicking on the **Copy** button.
 
 ![](../assets/gettingtoken2_m.gif){width="673" height="463"}
 
 #### Getting BEP20 tokens in the Binance Smart Chain test network
-To get tokens in the BSC test network, you can search for the contract address using <https://testnet.bscscan.com/>. Use the faucet <https://testnet.venus.io/faucet> or <https://testnet.binance.org/faucet-smart> to get tokens.
+- To get tokens in the BSC test network, search for the contract address using <https://testnet.bscscan.com/>. 
+- Use the faucet <https://testnet.venus.io/faucet> or <https://testnet.binance.org/faucet-smart> to receive tokens.
 
 ### Supported Chain Info
 
@@ -239,11 +243,11 @@ To get tokens in the BSC test network, you can search for the contract address u
 |   **New RPC URL**   | https://api.avax.network/ext/bc/C/rpc |
 |    **Chain ID**     |          43114           |
 
-- Ethereum Mainnet and Kovan Testnet are not listed here since they are natively supported by Metamask
+- Ethereum Mainnet and Kovan Testnet are not listed here since they are supported by Metamask by deafult. 
 
 ### Get supported by Witness
 
-We are open to onboard any EVM networks as our first batch of supported networks by Witness. The following details are required for us to complete the onboarding. The integration only involves small changes in Witness on our side.
+We are happy to onboard more EVM networks onto Witness. Please provide the following details for us to get started with the integration: 
 
 - Chain ID
 - JSON-RPC URL
