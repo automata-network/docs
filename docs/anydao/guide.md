@@ -1,6 +1,6 @@
 ## Claim test tokens
 - This guide assumes you have set up your wallet account. If not, please refer [here](../canarynet/userguide/setupwallet.md)
-- Head to the [Automata Faucet](./spec.md#faucet). You may need to login via a Twitter account.
+- Head to the [Automata Faucet](./spec.md#faucet). You may need to login via a Twitter account
 - Choose ContextFree under the Network drop-down field
 ![](../assets/anydao/faucet.png)
 - Input your ContextFree wallet address and click Submit. 
@@ -64,9 +64,9 @@
 ![](../assets/anydao/vote_anonymous.png)
   - Choose to vote publicly and details of the vote will be visible, such as:
   ![](../assets/anydao/vote_public_result.png)
-  - Choose to vote anonymously and no details will be revealed.
-- Click on an option to cast your vote.
-- Voting only requires a signature from your wallet. No fees will be charged for voting. 
-- You can use either Metamask wallet or Polkadot Extension Wallet according to the project's workspace configuration.
+  - Choose to vote anonymously and no details will be revealed
+- Click on an option to cast your vote
+- Voting only requires a signature from your wallet. No fees will be charged for voting
+- You can use either Metamask wallet or Polkadot Extension Wallet according to the project's workspace configuration
 
-[This](https://the.anydao.app/#/project/1/proposal/1) is an example of a closed proposal. 
+[This](https://the.anydao.app/#/project/1/proposal/1) is an example of a closed proposal
