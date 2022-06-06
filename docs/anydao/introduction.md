@@ -2,7 +2,7 @@
 
 ![](../assets/anydao-image.png){style="zoom:80%"}
 
-Governance is a perennial issue that has taken on weighted importance with the considerable growth of blockchain protocols, with many of these networks boasting billions in locked value on their platforms. Be that as it amy, participation rate remains low. One of the most immediate challenges for most Web3 projects on the path of progressive decentralization is in figuring out the tangle of collective decision making.
+Governance is a perennial issue that has taken on weighted importance with the considerable growth of blockchain protocols, with many of these networks boasting billions in locked value on their platforms. Be that as it may, participation rate remains low. One of the most immediate challenges for most Web3 projects on the path of decentralization is in figuring out the tangle of collective decision making.
 
 [AnyDAO](https://anydao.app) is designed with powerful, intutiive tools to help make this happen. 
 
