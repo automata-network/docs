@@ -57,7 +57,7 @@
 ![](../assets/anydao/proposal_publish_txn.png)
 
 ## Vote
-- Go to any on-going proposal or the one you just created.
+- Go to any on-going proposal or one you have just created
 ![](../assets/anydao/proposal_detail.png)
 - For proposals with `Mixed` privacy level, toggle `Vote Privacy` to choose whether to vote publicly or anonymously
 ![](../assets/anydao/vote_public.png)
