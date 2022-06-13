@@ -2,7 +2,7 @@
 
 **This is a guide on how to get onto the Automata Canary Net for Chrome users(recommended).**  
 
-1. Go to website url - ['Dashboard.ata.network'](https://dashboard.ata.network)  
+1. Go to ['ContextFree Dashboard'](https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer)
 *You should reach a website which looks like the picture below.*  
 ![](../../assets/canaryimg/img1.png){width="673" height="463"}  
   

@@ -43,6 +43,14 @@ Browse through any of our user guides below to get started:
 
 We're social creatures and active on a number of platforms. Find us on [Twitter](ata.ws/twitter), [Discord](ata.ws/discord) or [Telegram](ata.ws/telegram). 
 
+## [**XATA.FI**](./xata/introduction.md)
+
+[![image](../assets/xata/xata_brand.png){style="zoom:60%"}](./xata/introduction.md)
+
+**XATA.FI** is a Fair Liquidity Provisioning protocol to minimize MEV.
+
+Read the [introduction](./xata/introduction.md) to learn more about the protocol.
+
 <!--
 ## Links
 
