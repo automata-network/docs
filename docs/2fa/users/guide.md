@@ -1,5 +1,5 @@
 ## How to setup
-- Head to [2FA Guru](https://app.2fa.guru).
+- Head to [2FA Guru](https://app.2fa.guru)
 - Connect your Metamask wallet 
 - If this is your first time using 2FA Guru, click on `Wallet Actions` to sign up
 - Sign a message to prove your identity before a unique 2FA secret is generated 
@@ -12,7 +12,7 @@
 ![](../../assets/2fa/setup-3.png){width="600" height="150"}
 
 - 2FA Guru is compatible with numerous authenticators which can store the 2FA secret
-- This includes 1Password, LastPass, Authy, and more. 
+- This includes 1Password, LastPass, Authy, and more
 
 ![](../../assets/2fa/1password.png){width="600" height="360"}
 
@@ -36,7 +36,7 @@ Recommended configuration in 1Password
 
 - In the event that a user has lost access to the 2FA application or device, reset is only possible when a recovery wallet has been linked
 - The process is straightforward and similar to the first-time set up for 2FA Guru 
-  - Head to [2FA Guru](https://app.2fa.guru).
+  - Head to [2FA Guru](https://app.2fa.guru)
   - Connect your recovery wallet using Metamask
   - Click on `Reset 2FA` under `Wallet Actions`
   - Provide the primary wallet address and sign the message
