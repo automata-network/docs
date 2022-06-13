@@ -3,8 +3,8 @@
 - Head to the [Automata Faucet](./spec.md#faucet). You may need to login via a Twitter account
 - Choose ContextFree under the Network drop-down field
 ![](../assets/anydao/faucet.png)
-- Input your ContextFree wallet address and click Submit. 
-- 10 CTX tokens will be sent to your account. You can also check this on our [dashboard](./spec.md#explorer).
+- Input your ContextFree wallet address and click Submit
+- 10 CTX tokens will be sent to your account. You can also check this on our [dashboard](./spec.md#explorer)
 
 ## Interface layout
 - Let's take a look at the [AnyDAO](https://anydao.app) [frontend](./spec.md#frontend)
@@ -15,10 +15,10 @@
 ## Connect wallet
 - The connect button is located at the bottom of the left panel
 - To disconnect, click on your connected wallet to locate the Disconnect button
-- Connect with a PolkadotJS wallet to carry out the following: `Register Project`, `Update Project`, and `Create Proposal`.
+- Connect with a PolkadotJS wallet to carry out the following: `Register Project`, `Update Project`, and `Create Proposal`
 
 ## Create project
-- Having followed the steps above, `Project Management` should appear on the left panel. Make sure you are connected with a Polkadot Extension Wallet.
+- Having followed the steps above, `Project Management` should appear on the left panel. Make sure you are connected with a Polkadot Extension Wallet
 ![](../assets/anydao/home_connected.png)
 - Go to `Project Management`, then `Add a new project`
 ![](../assets/anydao/project_manage.png)
@@ -30,7 +30,7 @@
 ![](../assets/anydao/workspace_strategy.png)
 - You should arrive at this page once done 
 ![](../assets/anydao/project_set.png)
-- Click on `Submit new project` and follow the wallet instructions to submit the transaction. Ensure your wallet has enough tokens to pay for the transaction fee.
+- Click on `Submit new project` and follow the wallet instructions to submit the transaction. Ensure your wallet has enough tokens to pay for the transaction fee
 ![](../assets/anydao/project_create_txn.png)
 - A message should appear which means your project has been created successfully
 ![](../assets/anydao/project_success.png)
@@ -53,7 +53,7 @@
   - Understand the different [voting types](./spec.md#voting-type)
   - Starting date & ending date refers to the proposal voting period. Understand more about [time restriction](./spec.md#configurations)
   - Understand more about [update frequency](./design.md#update-frequency)
-- Click on `Publish my proposal` and follow the instructions to submit your transaction. You should be able to see your proposal once it has been successfully created.
+- Click on `Publish my proposal` and follow the instructions to submit your transaction. You should be able to see your proposal once it has been successfully created
 ![](../assets/anydao/proposal_publish_txn.png)
 
 ## Vote
