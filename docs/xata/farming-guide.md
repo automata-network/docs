@@ -1,5 +1,3 @@
-# Farming Guide
-
 ## Step-by-Step Guide to farming on XATA
 
 ### Step 1 : Visit the Farm Page 
@@ -24,6 +22,6 @@ That's it, you're done! You should start seeing rewards in 'Rewards Earned' over
 At any point in time, you can claim your rewards without unstaking, by clicking ' Harvest' after opening a farm. This will send all accumulated reward tokens to your wallet.
 
 ## Withdraw or exit the farm
-When you want to, you can unstake any amount of your LP tokens by clicking the 'Unstake Tokens' button. The remainder of your LP tokens will continue receiving rewards.
+Unstake any amount of your LP tokens by clicking the 'Unstake Tokens' button. The remainder of your LP tokens will continue receiving rewards.
 
-If you wish to stop everything, you should click the 'Unstake All and Harvest' button instead. This will claim all rewards and unstake all of your LP tokens in the same transaction.
+If you wish to unstake all your LP tokens, you should click the 'Unstake All and Harvest' button instead. This will claim all rewards and unstake all of your LP tokens in the same transaction.
