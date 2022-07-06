@@ -3,7 +3,7 @@
 ## Connecting Your Wallet
 
 !!! note
-	Please note: Currently, XATA only supports the Polygon(MATIC) network & Binance Smart Chain(BSC). Support for other chains will be launched very soon.
+	Please note: Currently, XATA only supports the Polygon (MATIC) network & Binance Smart Chain (BSC). Support for other chains will be launched very soon.
 
 For this guide, we will be using Metamask with a Polygon wallet address to connect to XATA. Please ensure that you have these ready:
 
@@ -13,10 +13,10 @@ For this guide, we will be using Metamask with a Polygon wallet address to conne
  
 * Ensure that you have some MATIC on your wallet address to pay for gas fees.
 
-Once you have prepared everything, let's begin conneting our wallet to XATA:
+Once you have prepared everything, let's begin connecting our wallet to XATA:
 
 * Head over to XATA at [app.xata.fi.](https://app.xata.fi/)
-* Click on “Connect to a Wallet” on the top right hand corner.
+* Click on “Connect to a Wallet” on the top right corner.
 
 ![](../assets/xata/connect_wallet.jpeg){style="zoom:80%"}
 
@@ -28,7 +28,7 @@ Once you have prepared everything, let's begin conneting our wallet to XATA:
 
 ![](../assets/xata/metamask_next.jpeg){ style="display: block; margin: 0 auto" }
 	
-* Another Metamask extension prompt will appear, then click on "Connect".
+* Another Metamask extension prompt will appear, click on "Connect".
 
 ![](../assets/xata/metamask_connect.jpeg){ style="display: block; margin: 0 auto" }
 	
@@ -37,23 +37,22 @@ If you have done everything right, the user’s address and balance should appea
 
 ## Swapping Tokens
 
-* Click on "Swap" at the top left hand corner.
+* Click on "Swap" at the top left corner.
 * Select the tokens that you are swapping for.
 	
 ![](../assets/xata/select_token.jpeg){style="zoom:60%; display: block; margin: 0 auto"}
 
-* The token at the bottom is what you will receive for trading in the tokens at the top. The estimated output token amount will be calculated based on the token monetary value ratio from the liquidity pool.
+* The token at the bottom is what you will receive for trading in the tokens at the top. The estimated output token amount will be calculated based on the tokens' monetary value ratio from the liquidity pool.
 	
 ![](../assets/xata/swap.jpeg){style="zoom:80%"}
 
-* You can also click on the gear icon to adjust the "Slippage Tolerance" and "Transaction Deadline" & "Multihop" for your transaction if necessary.
+* Click on the gear icon to adjust the "Slippage Tolerance" and "Transaction Deadline" & "Multihop" for your transaction if necessary.
 
 ![](../assets/xata/settings.jpeg){style="zoom:80%"}
 
 * **Slippage tolerance**: The % of the price change that a user can tolerate. For instance, if the value were set at 0.5%, then the transaction will be reverted if the token price change is greater than 0.5%.
 * **Transaction deadline**: The amount of time in seconds after the transaction is submitted. If a transaction were executed past the deadline, it will be reverted.
 * **Multihop**:  When a user is attempting to swap USDC for DAI, and such a LP pair does not exist, this trade must go through an intermediary token (USDT) from another existing LP pair. The trade route would look like this: USDC -> USDT -> DAI.
-
 
 * Once you are ready, click on "Swap" and a prompt on XATA will appear. Click on "Confirm Swap" to proceed.
 
