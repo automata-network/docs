@@ -17,7 +17,7 @@ Some of our middleware solutions include [Conveyor](https://conveyor.ata.network
 
 The best way to understand how we're doing this is to dive into our technical framework. Here's an ELI5 [version.](https://medium.com/atanetwork/introduction-to-sgx-the-eli5-3abf25e50057)
 
-**We're passionate about**
+**We're passionate about:**
 
 - (Minimizing) [Maximal Extractable Value](./mev/introduction.md) 
 - [Fair NFT launches](./nftfair/introduction.md) - no sniping! 
@@ -39,22 +39,16 @@ Browse through any of our user guides below to get started:
 - [2FA Guru](./2fa/users/guide.md)
 - [Witness](./witness/user-guide.md) 
 
-## Questions?
-
-We're social creatures and active on a number of platforms. Find us on [Twitter](ata.ws/twitter), [Discord](ata.ws/discord) or [Telegram](ata.ws/telegram). 
-
-## [**XATA.FI**](./xata/introduction.md)
-
-[![image](../assets/xata/xata_brand.png){style="zoom:60%"}](./xata/introduction.md)
-
-**XATA.FI** is a Fair Liquidity Provisioning protocol to minimize MEV.
-
-Read the [introduction](./xata/introduction.md) to learn more about the protocol.
-
-<!--
-## Links
+## Helpful links
 
 * [Website](https://www.ata.network/)
-* [Witness](https://witness.ata.network/)
 * [Dashboard](https://d.ata.network/)
-* [Faucet](https://faucet.ata.network) -->
+* [Faucet](https://faucet.ata.network)
+
+## Questions?
+
+We're social creatures and active on a number of platforms. Find us on: 
+
+* [Twitter](ata.ws/twitter)
+* [Discord](ata.ws/discord)
+* [Telegram](ata.ws/telegram)
