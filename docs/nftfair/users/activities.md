@@ -13,7 +13,7 @@ Users can click on the "Visit Activity Page" button to be redirected to the acti
 The activity site is where users participate in the Fairdrop event. To claim/purchase NFTs, users need to:
 
 - Be eligible for the Fairdrop based on the launch requirements 
-- Have a sufficient token balance to pay for the transaction fees and NFT
+- Have a sufficient token balance for the asset they're transacting in, i.e. ERC20/BEP20 tokens. Users no longer need to hold platform native tokens such as ETH or BNB due to the nature of gasless transactions
 - Make sure their total claim/purchase does not exceed the maximum limit
 - Purchase NFT(s) within the duration of the event
 
