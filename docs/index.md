@@ -1,13 +1,13 @@
 # Automata Network
 
-Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [2FA Guru](2fa.guru), [NFTFair](nftfair.app), [AnyDAO](anydao.app) and [XATA](xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
+Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [2FA Guru](https://2fa.guru), [NFTFair](https://nftfair.app), [AnyDAO](https://anydao.app) and [XATA](https://xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
 
 Some of our key features:
 - Traceless privacy
 - Non-intrusive integration
 - Universal compatibility
 
-Our [Medium](medium.com/atanetwork) is a great introduction to our vision and work. 
+Our [Medium](https://medium.com/atanetwork) is a great introduction to our vision and work. 
 
 **Overview**
 
@@ -19,7 +19,7 @@ The best way to understand how we're doing this is to dive into our technical fr
 
 **We're passionate about:**
 
-- (Minimizing) [Maximal Extractable Value](./mev/introduction.md) 
+- [Minimizing](./xata/introduction.md) Maximal Extractable Value
 - [Fair NFT launches](./nftfair/introduction.md) - no sniping! 
 - Borderless, privacy [governance](./anydao/introduction.md)
 - [Neutralizing](./2fa/introduction.md) social engineering attacks
@@ -33,11 +33,11 @@ If you're interested in developing with or on Automata Network, view our develop
 ## For Users
 
 Browse through any of our user guides below to get started:
-- [XATA](https://docs.xata.fi/)
-- [NFTFair](./nftfair/users/activities.md)
-- [AnyDAO](./anydao/guide.md)
-- [2FA Guru](./2fa/users/guide.md)
-- [Witness](./witness/user-guide.md) 
+* [XATA](./xata/introduction.md)
+* [NFTFair](./nftfair/users/activities.md)
+* [AnyDAO](./anydao/guide.md)
+* [2FA Guru](./2fa/users/guide.md)
+* [Witness](./witness/user-guide.md) 
 
 ## Helpful links
 
