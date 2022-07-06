@@ -1,64 +1,54 @@
 # Automata Network
 
-**Automata Network** is a decentralized service protocol that provides middleware-like services for dApps to achieve traceless privacy, high assurance and frictionless computation.
+Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [2FA Guru](2fa.guru), [NFTFair](nftfair.app), [AnyDAO](anydao.app) and [XATA](xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
 
+Some of our key features:
+- Traceless privacy
+- Non-intrusive integration
+- Universal compatibility
 
-## [**The MEV Wiki**](./mev/introduction.md)
+Our [Medium](medium.com/atanetwork) is a great introduction to our vision and work. 
 
-**Flashboys, Flashbots, Dark Forests and more..**
+**Overview**
 
-[![](./assets/mev_wiki.png){style="zoom:60%"}](./mev/introduction.md)
-## [**Witness**](./witness/introduction.md)
+Given the default transparency of blockchain, users struggle with moving large amount of their fortunes into what is invariably an exposed glass box. The developer experience is a central part of Automata's design and helps to explain our middleware approach. For blockchain projects to advocate for and adopt privacy at the protocol level, it's important to us to reduce integration friction and make the experience a positive one for builders, and further down the line, end-users. 
 
-[![](./assets/witness.png){style="zoom:60%"}](./witness/introduction.md)
+Some of our middleware solutions include [Conveyor](https://conveyor.ata.network/#/swap), a MEV Minimization solution, and [Witness](https://witness.ata.network/), for off-chain privacy governance. 
 
-**Witness** is a privacy-first off-chain governance solution with on-chain execution.
+The best way to understand how we're doing this is to dive into our technical framework. Here's an ELI5 [version.](https://medium.com/atanetwork/introduction-to-sgx-the-eli5-3abf25e50057)
 
-Please see the [guide](./witness/introduction.md) to start.
+**We're passionate about:**
 
-## [**ContextFree**](./canarynet/getstarted/introduction.md)
-[![](./assets/canary.png){style="zoom:60%"}](./canarynet/getstarted/introduction.md)
+- (Minimizing) [Maximal Extractable Value](./mev/introduction.md) 
+- [Fair NFT launches](./nftfair/introduction.md) - no sniping! 
+- Borderless, privacy [governance](./anydao/introduction.md)
+- [Neutralizing](./2fa/introduction.md) social engineering attacks
 
-**ContextFree** is the canary network of Automata Network.
+## For Developers 
 
-Please see the [wallet guide](./canarynet/userguide/setupwallet.md) here!
+If you're interested in developing with or on Automata Network, view our developer guides for:
+- ContextFree, our [Canary Network ](./canarynet/getstarted/introduction.md)
+- Conveyor, off-chain blockchain [governance](./conveyor/overview.md) 
 
-## [**NFTFair**](./nftfair/introduction.md)
+## For Users
 
-[![](./assets/nftfair-image.png){style="zoom:60%"}](./nftfair/introduction.md)
+Browse through any of our user guides below to get started:
+- [XATA](https://docs.xata.fi/)
+- [NFTFair](./nftfair/users/activities.md)
+- [AnyDAO](./anydao/guide.md)
+- [2FA Guru](./2fa/users/guide.md)
+- [Witness](./witness/user-guide.md) 
 
-**Automata NFTFair** is an NFT launch platform.
-
-Read the [introduction](./nftfair/introduction.md) to learn more about the platform.
-
-## [**AnyDAO**](./anydao/introduction.md)
-
-[![](./assets/anydao-image.png){style="zoom:60%"}](./anydao/introduction.md)
-
-**Automata AnyDAO** is a governance platform for DAOs.
-
-Read the [introduction](./anydao/introduction.md) to learn more about the platform.
-
-## [**2FA Guru**](./2fa/introduction.md)
-
-[![](./assets/2fa/2fa-guru-image.png){style="zoom:60%"}](./2fa/introduction.md)
-
-**Automata 2FA Guru** is a middleware to protect your assets.
-
-Read the [introduction](./2fa/introduction.md) to setup your 2FA Guru.
-
-## [**XATA.FI**](./xata/introduction.md)
-
-[![image](../assets/xata/xata_brand.png){style="zoom:60%"}](./xata/introduction.md)
-
-**XATA.FI** is a Fair Liquidity Provisioning protocol to minimize MEV.
-
-Read the [introduction](./xata/introduction.md) to learn more about the protocol.
-
-<!--
-## Links
+## Helpful links
 
 * [Website](https://www.ata.network/)
-* [Witness](https://witness.ata.network/)
 * [Dashboard](https://d.ata.network/)
-* [Faucet](https://faucet.ata.network) -->
+* [Faucet](https://faucet.ata.network)
+
+## Questions?
+
+We're social creatures and active on a number of platforms. Find us on: 
+
+* [Twitter](ata.ws/twitter)
+* [Discord](ata.ws/discord)
+* [Telegram](ata.ws/telegram)
