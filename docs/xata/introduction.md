@@ -1,10 +1,17 @@
-# **XATA**
+# Introduction
 
-Learn more about XATA, a Fair Liquidity Provisioning protocol to minimize MEV.
+![](../assets/xata_updated.png){style="zoom:80%"}
 
-## About XATA
+XATA is a Fair Liquidity Provisioning protocol that minimizes Maximal Extractable Value (MEV), with anti-front-running supported across multiple chains including Polygon Network and Binance Smart Chain. 
 
-![](../assets/xata/xata_brand.png){style="zoom:80%"}
+Notably, Automata's approach does not rely on any miner bribe nor modification to address MEV. 
+
+## Features 
+
+
+
+## How XATA works 
+
 
 !!! note
     Since 2020, [MEV](https://app.gitbook.com/o/-MjTHc7BOHyVLIwg4MYT/s/-MjTHhnx55kZnU8_VVc-/) has extracted over $730 millions from users, the upper boundaries of the figure is only expected to increase with the incredible velocity of DeFi.
