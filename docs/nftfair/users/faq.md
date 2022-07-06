@@ -18,7 +18,7 @@ A user-facing activity site is also created for a Fairdrop event, for participan
 
 ### **1. Can I start a Fairdrop activity to sell or give away NFTs from an existing contract?**
 
-Yes! Simply transfer the NFTs to a vault contract on NFTFair to begin setting up the activiy. Currently, NFTFair supports contracts that follow the ERC721 and ERC1155 standard. 
+Yes. Simply transfer the NFTs to a vault contract on NFTFair to begin setting up the activity. The platform offers support for contracts that follow the ERC721 and ERC1155 standard. 
 
 Drop us a message at [nftfair@ata.network](mailto:nftfair@ata.network) to get started with your own Fairdrop. 
 
