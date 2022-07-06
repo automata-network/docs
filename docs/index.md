@@ -1,6 +1,6 @@
 # Automata Network
 
-**Automata Network** is the privacy middleware layer building for a fair Web3. Its core suite of products include [2FA Guru](2fa.guru), [NFTFair](nftfair.app), [AnyDAO](anydao.app) and [XATA](xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
+Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [2FA Guru](2fa.guru), [NFTFair](nftfair.app), [AnyDAO](anydao.app) and [XATA](xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
 
 Some of our key features:
 - Traceless privacy
