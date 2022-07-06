@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/2fa/users/guide/">
       
       <link rel="icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-guide" class="md-skip">
+        <a href="#how-to-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -1022,8 +1022,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           User Guide
@@ -1040,8 +1038,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1050,22 +1046,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup-2fa" class="md-nav__link">
-    Setup 2FA
+  <a href="#how-to-setup" class="md-nav__link">
+    How to setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reset-2fa-devices" class="md-nav__link">
-    Reset 2FA devices
+  <a href="#reset-2fa-device" class="md-nav__link">
+    Reset 2FA device
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#make-authorised-transfer" class="md-nav__link">
-    Make authorised transfer
+  <a href="#make-authorised-transfers" class="md-nav__link">
+    Make authorised transfers
   </a>
   
 </li>
@@ -1075,18 +1071,12 @@
     Disable 2FA protection
   </a>
   
-    <nav class="md-nav" aria-label="Disable 2FA protection">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#steps-to-disable-2fa" class="md-nav__link">
     Steps to disable 2FA
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1940,25 +1930,23 @@
 
 
 
-<h1 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link">&para;</a></h1>
-<p>Visit <a href="https://app.2fa.guru">Automata 2FA Guru</a> to start your 2FA protection.</p>
-<hr />
-<h2 id="setup-2fa">Setup 2FA<a class="headerlink" href="#setup-2fa" title="Permanent link">&para;</a></h2>
+  <h1>User Guide</h1>
+
+<h2 id="how-to-setup">How to setup<a class="headerlink" href="#how-to-setup" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>Visit <a href="https://app.2fa.guru">Automata 2FA Guru</a>.</p>
-</li>
-<li>
-<p>Use metamask and connect your wallet.</p>
-</li>
-<li>
-<p>If you haven't signed up for an account, you can click the <strong>Wallet Actions</strong> button at the top to initiate the process of signing up. You will be required to sign a message to prove your identity before generating a 2FA secret. Take note, the primary wallet and 2FA device should be different devices.</p>
-</li>
+<li>Head to <a href="https://app.2fa.guru">2FA Guru</a></li>
+<li>Connect your Metamask wallet </li>
+<li>If this is your first time using 2FA Guru, click on <code>Wallet Actions</code> to sign up</li>
+<li>Sign a message to prove your identity before a unique 2FA secret is generated </li>
+<li>Your primary wallet and 2FA device should be on two separate devices </li>
 </ul>
 <p><img alt="" height="150" src="../../../assets/2fa/setup-1.png" width="600" /></p>
 <p><img alt="" height="270" src="../../../assets/2fa/setup-2.png" width="600" /></p>
 <p><img alt="" height="150" src="../../../assets/2fa/setup-3.png" width="600" /></p>
-<p>We support 1Password for storing your 2FA secret. To enable the use of <strong>Scan QR Code</strong> function in 1Password, you would first have to prepare a <strong>Login</strong> item in 1Password and configure the basic information. This makes password retrieval more convenient.</p>
+<ul>
+<li>2FA Guru is compatible with numerous authenticators which can store the 2FA secret</li>
+<li>This includes 1Password, LastPass, Authy, and more</li>
+</ul>
 <p><img alt="" height="360" src="../../../assets/2fa/1password.png" width="600" /></p>
 <p>Recommended configuration in 1Password</p>
 <table>
@@ -1984,56 +1972,51 @@
 </tbody>
 </table>
 <ul>
-<li>Once you've successfully signed up, we recommend that you add a recovery wallet for your primary wallet, which can be used to reset your 2FA device. Without a recovery wallet, if you lost your 2FA device, then you can only disable the 2FA protection before you use your 2FA protected assets.</li>
+<li>We recommend linking a recovery wallet so that you are able to reset the 2FA anytime</li>
+<li>There is a window of 7 days after signing up for users to complete this step</li>
+<li>To set up a recovery wallet, send a binding transaction to 2FA management contract. Gas fees are required</li>
 </ul>
-<p>For binding a recovery wallet, you would need to send a binding transaction to our 2FA management contract after our authentication, and gas fees would be required.</p>
-<p>There is a binding window for each account after signup, If you do not bind a recovery wallet in <strong>7 days</strong>, you would not be allowed to bind one subsequently.</p>
 <p><img alt="" height="150" src="../../../assets/2fa/bind-1.png" width="600" /></p>
 <p><img alt="" height="300" src="../../../assets/2fa/bind-2.png" width="600" /></p>
-<hr />
-<h2 id="reset-2fa-devices">Reset 2FA devices<a class="headerlink" href="#reset-2fa-devices" title="Permanent link">&para;</a></h2>
-<p>If you lost your 2FA device in an unfortunate incident, you can reset it only if you have a recovery wallet. The reset processes are similar to setting up 2FA for the first time:</p>
+<h2 id="reset-2fa-device">Reset 2FA device<a class="headerlink" href="#reset-2fa-device" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>Visit <a href="https://app.2fa.guru">Automata 2FA Guru</a>.</p>
-</li>
-<li>
-<p>Use metamask and connect your recovery wallet.</p>
-</li>
-<li>
-<p>Click <strong>Reset 2FA</strong> button in <strong>Wallet Actions</strong>, input your primary wallet address and sign the message. If the address pair matches, you can scan the new secret to reset the 2FA device. There is no transaction on chain, so no gas fees are required to reset a 2FA device. Take note, the recovery wallet does not need to sign up for 2FA for this to work.</p>
-</li>
+<li>In the event that a user has lost access to the 2FA application or device, reset is only possible when a recovery wallet has been linked</li>
+<li>The process is straightforward and similar to the first-time set up for 2FA Guru </li>
+<li>Head to <a href="https://app.2fa.guru">2FA Guru</a></li>
+<li>Connect your recovery wallet using Metamask</li>
+<li>Click on <code>Reset 2FA</code> under <code>Wallet Actions</code></li>
+<li>Provide the primary wallet address and sign the message</li>
+<li>A match between the address pair will allow the user to scan a new secret</li>
+<li>The 2FA device is successfully reset. No gas fees are required </li>
 </ul>
 <p><img alt="" height="225" src="../../../assets/2fa/reset-1.png" width="600" /></p>
 <p><img alt="" height="330" src="../../../assets/2fa/reset-2.png" width="600" /></p>
-<hr />
-<h2 id="make-authorised-transfer">Make authorised transfer<a class="headerlink" href="#make-authorised-transfer" title="Permanent link">&para;</a></h2>
-<p>Once you sign up 2FA for your wallet, your 2FA assets in supported dApps will be protected. If you hold any 2FA protected assets, you will be able to transfer them in <strong>Manage my Wallet Assets</strong> panel.</p>
-<p>During the transfer of assets, a 2FA check will be conducted before allowing you to sign a message which would be used in the transfer.</p>
+<h2 id="make-authorised-transfers">Make authorised transfers<a class="headerlink" href="#make-authorised-transfers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Once 2FA Guru has been set up, all assets across supported dApps will enjoy the same protection</li>
+<li>These assets can be transferred under the <code>Manage my wallet assets</code> panel</li>
+<li>Users will have to sign a message in order to secure the transfer </li>
+</ul>
 <p><img alt="" height="150" src="../../../assets/2fa/transfer-1.png" width="600" /></p>
 <p><img alt="" height="300" src="../../../assets/2fa/transfer-2.png" width="600" /></p>
 <p><img alt="" height="120" src="../../../assets/2fa/transfer-3.png" width="600" /></p>
-<hr />
 <h2 id="disable-2fa-protection">Disable 2FA protection<a class="headerlink" href="#disable-2fa-protection" title="Permanent link">&para;</a></h2>
-<p>If you've lost your 2FA device and no respective recovery wallet has been bound, you always have the option to disable 2FA protection in the 2FA dApp. There is a cooldown period for disabling 2FA protection, and you can cancel the disable 2FA protection request before this period ends. The cooldown period is <strong>7 Days</strong>, and after which you would not be able to use <strong>2FA protection</strong> anymore.</p>
-<p>Hence, it's recommended to transfer all your 2FA protected assets to another 2FA protected account after you've disabled the 2FA for a primary wallet. This ensures that all assets will stay protected.</p>
-<h3 id="steps-to-disable-2fa">Steps to disable 2FA<a class="headerlink" href="#steps-to-disable-2fa" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>Visit <a href="https://app.2fa.guru">Automata 2FA Guru</a>.</p>
-</li>
-<li>
-<p>Use metamask and connect your wallet.</p>
-</li>
-<li>
-<p>Click <strong>Disable 2FA</strong> button in <strong>Wallet actions</strong>, sign the message and wait until the cooldown window ends. Do note, 2FA is still active during this period, and all operations will require authorisation.</p>
-</li>
+<li>After a user has disabled 2FA, there is a cooldown period of 7 days during which the request can be cancelled</li>
+<li>Once the request has been confirmed after 7 days, the user will not be able to use 2FA Guru again </li>
+</ul>
+<h2 id="steps-to-disable-2fa">Steps to disable 2FA<a class="headerlink" href="#steps-to-disable-2fa" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Head to <a href="https://app.2fa.guru">2FA Guru</a></li>
+<li>Connect your wallet using Metamask</li>
+<li>Click on <code>Disable 2FA</code> button under <code>Wallet actions</code></li>
+<li>After signing the message, there is a cooldown window of 7 days during which the request can be cancelled</li>
+<li>2FA Guru remains active during this period and assets will continue to be protected </li>
 </ul>
 <p><img alt="" height="180" src="../../../assets/2fa/disable.png" width="600" /></p>
 <p><img alt="" height="100" src="../../../assets/2fa/disabling.png" width="800" /></p>
-<p>If you trigger the disable procedure by mistake, you can cancel it during the cooldown window to keep the 2FA protection.</p>
 <ul>
-<li>Click <strong>Cancel Disable 2FA</strong> button in <strong>Wallet actions</strong>, sign the message and this would cancel the request to disable 2FA on the current wallet. You can then continue to use the previous 2FA device with 2FA protection.</li>
+<li>To cancel the disable request, click on <code>Cancel Disable 2FA</code> under <code>Wallet Actions</code></li>
 </ul>
 <p><img alt="" height="180" src="../../../assets/2fa/cancel-disable.png" width="600" /></p>
 
@@ -2161,10 +2144,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../../javascripts/config.js"></script>
       

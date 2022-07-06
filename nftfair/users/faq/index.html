@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/nftfair/users/faq/">
       
       <link rel="icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1997,31 +1997,32 @@
 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
 <h3 id="1-what-is-nftfair-how-is-this-platform-different-from-other-nft-platforms-eg-opensea"><strong>1. What is NFTFair? How is this platform different from other NFT platforms? (e.g. OpenSea)</strong><a class="headerlink" href="#1-what-is-nftfair-how-is-this-platform-different-from-other-nft-platforms-eg-opensea" title="Permanent link">&para;</a></h3>
-<p>NFTFair is a platform that integrates Conveyor to ensure NFTs are being distributed (or sold) fairly, in a manner which the average users should not be put in a disadvantage of getting frontrun by technologically sophisticated buyers or trading bots. Conveyor achieves Fairness by enforcing the correct ordering of transactions to reduce MEV. Click <a href="https://www.ata.network/conveyor">here</a> to learn more about Conveyor's MEV minimization solution.</p>
+<p>NFTFair is a platform powered by Conveyor to ensure NFTs are being distributed (or sold) fairly. The average user is able to avoid being front-run by snipers, technically sophisticated buyers, or trading bots. Conveyor achieves this by enforcing the fair ordering of transactions. </p>
+<p>Click <a href="https://www.ata.network/conveyor">here</a> to try it out yourself. </p>
 <h3 id="2-what-is-a-fairdrop"><strong>2. What is a Fairdrop?</strong><a class="headerlink" href="#2-what-is-a-fairdrop" title="Permanent link">&para;</a></h3>
 <p>A Fairdrop is a single NFT distribution event being held for a certain duration. A vault contract is deployed and to be used <strong>only</strong> for a single Fairdrop event, which stores a fixed number of NFTs that is ready to be claimed by Fairdrop participants.</p>
 <p>A user-facing activity site is also created for a Fairdrop event, for participants to easily interact with the vault contract to claim NFTs.</p>
 <h2 id="partners">Partners<a class="headerlink" href="#partners" title="Permanent link">&para;</a></h2>
 <h3 id="1-can-i-start-a-fairdrop-activity-to-sell-or-give-away-nfts-from-an-existing-contract"><strong>1. Can I start a Fairdrop activity to sell or give away NFTs from an existing contract?</strong><a class="headerlink" href="#1-can-i-start-a-fairdrop-activity-to-sell-or-give-away-nfts-from-an-existing-contract" title="Permanent link">&para;</a></h3>
-<p>Currently, this platform only supports NFT contract that follows the ERC721 standard.</p>
-<p>Please reach out to us at <a href="mailto:nftfair@ata.network">nftfair@ata.network</a>, and we will gladly assist you with the deployment of your very own Fairdrop activity.</p>
+<p>Yes. Simply transfer the NFTs to a vault contract on NFTFair to begin setting up the activity. The platform offers support for contracts that follow the ERC721 and ERC1155 standard. </p>
+<p>Drop us a message at <a href="mailto:nftfair@ata.network">nftfair@ata.network</a> to get started with your own Fairdrop. </p>
 <h2 id="participants">Participants<a class="headerlink" href="#participants" title="Permanent link">&para;</a></h2>
 <h3 id="1-why-am-i-not-qualified-to-claim-nfts"><strong>1. Why am I not qualified to claim NFTs?</strong><a class="headerlink" href="#1-why-am-i-not-qualified-to-claim-nfts" title="Permanent link">&para;</a></h3>
-<p>Certain Fairdrop events may be limited for participants that are in a whitelist. If you are not an eligible participants, please reach out to the Fairdrop organizer directly, since we do not have control over whitelists.</p>
+<p>Certain Fairdrops may be be open only to participants on a whitelist. If you are not eligible, please reach out to the project directly, as we do not have control over whitelists.</p>
 <h3 id="2-how-much-does-it-cost-to-claim-nfts"><strong>2. How much does it cost to claim NFTs?</strong><a class="headerlink" href="#2-how-much-does-it-cost-to-claim-nfts" title="Permanent link">&para;</a></h3>
-<p>The price varies by the Fairdrop event and its category. You can find NFT pricings on the activity site.</p>
+<p>The price varies by the Fairdrop and its category. You can find NFT pricing on the activity site.</p>
 <h3 id="3-how-many-nfts-can-i-claim"><strong>3. How many NFTs can I claim?</strong><a class="headerlink" href="#3-how-many-nfts-can-i-claim" title="Permanent link">&para;</a></h3>
-<p>This also varies by the event and its category. More info can be found on the activity site.</p>
+<p>This also varies by the Fairdrop and its category. More details can be found on the activity site.</p>
 <h3 id="4-why-am-i-prompted-to-send-an-approve-transaction-what-am-i-approving"><strong>4. Why am I prompted to send an <code>approve()</code> transaction? What am I approving?</strong><a class="headerlink" href="#4-why-am-i-prompted-to-send-an-approve-transaction-what-am-i-approving" title="Permanent link">&para;</a></h3>
-<p>If this is your first time using Conveyor, you are likely prompted to send at most two <code>approve()</code> transactions.</p>
+<p>If this is your first time using Conveyor, you will likely be prompted with (at most) two <code>approve()</code> transactions.</p>
 <p>The first <code>approve()</code> transaction grants permission for the collection of <strong>gas payment</strong> ERC20 tokens. There are certain scenarios which may omit this requirement, such as:</p>
 <ul>
-<li>Certain Fairdrop events may be opting for relayer-sponsored transactions. In this case, users do not bear the cost of Conveyor transaction fees.</li>
-<li>User's token of choice has previously been approved for other Conveyor projects.</li>
+<li>Fairdrops that opt for relayer-sponsored transactions. In this case, users do not have to bear the cost of transaction fees.</li>
+<li>The user's token of choice has previously been approved for other Conveyor projects.</li>
 </ul>
 <p>The second <code>approve()</code> transaction grants permission to the Treasury contract for collecting payment from NFT sales. This permission is valid for all vaults and other contracts on the platform that are receiving payments via the Treasury contract.</p>
 <h3 id="5-why-do-i-still-have-to-sign-two-eip712-messages"><strong>5. Why do I still have to sign two EIP712 messages?</strong><a class="headerlink" href="#5-why-do-i-still-have-to-sign-two-eip712-messages" title="Permanent link">&para;</a></h3>
-<p>Sending <code>approve()</code> transactions as a mean of assigning allowance for the transfer of ERC20 tokens requires the users to hold native currencies to pay for gas. Requesting an approval for every single token transfers does not provide the smoothest user experience. A good workaround this issue is to allocate a very large amount of allowance for the spender, so users would only have to <code>approve()</code> once. This however, puts a huge trust on the spender to not drain the user's allowance at its will. To eliminate trust, the spender is subjected to a secondary approval process by requiring user's signed EIP 712 message, without needing to pay for gas.</p>
+<p>Sending <code>approve()</code> transactions as a mean of assigning allowance for the transfer of ERC20 tokens requires users to hold native currencies to pay for gas. Requesting an approval for every single token transfers does not provide the smoothest user experience. A good workaround is to allocate a large amount of allowance for the spender, so users would only have to <code>approve()</code> once. This however places a huge amount of trust in the spender to not drain the user's allowance at will. To prevent exploitation, the spender is subjected to a secondary approval process which requires the user's signed EIP 712 message, without needing to pay for gas.</p>
 <p>The first signature is verified by the Conveyor relayer to collect ERC20 payment token, with the amount closely equivalent to the market gas price.</p>
 <p>The second message is sent to the NFTPlatform treasury contract to collect sales payment for the purchase of NFTs. Users may not be required to sign this message, if an NFT were to be distributed free of charge.</p>
 <!-- ### **9. Some random question**
@@ -2152,10 +2153,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../../javascripts/config.js"></script>
       

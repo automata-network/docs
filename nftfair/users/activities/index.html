@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/nftfair/users/activities/">
       
       <link rel="icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -675,12 +675,60 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#homepage" class="md-nav__link">
+    Homepage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activity-sites" class="md-nav__link">
+    Activity Sites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approval" class="md-nav__link">
+    Approval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watch" class="md-nav__link">
+    Watch
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1875,22 +1923,31 @@
 
 
 
-<h1 id="homepage">Homepage<a class="headerlink" href="#homepage" title="Permanent link">&para;</a></h1>
-<p>The homepage is the main site where users can find a listing of past, current and future Fairdrop events. Every activity in the list contains information about a particular Fairdrop event, such as the network, the length of duration, the type of Fairdrop and the total amount of NFTs on sale (or to be given away). Users can click on the "Visit Activity Page" button to be redirected to the activity site, which is created specifically for an individual event. </p>
-<hr />
-<h1 id="activity-sites">Activity Sites<a class="headerlink" href="#activity-sites" title="Permanent link">&para;</a></h1>
-<p>The activity page is individually deployed and designated for a selected Fairdrop event. This user-facing site facilitates user interaction with the vault contract, as well as, providing detailed information about the Fairdrop, such as the remaining time, number of NFTs available to purchase, pricing and FAQs.</p>
-<p>To claim/purchase NFTs, the user must satisfy all of the following conditions:</p>
+  <h1>Overview</h1>
+
+<h2 id="homepage">Homepage<a class="headerlink" href="#homepage" title="Permanent link">&para;</a></h2>
+<p>The homepage is the main site where users can find a list of past, current and future Fairdrop events. Each activity contains information such as: 
+- The launch network
+- The event duration
+- The template format
+- The total number of NFTs</p>
+<p>Users can click on the "Visit Activity Page" button to be redirected to the activity site. </p>
+<h2 id="activity-sites">Activity Sites<a class="headerlink" href="#activity-sites" title="Permanent link">&para;</a></h2>
+<p>The activity site is where users participate in the Fairdrop event. To claim/purchase NFTs, users need to:</p>
 <ul>
-<li>Eligible to participate in the Fairdrop</li>
-<li>Users have the sufficient token balance to pay for transaction fee and NFT purchase</li>
-<li>User's total number of claim/purchase does not exceed the maximum limit.</li>
-<li>Users may only purchase NFT(s) within the duration of the event.</li>
+<li>Be eligible for the Fairdrop based on the launch requirements </li>
+<li>Have a sufficient token balance for the asset they're transacting in, i.e. ERC20/BEP20 tokens. Users no longer need to hold platform native tokens such as ETH or BNB due to the nature of gasless transactions</li>
+<li>Make sure their total claim/purchase does not exceed the maximum limit</li>
+<li>Purchase NFT(s) within the duration of the event</li>
 </ul>
+<h2 id="approval">Approval<a class="headerlink" href="#approval" title="Permanent link">&para;</a></h2>
 <p>Users may be prompted to submit an <code>approve()</code> transaction for an ERC20 token that do not have prior history with the protocol. In other words, an <code>approve()</code> transaction prompt is <strong>always</strong> required to authorize new ERC20 tokens to be used for payment to be collected by the Treasury contract.</p>
 <p>Once all of the above conditions have met, users may select one (or more) category that they wish to claim an NFT from. Users are then prompted to sign two EIP712 messages for authentication.</p>
-<p>The first message gives permission to the Conveyor relayer to collect ERC20 payment token, with the amount closely equivalent to the market gas price.</p>
-<p>The second message gives permission to the NFTPlatform treasury contract to collect sales payment for the purchase of NFTs. Users may not be required to sign this message, if an NFT were to be distributed free of charge.</p>
+<ul>
+<li>The first message gives permission to the Conveyor relayer to collect ERC20 payment token, with the amount closely equivalent to the market gas price.</li>
+<li>The second message gives permission to the NFTPlatform treasury contract to collect sales payment for the purchase of NFTs. Users may not be required to sign this message, if an NFT were to be distributed free of charge.</li>
+</ul>
+<h2 id="watch">Watch<a class="headerlink" href="#watch" title="Permanent link">&para;</a></h2>
 <p>Check out this <a href="https://www.youtube.com/watch?v=ihmXdG0efUE">video</a> to see NFTFair in action.</p>
 
               
@@ -2017,10 +2074,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../../javascripts/config.js"></script>
       

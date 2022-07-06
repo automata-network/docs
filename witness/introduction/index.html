@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/witness/introduction/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -1355,8 +1355,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Introduction
@@ -1373,14 +1371,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
@@ -1394,18 +1397,12 @@
     Platforms
   </a>
   
-    <nav class="md-nav" aria-label="Platforms">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#feature-support" class="md-nav__link">
-    Feature Support
-  </a>
-  
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
   
 </li>
       
@@ -1924,18 +1921,27 @@
 
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p><img alt="" src="../../assets/witness.png" style="zoom:80%" /></p>
-<p>Automata <a href="https://witness.ata.network">Witness</a> is a customizable voting service for decentralized applications. Witness provides a fully decentralized voting platform (with privacy features) across different blockchains.</p>
+  <h1>Introduction</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../assets/witness_updated.png" style="zoom:80%" /></p>
+<p>The concept of community takes on tangible form and value as blockchain gains velocity. People with real financial stake change not only the proverbial status quo, but also foster new economies and polities in the image of Web3. With so many going about to decide the future of some of the biggest and most impactful decentralized projects, we thought about the experience we wanted communities to have, and how we could value-add to that journey. </p>
+<p><a href="https://witness.ata.network">Witness</a> was the result. A privacy-first, off-chance governance solution with on-chain execution. </p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Privacy</strong>: You can choose different types of votes with different privacy levels e.g. Public (full disclosure of voter address and number of votes), Medium (only number of votes), and Private (only voting result is published — voter identities and number of votes are not).</li>
-<li><strong>Low-cost</strong>: Voting is conducted off-chain so there is no gas cost and a wider range of token holders can participate in governance without being deterred by high gas fees.</li>
-<li><strong>Chainhook</strong>: Trigger on-chain execution based on the voting results. Chainhook enables calling of the on-chain contract which was registered at proposal creation.</li>
-<li><strong>Modularity</strong>: Each of these functions can be used as standalones, or together. If a project wants to use Witness as a signaling tool without on-chain execution, that is also possible.</li>
+<li>Privacy 
+</br> Users can select and change different privacy settings, which allows for specific results to be displayed. Public: Voter address, number of votes. Medium: Number of votes. Private: Only the overall result is shown. </li>
+<li>Gasless 
+</br> Off-chain voting is gas-free. Users do not have to grapple with prohibitive gas fees to create proposals and vote on them.</li>
+<li>On-chain execution 
+</br> Chainhook enables calling of the on-chain contract registered at proposal creation. </li>
+<li>Multi-chain support 
+</br> Witness currently supports ERC20 on Ethereum, with other <a href="https://chainlist.org/">EVM-based chains</a> and <a href="https://polkaproject.com/#/projects?cateID=1&amp;tagID=0">Substrate-based chains</a> in the pipeline. </li>
+<li>Modular 
+</br> Each function can be used standalone or together. It is entirely possible for a project to use Witness solely as a signaling tool. </li>
 </ul>
 <h2 id="platforms">Platforms<a class="headerlink" href="#platforms" title="Permanent link">&para;</a></h2>
-<p>Witness currently supports the following with more to be added in future:</p>
+<p>Witness currently supports the following networks: </p>
 <ul>
 <li>Ethereum (Mainnet, Kovan Testnet)</li>
 <li>Binance Smart Chain (Mainnet, Testnet)</li>
@@ -1947,8 +1953,7 @@
 <li>Avalanche (Mainnet)</li>
 <li>HECO (Mainnet, Testnet)</li>
 </ul>
-<p>Next, we will be adding other <a href="https://chainlist.org/">EVM-based chains</a> and <a href="https://polkaproject.com/#/projects?cateID=1&amp;tagID=0">Substrate-based chains</a> to the list.</p>
-<h3 id="feature-support">Feature Support<a class="headerlink" href="#feature-support" title="Permanent link">&para;</a></h3>
+<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -2158,10 +2163,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       

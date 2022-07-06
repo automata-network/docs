@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/anydao/design/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1980,35 +1980,37 @@
 
 <h1 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h1>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
-<p>The whole system for <strong>AnyDAO MVP</strong> is composed of 4 major components:</p>
+<p><strong>AnyDAO MVP</strong> is composed of 4 major components:</p>
 <ul>
 <li><strong>Substrate based blockchain</strong>: Stores the related metadata and proofs for Projects and Proposals.</li>
-<li><strong>IPFS</strong>: Stores the actual bits of the data such as texts, images and public voter information.</li>
-<li><strong>Geode</strong>: It receives, queries and aggregates user votes. Also monitors the on-chain status and handles the uploading of IPFS storage and on-chain storage. At the same time it ensures the protection of user privacy.</li>
-<li><strong>Frontend</strong>: It gathers all kinds of data and provides information via graphical interface, and provides interactivity for users to register projects, create proposals, cast votes and many more.</li>
+<li><strong>IPFS</strong>: Stores actual data such as texts, images and public voter information.</li>
+<li><strong>Geode</strong>: Receives, queries and aggregates user votes. Also monitors the on-chain status and handles the uploading of IPFS storage and on-chain storage. At the same time, it ensures the protection of user privacy.</li>
+<li><strong>Frontend</strong>: Gathers all kinds of data and provides information via graphical interface, and provides interactivity for users to register projects, create proposals, cast votes and many more.</li>
 </ul>
 <h2 id="concept">Concept<a class="headerlink" href="#concept" title="Permanent link">&para;</a></h2>
 <h3 id="project">Project<a class="headerlink" href="#project" title="Permanent link">&para;</a></h3>
-<p>It represents an entity of a DAO, the creator will be the default owner, and the owner has the right to update project configurations and even transfer the ownership to another address.</p>
+<p>Represents the DAO. The creator is the default owner, and has the right to update project settings, as well as transfer the ownership to another address.</p>
 <h4 id="workspace">Workspace<a class="headerlink" href="#workspace" title="Permanent link">&para;</a></h4>
-<p>Each project can configure multiple workspaces, each workspace is composed of a chain and strategies.</p>
+<p>Each project can configure multiple workspaces. Each workspace is composed of a chain and strategies</p>
 <h4 id="strategy">Strategy<a class="headerlink" href="#strategy" title="Permanent link">&para;</a></h4>
-<p>It defines how to get the voting power of users from on-chain states, such as calculating by ERC20 token balance and so on.</p>
+<p>Defines how to get the voting power of users from on-chain states, such as by calculating ERC20 token balance</p>
 <h3 id="proposal">Proposal<a class="headerlink" href="#proposal" title="Permanent link">&para;</a></h3>
-<p>A proposal stands for a topic where user can vote on with their assets.</p>
+<p>Represents a topic where user can vote on with their assets</p>
 <h4 id="snapshot">Snapshot<a class="headerlink" href="#snapshot" title="Permanent link">&para;</a></h4>
-<p>For the fairness of all user voting assets, to avoid double-entrance, a snapshot mechanism is adopted in our design. When a proposal is started, the block height of each involved chain will be taken by our Geode, on which the state of each user will be fetched for power aggregation.</p>
+<p>To ensure fairness and avoid double-entry, a snapshot mechanism is adopted in our design. When a proposal is started, the block height of each participating chain will be taken by our Geode, and the state of each user will be fetched for power aggregation.</p>
 <h4 id="privacy-level">Privacy Level<a class="headerlink" href="#privacy-level" title="Permanent link">&para;</a></h4>
 <p>There are currently 4 levels of privacy settings:<br>
 - <strong>Public</strong>: Details of all individual votes made by users will be made available.<br>
-- <strong>Private</strong>: Total amount of votes made per option will be made available as an aggregation while the individual vote is hidden.<br>
+- <strong>Private</strong>: Total amount of votes for each option will be made available as an aggregation while the individual vote is hidden.<br>
 - <strong>Mixed</strong>: Users have the option to choose to reveal their vote or to cast their vote in the form of an aggregated result.<br>
-- <strong>Opaque</strong>: Only the result of the vote is revealed, all other details are hidden, including aggregated vote amount.<br></p>
+- <strong>Opaque</strong>: Only the result of the vote is revealed. All other details are hidden, including the aggregated vote amount.<br></p>
 <h4 id="update-frequency">Update Frequency<a class="headerlink" href="#update-frequency" title="Permanent link">&para;</a></h4>
-<p>It stands for how often Geode will execute transaction to update the on-chain states.<br>
-The total number of updates for a proposal is calculated by the total voting duration divided by update frequency.<br>
-As each execution generates transaction fee, the proposal creator need to pay certain amount of token according to the number of updating.<br>
-If the update frequency is not enabled, Geode will only update the IPFS and on-chain state for once when the proposal is ended.</p>
+<ul>
+<li>Stands for how often Geode executes transaction to update the on-chain state.<br></li>
+<li>The total number of updates for a proposal is calculated by the total voting duration divided by update frequency.<br></li>
+<li>Each execution generates a transaction fee and the proposal creator is responsible for this payment.<br></li>
+<li>If the update frequency is not enabled, Geode will only update the IPFS and on-chain state when the proposal is ended.</li>
+</ul>
 
               
             </article>
@@ -2134,10 +2136,10 @@ If the update frequency is not enabled, Geode will only update the IPFS and on-c
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       

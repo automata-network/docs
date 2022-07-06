@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.ata.network/conveyor/overview/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#automata-conveyor" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -1680,12 +1680,46 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    How it works
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1873,18 +1907,17 @@
 
 
 
-<h1 id="automata-conveyor">Automata Conveyor<a class="headerlink" href="#automata-conveyor" title="Permanent link">&para;</a></h1>
-<p>Automata Conveyor is a service that ingests and outputs transactions in a determined order. 
-This creates a front-running-free zone that removes the chaos of transaction reordering.</p>
-<p>When transactions are fed into Conveyor, it determines the order of the incoming transactions and makes it impossible for block producers to perform the following:</p>
+  <h1>Overview</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../assets/conveyor_updated.png" style="zoom:80%" /></p>
+<p>Automata Conveyor is a MEV Minimization solution that enforces fair ordering of transactions. The front-running-free-zone that ensures users are not disavantaged by overpaying on their transactions. </p>
+<p>Because blockchains are written by consensus and the content of each block is chosen by block producers - miners in PoW and validators in PoS systems - there is room and frankly, great incentive, for them to profit by front-running, back-running, sandwiching and generally exploiting transactions in their block. This is what is referred to as Maximal Extractable Value (MEV). </p>
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>When transactions are fed into Conveyor, the service ingest and outputs incoming transactions by a FIFO order. This means block producers cannot: </p>
 <ul>
-<li>Inject new transactions into the Conveyor output: The inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.</li>
-<li>Delete ordered transactions: Transactions accepted by Conveyor are broadcasted everywhere so transactions cannot be deleted unless ALL block producers are colluding and censoring the transactions at the same time.</li>
-</ul>
-<p>From the DEX’s perspective, they can choose to accept either</p>
-<ul>
-<li>Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions</li>
-<li>Other unordered transactions (which include front-running etc) that may negatively impact their users</li>
+<li>Inject new transactions into the Conveyor output. Any inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.</li>
+<li>Delete ordered transactions. Transactions accepted by Conveyor are broadcasted throughout the network so transactions cannot be deleted unless all block producers are colluding and censoring the transactions at the same time.</li>
 </ul>
 
               
@@ -2011,10 +2044,10 @@ This creates a front-running-free zone that removes the chaos of transaction reo
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       
