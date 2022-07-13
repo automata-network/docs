@@ -33,6 +33,7 @@ If you're interested in developing with or on Automata Network, view our develop
 ## For Users
 
 Browse through any of our user guides below to get started:
+
 * [XATA](./xata/introduction.md)
 * [NFTFair](./nftfair/users/activities.md)
 * [AnyDAO](./anydao/guide.md)
