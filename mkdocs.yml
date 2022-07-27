@@ -2,7 +2,6 @@ site_name: Automata Network Docs
 site_url: https://docs.ata.network
 site_description: Automata Network Documentation
 site_author: Automata Team
-site_dir: "./site"
 
 repo_url: https://github.com/automata-network/docs
 
