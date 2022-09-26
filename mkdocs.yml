@@ -117,6 +117,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     # - navigation.expand
+    - content.tabs.link
   logo: "assets/favicon-192.png"
   favicon: "assets/favicon.ico"
 
