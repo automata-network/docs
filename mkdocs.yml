@@ -38,6 +38,10 @@ nav:
       - Design: ./anydao/design.md
       - Specification: ./anydao/spec.md
       - User Guide: ./anydao/guide.md
+    - 1RPC:
+      - Introduction: ./1rpc/introduction.md
+      - Design: ./1rpc/design.md
+      - FAQs: ./1rpc/faq.md
     - 2FA Guru:
       - Introduction: ./2fa/introduction.md
       - User Info:
