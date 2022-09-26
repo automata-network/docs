@@ -38,6 +38,10 @@ nav:
       - Design: ./anydao/design.md
       - Specification: ./anydao/spec.md
       - User Guide: ./anydao/guide.md
+    - 1RPC:
+      - Introduction: ./1rpc/introduction.md
+      - Design: ./1rpc/design.md
+      - FAQs: ./1rpc/faq.md
     - 2FA Guru:
       - Introduction: ./2fa/introduction.md
       - User Info:
@@ -113,6 +117,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     # - navigation.expand
+    - content.tabs.link
   logo: "assets/favicon-192.png"
   favicon: "assets/favicon.ico"
 
@@ -127,7 +132,8 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
   - pymdownx.arithmatex
   - pymdownx.betterem:
