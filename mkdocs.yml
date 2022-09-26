@@ -132,7 +132,8 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
   - pymdownx.arithmatex
   - pymdownx.betterem:
