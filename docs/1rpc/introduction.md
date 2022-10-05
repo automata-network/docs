@@ -22,7 +22,7 @@ The information is received, collected, and potentially stored and analyzed by R
 
 - ### Zero tracking
 
-    1RPC relays user requests to RPC providers and shield user’s private metadata, including IP address, device information, and wallet association. 1PRC does not save or track such information.
+    1RPC relays user requests to RPC providers and shields user’s private metadata, including IP address, device information, and wallet association. 1PRC does not save or track such information.
 
 - ### Anti-phishing
 
@@ -55,7 +55,7 @@ The information is received, collected, and potentially stored and analyzed by R
 
 ### Limitations
 
-* Rate limit for the whole service: 20 requests per second.
+* Rate limit for the whole service: 40 requests per second; 6,000 per hour; 20,000 per day.
 
 * Request content size: 2MB at most.
 
