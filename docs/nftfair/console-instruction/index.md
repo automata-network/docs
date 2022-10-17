@@ -68,4 +68,8 @@ On the theme configuration page, you can update the activity banner, icon, title
 
 ![image](../../assets/nftfair/e13f1040-3453-4972-abbe-813b55411b8d.png)
 
-Finally, you can click the preview button on the activity list page and copy and post the activity link to your users.
+If your activity is ready, you can click the "Publish" button on the activity listing to set up your activity online.
+
+![image](../../assets/nftfair/094b291c-5624-44e4-b114-5fa9efe69be1.png)
+
+Finally, you can click the preview button on the activity list page, copy and post the activity link to your users.
