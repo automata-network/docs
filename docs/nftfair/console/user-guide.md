@@ -1,4 +1,4 @@
-# NFTFair Console Instruction
+# NFTFair Console User Guide
 
 This instruction will show you how to create an activity on the NFTFair console.
 
