@@ -6,9 +6,12 @@ Automata Conveyor is a MEV Minimization solution that enforces fair ordering of 
 
 Because blockchains are written by consensus and the content of each block is chosen by block producers - miners in PoW and validators in PoS systems - there is room and frankly, great incentive, for them to profit by front-running, back-running, sandwiching and generally exploiting transactions in their block. This is what is referred to as Maximal Extractable Value (MEV). 
 
-## How it works 
+For example, a DEX can choose to accept either
 
-When transactions are fed into Conveyor, the service ingest and outputs incoming transactions by a FIFO order. This means block producers cannot: 
+  - Ordered transactions from Automata’s Conveyor which is free from transaction reordering and other front-running transactions
+  - Other unordered transactions (which include front-running etc) that may negatively impact their users
 
-- Inject new transactions into the Conveyor output. Any inserted transactions bypassing Conveyor is detectable by anyone because of signature mismatch.
-- Delete ordered transactions. Transactions accepted by Conveyor are broadcasted throughout the network so transactions cannot be deleted unless all block producers are colluding and censoring the transactions at the same time.
+Automata Conveyor contracts comprise the following components:
+
+- `ConveyorForwarder`
+- A target contract that extends the `ConveyorBase` contract.

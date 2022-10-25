@@ -2,8 +2,8 @@
 
 ## Summary
 
-ConveyorV2 is an upgrade of Automata's ConveyorV1 to support a better user
-experience. 
+The ConveyorV2 smart contracts are the backbone of XATA. Click [here](../../../xata/introduction.md) to learn more about the product.
+
 Tokens that are traded in the ConveyorV2 liquidity pools enjoy the MEV protection and transaction ordering enforcement capabilities without the need to wrap existing ERC20 tokens into gTokens.
 
 Similar with ConveyorV1 (formerly known as GTokens), users must sign an EIP712 message to authorize Geode to submit a transaction on the user's behalf. Users would still enjoy the benefit of gasless trading, meaning they are not required to hold native tokens like MATIC or BNB to pay for gas. 
