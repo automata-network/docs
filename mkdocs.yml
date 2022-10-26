@@ -83,6 +83,7 @@ nav:
       - Forwarder: ./conveyor/forwarder.md
       - ConveyorBase: ./conveyor/conveyor-base.md
       - SDK: ./conveyor/conveyor-sdk.md
+      - Dev Guide: ./conveyor/guide.md
       - Legacy:
         - Summary: ./conveyor/legacy/legacy.md
         - ConveyorV1 (Deprecated):
