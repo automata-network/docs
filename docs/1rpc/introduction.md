@@ -22,7 +22,7 @@ The information is received, collected, and potentially stored and analyzed by R
 
 - ### Zero tracking
 
-    1RPC relays user requests to RPC providers and shield user’s private metadata, including IP address, device information, and wallet association. 1PRC does not save or track such information.
+    1RPC relays user requests to RPC providers and shield user’s private metadata, including IP address, device information, and wallet association. 1RPC does not save or track such information.
 
 - ### Anti-phishing
 
