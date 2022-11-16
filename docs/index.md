@@ -38,7 +38,6 @@ Browse through any of our user guides below to get started:
 * [NFTFair](./nftfair/users/activities.md)
 * [AnyDAO](./anydao/guide.md)
 * [2FA Guru](./2fa/users/guide.md)
-* [Witness](./witness/user-guide.md) 
 
 ## Helpful links
 
