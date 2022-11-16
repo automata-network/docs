@@ -13,7 +13,7 @@ Our [Medium](https://medium.com/atanetwork) is a great introduction to our visio
 
 Given the default transparency of blockchain, users struggle with moving large amount of their fortunes into what is invariably an exposed glass box. The developer experience is a central part of Automata's design and helps to explain our middleware approach. For blockchain projects to advocate for and adopt privacy at the protocol level, it's important to us to reduce integration friction and make the experience a positive one for builders, and further down the line, end-users. 
 
-Some of our middleware solutions include [Conveyor](https://conveyor.ata.network/#/swap), a MEV Minimization solution, and [Witness](https://witness.ata.network/), for off-chain privacy governance. 
+Some of our middleware solutions include [Conveyor](https://conveyor.ata.network/#/swap), a MEV Minimization solution, and Witness, for off-chain privacy governance. 
 
 The best way to understand how we're doing this is to dive into our technical framework. Here's an ELI5 [version.](https://medium.com/atanetwork/introduction-to-sgx-the-eli5-3abf25e50057)
 
