@@ -63,8 +63,8 @@ nav:
       - SDK: ./xata/sdk.md
       - FAQ: ./xata/faq.md
     - Witness: 
-      - Introduction: ./witness/migrate.md
-      - User Guide: ./witness/migrate.md
+      - Introduction: ./witness/introduction.md
+      - User Guide: ./witness/user-guide.md
       # - Witness API: ./witness/api.md
   - Developers:
     - ContextFree Network:
