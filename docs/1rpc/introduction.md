@@ -53,6 +53,7 @@ The information is received, collected, and potentially stored and analyzed by R
 | Optimism | https://1rpc.io/op | 10 | OP | https://optimistic.etherscan.io |
 | zkSync alpha testnet | https://1rpc.io/zksync2 | 280 | ETH | https://zksync2-testnet.zkscan.io |
 | Fantom Opera | https://1rpc.io/ftm | 250 | FTM | https://ftmscan.com |
+| Celo Mainnet | https://1rpc.io/celo | 42220 | CELO | https://explorer.celo.org |
 
 ### Limitations
 
