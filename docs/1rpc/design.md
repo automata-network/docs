@@ -42,7 +42,7 @@ Sometimes a single RPC call contains multiple batched queries (**`multicall`** t
 
 ### Burn after relaying
 
-1RPC will immediately discard any metadata and data after successful relaying a request. There is a very short time window that the request will be alive within 1RPC node. To avoid the collection from 1RPC node itself, secure enclave technology is used to provide integrity and privacy. This guarantees that the information will be burnt after use and the node itself will not be able to keep the information or send it to other 3rd parties.
+1RPC will immediately discard any metadata and data after successfully relaying a request. There is a very short time window that the request will be alive within 1RPC node. To avoid the collection from 1RPC node itself, secure enclave technology is used to provide integrity and privacy. This guarantees that the information will be burnt after use and the node itself will not be able to keep the information or send it to other 3rd parties.
 
 ## Phishing Detection
 
