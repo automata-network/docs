@@ -50,10 +50,11 @@ The information is received, collected, and potentially stored and analyzed by R
 | Polkadot | wss://1rpc.io/dot | | |
 | Kusama | wss://1rpc.io/ksm | | |
 | Acala | wss://1rpc.io/aca | | |
-| Optimism | https://1rpc.io/op | 10 | OP | https://optimistic.etherscan.io |
+| Optimism | https://1rpc.io/op | 10 | ETH | https://optimistic.etherscan.io |
 | zkSync alpha testnet | https://1rpc.io/zksync2 | 280 | ETH | https://zksync2-testnet.zkscan.io |
 | Fantom Opera | https://1rpc.io/ftm | 250 | FTM | https://ftmscan.com |
 | Celo Mainnet | https://1rpc.io/celo | 42220 | CELO | https://explorer.celo.org |
+| Klaytn Mainnet | https://1rpc.io/klay | 8217 | KLAY | https://www.klaytnfinder.io |
 
 ### Limitations
 
