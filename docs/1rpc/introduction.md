@@ -55,6 +55,8 @@ The information is received, collected, and potentially stored and analyzed by R
 | Fantom Opera | https://1rpc.io/ftm | 250 | FTM | https://ftmscan.com |
 | Celo Mainnet | https://1rpc.io/celo | 42220 | CELO | https://explorer.celo.org |
 | Klaytn Mainnet | https://1rpc.io/klay | 8217 | KLAY | https://www.klaytnfinder.io |
+| Starknet | https://1rpc.io/starknet | | | https://starkscan.co |
+| AltLayer | https://1rpc.io/alt | 9990 | ALT | https://devnet-explorer.altlayer.io |
 
 ### Limitations
 
