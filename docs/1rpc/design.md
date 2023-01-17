@@ -44,28 +44,14 @@ Sometimes a single RPC call contains multiple batched queries (**`multicall`** t
 
 1RPC will immediately discard any metadata and data after successfully relaying a request. There is a very short time window that the request will be alive within 1RPC node. To avoid the collection from 1RPC node itself, secure enclave technology is used to provide integrity and privacy. This guarantees that the information will be burnt after use and the node itself will not be able to keep the information or send it to other 3rd parties.
 
-## Phishing Detection
-
-This feature is only supported in our beta endpoints, https://beta.1rpc.io. You need to manually replace the https://1rpc.io to the beta one to get this functionalities. It will return a phishing detection error with error code -32000.
-
-```shell
-{"jsonrpc": "2.0", "error": {"code": -32000, "message": "Phishing detection error"}, "id": "1"}
-```
-
-### Domain check
-Leveraging open and public efforts on tracking phishing domains (e.g., [CryptoScamDB](https://cryptoscamdb.org/)), 1RPC can detect whether the request comes from a suspicious website. This will be the last line of defense to help reduce the risk of a user signing a transaction on a malicious website.
-
-### Address check
-Some significant transactions like approve, setApprovalForAll, transferFrom and safeTransferFrom, 1RPC will extract addresses such as spender, and check whether these addresses have suspicious behavior through APIs such as [@SlowMist_Team](https://twitter.com/SlowMist_Team), [@GoplusSecurity](https://twitter.com/GoplusSecurity) etc.
-
-Supported networks
-
-* Ethereum Mainnet
-* BNB Chain Mainnet
-* Polygon Mainnet
-* Arbitrum One
-* Avalanche Contract Chain
-
 ## Compatibility
 
 1RPC is JSON RPC compliant and will forward user requests transparently to the supported blockchain protocol. It utilizes the data availability from other 3rd-party RPC providers and provides the best aggregated RPC experience.
+
+## Phishing Detection
+
+This feature is only supported in [1RPC+](./1rpc%2B.md). Premium users can turn on some phishing detection options in 1RPC+, and for each write requests to the blockchain, 1RPC+ will stop relaying if the request hits any of the enabled detections. More details can be found in [1RPC+](./1rpc%2B.md).
+
+## Customization
+
+This feature is only supported in [1RPC+](./1rpc%2B.md). Premium users can customize their own rules to validate the requests before relaying them to the blockchain. This is an exclusive 1RPC for each user. More details can be found in [1RPC+](./1rpc%2B.md).

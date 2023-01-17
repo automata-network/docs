@@ -6,7 +6,7 @@
 
 1RPC is a free and private RPC relay that protects Web3 users when accessing RPC endpoints. It tunnels user requests via distributed relays to other RPC providers whilst preventing the tracking of user metadata such as IP address, device information and wallet linkability. It offers protection on user privacy without compromising compatibility with existing blockchain RPC protocols.
 
-To avoid metadata tracking from other RPC providers, 1RPC relays user requests and avoids any direct communication between user and RPC providers. In addition, the 1RPC nodes immediately delete any metadata after relaying the requests successfully. The connections between users, 1RPC and RPC providers are TLS secured which further prevents any tracking from other network providers. 
+To avoid metadata tracking from other RPC providers, 1RPC relays user requests and avoids any direct communication between user and RPC providers. In addition, the 1RPC nodes immediately delete any metadata after relaying the requests successfully. The connections between users, 1RPC and RPC providers are TLS secured which further prevents any tracking from other network providers.
 
 1RPC is created to be an open initiative from the blockchain infrastructure community. We are motivated by a common good mission to help build a better Web3 and we encourage anyone who values user privacy to join this open collaboration.
 
@@ -14,7 +14,7 @@ To avoid metadata tracking from other RPC providers, 1RPC relays user requests a
 
 The majority of the users in Web3 don’t know their **private metadata is exposed to 3rd party RPC providers.** Every time a user **connects their wallet**, an RPC endpoint is connected, which receives a tremendous amount of **identifying information** even before initiating a transaction.
 
-For example, as soon as you start up Metamask, an `eth_call` request is sent to Infura (Metamask’s default RPC), who could potentially have access to private **metadata such as your IP address, browser version, OS platform**, etc. Additionally, the request will try to get the balance of all your addresses added to Metamask - effectively exposing all your wallet addresses and the association between them, linked to your metadata, to RPC providers. 
+For example, as soon as you start up Metamask, an `eth_call` request is sent to Infura (Metamask’s default RPC), who could potentially have access to private **metadata such as your IP address, browser version, OS platform**, etc. Additionally, the request will try to get the balance of all your addresses added to Metamask - effectively exposing all your wallet addresses and the association between them, linked to your metadata, to RPC providers.
 
 The information is received, collected, and potentially stored and analyzed by RPC providers. This data harvesting is concerning enough to raise the alarm, but should a data breach occur to an RPC provider, the leakage could lead to more attacks on users via “social engineering” attacks, phishing attacks, and even physical danger.
 
@@ -22,15 +22,19 @@ The information is received, collected, and potentially stored and analyzed by R
 
 - ### Zero tracking
 
-    1RPC relays user requests to RPC providers and shield user’s private metadata, including IP address, device information, and wallet association. 1PRC does not save or track such information.
-
-- ### Anti-phishing
-
-    1RPC detects phishing requests from malicious domains and stops relaying malicious transactions. 
+    1RPC relays user requests to RPC providers and shields user’s private metadata, including IP address, device information, and wallet association. 1RPC does not save or track such information.
 
 - ### Multi-chain compatibility
 
     1RPC is compliant with JSON RPC 2.0 standard and supports multiple blockchain protocols (e.g., EVM, Substrate) via HTTPS and WSS.
+
+- ### Anti-phishing
+
+    1RPC contains some anti-phishing rules to detect phishing requests and stops relaying malicious transactions. This feature is only enabled in [1RPC+](./1rpc%2B.md).
+
+- ### Customization
+
+    Premium users can customize their own rules to validate the requests before relaying their write requests to the blockchain. This feature is only enabled in [1RPC+](./1rpc%2B.md).
 
 ## Supported Networks
 
@@ -57,14 +61,26 @@ The information is received, collected, and potentially stored and analyzed by R
 | Klaytn Mainnet | https://1rpc.io/klay | 8217 | KLAY | https://www.klaytnfinder.io |
 | Starknet | https://1rpc.io/starknet | | | https://starkscan.co |
 | AltLayer | https://1rpc.io/alt | 9990 | ALT | https://devnet-explorer.altlayer.io |
-| Near | https://1rpc.io/near | | | https://explorer.near.org |
+| Near Mainnet | https://1rpc.io/near | | | https://explorer.near.org |
 | Aurora Mainnet | https://1rpc.io/aurora | 1313161554 | ETH | https://explorer.mainnet.aurora.dev |
 
 ### Limitations
 
-* Rate limit for the whole service: 20 requests per second.
+* Rate limit for the free-tier service: 20,000 requests per day.
+
+It will reset the usage quota in the next day (00:00 UTC). If it reaches the limitation, it will return a rate limit error with error code -32001.
+
+```shell
+{"jsonrpc": "2.0", "error": {"code": -32001, "message": "Exceeded the quota usage"}, "id": 1}
+```
 
 * Request content size: 2MB at most.
+
+If it reaches the limitation, it will return a rate limit error with error code -32600.
+
+```shell
+{"jsonrpc": "2.0", "error": {"code": -32600, "message": "JSON RPC Request is too large"}, "id": 1}
+```
 
 ## Get Started
 
