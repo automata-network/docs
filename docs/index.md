@@ -23,6 +23,7 @@ The best way to understand how we're doing this is to dive into our technical fr
 - [Fair NFT launches](./nftfair/introduction.md) - no sniping! 
 - Borderless, privacy [governance](./anydao/introduction.md)
 - [Neutralizing](./2fa/introduction.md) social engineering attacks
+- [1RPC relays](./1rpc/introduction.md) - no tracking!
 
 ## For Developers 
 
@@ -38,6 +39,7 @@ Browse through any of our user guides below to get started:
 * [NFTFair](./nftfair/users/activities.md)
 * [AnyDAO](./anydao/guide.md)
 * [2FA Guru](./2fa/users/guide.md)
+* [1RPC](./1rpc/introduction.md)
 
 ## Helpful links
 
