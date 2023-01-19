@@ -21,7 +21,7 @@
         <link rel="next" href="../solutions/approaches/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9c788c91.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
@@ -171,7 +171,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -2076,7 +2076,7 @@
 <h3 id="the-second-defense-payment-only-on-a-sell-transaction">The second defense - Payment only on a sell transaction<a class="headerlink" href="#the-second-defense-payment-only-on-a-sell-transaction" title="Permanent link">&para;</a></h3>
 <p>Again: Sandwich bots make miner payment conditional on profit. That was broken by making the ERC20 token pay the miner. Thus even with the Sandwich bot sell failing, the miner would still get paid!</p>
 <p>Here's what actually happened: Sandwich bot gets baited and buys 100 ETH of the poisonous token. Poisonous token owner's bait triggers custom transfer function, which pays 0.1 ETH to the miner Sandwich bot's sell doesn't work because of the poisonous token. As the sandwich bot submitted these three transactions in a bundle all three were included: the successful buy, the bait, and the failed sell. The poisonous ERC20's payment via the custom transfer was what incentivized a miner to include it!</p>
-<p>It is estimated that the first person to do this made about 100 ETH. You can see the poisoned ERC20 Uniswap transactions <a href="https://etherscan.io/token/0xe253a1f7d5818022661bfbd2cbe043b642b4eff9?a=0x01f8d5a4862d51d2cf0cf52ac900a4d60adaeee6" target="_blank">here <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1z"/></svg></span></a>.</p>
+<p>It is estimated that the first person to do this made about 100 ETH. You can see the poisoned ERC20 Uniswap transactions <a href="https://etherscan.io/token/0xe253a1f7d5818022661bfbd2cbe043b642b4eff9?a=0x01f8d5a4862d51d2cf0cf52ac900a4d60adaeee6" target="_blank">here <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>.</p>
 <h3 id="from-victim-to-predator">From Victim to Predator<a class="headerlink" href="#from-victim-to-predator" title="Permanent link">&para;</a></h3>
 <p>One of their victims was one the most successful Flashbots bot operators, and they immediately sprung into action. In a short period of time the victim turned into an apex predator. They launched a similar but slightly different ERC20 (YOLOchain), and ended up successfully baiting many more sandwichers. They made 300 ETH doing so!</p>
 
@@ -2179,7 +2179,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "instant", "navigation.top", "navigation.tabs", "toc.integrate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       
