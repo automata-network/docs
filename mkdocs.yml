@@ -80,14 +80,21 @@ nav:
         - Join as Validator: ./canarynet/node/run-validator.md
     - Conveyor:
       - Overview: ./conveyor/overview.md
-      - ConveyorV1:
-        - ./conveyor/conveyorv1/automata-conveyor-overview.md
-        - ./conveyor/conveyorv1/automata-conveyor-gtoken.md
-        - ./conveyor/conveyorv1/automata-conveyor-controller.md
-        - ./conveyor/conveyorv1/fee.md
-        - ./conveyor/conveyorv1/fee-contract.md
-      - ConveyorV2:
-        - ./conveyor/conveyorv2/design.md
+      - Forwarder: ./conveyor/forwarder.md
+      - ConveyorBase: ./conveyor/conveyor-base.md
+      - SDK: ./conveyor/conveyor-sdk.md
+      - Dev Guide: ./conveyor/guide.md
+      - Legacy:
+        - Summary: ./conveyor/legacy/legacy.md
+        - ConveyorV1 (Deprecated):
+          - ./conveyor/legacy/conveyorv1/automata-conveyor-overview.md
+          - ./conveyor/legacy/conveyorv1/automata-conveyor-gtoken.md
+          - ./conveyor/legacy/conveyorv1/automata-conveyor-controller.md
+          - ./conveyor/legacy/conveyorv1/fee.md
+          - ./conveyor/legacy/conveyorv1/fee-contract.md
+        - ConveyorV2:
+          - ./conveyor/legacy/conveyorv2/design.md
+      - Appendix: ./conveyor/appendix.md
 
 theme:
   name: material
