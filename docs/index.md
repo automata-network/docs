@@ -3,8 +3,8 @@
 Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [1RPC](https://www.1rpc.io), [2FA Guru](https://2fa.guru), [NFTFair](https://nftfair.app), [AnyDAO](https://anydao.app) and [XATA](https://xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
 
 Some of our key features:
-- Traceless privacy
-- Non-intrusive integration
+- Do-not-track privacy
+- Native integration
 - Universal compatibility
 
 Our [Medium](https://medium.com/atanetwork) is a great introduction to our vision and work. 
@@ -23,6 +23,7 @@ The best way to understand how we're doing this is to dive into our technical fr
 - [Fair NFT launches](./nftfair/introduction.md) - no sniping! 
 - Borderless, privacy [governance](./anydao/introduction.md)
 - [Neutralizing](./2fa/introduction.md) social engineering attacks
+- [Eradicating](./1rpc/introduction.md) metadata exposure 
 
 ## For Developers 
 
@@ -38,6 +39,7 @@ Browse through any of our user guides below to get started:
 * [NFTFair](./nftfair/users/activities.md)
 * [AnyDAO](./anydao/guide.md)
 * [2FA Guru](./2fa/users/guide.md)
+* [1RPC](./1rpc/introduction.md)
 
 ## Helpful links
 
