@@ -71,7 +71,7 @@ The information is received, collected, and potentially stored and analyzed by R
 
 Users can visit https://www.1rpc.io/ to add 1RPC to the Metamask via the one-click button, or they can add the network manually.
 
-![](../assets/1rpc/metamask-oneclick.png){style="zoom:60%"}
+![](../assets/1rpc/1RPC_one.png){style="zoom:60%"}
 
 For substrate blockchains, users can switch to 1RPC easily in the polkadot js explorer.
 
