@@ -46,7 +46,7 @@ Sometimes a single RPC call contains multiple batched queries (**`multicall`** t
 
 ## Phishing Detection
 
-This feature is only supported in our beta endpoints, https://beta.1rpc.io. You need to manually replace the https://1rpc.io to the beta one to get this functionalities. It will return a phishing detection error with error code -32000.
+This feature is only supported in our beta endpoints, https://beta.1rpc.io. You need to manually replace the https://1rpc.io with the beta one to get this functionality. It will return a phishing detection error with error code -32000.
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Phishing detection error"}, "id": "1"}
