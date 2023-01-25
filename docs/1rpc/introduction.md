@@ -69,17 +69,23 @@ The information is received, collected, and potentially stored and analyzed by R
 
 ### User
 
-Users can visit https://www.1rpc.io/ to add 1RPC to the Metamask via the one-click button, or they can add the network manually.
+Visit https://www.1rpc.io/ to add 1RPC to MetaMask via the one-click "Add to Wallet" button.  
 
 ![](../assets/1rpc/1RPC_one.png){style="zoom:60%"}
 
-For substrate blockchains, users can switch to 1RPC easily in the polkadot js explorer.
+![](../assets/1rpc/1RPC_two.png){style="zoom:60%"}
 
-![](../assets/1rpc/polkadot-oneclick.png){style="zoom:70%"}
+Alternatively, copy and paste the network information to your wallet settings. 
+
+![](../assets/1rpc/1RPC_three.png){style="zoom:60%"}
+
+For Substrate blockchains, switch to 1RPC instantly on [Polkadot.js](https://polkadot.js.org/apps/)
+
+![](../assets/1rpc/1RPC_four.png){style="zoom:60%"}
 
 ### Developer
 
-Developers can use the 1RPC URL to interact with the blockchain and the only thing they need to change is the endpoint URL.
+Replace the existing URL with 1RPC's endpoint URL to interact with the blockchain.
 
 === "Curl"
 
