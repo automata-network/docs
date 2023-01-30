@@ -64,10 +64,10 @@ If a write request hit any of the enabled rules, 1RPC+ will returns a specified 
         * safeTransferFrom
         * transfer
     * Error code: -32002
-    * Error message: Invalid address
+    * Error message: Blocked by 1RPC: invalid address. See https://rules.1rpc.io/002
     * Example:
     ```shell
-    {"jsonrpc": "2.0", "error": {"code": -32002, "message": "Invalid address"}, "id": 1}
+    {"jsonrpc": "2.0", "error": {"code": -32002, "message": "Blocked by 1RPC: invalid address. See https://rules.1rpc.io/002"}, "id": 1}
     ```
 
 - #### Address check on uniswap transaction
@@ -136,10 +136,10 @@ If a write request hit any of the enabled rules, 1RPC+ will returns a specified 
             * swapExactTokensForETHSupportingFeeOnTransferTokens
             * swapExactTokensForTokensSupportingFeeOnTransferTokens
     * Error code: -32003
-    * Error message: Recipient is suspicious
+    * Error message: Blocked by 1RPC: recipient is suspicious. See https://rules.1rpc.io/003
     * Example:
     ```shell
-    {"jsonrpc": "2.0", "error": {"code": -32003, "message": "Recipient is suspicious"}, "id": 1}
+    {"jsonrpc": "2.0", "error": {"code": -32003, "message": "Blocked by 1RPC: recipient is suspicious. See https://rules.1rpc.io/003"}, "id": 1}
     ```
 
 - #### Address check via Gopluslabs API
@@ -160,10 +160,10 @@ If a write request hit any of the enabled rules, 1RPC+ will returns a specified 
         * Arbitrum One
         * Avalanche
     * Error code: -32051
-    * Error message: Malicious address is detected
+    * Error message: Blocked by 1RPC: malicious address. See https://rules.1rpc.io/051
     * Example:
     ```shell
-    {"jsonrpc": "2.0", "error": {"code": -32051, "message": "Malicious address is detected"}, "id": 1}
+    {"jsonrpc": "2.0", "error": {"code": -32051, "message": "Blocked by 1RPC: malicious address. See https://rules.1rpc.io/051"}, "id": 1}
     ```
 
 - #### Address check via AvengerDAO API
@@ -178,10 +178,10 @@ If a write request hit any of the enabled rules, 1RPC+ will returns a specified 
         * transfer
     * Support networks: All EVM compatible networks
     * Error code: -32052
-    * Error message: Insufficient trust score
+    * Error message: Blocked by 1RPC: insufficient trust score. See https://rules.1rpc.io/052
     * Example:
     ```shell
-    {"jsonrpc": "2.0", "error": {"code": -32052, "message": "Insufficient trust score"}, "id": 1}
+    {"jsonrpc": "2.0", "error": {"code": -32052, "message": "Blocked by 1RPC: insufficient trust score. See https://rules.1rpc.io/052"}, "id": 1}
     ```
 
 - #### Contract check via official blockchain explorer
@@ -198,8 +198,8 @@ If a write request hit any of the enabled rules, 1RPC+ will returns a specified 
         * Optimism: [optimistic](https://optimistic.etherscan.io/terms).
         * Fantom Opera: [ftmscan](https://ftmscan.com/terms).
     * Error code: -32053
-    * Error message: Unverified contract
+    * Error message: Blocked by 1RPC: unverified contract. See https://rules.1rpc.io/053
     * Example:
     ```shell
-    {"jsonrpc": "2.0", "error": {"code": -32053, "message": "Unverified contract"}, "id": 1}
+    {"jsonrpc": "2.0", "error": {"code": -32053, "message": "Blocked by 1RPC: unverified contract. See https://rules.1rpc.io/053"}, "id": 1}
     ```
