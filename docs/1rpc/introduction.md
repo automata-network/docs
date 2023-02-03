@@ -76,10 +76,18 @@ It will reset the usage quota in the next day (00:00 UTC). If it reaches the lim
 
 * Request content size: 2MB at most.
 
-If it reaches the limitation, it will return a rate limit error with error code -32600.
+If it reaches the limitation, it will return an error with error code -32600.
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32600, "message": "JSON RPC Request is too large"}, "id": 1}
+```
+
+* Response content size: 2MB at most.
+
+If it reaches the limitation, it will return an error with error code -32000. If you're trying to call eth_getLogs method and it may produce a larger response, we suggest to refine the request like reducing the block range.
+
+```shell
+{"jsonrpc": "2.0", "error": {"code": -32000, "message": "response size should not greater than 2097152 bytes"}, "id": 1}
 ```
 
 ## Get Started
