@@ -14,7 +14,7 @@ Introduced in private alpha, 1RPC+ is currently accessible via [waitlist](https:
     
 - ### Custom privacy filters 
 
-     Transactions often feel intimidating because of a lack of transparency. Our goal is to give users on 1RPC+ a better understanding of how a dApp or smart contract interacts with their wallet. With customized privacy filters that can be added or edited at any time, this reduces the likelihood of users ending up in unwanted situations, such as engaging with potentially risky sites that turn out to be wallet drainers. 
+     Transactions often feel intimidating because of a lack of transparency. Our goal is to give users on 1RPC+ a better understanding of how a dApp or smart contract interacts with their wallet. With customized privacy filters that can be added or edited at any time, this reduces the likelihood of users ending up in unwanted situations.  
      
 - ### Zero-tracking 
 
