@@ -4,7 +4,7 @@
 
 1RPC is a free RPC relay to eradicate metadata exposure and leakage with a one-click experience for users within Web3. As a proxy layer that shields user data before it reaches existing RPC endpoints, many of which continue to be centralized today, it is important to us that 1RPC neither collects nor stores user metadata in any part of the relay journey.
 
-To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of their personal data. The waitlist is now [open](https://automatanetwork.typeform.com/to/rcjiWMwO) for early members to preview and try out additional power features. Read more about 1RPC+ [here](docs/1rpc/1rpc+.md) - with advanced capabilities including anti-phishing and custom privacy filters. 
+To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of their personal data. The waitlist is now [open](https://automatanetwork.typeform.com/to/rcjiWMwO) for early members to preview and try out additional power features. Read more about 1RPC+ [here](./1rpc+.md) - with advanced capabilities including anti-phishing and custom privacy filters. 
 
 ## Features
 
@@ -56,7 +56,7 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 
 * Rate limit for 1RPC: 20,000 requests per day
 
-Usage quota will reset in the following day (00:00 UTC). An error code -32001 will be displayed once rate limit is reached. 
+Usage quota will reset in the following day (00:00 UTC). An error code -32001 will be displayed once the rate limit is reached. 
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32001, "message": "Exceeded the quota usage"}, "id": 1}
@@ -64,7 +64,7 @@ Usage quota will reset in the following day (00:00 UTC). An error code -32001 wi
 
 * Request content size: 2 Megabytes (MB)
 
-An error code -32600 will be displayed once request limit is reached. 
+An error code -32600 will be displayed once the request limit is reached. 
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32600, "message": "JSON RPC Request is too large"}, "id": 1}
@@ -72,7 +72,7 @@ An error code -32600 will be displayed once request limit is reached.
 
 * Response content size: 2 Megabytes (MB)
 
-An error code -32600 will be displayed once response limit is reached. Trying to call eth_getLogs method might increase the content size, which can be brought down by refining the request, such as reducing the block range. 
+An error code -32600 will be displayed once the response limit is reached. Trying to call the eth_getLogs method might increase the content size, which can be brought down by refining the request, such as reducing the block range. 
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32000, "message": "response size should not greater than 2097152 bytes"}, "id": 1}

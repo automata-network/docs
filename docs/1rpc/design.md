@@ -33,7 +33,7 @@ When users perform any kind of action, such as viewing their balance, creating a
 
 ### Request Caching
 
-Certain read-only queries are cached to reduce response time and reduce the information load passed to RPC providers. The current LRU (least recently used) policy will be upgraded as we learn more about usage and and capacity requirements.
+Certain read-only queries are cached to reduce response time and reduce the information load passed to RPC providers. The current LRU (least recently used) policy will be upgraded as we learn more about usage and capacity requirements.
 
 ### Burn after relaying
 
@@ -41,4 +41,4 @@ Certain read-only queries are cached to reduce response time and reduce the info
 
 ### Multicall Disassociation
 
-A single RPC call that contains multiple batched queries can reveal the relationship between an umbrella of different accounts under the same wallet. When possible, 1RPC diassembles multicall transactions into its indidvidual requests to prevent exposure. 
+A single RPC call that contains multiple batched queries can reveal the relationship between an umbrella of different accounts under the same wallet. When possible, 1RPC disassembles multicall transactions into its individual requests to prevent exposure. 
