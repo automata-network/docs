@@ -6,7 +6,7 @@ Read up on what makes 1RPC different [here](https://medium.com/atanetwork/breaki
     
 ### What makes 1RPC different from the other RPC providers?
     
-Automata’s core mission is protecting fairness and privacy, which has inspired us to think about the design and implementation of 1RPC not only as a RPC relay, but also as a user-facing service that provides ease of use and convenience. Learning from real-world use has allowed us to improve the experience and discover new uses for the relay. We look forward to working closely together with more RPC providers to bring about greater visbiility and control over user data and metadata. 
+Automata’s core mission is protecting fairness and privacy, which has inspired us to think about the design and implementation of 1RPC not only as a RPC relay, but also as a user-facing service that provides ease of use and convenience. Learning from real-world use has allowed us to improve the experience and discover new uses for 1RPC. We look forward to working closely together with more RPC providers to bring about greater visbiility and control over user data and metadata within Web3. 
 
 ### Will 1RPC always be free?
 
@@ -14,7 +14,7 @@ Of course. We encourage users who require more precise and comprehensive privacy
 
 ### Which wallets can I use 1RPC with? 
 
-EVM-compatible chains can already be used natively with MetaMask one-click deployment button. Alternatively, copy and paste the network’s information to any wallet that supports customized RPC endpoints, with native support provided by existing wallet partners including OneKey and MathWallet. We’re also constantly working on the list of wallet partners for 1RPC, so be sure to check back often.
+EVM-compatible chains can already be used natively with MetaMask one-click deployment button. Alternatively, copy and paste the network’s information to any wallet that supports customized RPC endpoints. OneKey and MathWallet offer native support for 1RPC, and we’re also constantly working on the list of wallet partners for 1RPC, so be sure to check back often.
 
 Here's a 30 seconds [tutorial](https://youtu.be/moI45RtbvxQ) on how to get started with 1RPC. 
 
