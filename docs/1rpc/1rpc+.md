@@ -12,9 +12,9 @@ Introduced in private alpha, 1RPC+ is currently accessible via [waitlist](https:
 
     Anti-phishing rules help users to avoid interactions with bad actors and allows them to explore Web3 with greater confidence. With the support of application tools from some of the best security partners in the space, including AvengerDAO and GoPlus, users are warned away from a network of known, malicious addresses and contracts that is sourced, flagged and updated regularly over time. 
 
-- ### Custom privacy filters 
+- ### Transaction Sanitizers 
 
-     Transactions often feel intimidating because of a lack of transparency. Our goal is to give users on 1RPC+ a better understanding of how a dApp or smart contract interacts with their wallet. With customized privacy filters that can be added or edited at any time, this reduces the likelihood of users ending up in unwanted situations. 
+     Transactions often feel intimidating because of a lack of transparency. Our goal is to give users on 1RPC+ a better understanding of how a dApp or smart contract interacts with their wallet. With customized transaction sanitizers that can be added or edited at any time, this reduces the likelihood of users ending up in unwanted situations. 
 
 - ### Zero-tracking 
 
