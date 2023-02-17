@@ -54,9 +54,9 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 
 ### Limitations
 
-* Rate limit for 1RPC: 20,000 requests per day
+* Rate limit for 1RPC: 40 requests per second, 20,000 requests per day
 
-Usage quota will reset in the following day (00:00 UTC). An error code -32001 will be displayed once the rate limit is reached. 
+Daily usage quota will reset in the following day (00:00 UTC). An error code -32001 will be displayed once the rate limit is reached. 
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32001, "message": "Exceeded the quota usage"}, "id": 1}
