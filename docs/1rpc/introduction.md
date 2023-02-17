@@ -4,7 +4,7 @@
 
 1RPC is a free RPC relay to eradicate metadata exposure and leakage with a one-click experience for users within Web3. As a proxy layer that shields user data before it reaches existing RPC endpoints, many of which continue to be centralized today, it is important to us that 1RPC neither collects nor stores user metadata in any part of the relay journey.
 
-To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of their personal data. The waitlist is now [open](https://automatanetwork.typeform.com/to/rcjiWMwO) for early members to preview and try out additional power features. Read more about 1RPC+ [here](./1rpc+.md) - with advanced capabilities including anti-phishing and custom transaction sanitizers. 
+To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of their personal data. Read more about 1RPC+ [here](./1rpc+.md) - with advanced capabilities including anti-phishing and transaction sanitizers. 
 
 ## Features
 
