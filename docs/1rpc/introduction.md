@@ -72,7 +72,7 @@ An error code -32600 will be displayed once the request limit is reached.
 
 * Response content size: 2 Megabytes (MB)
 
-An error code -32600 will be displayed once the response limit is reached. Trying to call the eth_getLogs method might increase the content size, which can be brought down by refining the request, such as reducing the block range. 
+An error code -32000 will be displayed once the response limit is reached. Trying to call the eth_getLogs method might increase the content size, which can be brought down by refining the request, such as reducing the block range. 
 
 ```shell
 {"jsonrpc": "2.0", "error": {"code": -32000, "message": "response size should not greater than 2097152 bytes"}, "id": 1}
