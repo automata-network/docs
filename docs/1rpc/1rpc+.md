@@ -2,7 +2,7 @@
 
 ### Overview
 
-1RPC+ is a subscription plan that offers users more granular, dynamic control of their personal data. 
+1RPC+ is a subscription plan that offers users more granular, dynamic control of their interaction with blockchain. 
 
 The waitlist for 1RPC+ is now at capacity, and we will begin to invite users over the next few weeks. 
 
