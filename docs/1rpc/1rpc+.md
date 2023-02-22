@@ -168,7 +168,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
         * BNB smart chain: [bscscan](https://bscscan.com/terms).
         * Polygon mainnet: [polygonscan](https://polygonscan.com/terms).
         * Arbitrum One: [arbiscan](https://arbiscan.io/terms).
-        * Moonbeam: [moonbeam](https://moonscan.io/terms).
+        * Moonbeam: [moonscan](https://moonscan.io/terms).
         * Avalanche: [snowtrace](https://snowtrace.io/terms).
         * Optimism: [optimistic](https://optimistic.etherscan.io/terms).
         * Fantom Opera: [ftmscan](https://ftmscan.com/terms).
