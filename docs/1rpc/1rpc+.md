@@ -2,29 +2,30 @@
 
 ### Overview
 
-1RPC+ is a subscription plan that offers users more granular, dynamic control of their personal data. 
+1RPC+ is a subscription plan that offers users more granular, dynamic control of their interaction with blockchain. 
 
 The waitlist for 1RPC+ is now at capacity, and we will begin to invite users over the next few weeks. 
 
 ### Features
 
-- ### Anti-phishing
+- ### Transaction sanitizers 
 
-    Anti-phishing rules help users to avoid interactions with bad actors and allows them to explore Web3 with greater confidence. With the support of application tools from some of the best security partners in the space, including AvengerDAO and GoPlus, users are warned away from a network of known, malicious addresses and contracts that is sourced, flagged and updated regularly over time. 
+    Transaction sanitizers deter both known and emerging phishing threats that precede a potential loss of funds. Anti-phishing rules help users to avoid interactions with bad actors. Address scanning warns against a network of known, malicious addresses and smart contracts. Explorer contract verification and recipient validation on exchanges such as Uniswap ensures that users are interacting with genuine, official sources. 
 
-- ### Transaction Sanitizers 
+- ### Bespoke RPC 
 
-     Transactions often feel intimidating because of a lack of transparency. Our goal is to give users on 1RPC+ a better understanding of how a dApp or smart contract interacts with their wallet. With transaction sanitizers that can be added or edited at any time, this reduces the likelihood of users ending up in unwanted situations. 
+     Users of 1RPC+ own and customize a unique RPC endpoint to structure their journey in Web3, instead of having to go along with a blanket protection policy. 1RPC+ provides clarity for users on how they interact with a dApp or smart contract. This offers a more intuitive experience, but also the freedom of choice to strike a balance between user convenience and privacy protection. 
 
-- ### Zero-tracking 
+- ### Fail-safe protection 
 
-     The same rigorous standards of privacy-protection on 1RPC applies as well on 1RPC+. For a refresher on how the relay achieves zero-tracking, read [this](./design.md). 
+     1RPC+ users are buffered from potential phishing attempts even if its wider technical environment becomes vulnerable to such attacks. For the user on a wallet that does not offer native anti-phishing protection, 1RPC+ will still be able to detect and prevent malicious transactions from taking place in real-time, ao long as the relevant transaction sanitizer was set up in the first place. 
 
-### Transaction sanitizers
+### Customization
 
-- #### Rate limitation
+- #### Usage quota
     * Rule ID: 001
-    * Rule Details: If it reaches the daily rate limit, 1RPC+ will stop the upcoming requests until the following day (00:00 UTC).
+    * Rule Details: There is a default daily usage quota for each 1RPC+ user, and if it reaches the limitation, 1RPC+ will stop the upcoming requests until the following day (00:00 UTC).
+    * Default quota: 40,000
     * Error code: -32001
     * Error message: Exceeded the quota usage
     * Example:
@@ -34,7 +35,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
 
 - #### Address whitelist/blacklist
     * Rule ID: 002
-    * Rule Details: 1RPC+ will encrypt and save users’ customized address lists as a part of the customized configuration. Users can choose to use either whitelist or blacklist in this config. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the interactive addresses, then validate these addresses by using users’ config.
+    * Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the interactive addresses, then validate these addresses by using users’ config.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -50,7 +51,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
 
 - #### Uniswap recipient validation
     * Rule ID: 003
-    * Rule Details: 1RPC+ will ensure beneficial address is the sender
+    * Rule Details: 1RPC+ will match beneficial address against its sender to confirm validity of transaction
     * Support networks & contracts
         * Ethereum Mainnet:
             * V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564
@@ -144,7 +145,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
 
 - #### AvengerDAO address scanning
     * Rule ID: 052
-    * Rule Details: Users can configure a trust level for the accounts the transaction is going to interact with, which will be used to compare with the [AvengerDAO Meter](https://www.avengerdao.org/) result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive addresses, and send these addresses to AvengerDAO Meter to verify whether any of them is potentially malicious by using the trust level comparison, which should follow the AvengerDAO's Terms of Use.
+    * Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the [AvengerDAO Meter](https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data) result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive addresses, and send these addresses to AvengerDAO Meter to validate their risk level and verify whether any of them is potentially malicious by using the trust level comparison, which should follow the AvengerDAO's Terms of Use.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -161,7 +162,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
 
 - #### Explorer contract verification
     * Rule ID: 053
-    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive contracts, and verify whether the contract is validated or not from the official blockchain explorer API.
+    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive contracts, and test whether the contract is verified or not by the official blockchain explorers.
     * Support networks and their terms of use:
         * Ethereum mainnet: [etherscan](https://etherscan.io/terms).
         * BNB smart chain: [bscscan](https://bscscan.com/terms).

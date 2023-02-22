@@ -4,7 +4,7 @@
 
 1RPC is a free RPC relay to eradicate metadata exposure and leakage with a one-click experience for users within Web3. As a proxy layer that shields user data before it reaches existing RPC endpoints, many of which continue to be centralized today, it is important to us that 1RPC neither collects nor stores user metadata in any part of the relay journey.
 
-To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of their personal data. Read more about 1RPC+ [here](./1rpc+.md) - with advanced capabilities including anti-phishing and transaction sanitizers. 
+To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of how they interact with the blockchain. Read more about 1RPC+ [here](./1rpc+.md) - and how users create their own bespoke RPC endpoint with transaction sanitizers that can be added, edited or removed instantly, at any time. 
 
 ## Features
 
@@ -16,7 +16,7 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 
     An intuitive user experience helps users to get the most out of 1RPC’s privacy features. Clicking on the MetaMask icon for EVM-compatible chains will allow users to switch instantly to 1RPC. 
 
-- ### Zero-tracking 
+- ### Zero tracking 
 
     Even ostensibly private transactions are liable to some form of tracing, but not on 1RPC. Skip ahead to 1RPC’s design to read all about how we make it happen using a number of technical methods. 
     

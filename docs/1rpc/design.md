@@ -21,7 +21,7 @@ When users perform any kind of action, such as viewing their balance, creating a
     * User agent (Browser version, OS platform)
     * Request timestamp (Timezone)
 
-## Zero-tracking by 1RPC 
+## Zero tracking by 1RPC 
 
 ### Metadata Masking
 
