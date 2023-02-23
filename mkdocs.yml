@@ -25,6 +25,8 @@ nav:
       - User Info:
         - Overview: ./nftfair/users/activities.md
         - FAQs: ./nftfair/users/faq.md
+      - Console:
+        - User Guide: ./nftfair/console/user-guide.md
       - Contracts:
         - Summary: ./nftfair/contracts/summary.md
         - NFTFairFactory: ./nftfair/contracts/factory.md
