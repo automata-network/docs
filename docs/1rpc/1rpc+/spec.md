@@ -1,28 +1,6 @@
-# 1RPC+
+# Specification
 
-### Overview
-
-1RPC+ is a subscription plan that offers users more granular, dynamic control of their interaction with blockchain. 
-
-The waitlist for 1RPC+ is now at capacity, and we will begin to invite users over the next few weeks. 
-
-### Features
-
-- ### Transaction sanitizers 
-
-    Transaction sanitizers deter both known and emerging phishing threats that precede a potential loss of funds. Anti-phishing rules help users to avoid interactions with bad actors. Address scanning warns against a network of known, malicious addresses and smart contracts. Explorer contract verification and recipient validation on exchanges such as Uniswap ensures that users are interacting with genuine, official sources. 
-
-- ### Bespoke RPC 
-
-     Users of 1RPC+ own and customize a unique RPC endpoint to structure their journey in Web3, instead of having to go along with a blanket protection policy. 1RPC+ provides clarity for users on how they interact with a dApp or smart contract. This offers a more intuitive experience, but also the freedom of choice to strike a balance between user convenience and privacy protection. 
-
-- ### Fail-safe protection 
-
-     1RPC+ users are buffered from potential phishing attempts even if its wider technical environment becomes vulnerable to such attacks. For the user on a wallet that does not offer native anti-phishing protection, 1RPC+ will still be able to detect and prevent malicious transactions from taking place in real-time, ao long as the relevant transaction sanitizer was set up in the first place. 
-
-### Customization
-
-- #### Usage quota
+- ## Usage quota
     * Rule ID: 001
     * Rule Details: There is a default daily usage quota for each 1RPC+ user, and if it reaches the limitation, 1RPC+ will stop the upcoming requests until the following day (00:00 UTC).
     * Default quota: 40,000
@@ -33,9 +11,9 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
     {"jsonrpc": "2.0", "error": {"code": -32001, "message": "Exceeded the quota usage"}, "id": 1}
     ```
 
-- #### Address whitelist/blacklist
+- ## Address whitelist/blacklist
     * Rule ID: 002
-    * Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the interactive addresses, then validate these addresses by using users’ config.
+    * Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the addresses that the users interact with, then validate these addresses by using users’ config.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -49,7 +27,7 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
     {"jsonrpc": "2.0", "error": {"code": -32002, "message": "Blocked by 1RPC: invalid address. See https://rules.1rpc.io/002"}, "id": 1}
     ```
 
-- #### Uniswap recipient validation
+- ## Uniswap recipient validation
     * Rule ID: 003
     * Rule Details: 1RPC+ will match beneficial address against its sender to confirm validity of transaction
     * Support networks & contracts
@@ -120,9 +98,9 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
     {"jsonrpc": "2.0", "error": {"code": -32003, "message": "Blocked by 1RPC: recipient is suspicious. See https://rules.1rpc.io/003"}, "id": 1}
     ```
 
-- #### GoPlus address scanning
+- ## GoPlus address scanning
     * Rule ID: 051
-    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive addresses, and send these addresses to [Gopluslabs API](https://twitter.com/GoplusSecurity) to verify whether any of them is malicious, which should follow the Gopluslabs's [Terms of Use](https://gopluslabs.io/terms-of-use).
+    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and send these addresses to [Gopluslabs API](https://twitter.com/GoplusSecurity) to verify whether any of them is malicious, which should follow the Gopluslabs's [Terms of Use](https://gopluslabs.io/terms-of-use).
     * Support methods:
         * approve
         * setApprovalForAll
@@ -143,9 +121,9 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
     {"jsonrpc": "2.0", "error": {"code": -32051, "message": "Blocked by 1RPC: malicious address. See https://rules.1rpc.io/051"}, "id": 1}
     ```
 
-- #### AvengerDAO address scanning
+- ## AvengerDAO address scanning
     * Rule ID: 052
-    * Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the [AvengerDAO Meter](https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data) result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive addresses, and send these addresses to AvengerDAO Meter to validate their risk level and verify whether any of them is potentially malicious by using the trust level comparison, which should follow the AvengerDAO's Terms of Use.
+    * Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the [AvengerDAO Meter](https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data) result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and ensure that the trust score based on risk levels provided by AvengerDAO Meter satisfies the threshold specified by the user, which should follow the AvengerDAO's Terms of Use.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -160,9 +138,9 @@ The waitlist for 1RPC+ is now at capacity, and we will begin to invite users ove
     {"jsonrpc": "2.0", "error": {"code": -32052, "message": "Blocked by 1RPC: insufficient trust score. See https://rules.1rpc.io/052"}, "id": 1}
     ```
 
-- #### Explorer contract verification
+- ## Explorer contract verification
     * Rule ID: 053
-    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the interactive contracts, and test whether the contract is verified or not by the official blockchain explorers.
+    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the contracts that users are interacting with, and test whether the contract is verified or not by the official blockchain explorers. e.g., etherscan for Ethereum.
     * Support networks and their terms of use:
         * Ethereum mainnet: [etherscan](https://etherscan.io/terms).
         * BNB smart chain: [bscscan](https://bscscan.com/terms).
