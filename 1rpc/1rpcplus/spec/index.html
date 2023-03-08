@@ -2154,7 +2154,7 @@
 <h2 id="address-whitelistblacklist">Address whitelist/blacklist<a class="headerlink" href="#address-whitelistblacklist" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rule ID: 002</li>
-<li>Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the addresses that the users interact with, then validate these addresses by using users’ config.</li>
+<li>Rule Details: 1RPC+ users are able to create, edit and maintain one or many lists of addresses they trust or don't trust. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode the addresses that the users interact with, then validate these addresses by using users’ config.</li>
 <li>Support methods:<ul>
 <li>approve</li>
 <li>setApprovalForAll</li>
@@ -2174,7 +2174,7 @@
 <h2 id="uniswap-recipient-validation">Uniswap recipient validation<a class="headerlink" href="#uniswap-recipient-validation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rule ID: 003</li>
-<li>Rule Details: 1RPC+ will match beneficial address against its sender to confirm validity of transaction</li>
+<li>Rule Details: 1RPC+ ensures that the recipient of a Uniswap transaction is the same as the sender of the transaction. In the event of a discrepancy, 1RPC+ will block the transaction.</li>
 <li>Support networks &amp; contracts<ul>
 <li>Ethereum Mainnet:<ul>
 <li>V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564</li>
@@ -2269,7 +2269,7 @@
 <h2 id="goplus-address-scanning">GoPlus address scanning<a class="headerlink" href="#goplus-address-scanning" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rule ID: 051</li>
-<li>Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and send these addresses to <a href="https://twitter.com/GoplusSecurity">Gopluslabs API</a> to verify whether any of them is malicious, which should follow the Gopluslabs's <a href="https://gopluslabs.io/terms-of-use">Terms of Use</a>.</li>
+<li>Rule Details: 1RPC+ decodes the users' request to obtain addresses that they interact with, and check each of these addresses with <a href="https://twitter.com/GoplusSecurity">Gopluslabs API</a> to verify whether any of them is malicious, By using this rule, users agree to Gopluslabs's <a href="https://gopluslabs.io/terms-of-use">Terms of Use</a>.</li>
 <li>Support methods:<ul>
 <li>approve</li>
 <li>setApprovalForAll</li>
@@ -2298,7 +2298,7 @@
 <h2 id="avengerdao-address-scanning">AvengerDAO address scanning<a class="headerlink" href="#avengerdao-address-scanning" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rule ID: 052</li>
-<li>Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the <a href="https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data">AvengerDAO Meter</a> result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and ensure that the trust score based on risk levels provided by AvengerDAO Meter satisfies the threshold specified by the user, which should follow the AvengerDAO's Terms of Use.</li>
+<li>Rule Details: Users can configure a trust level for the accounts that the transaction is going tointeract with. 1RPC+ decodes the users' request to obtain the addresses that the user interacts with. For each of those addresses, 1RPC+ ensures that the trust score based on risk levels provided by <a href="https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data">AvengerDAO Meter</a> satisfies the threshold specified by the user. By using this rule, users agree to AvengerDAO's Terms of Use.</li>
 <li>Support methods:<ul>
 <li>approve</li>
 <li>setApprovalForAll</li>
@@ -2319,7 +2319,7 @@
 <h2 id="explorer-contract-verification">Explorer contract verification<a class="headerlink" href="#explorer-contract-verification" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rule ID: 053</li>
-<li>Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the contracts that users are interacting with, and test whether the contract is verified or not by the official blockchain explorers. e.g., etherscan for Ethereum.</li>
+<li>Rule Details: 1RPC+ will decode the transaction and ensure that the target contract address that the user is interacting with is verified on the chain's official explorer. e.g., etherscan for Ethereum. </li>
 <li>Support networks and their terms of use:<ul>
 <li>Ethereum mainnet: <a href="https://etherscan.io/terms">etherscan</a>.</li>
 <li>BNB smart chain: <a href="https://bscscan.com/terms">bscscan</a>.</li>
