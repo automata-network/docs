@@ -12,20 +12,20 @@
         <meta name="author" content="Automata Team">
       
       
-        <link rel="canonical" href="https://docs.ata.network/1rpc/1rpc%2B/spec/">
+        <link rel="canonical" href="https://docs.ata.network/1rpc/1rpcplus/introduction/">
       
       
-        <link rel="prev" href="../guide/">
+        <link rel="prev" href="../../guide/">
       
       
-        <link rel="next" href="../../faq/">
+        <link rel="next" href="../guide/">
       
       <link rel="icon" href="../../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
-        <title>Specification - Automata Network Docs</title>
+        <title>Introduction - Automata Network Docs</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#specification" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Specification
+              Introduction
             
           </span>
         </div>
@@ -1058,11 +1058,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Introduction
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transaction-sanitizers" class="md-nav__link">
+    Transaction sanitizers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bespoke-rpc" class="md-nav__link">
+    Bespoke RPC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fail-safe-protection" class="md-nav__link">
+    Fail-safe protection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1086,87 +1161,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Specification
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../spec/" class="md-nav__link">
         Specification
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#usage-quota" class="md-nav__link">
-    Usage quota
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#address-whitelistblacklist" class="md-nav__link">
-    Address whitelist/blacklist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uniswap-recipient-validation" class="md-nav__link">
-    Uniswap recipient validation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goplus-address-scanning" class="md-nav__link">
-    GoPlus address scanning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#avengerdao-address-scanning" class="md-nav__link">
-    AvengerDAO address scanning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explorer-contract-verification" class="md-nav__link">
-    Explorer contract verification
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2135,208 +2134,23 @@
   
 
 
-<h1 id="specification">Specification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h1>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>1RPC+ is a subscription plan that offers users more granular, dynamic control of their interaction with blockchain. </p>
+<p>The waitlist for 1RPC+ is now at capacity, and we will begin to invite users over the next few weeks. </p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<h2 id="usage-quota">Usage quota<a class="headerlink" href="#usage-quota" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 001</li>
-<li>Rule Details: There is a default daily usage quota for each 1RPC+ user, and if it reaches the limitation, 1RPC+ will stop the upcoming requests until the following day (00:00 UTC).</li>
-<li>Default quota: 40,000</li>
-<li>Error code: -32001</li>
-<li>Error message: Exceeded the quota usage</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32001,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Exceeded the quota usage&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
+<h3 id="transaction-sanitizers">Transaction sanitizers<a class="headerlink" href="#transaction-sanitizers" title="Permanent link">&para;</a></h3>
+<p>Transaction sanitizers deter both known and emerging phishing threats that precede a potential loss of funds. Anti-phishing rules help users to avoid interactions with bad actors. Address scanning warns against a network of known, malicious addresses and smart contracts. Explorer contract verification and recipient validation on exchanges such as Uniswap ensures that users are interacting with genuine, official sources. </p>
 </li>
 <li>
-<h2 id="address-whitelistblacklist">Address whitelist/blacklist<a class="headerlink" href="#address-whitelistblacklist" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 002</li>
-<li>Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the addresses that the users interact with, then validate these addresses by using users’ config.</li>
-<li>Support methods:<ul>
-<li>approve</li>
-<li>setApprovalForAll</li>
-<li>transferFrom</li>
-<li>safeTransferFrom</li>
-<li>transfer</li>
-</ul>
-</li>
-<li>Error code: -32002</li>
-<li>Error message: Blocked by 1RPC: invalid address. See https://rules.1rpc.io/002</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32002,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Blocked by 1RPC: invalid address. See https://rules.1rpc.io/002&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
+<h3 id="bespoke-rpc">Bespoke RPC<a class="headerlink" href="#bespoke-rpc" title="Permanent link">&para;</a></h3>
+<p>Users of 1RPC+ own and customize a unique RPC endpoint to structure their journey in Web3, instead of having to go along with a blanket protection policy. 1RPC+ provides clarity for users on how they interact with a dApp or smart contract. This offers a more intuitive experience, but also the freedom of choice to strike a balance between user convenience and privacy protection. </p>
 </li>
 <li>
-<h2 id="uniswap-recipient-validation">Uniswap recipient validation<a class="headerlink" href="#uniswap-recipient-validation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 003</li>
-<li>Rule Details: 1RPC+ will match beneficial address against its sender to confirm validity of transaction</li>
-<li>Support networks &amp; contracts<ul>
-<li>Ethereum Mainnet:<ul>
-<li>V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564</li>
-<li>V3 Router2: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45</li>
-<li>V2 Router: 0xf164fC0Ec4E93095b804a4795bBe1e041497b92a</li>
-<li>V2 Router2: 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D</li>
-</ul>
-</li>
-<li>Polygon Mainnet:<ul>
-<li>V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564</li>
-<li>V3 Router2: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45</li>
-</ul>
-</li>
-<li>Optimism:<ul>
-<li>V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564</li>
-<li>V3 Router2: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45</li>
-</ul>
-</li>
-<li>Arbitrum One:<ul>
-<li>V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564</li>
-<li>V3 Router2: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45</li>
-</ul>
-</li>
-<li>Celo Mainnet:<ul>
-<li>V3 Router2: 0x5615CDAb10dc425a742d643d949a7F474C01abc4</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Support methods:<ul>
-<li>V3 Router:<ul>
-<li>exactInput</li>
-<li>exactInputSingle</li>
-<li>exactOutput</li>
-<li>exactOutputSingle</li>
-</ul>
-</li>
-<li>V3 Router2:<ul>
-<li>exactInput</li>
-<li>exactInputSingle</li>
-<li>exactOutput</li>
-<li>exactOutputSingle</li>
-<li>swapExactTokensForTokens</li>
-<li>swapTokensForExactTokens</li>
-</ul>
-</li>
-<li>V2 Router:<ul>
-<li>swapExactTokensForTokens</li>
-<li>swapTokensForExactTokens</li>
-<li>addLiquidity</li>
-<li>addLiquidityETH</li>
-<li>removeLiquidity</li>
-<li>removeLiquidityETH</li>
-<li>removeLiquidityWithPermit</li>
-<li>removeLiquidityETHWithPermit</li>
-<li>swapETHForExactTokens</li>
-<li>swapExactETHForTokens</li>
-<li>swapTokensForExactETH</li>
-<li>swapExactTokensForETH</li>
-</ul>
-</li>
-<li>V2 Router2:<ul>
-<li>swapExactTokensForTokens</li>
-<li>swapTokensForExactTokens</li>
-<li>addLiquidity</li>
-<li>addLiquidityETH</li>
-<li>removeLiquidity</li>
-<li>removeLiquidityETH</li>
-<li>removeLiquidityWithPermit</li>
-<li>removeLiquidityETHWithPermit</li>
-<li>swapETHForExactTokens</li>
-<li>swapExactETHForTokens</li>
-<li>swapTokensForExactETH</li>
-<li>swapExactTokensForETH</li>
-<li>removeLiquidityETHSupportingFeeOnTransferTokens</li>
-<li>removeLiquidityETHWithPermitSupportingFeeOnTransferTokens</li>
-<li>swapExactETHForTokensSupportingFeeOnTransferTokens</li>
-<li>swapExactTokensForETHSupportingFeeOnTransferTokens</li>
-<li>swapExactTokensForTokensSupportingFeeOnTransferTokens</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Error code: -32003</li>
-<li>Error message: Blocked by 1RPC: recipient is suspicious. See https://rules.1rpc.io/003</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32003,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Blocked by 1RPC: recipient is suspicious. See https://rules.1rpc.io/003&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
-</li>
-<li>
-<h2 id="goplus-address-scanning">GoPlus address scanning<a class="headerlink" href="#goplus-address-scanning" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 051</li>
-<li>Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and send these addresses to <a href="https://twitter.com/GoplusSecurity">Gopluslabs API</a> to verify whether any of them is malicious, which should follow the Gopluslabs's <a href="https://gopluslabs.io/terms-of-use">Terms of Use</a>.</li>
-<li>Support methods:<ul>
-<li>approve</li>
-<li>setApprovalForAll</li>
-<li>transferFrom</li>
-<li>safeTransferFrom</li>
-<li>transfer</li>
-</ul>
-</li>
-<li>Support networks:<ul>
-<li>Ethereum Mainnet</li>
-<li>BNB Smart Chain</li>
-<li>Polygon Mainnet</li>
-<li>Fantom Opera</li>
-<li>Arbitrum One</li>
-<li>Avalanche</li>
-</ul>
-</li>
-<li>Error code: -32051</li>
-<li>Error message: Blocked by 1RPC: malicious address. See https://rules.1rpc.io/051</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32051,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Blocked by 1RPC: malicious address. See https://rules.1rpc.io/051&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
-</li>
-<li>
-<h2 id="avengerdao-address-scanning">AvengerDAO address scanning<a class="headerlink" href="#avengerdao-address-scanning" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 052</li>
-<li>Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the <a href="https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data">AvengerDAO Meter</a> result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and ensure that the trust score based on risk levels provided by AvengerDAO Meter satisfies the threshold specified by the user, which should follow the AvengerDAO's Terms of Use.</li>
-<li>Support methods:<ul>
-<li>approve</li>
-<li>setApprovalForAll</li>
-<li>transferFrom</li>
-<li>safeTransferFrom</li>
-<li>transfer</li>
-</ul>
-</li>
-<li>Support networks: BNB Smart Chain</li>
-<li>Error code: -32052</li>
-<li>Error message: Blocked by 1RPC: insufficient trust score. See https://rules.1rpc.io/052</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32052,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Blocked by 1RPC: insufficient trust score. See https://rules.1rpc.io/052&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
-</li>
-<li>
-<h2 id="explorer-contract-verification">Explorer contract verification<a class="headerlink" href="#explorer-contract-verification" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Rule ID: 053</li>
-<li>Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the contracts that users are interacting with, and test whether the contract is verified or not by the official blockchain explorers. e.g., etherscan for Ethereum.</li>
-<li>Support networks and their terms of use:<ul>
-<li>Ethereum mainnet: <a href="https://etherscan.io/terms">etherscan</a>.</li>
-<li>BNB smart chain: <a href="https://bscscan.com/terms">bscscan</a>.</li>
-<li>Polygon mainnet: <a href="https://polygonscan.com/terms">polygonscan</a>.</li>
-<li>Arbitrum One: <a href="https://arbiscan.io/terms">arbiscan</a>.</li>
-<li>Moonbeam: <a href="https://moonscan.io/terms">moonscan</a>.</li>
-<li>Avalanche: <a href="https://snowtrace.io/terms">snowtrace</a>.</li>
-<li>Optimism: <a href="https://optimistic.etherscan.io/terms">optimistic</a>.</li>
-<li>Fantom Opera: <a href="https://ftmscan.com/terms">ftmscan</a>.</li>
-</ul>
-</li>
-<li>Error code: -32053</li>
-<li>Error message: Blocked by 1RPC: unverified contract. See https://rules.1rpc.io/053</li>
-<li>Example:
-<div class="highlight"><pre><span></span><code><span class="o">{</span><span class="s2">&quot;jsonrpc&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,<span class="w"> </span><span class="s2">&quot;error&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;code&quot;</span>:<span class="w"> </span>-32053,<span class="w"> </span><span class="s2">&quot;message&quot;</span>:<span class="w"> </span><span class="s2">&quot;Blocked by 1RPC: unverified contract. See https://rules.1rpc.io/053&quot;</span><span class="o">}</span>,<span class="w"> </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>
-</code></pre></div></li>
-</ul>
+<h3 id="fail-safe-protection">Fail-safe protection<a class="headerlink" href="#fail-safe-protection" title="Permanent link">&para;</a></h3>
+<p>1RPC+ users are buffered from potential phishing attempts even if its wider technical environment becomes vulnerable to such attacks. For the user on a wallet that does not offer native anti-phishing protection, 1RPC+ will still be able to detect and prevent malicious transactions from taking place in real-time, ao long as the relevant transaction sanitizer was set up in the first place. </p>
 </li>
 </ul>
 
