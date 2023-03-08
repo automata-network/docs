@@ -10,7 +10,7 @@ Automata’s core mission is protecting fairness and privacy, which has inspired
 
 ### Will 1RPC always be free?
 
-Of course. Users who require more precise and comprehensive privacy controls can reserve a spot on the [1RPC+](./1rpc%2B/introduction.md) waitlist once it opens up again. 
+Of course. Users who require more precise and comprehensive privacy controls can reserve a spot on the [1RPC+](./1rpcplus/introduction.md) waitlist once it opens up again. 
 
 ### Which wallets can I use 1RPC with? 
 

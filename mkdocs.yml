@@ -43,9 +43,9 @@ nav:
       - Design: ./1rpc/design.md
       - User Guide: ./1rpc/guide.md
       - 1RPC+:
-        - Introduction: ./1rpc/1rpc+/introduction.md
-        - User Guide: ./1rpc/1rpc+/guide.md
-        - Specification: ./1rpc/1rpc+/spec.md
+        - Introduction: ./1rpc/1rpcplus/introduction.md
+        - User Guide: ./1rpc/1rpcplus/guide.md
+        - Specification: ./1rpc/1rpcplus/spec.md
       - FAQs: ./1rpc/faq.md
     - 2FA Guru:
       - Introduction: ./2fa/introduction.md
