@@ -13,7 +13,7 @@
 
 - ## Address whitelist/blacklist
     * Rule ID: 002
-    * Rule Details: 1RPC+ users are able to create, edit and maintain a list of addresses they trust or don't turst. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode and deserialize the addresses that the users interact with, then validate these addresses by using users’ config.
+    * Rule Details: 1RPC+ users are able to create, edit and maintain one or many lists of addresses they trust or don't trust. 1RPC+ will encrypt and save these lists as a part of the customized configuration. For each eth_sendRawTransaction request, 1RPC+ will decode the addresses that the users interact with, then validate these addresses by using users’ config.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -29,7 +29,7 @@
 
 - ## Uniswap recipient validation
     * Rule ID: 003
-    * Rule Details: 1RPC+ will match beneficial address against its sender to confirm validity of transaction
+    * Rule Details: 1RPC+ ensures that the recipient of a Uniswap transaction is the same as the sender of the transaction. In the event of a discrepancy, 1RPC+ will block the transaction.
     * Support networks & contracts
         * Ethereum Mainnet:
             * V3 Router: 0xE592427A0AEce92De3Edee1F18E0157C05861564
@@ -100,7 +100,7 @@
 
 - ## GoPlus address scanning
     * Rule ID: 051
-    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and send these addresses to [Gopluslabs API](https://twitter.com/GoplusSecurity) to verify whether any of them is malicious, which should follow the Gopluslabs's [Terms of Use](https://gopluslabs.io/terms-of-use).
+    * Rule Details: 1RPC+ decodes the users' request to obtain addresses that they interact with, and check each of these addresses with [Gopluslabs API](https://twitter.com/GoplusSecurity) to verify whether any of them is malicious, By using this rule, users agree to Gopluslabs's [Terms of Use](https://gopluslabs.io/terms-of-use).
     * Support methods:
         * approve
         * setApprovalForAll
@@ -123,7 +123,7 @@
 
 - ## AvengerDAO address scanning
     * Rule ID: 052
-    * Rule Details: Users can configure a trust level for the accounts that the transaction is going to interact with, which will be used to compare with the [AvengerDAO Meter](https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data) result. 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the addresses that the users interact with, and ensure that the trust score based on risk levels provided by AvengerDAO Meter satisfies the threshold specified by the user, which should follow the AvengerDAO's Terms of Use.
+    * Rule Details: Users can configure a trust level for the accounts that the transaction is going tointeract with. 1RPC+ decodes the users' request to obtain the addresses that the user interacts with. For each of those addresses, 1RPC+ ensures that the trust score based on risk levels provided by [AvengerDAO Meter](https://www.avengerdao.org/docs/meter/consumer-api/Endpoints#data) satisfies the threshold specified by the user. By using this rule, users agree to AvengerDAO's Terms of Use.
     * Support methods:
         * approve
         * setApprovalForAll
@@ -140,7 +140,7 @@
 
 - ## Explorer contract verification
     * Rule ID: 053
-    * Rule Details: 1RPC+ will decode users' eth_sendRawTransaction request to deserialize the contracts that users are interacting with, and test whether the contract is verified or not by the official blockchain explorers. e.g., etherscan for Ethereum.
+    * Rule Details: 1RPC+ will decode the transaction and ensure that the target contract address that the user is interacting with is verified on the chain's official explorer. e.g., etherscan for Ethereum. 
     * Support networks and their terms of use:
         * Ethereum mainnet: [etherscan](https://etherscan.io/terms).
         * BNB smart chain: [bscscan](https://bscscan.com/terms).
