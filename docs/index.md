@@ -1,10 +1,16 @@
 # Automata Network
 
-Automata Network is the privacy middleware layer building for a fair Web3. Its core suite of products include [1RPC](https://www.1rpc.io), [2FA Guru](https://2fa.guru), [NFTFair](https://nftfair.app), [AnyDAO](https://anydao.app) and [XATA](https://xata.fi) to address perennial issues of exploitation on the blockchain without compromising on security.
+Welcome to Automata Network’s Documentation! Automata Network is the privacy middleware layer building to protect fairness & privacy in Web3. Its core suite of products include:
+
+* [1RPC](https://www.1rpc.io)
+* [NFTFair](https://nftfair.app)
+* [2FA Guru](https://2fa.guru)
+* [Carrier](https://carrier.so)
+
 
 Some of our key features:
-- Do-not-track privacy
-- Native integration
+- No tracking privacy
+- Native integration supporting multichain integration
 - Universal compatibility
 
 Our [Medium](https://medium.com/atanetwork) is a great introduction to our vision and work. 
@@ -35,11 +41,10 @@ If you're interested in developing with or on Automata Network, view our develop
 
 Browse through any of our user guides below to get started:
 
-* [XATA](./xata/introduction.md)
-* [NFTFair](./nftfair/users/activities.md)
-* [AnyDAO](./anydao/guide.md)
-* [2FA Guru](./2fa/users/guide.md)
 * [1RPC](./1rpc/introduction.md)
+* [NFTFair](./nftfair/users/activities.md)
+* [2FA Guru](./2fa/users/guide.md)
+* [MEV Wiki](./mev/users/introcution.md)
 
 ## Helpful links
 

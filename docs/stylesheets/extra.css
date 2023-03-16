@@ -1,0 +1,22 @@
+.md-nav {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.md-tabs__item {
+    font-weight: bold;
+}
+
+:root {
+    --md-primary-fg-color:        #e74c3c;
+    --md-primary-fg-color--light: #e74c3c;
+    --md-primary-fg-color--dark:  #e74c3c;
+}
+
+.md-typeset .admonition.tip {
+    border-color: #e74c3c;
+}
+
+.md-typeset .tip>.admonition-title:before {
+    background-color: #e74c3c;
+}
