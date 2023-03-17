@@ -1,6 +1,4 @@
-## Design
-
-![](../assets/1rpc/1RPC_design.png){style="zoom:100%"}
+![](../assets/1rpc/1RPC_intro.png){style="zoom:100%"}
 
 1RPC employs a number of methods for users' data and metadata to remain private before requests are relayed to RPC providers. Its lightweight design is able to scale to support high traffic volume. 
 

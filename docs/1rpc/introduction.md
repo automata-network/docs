@@ -1,10 +1,33 @@
-# Introduction
+# 1RPC - The relay protecting privacy for good in Web3
 
 ## Overview
 
-1RPC is a free RPC relay to eradicate metadata exposure and leakage with a one-click experience for users within Web3. As a proxy layer that shields user data before it reaches existing RPC endpoints, many of which continue to be centralized today, it is important to us that 1RPC neither collects nor stores user metadata in any part of the relay journey.
+1RPC is a free RPC relay to eradicate metadata exposure and leakage with a one-click experience for users within Web3. As a proxy layer that shields user data before it reaches existing RPC endpoints, many of which continue to be centralized today, it is important to us that 1RPC neither collects no stores user metadata in any part of the relay journey.
+
+``` mermaid
+graph LR
+  A[User client / wallet] --> B{1RPC};
+  B -->C[RPC providers];
+```
+
+
+1RPC prevents the following data collection from RPC providers:
+
+- Account addresses :fontawesome-light-wallet:
+association in the same wallet client (extension/mobile) 
+- IP address (Geolocation) 📍
+- User agent (Browser, OS) 💻📱
+- Request timestamp (Time zone) 🌎
+
+### 1RPC+
 
 To support the evolving needs of our budding community, we’ve rolled out 1RPC+ to give users more granular, dynamic control of how they interact with the blockchain. Read more about 1RPC+ [here](./1rpcplus/introduction.md) - and how users create their own bespoke RPC endpoint with transaction sanitizers that can be added, edited or removed instantly, at any time. 
+
+[Go to 1RPC+ Doc](./1rpcplus/introduction.md){ .md-button .md-button--primary }
+
+    
+
+
 
 ## Features
 
