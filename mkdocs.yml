@@ -128,6 +128,7 @@ extra:
       link: https://t.me/ata_network
     - icon: fontawesome/brands/discord
       link: https://discord.com/invite/Us8cxTVRxG
+  generator: false
 
 extra_javascript:
   - javascripts/config.js
