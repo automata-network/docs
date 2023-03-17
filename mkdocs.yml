@@ -139,5 +139,6 @@ extra_javascript:
 copyright: Copyright &copy; 2023 Automata Network
 
 plugins:
+  - search
   - git-revision-date-localized:
       enable_creation_date: false
