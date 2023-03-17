@@ -11,6 +11,8 @@
     --md-primary-fg-color:        #e74c3c;
     --md-primary-fg-color--light: #e74c3c;
     --md-primary-fg-color--dark:  #e74c3c;
+    --md-default-bg-color--light: #e0e0e0;
+    --md-default-bg-color--dark:  #191919;
 }
 
 .md-typeset .admonition.tip {
@@ -19,4 +21,18 @@
 
 .md-typeset .tip>.admonition-title:before {
     background-color: #e74c3c;
+}
+
+/* .md-sidebar, .md-sidebar__scrollwrap, .md-sidebar--primary {
+    background-color: rgb(246, 246, 246);
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    background-color: rgb(246, 246, 246);
+} */
+
+
+.md-content__inner>:last-child {
+    float: right;
+    margin-bottom: 1rem;
 }

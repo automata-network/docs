@@ -6,14 +6,15 @@
 
 ``` mermaid
 graph LR
-  A[User Client] --> B{1RPC};
+  A[User client / wallet] --> B{1RPC};
   B -->C[RPC providers];
 ```
 
 
 1RPC prevents the following data collection from RPC providers:
 
-- Account addresses association in the same wallet client (extension/mobile) 
+- Account addresses :fontawesome-light-wallet:
+association in the same wallet client (extension/mobile) 
 - IP address (Geolocation) 📍
 - User agent (Browser, OS) 💻📱
 - Request timestamp (Time zone) 🌎

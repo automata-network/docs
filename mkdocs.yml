@@ -78,7 +78,7 @@ theme:
     - instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
     - navigation.top
-    - navigation.tabs
+    - navigation
     - toc.integrate
     # - navigation.expand
     - content.tabs.link
@@ -135,4 +135,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
 
-copyright: Copyright &copy; 2021 Automata Network
+copyright: Copyright &copy; 2023 Automata Network
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: false
