@@ -2,332 +2,332 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.ata.network/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/design/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/faq/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/1rpcplus/guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/1rpcplus/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/1rpc/1rpcplus/spec/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/contracts/2FAppendix/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/contracts/TwoFactorAuthentication/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/contracts/TwoFactorBase/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/contracts/summary/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/developers/faq/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/developers/workflow/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/users/faq/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/2fa/users/guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/anydao/design/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/anydao/guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/anydao/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/anydao/spec/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/getstarted/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/node/node-type/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/node/run-full-node/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/node/run-validator/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/userguide/accounts/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/userguide/get-test-token/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/userguide/setupwallet/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/canarynet/userguide/token-bridge/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/overview/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv1/automata-conveyor-controller/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv1/automata-conveyor-gtoken/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv1/automata-conveyor-overview/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv1/fee-contract/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv1/fee/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/conveyor/conveyorv2/design/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/examples/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/misc/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/resource-list/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/terms-and-concepts/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/trick-the-bots/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/solutions/approaches/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/solutions/faas-or-meva/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/solutions/mev-minimization-prevention/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/mev/solutions/others/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/factory/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/summary/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/treasury/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/vault/base/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/vault/templates/fifo/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/contracts/vault/templates/mysteryboxes/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/users/activities/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/nftfair/users/faq/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/witness/api/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/witness/introduction-bak/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/witness/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/witness/user-guide-bak/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/witness/user-guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/faq/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/farming-guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/introduction/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/liquiditypool-guide/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/sdk/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ata.network/xata/smart-contract/</loc>
-         <lastmod>2023-03-13</lastmod>
+         <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
