@@ -31,6 +31,7 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 | ETH Mainnet | https://1rpc.io/eth | 1 | ETH | https://etherscan.io |
 | BNB Chain Mainnet | https://1rpc.io/bnb | 56 | BNB | https://bscscan.com |
 | Polygon Mainnet | https://1rpc.io/matic | 137 | MATIC | https://polygonscan.com |
+| Polygon zkEVM Mainnet Beta | https://1rpc.io/zkevm | 1101 | ETH | https://zkevm.polygonscan.com |
 | Avalanche Contract Chain | https://1rpc.io/avax/c | 43114 | AVAX | https://snowtrace.io |
 | Avalanche Platform Chain | https://1rpc.io/avax/p | | | |
 | Avalanche Exchange Chain | https://1rpc.io/avax/x | | | |
