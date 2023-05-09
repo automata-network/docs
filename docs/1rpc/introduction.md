@@ -49,7 +49,7 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 | Celo Mainnet | https://1rpc.io/celo | 42220 | CELO | https://explorer.celo.org |
 | Klaytn Mainnet | https://1rpc.io/klay | 8217 | KLAY | https://www.klaytnfinder.io |
 | Starknet | https://1rpc.io/starknet | | | https://starkscan.co |
-| AltLayer | https://1rpc.io/alt | 9990 | ALT | https://devnet-explorer.altlayer.io |
+| AltLayer Testnet | https://1rpc.io/alt-testnet | 9997 | ETH | https://testnet-rollup-explorer.altlayer.io |
 | Near Mainnet | https://1rpc.io/near | | | https://explorer.near.org |
 | Aurora Mainnet | https://1rpc.io/aurora | 1313161554 | ETH | https://explorer.mainnet.aurora.dev |
 | Base Goerli | https://1rpc.io/base-goerli | 84531 | ETH | https://goerli.basescan.org |
