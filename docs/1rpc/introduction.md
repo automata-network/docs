@@ -54,6 +54,8 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 | Aurora Mainnet | https://1rpc.io/aurora | 1313161554 | ETH | https://explorer.mainnet.aurora.dev |
 | Base Goerli | https://1rpc.io/base-goerli | 84531 | ETH | https://goerli.basescan.org |
 | Harmony Mainnet | https://1rpc.io/one | 1666600000 | ONE | https://explorer.harmony.one |
+| Secret Mainnet RPC | https://1rpc.io/scrt-rpc | | | https://secretnodes.com/secret |
+| Secret Mainnet LCD | https://1rpc.io/scrt-lcd | | | |
 
 ### Limitations
 
