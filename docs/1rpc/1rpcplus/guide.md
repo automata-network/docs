@@ -1,6 +1,6 @@
 # User Guide
 
-Click on the "Sign in" button on the top right of the page. 1RPC+ is currently in private alpha and accessible via waitlist only, so check that you’re using the correct wallet address.
+Click on 'Meet 1RPC+' on the top right of the page. 
 
 ![](../../assets/1rpc/1RPC+_1.png){style="zoom:100%"}
 
@@ -12,7 +12,7 @@ Sign the message to begin using 1RPC+.
 
 ![](../../assets/1rpc/1RPC+_3.png){style="zoom:100%"}
 
-This is the dashboard for 1RPC+ members. The API key on the dashboard is unique to you and is used to generate 1RPC+ URLs across all supported networks. 
+This is the dashboard for 1RPC+ members. The API key on the dashboard is private to you and is used to generate 1RPC+ URLs across all supported networks. Do not share this key publicly to avoid misuse or abuse by others. 
 
 ![](../../assets/1rpc/1RPC+_4.png){style="zoom:100%"}
 
@@ -24,17 +24,17 @@ The status gives an indication of the daily limit for the number of relays suppo
 
 ![](../../assets/1rpc/1RPC+_6.png){style="zoom:100%"}
 
-Hover over the wallet icons and click on your preferred wallet to switch to 1RPC+ instantly. Here we’re using MetaMask as an example to illustrate what that would look like. The experience for different wallets should be similar. 
+Click on the wallet icon to switch to 1RPC+ instantly. Here we’re using MetaMask as an example to illustrate what that would look like.
 
 ![](../../assets/1rpc/1RPC+_7.png){style="zoom:100%"}
 
-Let’s select the MetaMask icon under Ethereum. Sign the following messages to switch to 1RPC+ on the network. 
+Sign the following messages to switch to 1RPC+ on the network. 
 
 ![](../../assets/1rpc/1RPC+_8.png){style="zoom:100%"}
 
 # Transaction Sanitizers
 
-Click on "Customize" in the top right corner of 1RPC+ dashboard. 
+Click on "Customize" on the top right of the 1RPC+ dashboard. 
 
 ![](../../assets/1rpc/1RPC+_9.png){style="zoom:100%"}
 
