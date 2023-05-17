@@ -2,7 +2,7 @@
 
 ## User
 
-Visit [1RPC](https://www.1rpc.io/). Search for the network by token, name or Chain ID, or scroll through the list of networks. 
+Visit [1RPC](https://www.1rpc.io/). Search for the network by token, name or Chain ID, or scroll through the list.
 
 ![](../assets/1rpc/1RPC_demo_1.png){style="zoom:100%"}
 
