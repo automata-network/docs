@@ -3,7 +3,7 @@
 - ## Usage quota
     * Rule ID: 001
     * Rule Details: There is a default daily usage quota for each 1RPC+ user, and if it reaches the limitation, 1RPC+ will stop the upcoming requests until the following day (00:00 UTC).
-    * Default quota: 40,000
+    * Default quota: 20,000
     * Error code: -32001
     * Error message: Exceeded the quota usage
     * Example:

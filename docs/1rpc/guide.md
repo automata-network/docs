@@ -2,21 +2,17 @@
 
 ## User
 
-Visit [1RPC](https://www.1rpc.io/). Click on the "Add 1RPC to Wallet" button.  
+Visit [1RPC](https://www.1rpc.io/). Search for the network by token, name or Chain ID, or scroll through the list.
 
 ![](../assets/1rpc/1RPC_demo_1.png){style="zoom:100%"}
 
-Search for the network by token, name or Chain ID.
+Click on the wallet icon to switch to 1RPC instantly. 
 
 ![](../assets/1rpc/1RPC_demo_2.png){style="zoom:100%"}
 
-Click on the MetaMask icon to switch to 1RPC instantly. 
-
-![](../assets/1rpc/1RPC_demo_3.png){style="zoom:100%"}
-
 Alternatively, click on View Details. Copy the network information to your wallet settings. 
 
-![](../assets/1rpc/1RPC_demo_4.png){style="zoom:100%"}
+![](../assets/1rpc/1RPC_demo_3.png){style="zoom:100%"}
 
 For Substrate blockchains, switch to 1RPC on [Polkadot.js](https://polkadot.js.org/apps/)
 
