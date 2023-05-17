@@ -10,13 +10,11 @@ Automata’s core mission is protecting fairness and privacy, which has inspired
 
 ### Will 1RPC always be free?
 
-Of course. Users who require more precise and comprehensive privacy controls can reserve a spot on the [1RPC+](./1rpcplus/introduction.md) waitlist once it opens up again. 
+Yes! 
 
 ### Which wallets can I use 1RPC with? 
 
 EVM-compatible chains can already be used natively with MetaMask one-click deployment button. Alternatively, copy and paste the network’s information to any wallet that supports customized RPC endpoints. OneKey and MathWallet offer native support for 1RPC, and we’re also constantly working on the list of wallet partners for 1RPC, so be sure to check back often.
-
-Here's a 30 seconds [tutorial](https://youtu.be/moI45RtbvxQ) on how to get started with 1RPC. 
 
 ### Why use 1RPC if my privacy is already compromised?
 
