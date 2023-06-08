@@ -56,6 +56,7 @@ To support the evolving needs of our budding community, we’ve rolled out 1RPC+
 | Harmony Mainnet | https://1rpc.io/one | 1666600000 | ONE | https://explorer.harmony.one |
 | Secret Mainnet RPC | https://1rpc.io/scrt-rpc | | | https://secretnodes.com/secret |
 | Secret Mainnet LCD | https://1rpc.io/scrt-lcd | | | |
+| Bitcoin Blockbook RPC | https://1rpc.io/btc | | | |
 
 ### Limitations
 
