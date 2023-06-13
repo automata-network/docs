@@ -6,8 +6,43 @@ site_author: Automata Team
 repo_url: https://github.com/automata-network/docs
 
 nav:
-  - General:
-    - The MEV Wiki:
+  - 1RPC:
+    - Introduction: ./1rpc/introduction.md
+    - Design: ./1rpc/design.md
+    - User Guide: ./1rpc/guide.md
+    - 1RPC+:
+        - Introduction: ./1rpc/1rpcplus/introduction.md
+        - User Guide: ./1rpc/1rpcplus/guide.md
+        - Specification: ./1rpc/1rpcplus/spec.md
+    - FAQs: ./1rpc/faq.md
+  - NFTFair:
+    - Introduction: ./nftfair/introduction.md
+    - User Info:
+      - Overview: ./nftfair/users/activities.md
+      - FAQs: ./nftfair/users/faq.md
+    - Contracts:
+      - Summary: ./nftfair/contracts/summary.md
+      - NFTFairFactory: ./nftfair/contracts/factory.md
+      - NFTFairTreasury: ./nftfair/contracts/treasury.md
+      - NFTFairVault: ./nftfair/contracts/vault/base.md
+      - Vault Templates:
+        - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
+        - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
+  - 2FA Guru:
+    - Introduction: ./2fa/introduction.md
+    - User Info:
+      - User Guide: ./2fa/users/guide.md
+      - FAQs: ./2fa/users/faq.md
+    - Developer Info:
+      - Workflow: ./2fa/developers/workflow.md
+      - Contracts:
+        - Summary: ./2fa/contracts/summary.md
+        - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
+        - TwoFactorAuthentication: ./2fa/contracts/TwoFactorAuthentication.md
+        - Appendix: ./2fa/contracts/2FAppendix.md
+      - FAQs: ./2fa/developers/faq.md
+  - MEV Wiki:
+    - MEV Wiki:
       - Introduction: ./mev/introduction.md
       - Resource List: ./mev/resource-list.md
       - Terms and Concepts: ./mev/terms-and-concepts.md
@@ -19,81 +54,6 @@ nav:
         - MEV Minimization / Prevention:  ./mev/solutions/mev-minimization-prevention.md
         - Others: ./mev/solutions/others.md
       - Miscellaneous: ./mev/misc.md
-  - User Guide:
-    - NFTFair:
-      - Introduction: ./nftfair/introduction.md
-      - User Info:
-        - Overview: ./nftfair/users/activities.md
-        - FAQs: ./nftfair/users/faq.md
-      - Contracts:
-        - Summary: ./nftfair/contracts/summary.md
-        - NFTFairFactory: ./nftfair/contracts/factory.md
-        - NFTFairTreasury: ./nftfair/contracts/treasury.md
-        - NFTFairVault: ./nftfair/contracts/vault/base.md
-        - Vault Templates:
-          - FIFO Vault: ./nftfair/contracts/vault/templates/fifo.md
-          - Mystery Boxes Vault: ./nftfair/contracts/vault/templates/mysteryboxes.md
-    - AnyDao:
-      - Introduction: ./anydao/introduction.md
-      - Design: ./anydao/design.md
-      - Specification: ./anydao/spec.md
-      - User Guide: ./anydao/guide.md
-    - 1RPC:
-      - Introduction: ./1rpc/introduction.md
-      - Design: ./1rpc/design.md
-      - User Guide: ./1rpc/guide.md
-      - 1RPC+:
-        - Introduction: ./1rpc/1rpcplus/introduction.md
-        - User Guide: ./1rpc/1rpcplus/guide.md
-        - Specification: ./1rpc/1rpcplus/spec.md
-      - FAQs: ./1rpc/faq.md
-    - 2FA Guru:
-      - Introduction: ./2fa/introduction.md
-      - User Info:
-        - User Guide: ./2fa/users/guide.md
-        - FAQs: ./2fa/users/faq.md
-      - Developer Info:
-        - Workflow: ./2fa/developers/workflow.md
-        - Contracts:
-          - Summary: ./2fa/contracts/summary.md
-          - TwoFactorBase: ./2fa/contracts/TwoFactorBase.md
-          - TwoFactorAuthentication: ./2fa/contracts/TwoFactorAuthentication.md
-          - Appendix: ./2fa/contracts/2FAppendix.md
-        - FAQs: ./2fa/developers/faq.md
-    - XATA:
-      - Introduction: ./xata/introduction.md
-      - Smart Contracts: ./xata/smart-contract.md
-      - Swap & Liquidity Pool Guide: ./xata/liquiditypool-guide.md
-      - Farming Guide: ./xata/farming-guide.md
-      - SDK: ./xata/sdk.md
-      - FAQ: ./xata/faq.md
-    - Witness: 
-      - Introduction: ./witness/introduction.md
-      - User Guide: ./witness/user-guide.md
-      # - Witness API: ./witness/api.md
-  - Developers:
-    - ContextFree Network:
-      - Get Started:
-        - Introduction: ./canarynet/getstarted/introduction.md
-      - User Guide:
-        - Set up Wallet: ./canarynet/userguide/setupwallet.md
-        - Get Test Token: ./canarynet/userguide/get-test-token.md
-        - Use Token Bridge: ./canarynet/userguide/token-bridge.md
-      - Node:
-        - Node Types: ./canarynet/node/node-type.md
-        - Run Full Node: ./canarynet/node/run-full-node.md
-        - Join as Validator: ./canarynet/node/run-validator.md
-    - Conveyor:
-      - Overview: ./conveyor/overview.md
-      - ConveyorV1:
-        - ./conveyor/conveyorv1/automata-conveyor-overview.md
-        - ./conveyor/conveyorv1/automata-conveyor-gtoken.md
-        - ./conveyor/conveyorv1/automata-conveyor-controller.md
-        - ./conveyor/conveyorv1/fee.md
-        - ./conveyor/conveyorv1/fee-contract.md
-      - ConveyorV2:
-        - ./conveyor/conveyorv2/design.md
-
 theme:
   name: material
   custom_dir: overrides
@@ -101,8 +61,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: orange
-      accent: orange
+      accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -110,7 +69,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: orange
+      accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -119,7 +78,7 @@ theme:
     - instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
     - navigation.top
-    - navigation.tabs
+    - navigation
     - toc.integrate
     # - navigation.expand
     - content.tabs.link
@@ -154,6 +113,9 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -166,6 +128,7 @@ extra:
       link: https://t.me/ata_network
     - icon: fontawesome/brands/discord
       link: https://discord.com/invite/Us8cxTVRxG
+  generator: false
 
 extra_javascript:
   - javascripts/config.js
@@ -173,4 +136,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
 
-copyright: Copyright &copy; 2021 Automata Network
+copyright: Copyright &copy; 2023 Automata Network
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
