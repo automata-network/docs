@@ -26,7 +26,7 @@ For running `Validator Node`, please refer to the [next section](./run-validator
     -v "/chain:/data" \
     -u $(id -u ${USER}):$(id -g ${USER}) \
     -d \
-    atactr/automata:contextfree-v0.1.0-rc4 \
+    atactr/automata:contextfree-v0.1.0-rc5 \
     --node-type full \
     --name <YOUR_NODE_NAME>
   ```
@@ -40,7 +40,7 @@ For running `Validator Node`, please refer to the [next section](./run-validator
     -v "/chain:/data" \
     -u $(id -u ${USER}):$(id -g ${USER}) \
     -d \
-    atactr/automata:contextfree-v0.1.0-rc4 \
+    atactr/automata:contextfree-v0.1.0-rc5 \
     --node-type archive \
     --name <YOUR_NODE_NAME>
     ```
